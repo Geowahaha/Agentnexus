@@ -5,21 +5,13 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$RepoRoot = Split-Path $PSScriptRoot -Parent
+. (Join-Path $PSScriptRoot "lib\secure-env.ps1")
 
-function Read-EnvKey($path, $key) {
-    if (-not (Test-Path $path)) { return $null }
-    foreach ($line in Get-Content $path -Encoding UTF8) {
-        if ($line -match "^\s*$([regex]::Escape($key))\s*=\s*(.+)\s*$") {
-            return $Matches[1].Trim().Trim('"').Trim("'")
-        }
-    }
-    return $null
-}
-
-$githubToken = Read-EnvKey $EnvFile "GITHUB_TOKEN"
-$cfToken = Read-EnvKey $EnvFile "CLOUDFLARE_API_TOKEN"
+$githubToken = Get-GithubPat -RepoRoot $RepoRoot
+$cfToken = Get-RepoEnvValue -Key "CLOUDFLARE_API_TOKEN" -RepoRoot $RepoRoot
 $repo = "Geowahaha/Agentnexus"
-$cfAccount = Read-EnvKey $EnvFile "CLOUDFLARE_ACCOUNT_ID"
+$cfAccount = Get-RepoEnvValue -Key "CLOUDFLARE_ACCOUNT_ID" -RepoRoot $RepoRoot
 if (-not $cfAccount) {
     $wr = Get-Content (Join-Path (Split-Path $PSScriptRoot -Parent) "wrangler.jsonc") -Raw
     if ($wr -match '"account_id"\s*:\s*"([^"]+)"') { $cfAccount = $Matches[1] }

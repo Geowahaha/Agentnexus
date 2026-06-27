@@ -8,14 +8,7 @@ $ErrorActionPreference = "Stop"
 $RepoRoot = Split-Path $PSScriptRoot -Parent
 Set-Location $RepoRoot
 
-function Read-EnvKey($path, $key) {
-    foreach ($line in Get-Content $path -Encoding UTF8) {
-        if ($line -match "^\s*$([regex]::Escape($key))\s*=\s*(.+)\s*$") {
-            return $Matches[1].Trim().Trim('"').Trim("'")
-        }
-    }
-    return $null
-}
+. (Join-Path $PSScriptRoot "lib\secure-env.ps1")
 
 if (-not (Test-Path ".git")) {
     git init

@@ -5,52 +5,25 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+. (Join-Path $RepoRoot "scripts\lib\secure-env.ps1")
 $rootEnv = Join-Path $RepoRoot ".env"
 $backendEnv = Join-Path $RepoRoot "backend\.env"
 
-function Read-EnvKey($path, $key) {
-    if (-not (Test-Path $path)) { return $null }
-    foreach ($line in Get-Content $path -Encoding UTF8) {
-        if ($line -match "^\s*$([regex]::Escape($key))\s*=\s*(.+)\s*$") {
-            return $Matches[1].Trim().Trim('"').Trim("'")
-        }
-    }
-    return $null
-}
+$oldToken = Get-RepoEnvValue -Key "GITHUB_TOKEN" -RepoRoot $RepoRoot
+$newToken = Get-RepoEnvValue -Key "GIT_TOKEN" -RepoRoot $RepoRoot
+if (-not $newToken) { $newToken = $oldToken }
+if (-not $newToken) { throw "Set GITHUB_TOKEN in repo root .env" }
 
-function Set-EnvKey($path, $key, $value) {
-    $lines = if (Test-Path $path) { Get-Content $path -Encoding UTF8 } else { @() }
-    $found = $false
-    $out = foreach ($line in $lines) {
-        if ($line -match "^\s*$([regex]::Escape($key))\s*=") {
-            $found = $true
-            "$key=$value"
-        } else {
-            $line
-        }
-    }
-    if (-not $found) { $out += "$key=$value" }
-    Set-Content -Path $path -Value $out -Encoding UTF8
-}
-
-$oldToken = Read-EnvKey $rootEnv "GITHUB_TOKEN"
-$newToken = Read-EnvKey $backendEnv "GIT_TOKEN"
-if (-not $newToken) { throw "GIT_TOKEN missing in backend/.env" }
-if ($oldToken -eq $newToken) {
-    Write-Host "GITHUB_TOKEN already matches GIT_TOKEN." -ForegroundColor DarkGray
-} else {
-    Set-EnvKey $rootEnv "GITHUB_TOKEN" $newToken
+if ($oldToken -ne $newToken) {
+    Set-RepoEnvValue -Key "GITHUB_TOKEN" -Value $newToken -EnvFile $rootEnv
     if (Test-Path $backendEnv) {
-        if (-not (Read-EnvKey $backendEnv "GITHUB_TOKEN")) {
-            Add-Content -Path $backendEnv -Value "GITHUB_TOKEN=$newToken" -Encoding UTF8
-        } else {
-            Set-EnvKey $backendEnv "GITHUB_TOKEN" $newToken
-        }
+        Set-RepoEnvValue -Key "GITHUB_TOKEN" -Value $newToken -EnvFile $backendEnv
     }
-    Write-Host "Updated GITHUB_TOKEN in .env files (using GIT_TOKEN)." -ForegroundColor Green
+    Write-Host "Updated GITHUB_TOKEN in .env files." -ForegroundColor Green
 }
 
-& (Join-Path $RepoRoot "scripts\setup-github-credential-manager.ps1") -RepoRoot $RepoRoot -EnvFile $rootEnv
+& (Join-Path $RepoRoot "scripts\setup-github-credential-manager.ps1") -RepoRoot $RepoRoot
+& (Join-Path $RepoRoot "scripts\sync-github-actions-secrets.ps1") -RepoRoot $RepoRoot
 
 if (-not $SkipRevoke -and $oldToken -and $oldToken -ne $newToken) {
     try {

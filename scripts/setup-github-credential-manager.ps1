@@ -9,23 +9,10 @@ param(
 
 $ErrorActionPreference = "Stop"
 if (-not $EnvFile) { $EnvFile = Join-Path $RepoRoot ".env" }
+. (Join-Path $PSScriptRoot "lib\secure-env.ps1")
 
-function Read-EnvKey($path, $key) {
-    if (-not (Test-Path $path)) { return $null }
-    foreach ($line in Get-Content $path -Encoding UTF8) {
-        if ($line -match "^\s*$([regex]::Escape($key))\s*=\s*(.+)\s*$") {
-            return $Matches[1].Trim().Trim('"').Trim("'")
-        }
-    }
-    return $null
-}
-
-$token = Read-EnvKey $EnvFile "GITHUB_TOKEN"
-if ($UseGitTokenFromBackend) {
-    $backendToken = Read-EnvKey (Join-Path $RepoRoot "backend\.env") "GIT_TOKEN"
-    if ($backendToken) { $token = $backendToken }
-}
-if (-not $token) { throw "GITHUB_TOKEN (or GIT_TOKEN with -UseGitTokenFromBackend) missing" }
+$token = Get-GithubPat -RepoRoot $RepoRoot
+if (-not (Test-GithubPat -Token $token)) { throw "GITHUB_TOKEN in .env is invalid or expired" }
 
 Push-Location $RepoRoot
 try {
