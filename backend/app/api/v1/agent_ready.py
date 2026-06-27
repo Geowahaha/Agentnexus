@@ -1,10 +1,11 @@
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 
-from app.auth.dependencies import get_current_user
+from app.auth.dependencies import get_current_user, get_optional_user
 from app.auth.models import User
 from app.repositories.agent_ready_session_repository import AgentReadySessionRepository
 from app.repositories.user_repository import UserRepository
+from app.services.agent_ready.entitlement_guard import assert_entitled, assert_scan_allowed
 from app.services.agent_ready.orchestrator import AgentReadyOrchestrator
 from app.services.agent_ready.run_archive import AgentReadyRunArchive
 from app.services.agent_ready.session_service import AgentReadySessionService
@@ -20,6 +21,10 @@ _archive = AgentReadyRunArchive()
 
 class AnalyzeRequest(BaseModel):
     url: str = Field(..., description="Site URL to analyze")
+    workflow_id: str | None = Field(
+        None,
+        description="Required for first paid scan when logged in; omit for entitled free re-scan",
+    )
 
 
 class SmartScanRequest(BaseModel):
@@ -44,6 +49,7 @@ class ApplyAgentReadyFixRequest(BaseModel):
 
 class VerifyRequest(BaseModel):
     url: str
+    workflow_id: str | None = None
     target_percent: int = Field(95, ge=0, le=100)
     max_attempts: int = Field(3, ge=1, le=10)
     purge_between: bool = True
@@ -101,13 +107,33 @@ async def smart_scan_site(body: SmartScanRequest):
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 
 
+async def _guard_logged_in_scan(
+    url: str,
+    workflow_id: str | None,
+    user: User | None,
+    db: AsyncSession,
+) -> None:
+    if user is None:
+        return
+    repo = AgentReadySessionRepository(db)
+    await assert_scan_allowed(repo, user.id, url, workflow_id=workflow_id)
+
+
 @router.post("/analyze")
-async def analyze_site(body: AnalyzeRequest):
+async def analyze_site(
+    body: AnalyzeRequest,
+    current_user: User | None = Depends(get_optional_user),
+    db: AsyncSession = Depends(get_session),
+):
     """Stack fingerprint + isitagentready scan + deploy plan.
     Returns partial result on error to avoid hard failures in UI.
     """
     try:
-        return await _orchestrator.analyze(body.url.strip())
+        site_url = body.url.strip()
+        await _guard_logged_in_scan(site_url, body.workflow_id, current_user, db)
+        return await _orchestrator.analyze(site_url)
+    except PermissionError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
     except Exception as exc:  # noqa: BLE001
         # Last resort: try verify-only scan so UI never shows a fake 0% when the scanner works.
         try:
@@ -137,15 +163,23 @@ async def analyze_site(body: AnalyzeRequest):
 
 
 @router.post("/verify")
-async def verify_site(body: VerifyRequest):
+async def verify_site(
+    body: VerifyRequest,
+    current_user: User | None = Depends(get_optional_user),
+    db: AsyncSession = Depends(get_session),
+):
     """Post-deploy re-scan loop with optional Cloudflare cache purge."""
     try:
+        site_url = body.url.strip()
+        await _guard_logged_in_scan(site_url, body.workflow_id, current_user, db)
         return await _orchestrator.verify_loop(
-            body.url.strip(),
+            site_url,
             target_percent=body.target_percent,
             max_attempts=body.max_attempts,
             purge_between=body.purge_between,
         )
+    except PermissionError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 
@@ -250,6 +284,8 @@ async def sync_coach_after_paid_scan(
             fix_pack=body.fix_pack,
             progress=body.progress,
         )
+    except PermissionError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 
@@ -290,10 +326,13 @@ async def coach_update_progress(
     current_user: User = Depends(get_current_user),
     coach: AgentReadySessionService = Depends(_coach_service),
 ):
-    record = await coach.update_progress(current_user.id, body.url.strip(), body.progress)
-    if not record:
-        raise HTTPException(status_code=404, detail="No saved session for this site")
-    return record
+    try:
+        record = await coach.update_progress(current_user.id, body.url.strip(), body.progress)
+        if not record:
+            raise HTTPException(status_code=404, detail="No saved session for this site")
+        return record
+    except PermissionError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
 
 
 @router.get("/archive/sites")
@@ -324,10 +363,18 @@ async def get_archive_run(host: str, run_id: str):
 
 
 @router.post("/fix-pack")
-async def build_fix_pack(body: AnalyzeRequest):
+async def build_fix_pack(
+    body: AnalyzeRequest,
+    current_user: User | None = Depends(get_optional_user),
+    db: AsyncSession = Depends(get_session),
+):
     """Build the agent-ready fix pack (real files, diffs, SEO/AEO/AAIO content from page text)."""
     try:
-        return _orchestrator.build_fix_pack(body.url.strip())
+        site_url = body.url.strip()
+        await _guard_logged_in_scan(site_url, body.workflow_id, current_user, db)
+        return _orchestrator.build_fix_pack(site_url)
+    except PermissionError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 
@@ -335,6 +382,7 @@ async def build_fix_pack(body: AnalyzeRequest):
 @router.post("/apply")
 async def apply_fix_and_log_revenue(
     body: ApplyAgentReadyFixRequest,
+    current_user: User = Depends(get_current_user),
     session: AsyncSession = Depends(get_session),
 ):
     """
@@ -345,8 +393,11 @@ async def apply_fix_and_log_revenue(
     - Always logs revenue to moat (Billing + CreatorEarning)
     """
     try:
+        site_url = body.url.strip()
+        repo = AgentReadySessionRepository(session)
+        await assert_entitled(repo, current_user.id, site_url)
         apply_result = await _orchestrator.apply_agent_ready_fix(
-            url=body.url.strip(),
+            url=site_url,
             fix_pack=body.fix_pack,
             github_token=body.github_token,
             repo=body.repo,
@@ -371,5 +422,7 @@ async def apply_fix_and_log_revenue(
             "revenue_logged": True,
             "moat": "BillingTransaction + CreatorEarning created",
         }
+    except PermissionError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=502, detail=str(exc)) from exc

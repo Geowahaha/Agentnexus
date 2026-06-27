@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react'
 import type { FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { api, request } from '../api/client'  // request for custom POSTs
@@ -34,9 +34,19 @@ export function AgentReadyPro() {
   const isEntitledForUrl = useCallback((siteUrl: string) => {
     if (!siteUrl) return false
     const { normalized } = normalizeSiteUrl(siteUrl)
-    if (coachSession?.site_url === normalized && coachSession?.entitled) return true
+    if (!normalized) return false
     return savedSites.some((s: any) => s.site_url === normalized && s.entitled)
-  }, [coachSession, savedSites])
+  }, [savedSites])
+
+  const normalizedUrl = useMemo(() => {
+    const { normalized } = normalizeSiteUrl(url)
+    return normalized || ''
+  }, [url])
+
+  const entitled = isEntitledForUrl(url)
+  const coachMatchesUrl = Boolean(
+    coachSession?.site_url && normalizedUrl && coachSession.site_url === normalizedUrl,
+  )
 
   const applyCoachSession = useCallback((session: any) => {
     if (!session) return
@@ -118,6 +128,14 @@ export function AgentReadyPro() {
       setError(urlErr)
       return
     }
+    if (isEntitledForUrl(normalized)) {
+      setError(
+        isTh
+          ? 'เว็บนี้ซื้อแล้ว — ใช้ Re-scan ฟรีเท่านั้น (ไม่สามารถสแกนจ่ายซ้ำได้)'
+          : 'This site is already purchased — use free re-scan only.',
+      )
+      return
+    }
 
     setRunning(true)
     setError('')
@@ -137,11 +155,12 @@ export function AgentReadyPro() {
         task_context: { expert_skill_id: skillId, expert_skill_slug: 'agent-ready-auto-fix', target_url: normalized },
       })
 
+      const wfId = workflow.workflow_id
       let scored: any = null
       try {
-        const analyze: any = await request('/agent-ready/analyze', { method: 'POST', body: JSON.stringify({ url: normalized }) }, token)
+        const analyze: any = await request('/agent-ready/analyze', { method: 'POST', body: JSON.stringify({ url: normalized, workflow_id: wfId }) }, token)
         scored = analyze?.partial && analyze?.summary?.percent == null
-          ? await request('/agent-ready/verify', { method: 'POST', body: JSON.stringify({ url: normalized, max_attempts: 1, purge_between: false }) }, token).then((v: any) => ({
+          ? await request('/agent-ready/verify', { method: 'POST', body: JSON.stringify({ url: normalized, workflow_id: wfId, max_attempts: 1, purge_between: false }) }, token).then((v: any) => ({
               ...analyze,
               summary: v?.final ?? v?.attempts?.[0] ?? analyze.summary,
               scan: { level: v?.final?.level, level_name: v?.final?.level_name },
@@ -152,7 +171,7 @@ export function AgentReadyPro() {
       } catch (e) {
         console.warn('analyze failed', e)
         try {
-          const verify: any = await request('/agent-ready/verify', { method: 'POST', body: JSON.stringify({ url: normalized, max_attempts: 1, purge_between: false }) }, token)
+          const verify: any = await request('/agent-ready/verify', { method: 'POST', body: JSON.stringify({ url: normalized, workflow_id: wfId, max_attempts: 1, purge_between: false }) }, token)
           scored = {
             url: normalized,
             summary: verify?.final ?? verify?.attempts?.[0] ?? { percent: 0 },
@@ -170,7 +189,7 @@ export function AgentReadyPro() {
 
       let pack: any = null
       try {
-        pack = await request('/agent-ready/fix-pack', { method: 'POST', body: JSON.stringify({ url: normalized }) }, token)
+        pack = await request('/agent-ready/fix-pack', { method: 'POST', body: JSON.stringify({ url: normalized, workflow_id: wfId }) }, token)
         setFixPack(pack)
       } catch (e) {
         console.warn('fix-pack failed', e)
@@ -291,15 +310,16 @@ export function AgentReadyPro() {
     }
   }
 
-  const coach = coachSession?.coach
+  const coach = coachMatchesUrl ? coachSession?.coach : null
   const coachHeadlineTh = coach?.headline_th_business || coach?.headline_th
   const coachHeadlineEn = coach?.headline_en
   const coachSummaryTh = coach?.executive_summary_th_business || coach?.executive_summary_th
   const coachSummaryEn = coach?.executive_summary_en
   const coachStepsTh = coach?.next_steps_th_business || coach?.next_steps_th
   const coachStepsEn = coach?.next_steps_en
-  const entitled = isEntitledForUrl(url)
-  const showCoach = coach || (result && entitled)
+  const showCoach = Boolean(coach)
+  const hasPurchasedSites = savedSites.some((s: any) => s.entitled)
+  const isUnpurchasedUrl = Boolean(normalizedUrl && hasPurchasedSites && !entitled)
 
   return (
     <div className="page-shell mx-auto max-w-5xl">
@@ -344,11 +364,11 @@ export function AgentReadyPro() {
         Real files for SEO, AEO &amp; AAIO. Revenue attribution automatic.
       </div>
 
-      {/* Saved sites — resume coach without paying again */}
+      {/* Saved sites — bound purchase; free re-scan only for these URLs */}
       {user && savedSites.length > 0 && (
         <div className="mt-8 max-w-2xl rounded-3xl border bg-white p-4">
           <div className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)] mb-2">
-            {isTh ? 'เว็บที่คุณซื้อแล้ว — re-scan ฟรี' : 'Your sites — free re-scan'}
+            {isTh ? 'เว็บที่ซื้อแล้ว (ผูกกับการจ่าย) — re-scan ฟรีเฉพาะเว็บนี้' : 'Purchased sites (bound) — free re-scan for these only'}
           </div>
           <div className="flex flex-wrap gap-2">
             {savedSites.map((s: any) => (
@@ -428,6 +448,14 @@ export function AgentReadyPro() {
         </div>
       )}
 
+      {isUnpurchasedUrl && (
+        <div className="mt-6 max-w-2xl rounded-2xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+          {isTh
+            ? `เว็บ ${normalizedUrl} ยังไม่ได้ซื้อ — จ่าย $${price} เพื่อสแกนเว็บใหม่ หรือเลือกเว็บที่ซื้อแล้วด้านบนเพื่อ re-scan ฟรี`
+            : `${normalizedUrl} is not purchased — pay $${price} for a new site, or pick a purchased site above for free re-scan.`}
+        </div>
+      )}
+
       {/* Super simple run form */}
       <div ref={runRef} className="mt-8 max-w-md">
         {!user ? (
@@ -442,17 +470,25 @@ export function AgentReadyPro() {
               className="w-full rounded-2xl border px-4 py-3"
               required
             />
-            <button 
-              type="submit" 
-              disabled={running || !consentAccepted}
-              className="w-full rounded-2xl bg-black py-3 text-sm font-bold text-white disabled:opacity-60"
-            >
-              {running
-                ? `Working... ${runSeconds}s`
-                : entitled
-                  ? (isTh ? 'สแกนใหม่ (จ่ายอีกครั้งสำหรับเว็บใหม่)' : 'New paid scan (new site)')
-                  : `Scan & Prepare Fixes — $${price}`}
-            </button>
+            {entitled ? (
+              <div className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-4 text-sm text-emerald-900">
+                {isTh
+                  ? `เว็บนี้ซื้อแล้ว — ใช้ Re-scan ฟรีด้านบนเท่านั้น (ไม่สแกนจ่ายซ้ำ)`
+                  : `This site is purchased — use free re-scan above only (no duplicate paid scan)`}
+              </div>
+            ) : (
+              <button 
+                type="submit" 
+                disabled={running || !consentAccepted}
+                className="w-full rounded-2xl bg-black py-3 text-sm font-bold text-white disabled:opacity-60"
+              >
+                {running
+                  ? `Working... ${runSeconds}s`
+                  : hasPurchasedSites
+                    ? (isTh ? `ซื้อสแกนเว็บใหม่ — $${price}` : `Buy scan for new site — $${price}`)
+                    : `Scan & Prepare Fixes — $${price}`}
+              </button>
+            )}
             {/* Clean professional consent for customers (benefit-focused, non-redundant) */}
             <label className="flex cursor-pointer gap-3 rounded-2xl border border-[var(--color-border)] bg-white p-3.5 text-sm">
               <input

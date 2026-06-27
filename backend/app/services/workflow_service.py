@@ -177,6 +177,20 @@ class WorkflowService:
             await self._validate_expert_skill_preflight(
                 str(expert_skill_id) if expert_skill_id else None
             )
+            if skill_slug == "agent-ready-auto-fix":
+                target = merged_context.get("target_url") or extract_target_url(task_description)
+                if target:
+                    from app.core.database import async_session_maker
+                    from app.repositories.agent_ready_session_repository import AgentReadySessionRepository
+                    from app.services.agent_ready.entitlement_guard import is_entitled
+
+                    async with async_session_maker() as db:
+                        repo = AgentReadySessionRepository(db)
+                        if await is_entitled(repo, user_id, str(target)):
+                            raise ValueError(
+                                "This website is already purchased — use free re-scan on Agent-Ready. "
+                                "Enter a different URL to buy another site."
+                            )
         await self._billing.ensure_sufficient_balance(
             user_id,
             workflow_type=workflow_type,

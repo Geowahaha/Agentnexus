@@ -11,6 +11,7 @@ from app.repositories.agent_ready_session_repository import AgentReadySessionRep
 from app.repositories.user_repository import UserRepository
 from app.services.agent_ready.coach import build_coach_brief_async, build_session_state
 from app.services.agent_ready.coach_notify import notify_rescan_complete
+from app.services.agent_ready.entitlement_guard import assert_entitled, verify_workflow_for_site
 from app.services.agent_ready.orchestrator import AgentReadyOrchestrator
 
 logger = logging.getLogger(__name__)
@@ -51,15 +52,23 @@ class AgentReadySessionService:
         progress: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
         site_url, _ = self._repo.normalize(url)
+        uid = self._uid(user_id)
+        _, host = self._repo.normalize(site_url)
+        existing = await self._repo.get_for_user(uid, host)
+        if existing and existing.entitled:
+            raise PermissionError(
+                "This site is already purchased — use free re-scan only; "
+                "enter a different URL and pay again for another website."
+            )
+        if not workflow_id:
+            raise PermissionError("workflow_id required to bind purchase to scanned website")
+        await verify_workflow_for_site(workflow_id=workflow_id, user_id=uid, site_url=site_url)
+
         scan = analyze or await self._orchestrator.analyze(site_url)
         scan["recorded_at"] = datetime.now(timezone.utc).isoformat()
         pack = fix_pack
         if pack is None:
             pack = self._orchestrator.build_fix_pack(site_url)
-
-        _, host = self._repo.normalize(site_url)
-        uid = self._uid(user_id)
-        existing = await self._repo.get_for_user(uid, host)
         initial = (existing.state or {}).get("initial_scan") if existing else None
         if not initial:
             initial = scan
@@ -93,8 +102,9 @@ class AgentReadySessionService:
     ) -> dict[str, Any]:
         uid = self._uid(user_id)
         _, host = self._repo.normalize(url)
+        await assert_entitled(self._repo, uid, url)
         row = await self._repo.get_for_user(uid, host)
-        if row is None or not row.entitled:
+        if row is None:
             raise PermissionError("No paid entitlement for this site — run a paid scan first")
 
         site_url, _ = self._repo.normalize(url)
@@ -151,8 +161,9 @@ class AgentReadySessionService:
         """Queue live re-scan in background — user can leave; email/push when done."""
         uid = self._uid(user_id)
         _, host = self._repo.normalize(url)
+        await assert_entitled(self._repo, uid, url)
         row = await self._repo.get_for_user(uid, host)
-        if row is None or not row.entitled:
+        if row is None:
             raise PermissionError("No paid entitlement for this site — run a paid scan first")
 
         key = f"{uid}:{host}"
@@ -199,6 +210,7 @@ class AgentReadySessionService:
             _background_rescans.discard(queue_key)
 
     async def update_progress(self, user_id: str | uuid.UUID, url: str, progress: dict[str, Any]) -> dict[str, Any] | None:
+        await assert_entitled(self._repo, self._uid(user_id), url)
         _, host = self._repo.normalize(url)
         row = await self._repo.patch_progress(self._uid(user_id), host, progress)
         return self._row_detail(row) if row else None
