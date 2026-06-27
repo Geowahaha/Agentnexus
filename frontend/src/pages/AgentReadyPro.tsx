@@ -90,17 +90,17 @@ export function AgentReadyPro() {
   const price = 9.99
 
   const headline = isTh
-    ? 'สแกน → ไฟล์แก้จริง → AI MCP ของคุณ'
-    : 'Scan → real fixes → your AI MCP'
+    ? 'บอท AI มองไม่เห็นเว็บ? ได้ไฟล์แก้จริง'
+    : 'AI skips your site. Real fixes — not PDFs.'
 
   const subline = isTh
-    ? 'Growth Score · AIBotAuth deep · PageSpeed · SEO/AEO/AAIO'
-    : 'Growth Score · AIBotAuth deep · PageSpeed · SEO/AEO/AAIO · ROI'
+    ? 'Growth Score จุดเสียรายได้ · AIBotAuth · PageSpeed · SEO/AEO/AAIO · พิสูจน์ ROI'
+    : 'Growth Score · AIBotAuth deep · PageSpeed · SEO/AEO/AAIO · ROI proof'
 
   const steps = [
-    { num: '1', title: isTh ? 'สแกน' : 'Scan', desc: isTh ? '8 บอท + live score' : '8 bots + live score' },
-    { num: '2', title: isTh ? 'แก้ไข' : 'Fix', desc: isTh ? 'ไฟล์ deploy จริง' : 'Deploy-ready files' },
-    { num: '3', title: isTh ? 'MCP' : 'MCP', desc: isTh ? 'AI ของคุณ apply' : 'Your AI applies' },
+    { num: '1', title: isTh ? 'สแกน' : 'Scan', desc: isTh ? '8 บอทบอกว่าเสียตรงไหน' : '8 bots show what blocks you' },
+    { num: '2', title: isTh ? 'ไฟล์จริง' : 'Real files', desc: isTh ? 'robots · llms · schema' : 'robots · llms · schema' },
+    { num: '3', title: isTh ? 'MCP' : 'MCP', desc: isTh ? 'วางเดียว AI deploy' : 'One paste · AI deploys' },
   ]
 
   function scrollToRun() {
@@ -336,7 +336,7 @@ export function AgentReadyPro() {
           onClick={scrollToRun}
           className="w-full sm:w-auto rounded-2xl bg-[var(--color-market)] px-6 py-3 text-sm font-semibold text-white"
         >
-          {isTh ? `เริ่มสแกน — $${price}` : `Start scan — $${price}`}
+          {isTh ? `สแกนเว็บฉัน — $${price}` : `Scan my site — $${price}`}
         </button>
       </div>
 
