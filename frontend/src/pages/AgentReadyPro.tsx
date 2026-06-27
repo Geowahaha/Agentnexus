@@ -90,8 +90,8 @@ export function AgentReadyPro() {
   const price = 9.99
 
   const headline = isTh
-    ? 'สแกน → ได้ไฟล์แก้จริง → ให้ AI apply'
-    : 'Scan → real fixes → your AI applies'
+    ? 'สแกน → ไฟล์แก้จริง → AI MCP ของคุณ'
+    : 'Scan → real fixes → your AI MCP'
 
   const subline = isTh
     ? 'Growth Score · AIBotAuth deep · PageSpeed · SEO/AEO/AAIO'
