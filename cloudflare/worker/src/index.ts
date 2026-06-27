@@ -28,7 +28,7 @@ const AGENT_READY_MARKER = 'obolla-agent-ready-2026-06-25'
 const BOT_UA_PATTERN = /GPTBot|OAI-SearchBot|ChatGPT-User|ClaudeBot|Claude-SearchBot|PerplexityBot|Googlebot|bingbot|Applebot|Bytespider/i
 const AGENT_READY_ORIGIN = 'https://obolla.com'
 const AGENT_READY_SITE_NAME = 'OBOLLA'
-const AGENT_READY_CONTENT_SIGNAL = 'ai-train=yes, ai-input=yes, search=yes'
+const AGENT_READY_CONTENT_SIGNAL = 'ai-train=no, search=yes, ai-input=yes'
 const AGENT_READY_WEB_BOT_JWKS = {
   keys: [
     {
@@ -226,6 +226,101 @@ async function finalizeAssetResponse(request: Request, response: Response, env: 
   })
 }
 
+function discoveryRobotsTxt(origin: string): string {
+  return `# ${new URL(origin).hostname} — agent-ready robots.txt
+User-agent: *
+Allow: /
+Content-Signal: ${AGENT_READY_CONTENT_SIGNAL}
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+Sitemap: ${origin}/sitemap.xml
+`
+}
+
+function discoveryLlmsTxt(origin: string): string {
+  return `# ${new URL(origin).hostname} — Machine-readable for LLM agents + Search Engines
+
+> Policy: ${AGENT_READY_CONTENT_SIGNAL}. Optimized for traditional SEO, AI Answer Engines (AEO), and autonomous Agents (AAIO).
+
+## About OBOLLA — AI Garden Community
+OBOLLA is an AI expert skills marketplace with Agent-Ready SEO+AEO+AAIO scans, MCP fix packs, smart farm workflows, and revenue attribution on live URLs.
+
+## Core Pages (SEO + AEO ready)
+- [Homepage](${origin}/) — Primary landing: marketplace, Agent-Ready, Smart Farm
+- [Marketplace](${origin}/marketplace) — Browse and run expert agent skills
+- [Agent-Ready Pro](${origin}/agent-ready) — Scan → fix pack → apply with your AI MCP
+- [Smart Farm](${origin}/smart-farm) — Telemetry ingest and dataset packs
+- [Creator Garden](${origin}/garden) — Free companion for new skill creators
+
+## Agent Discovery (AAIO)
+- [llms.txt](${origin}/llms.txt) — This file
+- [agents.txt](${origin}/agents.txt)
+- [ai.txt](${origin}/ai.txt)
+- [robots.txt](${origin}/robots.txt) — AI crawler rules + Content-Signal
+
+## Structured Data & Commerce (SEO + AEO + AAIO)
+- [API Catalog](${origin}/.well-known/api-catalog)
+- [OpenAPI / Schema](${origin}/openapi.json)
+- [Auth & Commerce](${origin}/auth.md) — UCP / ACP / x402
+- [MCP server card](${origin}/.well-known/mcp/server-card.json) — apply_agent_ready_fix
+
+Agents & search engines: Use clear intent, entities, and structured data from actual page content.
+`
+}
+
+function discoveryAiTxt(origin: string): string {
+  return `# ai.txt — ${new URL(origin).hostname}
+ai-train: no
+search: yes
+ai-input: yes
+
+See also:
+- ${origin}/llms.txt
+- ${origin}/agents.txt
+- ${origin}/robots.txt
+`
+}
+
+function discoveryAgentsTxt(origin: string): string {
+  return `# agents.txt for ${new URL(origin).hostname}
+
+contact: ${origin}/community
+policy: ${origin}/ai.txt
+allowed-paths: /, /marketplace, /agent-ready, /smart-farm, /garden
+catalog: ${origin}/.well-known/api-catalog
+skills: ${origin}/.well-known/agent-skills/index.json
+mcp: ${origin}/.well-known/mcp/server-card.json
+
+# This site supports agent interactions via discovery files and API.
+`
+}
+
 function botReadableHomeMarkdown(origin: string): string {
   return `# OBOLLA — AI Garden & Expert Skills Marketplace
 
@@ -280,21 +375,41 @@ function handleAgentReadinessRequest(request: Request, env: Env): Response | nul
   if (path === '/api/v1' && request.method === 'GET') return x402Response(request, env)
 
   if (path === '/robots.txt') {
-    return agentText(`User-agent: *\nAllow: /\n\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-SearchBot\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nContent-Signal: ${AGENT_READY_CONTENT_SIGNAL}\nSitemap: ${origin}/sitemap.xml\n`, 'text/plain; charset=utf-8', env)
+    return agentText(discoveryRobotsTxt(origin), 'text/plain; charset=utf-8', env)
   }
 
   if (path === '/sitemap.xml') {
-    return agentText(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${origin}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>\n  <url><loc>${origin}/marketplace</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>\n  <url><loc>${origin}/agent-ready-pro</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>\n</urlset>\n`, 'application/xml; charset=utf-8', env)
+    return agentText(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${origin}/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>\n  <url><loc>${origin}/marketplace</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>\n  <url><loc>${origin}/agent-ready</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>\n  <url><loc>${origin}/smart-farm</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>\n</urlset>\n`, 'application/xml; charset=utf-8', env)
   }
 
-  if (path === '/llms.txt') return agentText(`# OBOLLA\n\nOBOLLA is an AI expert skills marketplace, agent-ready service surface, and smart farm data workflow platform.\n\nCanonical origin: ${origin}\nAPI catalog: ${origin}/.well-known/api-catalog\nAgent card: ${origin}/.well-known/agent-card.json\nAuth instructions: ${origin}/auth.md\n`, 'text/plain; charset=utf-8', env)
-  if (path === '/ai.txt') return agentText(`# OBOLLA AI Access\n\nPublic pages may be fetched for search, summarization, and agent discovery. Do not treat public website content as final professional advice or production payment settlement.\n`, 'text/plain; charset=utf-8', env)
-  if (path === '/agents.txt') return agentText(`# OBOLLA Agent Discovery\n\nOrigin: ${origin}\nAPI catalog: ${origin}/.well-known/api-catalog\nOpenAPI: ${origin}/openapi.json\nMCP server card: ${origin}/.well-known/mcp/server-card.json\nA2A agent card: ${origin}/.well-known/agent-card.json\nSkills index: ${origin}/.well-known/agent-skills/index.json\nAuth.md: ${origin}/auth.md\n`, 'text/plain; charset=utf-8', env)
+  if (path === '/llms.txt') return agentText(discoveryLlmsTxt(origin), 'text/plain; charset=utf-8', env)
+  if (path === '/ai.txt') return agentText(discoveryAiTxt(origin), 'text/plain; charset=utf-8', env)
+  if (path === '/agents.txt') return agentText(discoveryAgentsTxt(origin), 'text/plain; charset=utf-8', env)
   if (path === '/auth.md') return agentText(`# Auth.md\n\n## OBOLLA Agent Registration\n\nPublic website pages are available without authentication. Protected marketplace, creator, smart-farm, and payable agent workflows require user or partner approval.\n\nDiscovery metadata:\n\n- ${origin}/.well-known/oauth-protected-resource\n- ${origin}/.well-known/oauth-authorization-server\n- ${origin}/.well-known/openid-configuration\n\n## agent_auth\n\nagent_auth = {\n  "skill": "${origin}/auth.md",\n  "register_uri": "${origin}/agent-registration",\n  "identity_types_supported": ["anonymous"],\n  "anonymous": {\n    "credential_types_supported": ["none"],\n    "claim_uri": "${origin}/auth.md#anonymous-claims"\n  }\n}\n\n## Anonymous Claims\n\nClaim URI: ${origin}/auth.md#anonymous-claims\nRevocation URI: ${origin}/auth.md#anonymous-revocation\n\nAgents may identify themselves as anonymous clients for public discovery. Production access to private data, paid workflows, or account-specific operations requires a separate human-approved registration or provider credential.\n`, 'text/markdown; charset=utf-8', env)
   if (path === '/.well-known/api-docs.md') return agentText(`# OBOLLA API Documentation\n\nPublic discovery endpoints are available for AI agents. Payable examples are discovery metadata; production settlement requires configured provider credentials.\n\n- OpenAPI: ${origin}/openapi.json\n- Auth.md: ${origin}/auth.md\n- Agent card: ${origin}/.well-known/agent-card.json\n`, 'text/markdown; charset=utf-8', env)
 
   if (path === '/openapi.json' || path === '/.well-known/openapi.json') return agentJson(openApiDocument(origin), env, 'application/vnd.oai.openapi+json;version=3.1; charset=utf-8')
-  if (path === '/.well-known/api-catalog') return agentJson({ linkset: [{ anchor: `${origin}/api`, 'service-desc': [{ href: `${origin}/openapi.json`, type: 'application/vnd.oai.openapi+json;version=3.1' }], 'service-doc': [{ href: `${origin}/.well-known/api-docs.md`, type: 'text/markdown' }, { href: `${origin}/auth.md`, type: 'text/markdown' }], 'service-meta': [{ href: `${origin}/agents.txt`, type: 'text/plain' }, { href: `${origin}/.well-known/http-message-signatures-directory`, type: 'application/jwk-set+json' }, { href: `${origin}/.well-known/ucp`, type: 'application/json' }, { href: `${origin}/.well-known/acp.json`, type: 'application/json' }] }] }, env, 'application/linkset+json; charset=utf-8')
+  if (path === '/.well-known/api-catalog') {
+    return agentJson(
+      {
+        linkset: [
+          {
+            anchor: `${origin}/api`,
+            item: [
+              { rel: 'service-desc', href: `${origin}/openapi.json`, type: 'application/json' },
+              { rel: 'service-doc', href: `${origin}/auth.md`, type: 'text/markdown' },
+              { rel: 'service-doc', href: `${origin}/.well-known/api-docs.md`, type: 'text/markdown' },
+              { rel: 'status', href: `${origin}/health`, type: 'application/json' },
+              { rel: 'service-meta', href: `${origin}/agents.txt`, type: 'text/plain' },
+              { rel: 'service-meta', href: `${origin}/llms.txt`, type: 'text/plain' },
+            ],
+          },
+        ],
+      },
+      env,
+      'application/linkset+json; charset=utf-8',
+    )
+  }
   if (path === '/.well-known/oauth-protected-resource') return agentJson({ resource: origin, authorization_servers: [origin], scopes_supported: ['public:read', 'agent:review'], bearer_methods_supported: ['header'], resource_documentation: `${origin}/auth.md` }, env)
   if (path === '/.well-known/oauth-authorization-server') return agentJson(oauthServer(origin), env)
   if (path === '/.well-known/openid-configuration') return agentJson({ ...oauthServer(origin), userinfo_endpoint: `${origin}/api/oauth/userinfo`, subject_types_supported: ['public'], id_token_signing_alg_values_supported: ['EdDSA', 'RS256'] }, env)
