@@ -1,0 +1,60 @@
+---
+pid: 20876
+cwd: "D:\AgentNexus"
+command: "Stop-Process -Id 37588 -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 2; Set-Location D:\\AgentNexus\\backend; .\\run.ps1"
+started_at: 2026-06-17T12:54:52.348Z
+running_for_ms: 86400008 
+---
+INFO:     Started server process [30448]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:61143 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61142 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54280 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54281 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51200 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56935 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51201 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54282 - "GET /api/v1/workflows/6224ed61-a3d1-49c2-b844-829b902b019e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55672 - "GET /api/v1/workflows/6224ed61-a3d1-49c2-b844-829b902b019e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54056 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333301 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63895 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333301 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58666 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59230 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62983 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62982 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62984 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52029 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58856 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333301 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49920 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333301 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59622 - "POST /api/v1/workflows/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57605 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53886 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62613 - "GET /api/v1/workflows/e28aafad-b958-4fd3-bbeb-df6625725b0a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61673 - "GET /api/v1/workflows/e28aafad-b958-4fd3-bbeb-df6625725b0a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49709 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49708 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62588 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49674 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61029 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52862 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62587 - "GET /api/v1/workflows/e28aafad-b958-4fd3-bbeb-df6625725b0a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49710 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60726 - "GET /api/v1/workflows/e28aafad-b958-4fd3-bbeb-df6625725b0a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64070 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64069 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64071 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58413 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65297 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61574 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58412 - "GET /api/v1/workflows/e28aafad-b958-4fd3-bbeb-df6625725b0a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49674 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53632 - "GET /api/v1/workflows/e28aafad-b958-4fd3-bbeb-df6625725b0a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56027 - "GET /api/v1/showcases HTTP/1.1" 404 Not Found
+
+---
+exit_code: -1
+elapsed_ms: 86400008
+ended_at: 2026-06-18T12:54:48.873Z
+---

@@ -1,0 +1,15 @@
+---
+pid: 16156
+cwd: "D:\AgentNexus"
+command: "& \"C:\\Program Files\\PostgreSQL\\18\\bin\\pg_ctl.exe\" start -D \"C:\\Program Files\\PostgreSQL\\18\\data\" -l \"C:\\Program Files\\PostgreSQL\\18\\data\\log\\agentnexus-start.log\" 2>&1; Start-Sleep -Seconds 4; Get-Service postgresql-x64-18 | Select-Object Status; & \"C:\\Program Files\\PostgreSQL\\18\\bin\\psql.exe\" -U postgres -h 127.0.0.1 -d postgres -c \"SELECT current_user, version();\" 2>&1"
+started_at: 2026-06-17T08:58:44.467Z
+running_for_ms: 86400004 
+---
+waiting for server to start....................................... done
+server started
+
+---
+exit_code: -1
+elapsed_ms: 86400004
+ended_at: 2026-06-18T08:59:11.012Z
+---

@@ -1,0 +1,18 @@
+{
+  "crop": "japanese-melon",
+  "environment": "greenhouse",
+  "channels": [
+    {"key": "temp_day_c", "label": "Daytime temperature", "unit": "celsius"},
+    {"key": "temp_night_c", "label": "Nighttime temperature", "unit": "celsius"},
+    {"key": "humidity_pct", "label": "Relative humidity", "unit": "percent"},
+    {"key": "uv_index", "label": "UV index", "unit": "index"},
+    {"key": "light_lux", "label": "Light intensity", "unit": "lux"},
+    {"key": "co2_ppm", "label": "CO2 concentration", "unit": "ppm"},
+    {"key": "ec_ms", "label": "Nutrient EC", "unit": "mS/cm"},
+    {"key": "ph", "label": "Nutrient pH", "unit": "pH"},
+    {"key": "soil_moisture_pct", "label": "Soil moisture", "unit": "percent"},
+    {"key": "brix", "label": "Sugar content", "unit": "brix"}
+  ],
+  "growth_stages": ["germination", "vegetative", "flowering", "fruiting", "harvest"],
+  "sampling_hint": "Collect environmental readings every 15-60 minutes; quality metrics daily near harvest."
+}

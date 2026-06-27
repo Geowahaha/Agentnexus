@@ -1,0 +1,11 @@
+---
+pid: 940
+cwd: "D:\AgentNexus"
+command: "scp -i \"$env:USERPROFILE\\.ssh\\ssh-key-2026-03-21_Oracle_Geomonkey.key\" -o BatchMode=yes D:\\AgentNexus\\backend\\scripts\\mqtt-roundtrip-test.py root@43.128.75.149:/tmp/mqtt-roundtrip-test.py; ssh -i \"$env:USERPROFILE\\.ssh\\ssh-key-2026-03-21_Oracle_Geomonkey.key\" -o BatchMode=yes root@43.128.75.149 \"docker cp /tmp/mqtt-roundtrip-test.py agentnexus-api:/tmp/mqtt-roundtrip-test.py; docker exec agentnexus-api python /tmp/mqtt-roundtrip-test.py; docker logs agentnexus-mqtt --since 10s 2>&1 | tail -15\""
+started_at: 2026-06-22T06:39:55.060Z
+running_for_ms: 27345003 
+---
+/tmp/mqtt-roundtrip-test.py:28: DeprecationWarning: Callback API version 1 is deprecated, update to latest version
+  client = mqtt.Client(
+1782110469: Client obolla-smart-farm-ingest [172.21.0.4:57437] disconnected.
+1782110470: Client roundtrip-test [172.21.0.4:56969] disconnected: connection closed by client.

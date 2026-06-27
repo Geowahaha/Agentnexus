@@ -1,0 +1,696 @@
+
+ Status
+ ------
+Stopped
+2025-11-17 14:32:26 +07 LOG:  database system was shut down at 2025-11-17 14:32:08 +07
+2025-11-17 14:37:26 +07 LOG:  checkpoint starting: time
+2025-11-17 14:37:31 +07 LOG:  checkpoint complete: wrote 43 buffers (0.3%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.663 s, sync=0.051 s, total=4.755 s; sync files=11, longest=0.016 s, average=0.005 s; distance=333 kB, estimate=333 kB; lsn=0/1844C38, redo lsn=0/1844BE0
+2025-11-17 15:25:32 +07 FATAL:  password authentication failed for user "mrgeo"
+2025-11-17 15:25:32 +07 DETAIL:  Role "mrgeo" does not exist.
+Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2025-11-17 15:25:43 +07 FATAL:  password authentication failed for user "mrgeo"
+2025-11-17 15:25:43 +07 DETAIL:  Role "mrgeo" does not exist.
+Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2025-11-17 15:26:17 +07 FATAL:  password authentication failed for user "mrgeo"
+2025-11-17 15:26:17 +07 DETAIL:  Role "mrgeo" does not exist.
+Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2025-11-17 15:28:33 +07 FATAL:  password authentication failed for user "mrgeo"
+2025-11-17 15:28:33 +07 DETAIL:  Role "mrgeo" does not exist.
+Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2025-11-17 15:31:54 +07 FATAL:  password authentication failed for user "mrgeo"
+2025-11-17 15:31:54 +07 DETAIL:  Role "mrgeo" does not exist.
+Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2025-11-18 06:48:27 +07 LOG:  database system was interrupted; last known up at 2025-11-17 14:37:31 +07
+2025-11-18 06:48:30 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-11-18 06:48:30 +07 LOG:  redo starts at 0/1844BE0
+2025-11-18 06:48:30 +07 LOG:  invalid record length at 0/1844CE8: expected at least 24, got 0
+2025-11-18 06:48:30 +07 LOG:  redo done at 0/1844CB0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-11-18 06:48:30 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-11-18 06:48:30 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.008 s, total=0.040 s; sync files=2, longest=0.004 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1844CE8, redo lsn=0/1844CE8
+2025-11-19 06:29:02 +07 LOG:  database system was interrupted; last known up at 2025-11-18 06:48:30 +07
+2025-11-19 06:29:04 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-11-19 06:29:04 +07 LOG:  redo starts at 0/1844D60
+2025-11-19 06:29:04 +07 LOG:  invalid record length at 0/1844D98: expected at least 24, got 0
+2025-11-19 06:29:04 +07 LOG:  redo done at 0/1844D60 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-11-19 06:29:04 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-11-19 06:29:04 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.015 s, total=0.062 s; sync files=2, longest=0.008 s, average=0.008 s; distance=0 kB, estimate=0 kB; lsn=0/1844D98, redo lsn=0/1844D98
+2025-11-19 07:53:19 +07 LOG:  database system was interrupted; last known up at 2025-11-19 06:29:04 +07
+2025-11-19 07:53:22 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-11-19 07:53:22 +07 LOG:  redo starts at 0/1844E10
+2025-11-19 07:53:22 +07 LOG:  invalid record length at 0/1844E48: expected at least 24, got 0
+2025-11-19 07:53:22 +07 LOG:  redo done at 0/1844E10 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-11-19 07:53:22 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-11-19 07:53:22 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.009 s, total=0.042 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1844E48, redo lsn=0/1844E48
+2025-11-21 09:47:44 +07 LOG:  database system was interrupted; last known up at 2025-11-19 07:53:22 +07
+2025-11-21 09:47:46 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-11-21 09:47:46 +07 LOG:  redo starts at 0/1844EC0
+2025-11-21 09:47:46 +07 LOG:  invalid record length at 0/1844EF8: expected at least 24, got 0
+2025-11-21 09:47:46 +07 LOG:  redo done at 0/1844EC0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-11-21 09:47:46 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-11-21 09:47:46 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.008 s, total=0.044 s; sync files=2, longest=0.004 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1844EF8, redo lsn=0/1844EF8
+2025-11-22 08:40:55 +07 LOG:  database system was interrupted; last known up at 2025-11-21 09:47:46 +07
+2025-11-22 08:41:01 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-11-22 08:41:01 +07 LOG:  redo starts at 0/1844F70
+2025-11-22 08:41:01 +07 LOG:  invalid record length at 0/1844FA8: expected at least 24, got 0
+2025-11-22 08:41:01 +07 LOG:  redo done at 0/1844F70 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-11-22 08:41:01 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-11-22 08:41:01 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.010 s, total=0.056 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1844FA8, redo lsn=0/1844FA8
+2025-11-22 19:15:38 +07 LOG:  database system was interrupted; last known up at 2025-11-22 08:41:01 +07
+2025-11-22 19:15:41 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-11-22 19:15:41 +07 LOG:  redo starts at 0/1845020
+2025-11-22 19:15:41 +07 LOG:  invalid record length at 0/1845058: expected at least 24, got 0
+2025-11-22 19:15:41 +07 LOG:  redo done at 0/1845020 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-11-22 19:15:41 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-11-22 19:15:41 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.014 s, total=0.058 s; sync files=2, longest=0.009 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/1845058, redo lsn=0/1845058
+2025-11-27 07:59:53 +07 LOG:  database system was interrupted; last known up at 2025-11-22 19:15:41 +07
+2025-11-27 08:00:01 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-11-27 08:00:01 +07 LOG:  redo starts at 0/18450D0
+2025-11-27 08:00:01 +07 LOG:  invalid record length at 0/1845108: expected at least 24, got 0
+2025-11-27 08:00:01 +07 LOG:  redo done at 0/18450D0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-11-27 08:00:01 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-11-27 08:00:01 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.015 s, total=0.062 s; sync files=2, longest=0.008 s, average=0.008 s; distance=0 kB, estimate=0 kB; lsn=0/1845108, redo lsn=0/1845108
+2025-12-01 10:29:35 +07 LOG:  database system was interrupted; last known up at 2025-11-27 08:00:01 +07
+2025-12-01 10:29:39 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-01 10:29:39 +07 LOG:  redo starts at 0/1845180
+2025-12-01 10:29:39 +07 LOG:  invalid record length at 0/18451B8: expected at least 24, got 0
+2025-12-01 10:29:39 +07 LOG:  redo done at 0/1845180 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-01 10:29:39 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-01 10:29:39 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.008 s, total=0.049 s; sync files=2, longest=0.004 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/18451B8, redo lsn=0/18451B8
+2025-12-01 11:36:11 +07 LOG:  database system was interrupted; last known up at 2025-12-01 10:29:39 +07
+2025-12-01 11:36:14 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-01 11:36:14 +07 LOG:  redo starts at 0/1845230
+2025-12-01 11:36:14 +07 LOG:  invalid record length at 0/1845268: expected at least 24, got 0
+2025-12-01 11:36:14 +07 LOG:  redo done at 0/1845230 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-01 11:36:14 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-01 11:36:14 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.009 s, total=0.051 s; sync files=2, longest=0.007 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1845268, redo lsn=0/1845268
+2025-12-02 04:56:49 +07 LOG:  database system was interrupted; last known up at 2025-12-01 11:36:14 +07
+2025-12-02 04:56:51 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-02 04:56:51 +07 LOG:  redo starts at 0/18452E0
+2025-12-02 04:56:51 +07 LOG:  invalid record length at 0/1845318: expected at least 24, got 0
+2025-12-02 04:56:51 +07 LOG:  redo done at 0/18452E0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-02 04:56:51 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-02 04:56:51 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.007 s, total=0.039 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1845318, redo lsn=0/1845318
+2025-12-06 04:44:46 +07 LOG:  shutting down
+2025-12-06 04:44:46 +07 LOG:  checkpoint starting: shutdown immediate
+2025-12-06 04:44:46 +07 ERROR:  canceling statement due to user request
+2025-12-06 04:44:46 +07 ERROR:  canceling statement due to user request
+2025-12-06 04:44:46 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.001 s, total=0.061 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/18453C8, redo lsn=0/18453C8
+2025-12-06 04:45:17 +07 LOG:  database system was shut down at 2025-12-06 04:44:46 +07
+2025-12-06 05:09:23 +07 LOG:  checkpoint starting: time
+2025-12-06 05:09:23 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.047 s; sync files=2, longest=0.006 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/18454D0, redo lsn=0/1845478
+2025-12-07 08:03:01 +07 LOG:  database system was interrupted; last known up at 2025-12-06 05:09:23 +07
+2025-12-07 08:03:05 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-07 08:03:05 +07 LOG:  redo starts at 0/1845478
+2025-12-07 08:03:05 +07 LOG:  invalid record length at 0/1845580: expected at least 24, got 0
+2025-12-07 08:03:05 +07 LOG:  redo done at 0/1845548 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-07 08:03:05 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-07 08:03:05 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.012 s, total=0.052 s; sync files=2, longest=0.006 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/1845580, redo lsn=0/1845580
+2025-12-12 05:07:31 +07 LOG:  shutting down
+2025-12-12 05:07:31 +07 LOG:  checkpoint starting: shutdown immediate
+2025-12-12 05:07:31 +07 ERROR:  canceling statement due to user request
+2025-12-12 05:07:31 +07 ERROR:  canceling statement due to user request
+2025-12-12 05:07:31 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.001 s, total=0.092 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1845630, redo lsn=0/1845630
+2025-12-12 05:08:02 +07 LOG:  database system was shut down at 2025-12-12 05:07:31 +07
+2025-12-12 05:09:41 +07 LOG:  shutting down
+2025-12-12 05:09:41 +07 LOG:  checkpoint starting: shutdown immediate
+2025-12-12 05:09:41 +07 ERROR:  canceling statement due to user request
+2025-12-12 05:09:41 +07 ERROR:  canceling statement due to user request
+2025-12-12 05:09:41 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.011 s, total=0.060 s; sync files=2, longest=0.007 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/18456E0, redo lsn=0/18456E0
+2025-12-12 05:10:09 +07 LOG:  database system was shut down at 2025-12-12 05:09:41 +07
+2025-12-12 05:15:09 +07 LOG:  checkpoint starting: time
+2025-12-12 05:15:09 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.009 s, total=0.044 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/18457E8, redo lsn=0/1845790
+2025-12-12 17:27:49 +07 LOG:  database system was interrupted; last known up at 2025-12-12 05:15:09 +07
+2025-12-12 17:27:53 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-12 17:27:53 +07 LOG:  redo starts at 0/1845790
+2025-12-12 17:27:53 +07 LOG:  invalid record length at 0/1845898: expected at least 24, got 0
+2025-12-12 17:27:53 +07 LOG:  redo done at 0/1845860 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-12 17:27:53 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-12 17:27:53 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.010 s, total=0.062 s; sync files=2, longest=0.006 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1845898, redo lsn=0/1845898
+2025-12-24 07:04:56 +07 LOG:  database system was interrupted; last known up at 2025-12-12 17:27:53 +07
+2025-12-24 07:05:01 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-24 07:05:01 +07 LOG:  redo starts at 0/1845910
+2025-12-24 07:05:01 +07 LOG:  invalid record length at 0/1845948: expected at least 24, got 0
+2025-12-24 07:05:01 +07 LOG:  redo done at 0/1845910 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-24 07:05:01 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-24 07:05:01 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.007 s, total=0.050 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1845948, redo lsn=0/1845948
+2025-12-25 23:47:37 +07 LOG:  database system was interrupted; last known up at 2025-12-24 07:05:01 +07
+2025-12-25 23:47:39 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-12-25 23:47:39 +07 LOG:  redo starts at 0/18459C0
+2025-12-25 23:47:39 +07 LOG:  invalid record length at 0/18459F8: expected at least 24, got 0
+2025-12-25 23:47:39 +07 LOG:  redo done at 0/18459C0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2025-12-25 23:47:39 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-12-25 23:47:39 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.009 s, total=0.043 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/18459F8, redo lsn=0/18459F8
+2026-01-01 20:21:28 +07 LOG:  shutting down
+2026-01-01 20:21:28 +07 LOG:  checkpoint starting: shutdown immediate
+2026-01-01 20:21:28 +07 ERROR:  canceling statement due to user request
+2026-01-01 20:21:28 +07 ERROR:  canceling statement due to user request
+2026-01-01 20:21:28 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.015 s, sync=0.001 s, total=0.096 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1845AA8, redo lsn=0/1845AA8
+2026-01-01 20:22:06 +07 LOG:  database system was shut down at 2026-01-01 20:21:28 +07
+2026-01-01 20:27:06 +07 LOG:  checkpoint starting: time
+2026-01-01 20:27:06 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.007 s, total=0.043 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1845BB0, redo lsn=0/1845B58
+2026-01-02 08:30:51 +07 LOG:  shutting down
+2026-01-02 08:30:51 +07 LOG:  checkpoint starting: shutdown immediate
+2026-01-02 08:30:51 +07 ERROR:  canceling statement due to user request
+2026-01-02 08:30:51 +07 ERROR:  canceling statement due to user request
+2026-01-02 08:30:51 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.020 s, sync=0.001 s, total=0.110 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1845C60, redo lsn=0/1845C60
+2026-01-02 08:31:19 +07 LOG:  database system was shut down at 2026-01-02 08:30:51 +07
+2026-01-02 08:36:20 +07 LOG:  checkpoint starting: time
+2026-01-02 08:36:20 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.052 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1845D68, redo lsn=0/1845D10
+2026-01-16 08:57:20 +07 LOG:  shutting down
+2026-01-16 08:57:20 +07 ERROR:  canceling statement due to user request
+2026-01-16 08:57:20 +07 ERROR:  canceling statement due to user request
+2026-01-16 08:57:20 +07 LOG:  checkpoint starting: shutdown immediate
+2026-01-16 08:57:20 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.028 s, sync=0.001 s, total=0.087 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1845E18, redo lsn=0/1845E18
+2026-01-16 08:57:52 +07 LOG:  database system was shut down at 2026-01-16 08:57:20 +07
+2026-01-16 09:02:52 +07 LOG:  checkpoint starting: time
+2026-01-16 09:02:52 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.011 s, total=0.056 s; sync files=2, longest=0.006 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/1845F20, redo lsn=0/1845EC8
+2026-01-19 16:32:48 +07 LOG:  shutting down
+2026-01-19 16:32:48 +07 LOG:  checkpoint starting: shutdown immediate
+2026-01-19 16:32:48 +07 ERROR:  canceling statement due to user request
+2026-01-19 16:32:48 +07 ERROR:  canceling statement due to user request
+2026-01-19 16:32:48 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.080 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1845FD0, redo lsn=0/1845FD0
+2026-01-19 16:33:20 +07 LOG:  database system was shut down at 2026-01-19 16:32:48 +07
+2026-01-19 16:34:19 +07 LOG:  shutting down
+2026-01-19 16:34:19 +07 LOG:  checkpoint starting: shutdown immediate
+2026-01-19 16:34:19 +07 ERROR:  canceling statement due to user request
+2026-01-19 16:34:19 +07 ERROR:  canceling statement due to user request
+2026-01-19 16:34:20 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.033 s, total=0.105 s; sync files=2, longest=0.026 s, average=0.017 s; distance=0 kB, estimate=0 kB; lsn=0/1846098, redo lsn=0/1846098
+2026-01-19 16:34:50 +07 LOG:  database system was shut down at 2026-01-19 16:34:20 +07
+2026-01-19 16:39:50 +07 LOG:  checkpoint starting: time
+2026-01-19 16:39:50 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.014 s, total=0.102 s; sync files=2, longest=0.009 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/18461A0, redo lsn=0/1846148
+2026-01-23 16:25:46 +07 LOG:  shutting down
+2026-01-23 16:25:46 +07 LOG:  checkpoint starting: shutdown immediate
+2026-01-23 16:25:46 +07 ERROR:  canceling statement due to user request
+2026-01-23 16:25:46 +07 ERROR:  canceling statement due to user request
+2026-01-23 16:25:46 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.057 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1846250, redo lsn=0/1846250
+2026-01-23 16:28:15 +07 LOG:  database system was shut down at 2026-01-23 16:25:46 +07
+2026-01-23 16:28:17 +07 LOG:  shutting down
+2026-01-23 16:28:17 +07 LOG:  checkpoint starting: shutdown immediate
+2026-01-23 16:28:17 +07 ERROR:  canceling statement due to user request
+2026-01-23 16:28:17 +07 ERROR:  canceling statement due to user request
+2026-01-23 16:28:17 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.016 s, total=0.092 s; sync files=2, longest=0.010 s, average=0.008 s; distance=0 kB, estimate=0 kB; lsn=0/18462C8, redo lsn=0/18462C8
+2026-01-23 20:00:34 +07 LOG:  database system was shut down at 2026-01-23 16:28:17 +07
+2026-01-23 20:05:34 +07 LOG:  checkpoint starting: time
+2026-01-23 20:05:34 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.014 s, total=0.065 s; sync files=2, longest=0.010 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/18463D0, redo lsn=0/1846378
+2026-01-25 08:07:17 +07 LOG:  database system was interrupted; last known up at 2026-01-23 20:05:34 +07
+2026-01-25 08:07:21 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-01-25 08:07:21 +07 LOG:  redo starts at 0/1846378
+2026-01-25 08:07:21 +07 LOG:  invalid record length at 0/1846480: expected at least 24, got 0
+2026-01-25 08:07:21 +07 LOG:  redo done at 0/1846448 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-01-25 08:07:21 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-01-25 08:07:21 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.012 s, total=0.058 s; sync files=2, longest=0.006 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/1846480, redo lsn=0/1846480
+2026-02-01 07:18:54 +07 LOG:  database system was interrupted; last known up at 2026-01-25 08:07:21 +07
+2026-02-01 07:19:04 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-01 07:19:04 +07 LOG:  redo starts at 0/18464F8
+2026-02-01 07:19:04 +07 LOG:  invalid record length at 0/1846530: expected at least 24, got 0
+2026-02-01 07:19:04 +07 LOG:  redo done at 0/18464F8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-01 07:19:04 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-01 07:19:04 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.019 s, total=0.071 s; sync files=2, longest=0.012 s, average=0.010 s; distance=0 kB, estimate=0 kB; lsn=0/1846530, redo lsn=0/1846530
+2026-02-01 11:52:09 +07 LOG:  database system was interrupted; last known up at 2026-02-01 07:19:04 +07
+2026-02-01 11:52:13 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-01 11:52:13 +07 LOG:  redo starts at 0/18465A8
+2026-02-01 11:52:13 +07 LOG:  invalid record length at 0/18465E0: expected at least 24, got 0
+2026-02-01 11:52:13 +07 LOG:  redo done at 0/18465A8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-01 11:52:13 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-01 11:52:13 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.022 s, total=0.071 s; sync files=2, longest=0.017 s, average=0.011 s; distance=0 kB, estimate=0 kB; lsn=0/18465E0, redo lsn=0/18465E0
+2026-02-02 00:51:29 +07 LOG:  database system was interrupted; last known up at 2026-02-01 11:52:13 +07
+2026-02-02 00:51:33 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-02 00:51:33 +07 LOG:  redo starts at 0/1846658
+2026-02-02 00:51:33 +07 LOG:  invalid record length at 0/1846690: expected at least 24, got 0
+2026-02-02 00:51:33 +07 LOG:  redo done at 0/1846658 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-02 00:51:33 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-02 00:51:33 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.010 s, total=0.050 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1846690, redo lsn=0/1846690
+2026-02-02 07:33:32 +07 LOG:  database system was interrupted; last known up at 2026-02-02 00:51:33 +07
+2026-02-02 07:33:35 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-02 07:33:35 +07 LOG:  redo starts at 0/1846708
+2026-02-02 07:33:35 +07 LOG:  invalid record length at 0/1846740: expected at least 24, got 0
+2026-02-02 07:33:35 +07 LOG:  redo done at 0/1846708 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-02 07:33:35 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-02 07:33:35 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.010 s, total=0.049 s; sync files=2, longest=0.006 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1846740, redo lsn=0/1846740
+2026-02-03 20:31:49 +07 LOG:  database system was interrupted; last known up at 2026-02-02 07:33:35 +07
+2026-02-03 20:31:52 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-03 20:31:52 +07 LOG:  redo starts at 0/18467B8
+2026-02-03 20:31:52 +07 LOG:  invalid record length at 0/18467F0: expected at least 24, got 0
+2026-02-03 20:31:52 +07 LOG:  redo done at 0/18467B8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-03 20:31:53 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-03 20:31:53 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.049 s, total=0.567 s; sync files=2, longest=0.025 s, average=0.025 s; distance=0 kB, estimate=0 kB; lsn=0/18467F0, redo lsn=0/18467F0
+2026-02-04 07:31:15 +07 LOG:  database system was interrupted; last known up at 2026-02-03 20:31:53 +07
+2026-02-04 07:31:18 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-04 07:31:18 +07 LOG:  redo starts at 0/1846868
+2026-02-04 07:31:18 +07 LOG:  invalid record length at 0/18468A0: expected at least 24, got 0
+2026-02-04 07:31:18 +07 LOG:  redo done at 0/1846868 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-04 07:31:18 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-04 07:31:18 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.009 s, total=0.060 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/18468A0, redo lsn=0/18468A0
+2026-02-10 10:07:32 +07 LOG:  shutting down
+2026-02-10 10:07:32 +07 ERROR:  canceling statement due to user request
+2026-02-10 10:07:32 +07 ERROR:  canceling statement due to user request
+2026-02-10 10:07:32 +07 LOG:  checkpoint starting: shutdown immediate
+2026-02-10 10:07:33 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.001 s, total=0.106 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1846950, redo lsn=0/1846950
+2026-02-10 10:08:02 +07 LOG:  database system was shut down at 2026-02-10 10:07:33 +07
+2026-02-10 10:13:32 +07 LOG:  checkpoint starting: time
+2026-02-10 10:13:32 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.010 s, total=0.117 s; sync files=2, longest=0.007 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1846A58, redo lsn=0/1846A00
+2026-02-10 10:18:10 +07 LOG:  shutting down
+2026-02-10 10:18:10 +07 ERROR:  canceling statement due to user request
+2026-02-10 10:18:10 +07 ERROR:  canceling statement due to user request
+2026-02-10 10:18:10 +07 LOG:  checkpoint starting: shutdown immediate
+2026-02-10 10:18:10 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.068 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1846B08, redo lsn=0/1846B08
+2026-02-10 10:18:36 +07 LOG:  database system was shut down at 2026-02-10 10:18:10 +07
+2026-02-10 10:23:36 +07 LOG:  checkpoint starting: time
+2026-02-10 10:23:36 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.011 s, total=0.074 s; sync files=2, longest=0.006 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/1846C10, redo lsn=0/1846BB8
+2026-02-11 15:20:40 +07 LOG:  database system was interrupted; last known up at 2026-02-10 10:23:36 +07
+2026-02-11 15:20:43 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-11 15:20:43 +07 LOG:  redo starts at 0/1846BB8
+2026-02-11 15:20:43 +07 LOG:  invalid record length at 0/1846CC0: expected at least 24, got 0
+2026-02-11 15:20:43 +07 LOG:  redo done at 0/1846C88 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-11 15:20:43 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-11 15:20:44 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.008 s, total=0.042 s; sync files=2, longest=0.006 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1846CC0, redo lsn=0/1846CC0
+2026-02-11 16:52:42 +07 LOG:  database system was interrupted; last known up at 2026-02-11 15:20:44 +07
+2026-02-11 16:52:46 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-11 16:52:46 +07 LOG:  redo starts at 0/1846D38
+2026-02-11 16:52:46 +07 LOG:  invalid record length at 0/1846D70: expected at least 24, got 0
+2026-02-11 16:52:46 +07 LOG:  redo done at 0/1846D38 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-11 16:52:46 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-11 16:52:46 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.016 s, total=0.073 s; sync files=2, longest=0.009 s, average=0.008 s; distance=0 kB, estimate=0 kB; lsn=0/1846D70, redo lsn=0/1846D70
+2026-02-11 16:54:30 +07 LOG:  shutting down
+2026-02-11 16:54:30 +07 LOG:  checkpoint starting: shutdown immediate
+2026-02-11 16:54:30 +07 ERROR:  canceling statement due to user request
+2026-02-11 16:54:30 +07 ERROR:  canceling statement due to user request
+2026-02-11 16:54:30 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.058 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1846E20, redo lsn=0/1846E20
+2026-02-11 16:55:03 +07 LOG:  database system was shut down at 2026-02-11 16:54:30 +07
+2026-02-11 17:00:03 +07 LOG:  checkpoint starting: time
+2026-02-11 17:00:03 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.056 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1846F28, redo lsn=0/1846ED0
+2026-02-12 18:10:24 +07 LOG:  database system was interrupted; last known up at 2026-02-11 17:00:03 +07
+2026-02-12 18:10:26 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-12 18:10:26 +07 LOG:  redo starts at 0/1846ED0
+2026-02-12 18:10:26 +07 LOG:  invalid record length at 0/1846FD8: expected at least 24, got 0
+2026-02-12 18:10:26 +07 LOG:  redo done at 0/1846FA0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-12 18:10:26 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-12 18:10:26 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.007 s, total=0.039 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1846FD8, redo lsn=0/1846FD8
+2026-02-17 17:39:22 +07 LOG:  shutting down
+2026-02-17 17:39:22 +07 ERROR:  canceling statement due to user request
+2026-02-17 17:39:22 +07 ERROR:  canceling statement due to user request
+2026-02-17 17:39:22 +07 LOG:  checkpoint starting: shutdown immediate
+2026-02-17 17:39:22 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.001 s, total=0.110 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1847088, redo lsn=0/1847088
+2026-02-17 17:40:01 +07 LOG:  database system was shut down at 2026-02-17 17:39:22 +07
+2026-02-17 17:45:01 +07 LOG:  checkpoint starting: time
+2026-02-17 17:45:01 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.069 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1847190, redo lsn=0/1847138
+2026-02-17 18:15:49 +07 LOG:  shutting down
+2026-02-17 18:15:49 +07 LOG:  checkpoint starting: shutdown immediate
+2026-02-17 18:15:49 +07 ERROR:  canceling statement due to user request
+2026-02-17 18:15:49 +07 ERROR:  canceling statement due to user request
+2026-02-17 18:15:49 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.063 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1847240, redo lsn=0/1847240
+2026-02-17 18:16:15 +07 LOG:  database system was shut down at 2026-02-17 18:15:49 +07
+2026-02-17 18:21:15 +07 LOG:  checkpoint starting: time
+2026-02-17 18:21:15 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.058 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1847348, redo lsn=0/18472F0
+2026-02-19 09:37:37 +07 LOG:  database system was interrupted; last known up at 2026-02-17 18:21:15 +07
+2026-02-19 09:37:41 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-19 09:37:41 +07 LOG:  redo starts at 0/18472F0
+2026-02-19 09:37:41 +07 LOG:  invalid record length at 0/18473F8: expected at least 24, got 0
+2026-02-19 09:37:41 +07 LOG:  redo done at 0/18473C0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-19 09:37:41 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-19 09:37:41 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.011 s, total=0.062 s; sync files=2, longest=0.006 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/18473F8, redo lsn=0/18473F8
+2026-02-20 00:26:41 +07 LOG:  database system was interrupted; last known up at 2026-02-19 09:37:41 +07
+2026-02-20 00:26:48 +07 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-02-20 00:26:48 +07 LOG:  redo starts at 0/1847470
+2026-02-20 00:26:48 +07 LOG:  invalid record length at 0/18474A8: expected at least 24, got 0
+2026-02-20 00:26:48 +07 LOG:  redo done at 0/1847470 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-02-20 00:26:48 +07 LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-02-20 00:26:48 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.021 s, total=0.111 s; sync files=2, longest=0.012 s, average=0.011 s; distance=0 kB, estimate=0 kB; lsn=0/18474A8, redo lsn=0/18474A8
+2026-02-24 11:08:19 +07 LOG:  shutting down
+2026-02-24 11:08:19 +07 ERROR:  canceling statement due to user request
+2026-02-24 11:08:19 +07 ERROR:  canceling statement due to user request
+2026-02-24 11:08:19 +07 LOG:  checkpoint starting: shutdown immediate
+2026-02-24 11:08:19 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.001 s, total=0.152 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1847558, redo lsn=0/1847558
+2026-02-24 11:08:53 +07 LOG:  database system was shut down at 2026-02-24 11:08:19 +07
+2026-02-24 11:13:53 +07 LOG:  checkpoint starting: time
+2026-02-24 11:13:53 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.009 s, total=0.086 s; sync files=2, longest=0.006 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1847660, redo lsn=0/1847608
+2026-03-01 06:33:02 +07 LOG:  shutting down
+2026-03-01 06:33:02 +07 ERROR:  canceling statement due to user request
+2026-03-01 06:33:02 +07 ERROR:  canceling statement due to user request
+2026-03-01 06:33:02 +07 LOG:  checkpoint starting: shutdown immediate
+2026-03-01 06:33:02 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.035 s, sync=0.001 s, total=0.159 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1847710, redo lsn=0/1847710
+2026-03-01 06:33:42 +07 LOG:  database system was shut down at 2026-03-01 06:33:02 +07
+2026-03-01 06:38:42 +07 LOG:  checkpoint starting: time
+2026-03-01 06:38:42 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.012 s, total=0.062 s; sync files=2, longest=0.007 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/1847818, redo lsn=0/18477C0
+2026-03-05 18:45:30 +07 LOG:  shutting down
+2026-03-05 18:45:30 +07 ERROR:  canceling statement due to user request
+2026-03-05 18:45:30 +07 ERROR:  canceling statement due to user request
+2026-03-05 18:45:30 +07 LOG:  checkpoint starting: shutdown immediate
+2026-03-05 18:45:30 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.001 s, total=0.110 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/18478C8, redo lsn=0/18478C8
+2026-03-05 18:47:59 +07 LOG:  database system was shut down at 2026-03-05 18:45:30 +07
+2026-03-05 18:52:59 +07 LOG:  checkpoint starting: time
+2026-03-05 18:52:59 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.007 s, total=0.059 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/18479D0, redo lsn=0/1847978
+2026-03-12 17:59:32 +07 LOG:  shutting down
+2026-03-12 17:59:32 +07 ERROR:  canceling statement due to user request
+2026-03-12 17:59:32 +07 ERROR:  canceling statement due to user request
+2026-03-12 17:59:32 +07 LOG:  checkpoint starting: shutdown immediate
+2026-03-12 17:59:32 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.033 s, sync=0.001 s, total=0.126 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1847A80, redo lsn=0/1847A80
+2026-03-12 18:00:16 +07 LOG:  database system was shut down at 2026-03-12 17:59:32 +07
+2026-03-12 18:01:39 +07 LOG:  shutting down
+2026-03-12 18:01:39 +07 LOG:  checkpoint starting: shutdown immediate
+2026-03-12 18:01:39 +07 ERROR:  canceling statement due to user request
+2026-03-12 18:01:39 +07 ERROR:  canceling statement due to user request
+2026-03-12 18:01:39 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.007 s, total=0.078 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1847B30, redo lsn=0/1847B30
+2026-03-12 18:02:16 +07 LOG:  database system was shut down at 2026-03-12 18:01:39 +07
+2026-03-12 18:07:16 +07 LOG:  checkpoint starting: time
+2026-03-12 18:07:16 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.007 s, total=0.052 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1847C38, redo lsn=0/1847BE0
+2026-03-18 11:15:46 +07 LOG:  shutting down
+2026-03-18 11:15:46 +07 ERROR:  canceling statement due to user request
+2026-03-18 11:15:46 +07 ERROR:  canceling statement due to user request
+2026-03-18 11:15:46 +07 LOG:  checkpoint starting: shutdown immediate
+2026-03-18 11:15:46 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.015 s, sync=0.001 s, total=0.114 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1847CE8, redo lsn=0/1847CE8
+2026-03-18 11:16:17 +07 LOG:  database system was shut down at 2026-03-18 11:15:46 +07
+2026-03-18 11:21:17 +07 LOG:  checkpoint starting: time
+2026-03-18 11:21:17 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.010 s, total=0.066 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1847DF0, redo lsn=0/1847D98
+2026-03-19 17:44:46 +07 LOG:  shutting down
+2026-03-19 17:44:46 +07 ERROR:  canceling statement due to user request
+2026-03-19 17:44:46 +07 ERROR:  canceling statement due to user request
+2026-03-19 17:44:46 +07 LOG:  checkpoint starting: shutdown immediate
+2026-03-19 17:44:46 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.001 s, total=0.075 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1847EA0, redo lsn=0/1847EA0
+2026-03-19 17:45:18 +07 LOG:  database system was shut down at 2026-03-19 17:44:46 +07
+2026-03-19 17:50:18 +07 LOG:  checkpoint starting: time
+2026-03-19 17:50:18 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.011 s, total=0.078 s; sync files=2, longest=0.006 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/1847FA8, redo lsn=0/1847F50
+2026-03-25 23:16:47 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-25 23:16:47 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-25 23:27:48 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-25 23:27:48 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:07:47 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:07:47 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:16:55 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:16:55 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:19:05 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:19:05 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:21:40 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:21:40 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:29:02 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:29:02 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:41:57 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:41:57 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:48:22 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:48:22 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:57:22 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:57:22 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 00:58:03 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 00:58:03 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 01:00:29 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 01:00:29 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 01:03:34 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 01:03:34 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 18:15:17 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 18:15:17 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 18:43:17 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 18:43:17 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 18:48:48 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 18:48:48 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 18:54:33 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 18:54:33 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 19:02:54 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 19:02:54 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 19:18:57 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 19:18:57 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 19:25:48 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 19:25:48 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 19:28:24 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 19:28:24 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 19:46:04 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 19:46:04 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 19:57:28 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 19:57:28 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 22:20:22 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 22:20:22 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 23:36:02 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 23:36:02 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-26 23:50:41 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-26 23:50:41 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:58 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:58 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:58 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:58 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:58 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:58 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:58 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:58 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:58 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:58 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:58 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:58 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:58 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:58 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:58 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:58 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:59 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:59 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:59 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:59 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:59 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:59 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:31:59 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:31:59 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:32:14 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:32:14 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:32:14 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:32:14 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-03-27 08:32:14 +07 FATAL:  password authentication failed for user "postgres"
+2026-03-27 08:32:14 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-04-01 11:37:37 +07 FATAL:  password authentication failed for user "postgres"
+2026-04-01 11:37:37 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-04-01 12:11:15 +07 FATAL:  password authentication failed for user "postgres"
+2026-04-01 12:11:15 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-04-08 20:08:25 +07 LOG:  shutting down
+2026-04-08 20:08:25 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-08 20:08:25 +07 ERROR:  canceling statement due to user request
+2026-04-08 20:08:25 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.024 s, sync=0.001 s, total=0.079 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1848070, redo lsn=0/1848070
+2026-04-08 20:09:06 +07 LOG:  database system was shut down at 2026-04-08 20:08:25 +07
+2026-04-08 20:14:06 +07 LOG:  checkpoint starting: time
+2026-04-08 20:14:06 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.007 s, total=0.051 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1848178, redo lsn=0/1848120
+2026-04-14 12:51:04 +07 LOG:  shutting down
+2026-04-14 12:51:04 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-14 12:51:04 +07 ERROR:  canceling statement due to user request
+2026-04-14 12:51:04 +07 ERROR:  canceling statement due to user request
+2026-04-14 12:51:04 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.001 s, total=0.108 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1848228, redo lsn=0/1848228
+2026-04-14 12:51:42 +07 LOG:  database system was shut down at 2026-04-14 12:51:04 +07
+2026-04-14 12:56:42 +07 LOG:  checkpoint starting: time
+2026-04-14 12:56:43 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.094 s, sync=0.134 s, total=0.378 s; sync files=2, longest=0.085 s, average=0.067 s; distance=0 kB, estimate=0 kB; lsn=0/1848330, redo lsn=0/18482D8
+2026-04-15 15:26:13 +07 LOG:  shutting down
+2026-04-15 15:26:13 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-15 15:26:13 +07 ERROR:  canceling statement due to user request
+2026-04-15 15:26:13 +07 ERROR:  canceling statement due to user request
+2026-04-15 15:26:13 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.001 s, total=0.145 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/18483E0, redo lsn=0/18483E0
+2026-04-15 15:26:56 +07 LOG:  database system was shut down at 2026-04-15 15:26:13 +07
+2026-04-15 15:30:23 +07 LOG:  shutting down
+2026-04-15 15:30:23 +07 ERROR:  canceling statement due to user request
+2026-04-15 15:30:23 +07 ERROR:  canceling statement due to user request
+2026-04-15 15:30:23 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-15 15:30:23 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.008 s, total=0.097 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1848490, redo lsn=0/1848490
+2026-04-15 15:30:54 +07 LOG:  database system was shut down at 2026-04-15 15:30:23 +07
+2026-04-15 15:31:19 +07 LOG:  shutting down
+2026-04-15 15:31:19 +07 ERROR:  canceling statement due to user request
+2026-04-15 15:31:19 +07 ERROR:  canceling statement due to user request
+2026-04-15 15:31:19 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-15 15:31:19 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.066 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1848540, redo lsn=0/1848540
+2026-04-15 15:31:46 +07 LOG:  database system was shut down at 2026-04-15 15:31:19 +07
+2026-04-15 15:32:18 +07 ERROR:  canceling statement due to user request
+2026-04-15 15:32:18 +07 LOG:  shutting down
+2026-04-15 15:32:18 +07 ERROR:  canceling statement due to user request
+2026-04-15 15:32:18 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-15 15:32:19 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.068 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/18485F0, redo lsn=0/18485F0
+2026-04-15 21:21:27 +07 LOG:  database system was shut down at 2026-04-15 15:32:19 +07
+2026-04-15 21:26:27 +07 LOG:  checkpoint starting: time
+2026-04-15 21:26:27 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.015 s, sync=0.010 s, total=0.114 s; sync files=2, longest=0.006 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/18486F8, redo lsn=0/18486A0
+2026-04-17 02:44:44 +07 LOG:  shutting down
+2026-04-17 02:44:44 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-17 02:44:44 +07 ERROR:  canceling statement due to user request
+2026-04-17 02:44:44 +07 ERROR:  canceling statement due to user request
+2026-04-17 02:44:44 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.088 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/18487A8, redo lsn=0/18487A8
+2026-04-17 02:45:26 +07 LOG:  database system was shut down at 2026-04-17 02:44:44 +07
+2026-04-17 02:50:26 +07 LOG:  checkpoint starting: time
+2026-04-17 02:50:26 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.008 s, total=0.261 s; sync files=2, longest=0.006 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/18488B0, redo lsn=0/1848858
+2026-04-19 14:44:44 +07 LOG:  shutting down
+2026-04-19 14:44:44 +07 ERROR:  canceling statement due to user request
+2026-04-19 14:44:44 +07 ERROR:  canceling statement due to user request
+2026-04-19 14:44:44 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-19 14:44:44 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.105 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1848960, redo lsn=0/1848960
+2026-04-19 14:45:16 +07 LOG:  database system was shut down at 2026-04-19 14:44:44 +07
+2026-04-19 14:50:16 +07 LOG:  checkpoint starting: time
+2026-04-19 14:50:16 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.006 s, total=0.056 s; sync files=2, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/1848A68, redo lsn=0/1848A10
+2026-04-20 00:34:06 +07 LOG:  shutting down
+2026-04-20 00:34:06 +07 ERROR:  canceling statement due to user request
+2026-04-20 00:34:06 +07 ERROR:  canceling statement due to user request
+2026-04-20 00:34:06 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-20 00:34:06 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.001 s, total=0.058 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1848B18, redo lsn=0/1848B18
+2026-04-20 00:34:42 +07 LOG:  database system was shut down at 2026-04-20 00:34:06 +07
+2026-04-20 00:39:42 +07 LOG:  checkpoint starting: time
+2026-04-20 00:39:42 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.006 s, total=0.042 s; sync files=2, longest=0.005 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/1848C20, redo lsn=0/1848BC8
+2026-04-22 05:19:46 +07 LOG:  shutting down
+2026-04-22 05:19:46 +07 ERROR:  canceling statement due to user request
+2026-04-22 05:19:46 +07 ERROR:  canceling statement due to user request
+2026-04-22 05:19:46 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-22 05:19:46 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.043 s, sync=0.001 s, total=0.154 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1848CD0, redo lsn=0/1848CD0
+2026-04-22 05:20:19 +07 LOG:  database system was shut down at 2026-04-22 05:19:46 +07
+2026-04-22 05:25:19 +07 LOG:  checkpoint starting: time
+2026-04-22 05:25:19 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.016 s, total=0.165 s; sync files=2, longest=0.011 s, average=0.008 s; distance=0 kB, estimate=0 kB; lsn=0/1848DD8, redo lsn=0/1848D80
+2026-04-24 20:10:55 +07 LOG:  shutting down
+2026-04-24 20:10:55 +07 ERROR:  canceling statement due to user request
+2026-04-24 20:10:55 +07 ERROR:  canceling statement due to user request
+2026-04-24 20:10:55 +07 LOG:  checkpoint starting: shutdown immediate
+2026-04-24 20:10:55 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.001 s, total=0.091 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1848E88, redo lsn=0/1848E88
+2026-04-24 20:11:21 +07 LOG:  database system was shut down at 2026-04-24 20:10:55 +07
+2026-04-24 20:16:21 +07 LOG:  checkpoint starting: time
+2026-04-24 20:16:21 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.013 s, total=0.095 s; sync files=2, longest=0.009 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/1848F90, redo lsn=0/1848F38
+2026-05-01 02:05:28 +07 LOG:  shutting down
+2026-05-01 02:05:28 +07 ERROR:  canceling statement due to user request
+2026-05-01 02:05:28 +07 ERROR:  canceling statement due to user request
+2026-05-01 02:05:28 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-01 02:05:28 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.081 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1849040, redo lsn=0/1849040
+2026-05-01 02:08:03 +07 LOG:  database system was shut down at 2026-05-01 02:05:28 +07
+2026-05-01 02:08:16 +07 LOG:  shutting down
+2026-05-01 02:08:16 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-01 02:08:16 +07 ERROR:  canceling statement due to user request
+2026-05-01 02:08:16 +07 ERROR:  canceling statement due to user request
+2026-05-01 02:08:16 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.006 s, total=0.045 s; sync files=2, longest=0.005 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/18490B8, redo lsn=0/18490B8
+2026-05-01 07:50:25 +07 LOG:  database system was shut down at 2026-05-01 02:08:16 +07
+2026-05-01 07:55:25 +07 LOG:  checkpoint starting: time
+2026-05-01 07:55:25 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.007 s, total=0.054 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/18491C0, redo lsn=0/1849168
+2026-05-08 20:54:48 +07 LOG:  shutting down
+2026-05-08 20:54:48 +07 ERROR:  canceling statement due to user request
+2026-05-08 20:54:48 +07 ERROR:  canceling statement due to user request
+2026-05-08 20:54:48 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-08 20:54:48 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.001 s, total=0.107 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1849270, redo lsn=0/1849270
+2026-05-08 20:55:20 +07 LOG:  database system was shut down at 2026-05-08 20:54:48 +07
+2026-05-08 21:00:20 +07 LOG:  checkpoint starting: time
+2026-05-08 21:00:20 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.008 s, total=0.074 s; sync files=2, longest=0.006 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1849378, redo lsn=0/1849320
+2026-05-14 04:46:23 +07 LOG:  shutting down
+2026-05-14 04:46:23 +07 ERROR:  canceling statement due to user request
+2026-05-14 04:46:23 +07 ERROR:  canceling statement due to user request
+2026-05-14 04:46:23 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-14 04:46:23 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.085 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1849428, redo lsn=0/1849428
+2026-05-14 04:46:57 +07 LOG:  database system was shut down at 2026-05-14 04:46:23 +07
+2026-05-14 04:48:52 +07 LOG:  shutting down
+2026-05-14 04:48:52 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-14 04:48:52 +07 ERROR:  canceling statement due to user request
+2026-05-14 04:48:52 +07 ERROR:  canceling statement due to user request
+2026-05-14 04:48:52 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.010 s, total=0.071 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/18494D8, redo lsn=0/18494D8
+2026-05-14 04:49:26 +07 LOG:  database system was shut down at 2026-05-14 04:48:52 +07
+2026-05-14 04:49:49 +07 LOG:  shutting down
+2026-05-14 04:49:49 +07 ERROR:  canceling statement due to user request
+2026-05-14 04:49:49 +07 ERROR:  canceling statement due to user request
+2026-05-14 04:49:49 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-14 04:49:49 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.010 s, total=0.078 s; sync files=2, longest=0.006 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1849588, redo lsn=0/1849588
+2026-05-14 04:50:19 +07 LOG:  database system was shut down at 2026-05-14 04:49:49 +07
+2026-05-14 04:55:19 +07 LOG:  checkpoint starting: time
+2026-05-14 04:55:19 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.009 s, total=0.054 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1849690, redo lsn=0/1849638
+2026-05-18 21:54:34 +07 LOG:  shutting down
+2026-05-18 21:54:34 +07 ERROR:  canceling statement due to user request
+2026-05-18 21:54:34 +07 ERROR:  canceling statement due to user request
+2026-05-18 21:54:34 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-18 21:54:34 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.027 s, sync=0.001 s, total=0.117 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1849740, redo lsn=0/1849740
+2026-05-18 21:55:12 +07 LOG:  database system was shut down at 2026-05-18 21:54:34 +07
+2026-05-18 22:00:12 +07 LOG:  checkpoint starting: time
+2026-05-18 22:00:12 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.007 s, total=0.060 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1849848, redo lsn=0/18497F0
+2026-05-22 22:58:56 +07 ERROR:  canceling statement due to user request
+2026-05-22 22:58:56 +07 ERROR:  canceling statement due to user request
+2026-05-22 22:58:56 +07 LOG:  shutting down
+2026-05-22 22:58:56 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-22 22:58:56 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.082 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/18498F8, redo lsn=0/18498F8
+2026-05-22 22:59:37 +07 LOG:  database system was shut down at 2026-05-22 22:58:56 +07
+2026-05-22 23:04:37 +07 LOG:  checkpoint starting: time
+2026-05-22 23:04:38 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.006 s, total=0.067 s; sync files=2, longest=0.005 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/1849A00, redo lsn=0/18499A8
+2026-05-26 22:11:59 +07 ERROR:  canceling statement due to user request
+2026-05-26 22:11:59 +07 ERROR:  canceling statement due to user request
+2026-05-26 22:11:59 +07 LOG:  shutting down
+2026-05-26 22:11:59 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-26 22:11:59 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.001 s, total=0.125 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1849AB0, redo lsn=0/1849AB0
+2026-05-26 22:12:41 +07 LOG:  database system was shut down at 2026-05-26 22:11:59 +07
+2026-05-26 22:17:41 +07 LOG:  checkpoint starting: time
+2026-05-26 22:17:41 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.017 s, sync=0.010 s, total=0.155 s; sync files=2, longest=0.007 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1849BB8, redo lsn=0/1849B60
+2026-05-26 22:50:32 +07 LOG:  shutting down
+2026-05-26 22:50:32 +07 ERROR:  canceling statement due to user request
+2026-05-26 22:50:32 +07 ERROR:  canceling statement due to user request
+2026-05-26 22:50:32 +07 LOG:  checkpoint starting: shutdown immediate
+2026-05-26 22:50:32 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.076 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1849C68, redo lsn=0/1849C68
+2026-05-26 22:51:12 +07 LOG:  database system was shut down at 2026-05-26 22:50:32 +07
+2026-05-26 22:56:12 +07 LOG:  checkpoint starting: time
+2026-05-26 22:56:12 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.012 s, sync=0.008 s, total=0.109 s; sync files=2, longest=0.006 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1849D70, redo lsn=0/1849D18
+2026-06-04 20:30:29 +07 LOG:  shutting down
+2026-06-04 20:30:29 +07 ERROR:  canceling statement due to user request
+2026-06-04 20:30:29 +07 ERROR:  canceling statement due to user request
+2026-06-04 20:30:29 +07 LOG:  checkpoint starting: shutdown immediate
+2026-06-04 20:30:29 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.013 s, sync=0.001 s, total=0.107 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1849E20, redo lsn=0/1849E20
+2026-06-04 20:31:04 +07 LOG:  database system was shut down at 2026-06-04 20:30:29 +07
+2026-06-04 20:36:04 +07 LOG:  checkpoint starting: time
+2026-06-04 20:36:04 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.008 s, total=0.082 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1849F28, redo lsn=0/1849ED0
+2026-06-09 23:40:24 +07 LOG:  shutting down
+2026-06-09 23:40:24 +07 ERROR:  canceling statement due to user request
+2026-06-09 23:40:24 +07 ERROR:  canceling statement due to user request
+2026-06-09 23:40:24 +07 LOG:  checkpoint starting: shutdown immediate
+2026-06-09 23:40:24 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.001 s, total=0.090 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1849FD8, redo lsn=0/1849FD8
+2026-06-09 23:40:56 +07 LOG:  database system was shut down at 2026-06-09 23:40:24 +07
+2026-06-09 23:45:56 +07 LOG:  checkpoint starting: time
+2026-06-09 23:45:56 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.007 s, total=0.083 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/184A0F8, redo lsn=0/184A0A0
+2026-06-10 04:31:00 +07 LOG:  shutting down
+2026-06-10 04:31:00 +07 LOG:  checkpoint starting: shutdown immediate
+2026-06-10 04:31:00 +07 ERROR:  canceling statement due to user request
+2026-06-10 04:31:00 +07 ERROR:  canceling statement due to user request
+2026-06-10 04:31:00 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.001 s, total=0.092 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/184A1A8, redo lsn=0/184A1A8
+2026-06-10 04:31:37 +07 LOG:  database system was shut down at 2026-06-10 04:31:00 +07
+2026-06-10 04:33:37 +07 LOG:  shutting down
+2026-06-10 04:33:37 +07 ERROR:  canceling statement due to user request
+2026-06-10 04:33:37 +07 ERROR:  canceling statement due to user request
+2026-06-10 04:33:37 +07 LOG:  checkpoint starting: shutdown immediate
+2026-06-10 04:33:37 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.007 s, total=0.073 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/184A258, redo lsn=0/184A258
+2026-06-10 04:34:09 +07 LOG:  database system was shut down at 2026-06-10 04:33:37 +07
+2026-06-10 04:34:32 +07 LOG:  shutting down
+2026-06-10 04:34:32 +07 ERROR:  canceling statement due to user request
+2026-06-10 04:34:32 +07 ERROR:  canceling statement due to user request
+2026-06-10 04:34:32 +07 LOG:  checkpoint starting: shutdown immediate
+2026-06-10 04:34:32 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.007 s, total=0.067 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/184A308, redo lsn=0/184A308
+2026-06-10 04:35:11 +07 LOG:  database system was shut down at 2026-06-10 04:34:32 +07
+2026-06-10 04:40:11 +07 LOG:  checkpoint starting: time
+2026-06-10 04:40:11 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.072 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/184A410, redo lsn=0/184A3B8
+2026-06-10 10:04:45 +07 LOG:  shutting down
+2026-06-10 10:04:45 +07 LOG:  checkpoint starting: shutdown immediate
+2026-06-10 10:04:45 +07 ERROR:  canceling statement due to user request
+2026-06-10 10:04:45 +07 ERROR:  canceling statement due to user request
+2026-06-10 10:04:45 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.057 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/184A4C0, redo lsn=0/184A4C0
+2026-06-10 10:05:18 +07 LOG:  database system was shut down at 2026-06-10 10:04:45 +07
+2026-06-10 10:10:18 +07 LOG:  checkpoint starting: time
+2026-06-10 10:10:18 +07 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.066 s, sync=0.049 s, total=0.226 s; sync files=2, longest=0.045 s, average=0.025 s; distance=0 kB, estimate=0 kB; lsn=0/184A5C8, redo lsn=0/184A570
+2026-06-17 15:49:56 +07 FATAL:  password authentication failed for user "agentnexus"
+2026-06-17 15:49:56 +07 DETAIL:  Role "agentnexus" does not exist.
+Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2026-06-17 15:50:06 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:50:06 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2026-06-17 15:50:06 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:50:06 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2026-06-17 15:50:06 +07 FATAL:  password authentication failed for user "agentnexus"
+2026-06-17 15:50:06 +07 DETAIL:  Role "agentnexus" does not exist.
+Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2026-06-17 15:53:23 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:53:23 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2026-06-17 15:58:09 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:58:09 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-06-17 15:58:09 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:58:09 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-06-17 15:58:10 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:58:10 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-06-17 15:58:10 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:58:10 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-06-17 15:58:10 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:58:10 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-06-17 15:58:10 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:58:10 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-06-17 15:58:10 +07 FATAL:  password authentication failed for user "postgres"
+2026-06-17 15:58:10 +07 DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/18/data/pg_hba.conf" line 115: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-06-17 15:58:26 +07 LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35219, 64-bit
+2026-06-17 15:58:26 +07 LOG:  could not bind IPv6 address "::": Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+
+2026-06-17 15:58:26 +07 HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2026-06-17 15:58:26 +07 LOG:  could not bind IPv4 address "0.0.0.0": Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+
+2026-06-17 15:58:26 +07 HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2026-06-17 15:58:26 +07 WARNING:  could not create listen socket for "*"
+2026-06-17 15:58:26 +07 FATAL:  could not create any TCP/IP sockets
+2026-06-17 15:58:26 +07 LOG:  database system is shut down
+

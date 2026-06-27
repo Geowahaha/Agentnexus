@@ -1,0 +1,64 @@
+---
+pid: 26808
+cwd: "D:\AgentNexus"
+command: "Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force -ErrorAction SilentlyContinue }; Start-Sleep -Seconds 2; Set-Location D:\\AgentNexus\\backend; .\\run.ps1"
+started_at: 2026-06-17T13:40:51.045Z
+running_for_ms: 86400017 
+---
+INFO:     Started server process [11712]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56522 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49775 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63652 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63656 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63653 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63651 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53397 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51572 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50066 - "GET /api/v1/showcases/55555555-5555-4555-8555-555555555501 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54762 - "GET /api/v1/showcases/55555555-5555-4555-8555-555555555501 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52669 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333301 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51219 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333301 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55030 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333301 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55939 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333301 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55032 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55031 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55940 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59250 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58886 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52019 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52018 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61149 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61425 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62219 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55941 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59676 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52972 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59677 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56868 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60821 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62606 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52974 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52973 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56477 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53107 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61630 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56380 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56383 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56381 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56379 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56384 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60275 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61387 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61478 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52644 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56548 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+
+---
+exit_code: -1
+elapsed_ms: 86400017
+ended_at: 2026-06-18T13:40:47.598Z
+---

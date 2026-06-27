@@ -1,0 +1,1936 @@
+---
+pid: 35148
+cwd: "D:\AgentNexus"
+command: "Set-Location \"D:\\AgentNexus\\backend\"; $env:PYTHONPATH = (Get-Location).Path; .\\.venv\\Scripts\\python.exe run.py"
+started_at: 2026-06-19T06:53:23.172Z
+running_for_ms: 45440002 
+---
+INFO:     Started server process [11216]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/auth/login HTTP/1.1" 422 Unprocessable Entity
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/auth/login HTTP/1.1" 401 Unauthorized
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/auth/login HTTP/1.1" 401 Unauthorized
+(trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/showcases?expert_skill_id=33333333-3333-4333-8333-333333333302 HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333302 HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/billing/estimate HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/showcases/55555555-5555-4555-8555-555555555503 HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/pair HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/auth/login HTTP/1.1" 401 Unauthorized
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51963 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/auth/login HTTP/1.1" 401 Unauthorized
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64153 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/graphql HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "POST /api/graphql HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "POST /api/graphql HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "POST /api/gql HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "POST /api/gql HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "POST /api/gql HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/billing/wallet HTTP/1.1" 401 Unauthorized
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/billing/wallet HTTP/1.1" 401 Unauthorized
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49303 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60230 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58103 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56511 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/showcases/55555555-5555-4555-8555-555555555503 HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     52.86.227.224:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     52.86.227.224:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2607:f8b0:4023:405::10:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2607:f8b0:4023:405::10:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2607:f8b0:4023:405::10:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/auth/google HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     205.169.39.51:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     34.123.170.104:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     205.169.39.147:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     34.72.176.129:0 - "GET /api/v1/billing/config HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/bridge/pairing-codes HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/bridge/pairing-codes HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/analytics?period=week HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/reviews/inbox/badge HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/payouts HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/summary HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/analytics?period=week HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/mcp-servers HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/tools HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/reviews/inbox?sort=newest HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/reviews/notification-settings HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2600:3c06::f03c:95ff:feea:809f:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/billing/estimate HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/agents/11111111-1111-4111-8111-111111111101 HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/agents/11111111-1111-4111-8111-111111111101/profile HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills/33333333-3333-4333-8333-333333333302 HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/billing/estimate HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases?expert_skill_id=33333333-3333-4333-8333-333333333302 HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases/55555555-5555-4555-8555-555555555504 HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2600:3c06::f03c:95ff:feea:809f:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2600:3c06::f03c:95ff:feea:809f:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/analytics?period=week HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/reviews/inbox/badge HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/payouts HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/summary HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills/preview HTTP/1.1" 500 Internal Server Error
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases?expert_skill_id=preview HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 87, in get_expert_skill
+    skill = await repository.get_by_id(skill_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\expert_skill_repository.py", line 41, in get_by_id
+    select(ExpertSkillORM).where(ExpertSkillORM.id == UUID(skill_id))
+                                                      ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/billing/estimate HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\showcases.py", line 17, in list_showcases
+    return await repository.list_all(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\showcase_repository.py", line 75, in list_all
+    query = query.where(SkillShowcaseORM.expert_skill_id == UUID(expert_skill_id))
+                                                            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\billing\router.py", line 87, in estimate_cost
+    return await billing.estimate_cost(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\billing\service.py", line 166, in estimate_cost
+    charges = await self.resolve_agent_charges(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\billing\service.py", line 113, in resolve_agent_charges
+    skill = await self._expert_skills.get_by_id(expert_skill_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\expert_skill_repository.py", line 41, in get_by_id
+    select(ExpertSkillORM).where(ExpertSkillORM.id == UUID(skill_id))
+                                                      ^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     35.87.73.46:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     52.42.31.112:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     52.42.31.112:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/creators/me/skills HTTP/1.1" 201 Created
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "PATCH /api/v1/creators/me/skills/0da161de-4cd8-4e89-aeb7-f6e02438d3d7 HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/bridge/pairing-codes HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     35.91.18.185:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     35.91.18.185:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/analytics?period=week HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/reviews/inbox/badge HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/skills HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/payouts HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/summary HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/analytics?period=week HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/tools HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/mcp-servers HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/reviews/notification-settings HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/reviews/inbox?sort=newest HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/mcp-servers HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/creators/me/tools HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     52.16.245.145:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     54.204.103.51:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/expert-skills/0da161de-4cd8-4e89-aeb7-f6e02438d3d7 HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "POST /api/v1/billing/estimate HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/showcases?expert_skill_id=0da161de-4cd8-4e89-aeb7-f6e02438d3d7 HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET / HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     2a06:98c0:3600::103:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55776 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51176 - "GET /docs HTTP/1.1" 200 OK

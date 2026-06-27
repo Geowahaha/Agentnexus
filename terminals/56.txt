@@ -1,0 +1,14 @@
+---
+pid: 12040
+cwd: "D:\AgentNexus"
+command: "cd D:\\AgentNexus\\backend && pip install langchain-ollama -q && python scripts/test_expert_skill_prompts.py && python -c \"from app.expert_skills.pack_loader import load_skill_pack; p=load_skill_pack('fable5-coding-agent'); print('pack ok', len(p['skill_md']), 'refs', len(p['references']))\""
+started_at: 2026-06-19T12:16:56.280Z
+running_for_ms: 25994997 
+---
+
+[notice] A new release of pip is available: 26.0.1 -> 26.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\scripts\test_expert_skill_prompts.py", line 3, in <module>
+    from app.graphs.expert_skill_prompts import build_llm_prompt, extract_task_keywords
+ModuleNotFoundError: No module named 'app'

@@ -1,0 +1,13 @@
+---
+pid: 9892
+cwd: "D:\successcasting.com"
+command: "npx wrangler pages project list 2>&1 | Select-String -Pattern 'success'"
+started_at: 2026-06-18T05:24:58.678Z
+running_for_ms: 86400012 
+---
+
+---
+exit_code: -1
+elapsed_ms: 86400012
+ended_at: 2026-06-19T05:25:29.149Z
+---

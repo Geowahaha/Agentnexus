@@ -1,0 +1,105 @@
+---
+pid: 9092
+cwd: "D:\AgentNexus"
+command: "Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force -ErrorAction SilentlyContinue }; Start-Sleep -Seconds 2; Set-Location D:\\AgentNexus\\backend; .\\run.ps1"
+started_at: 2026-06-19T05:40:06.486Z
+running_for_ms: 3365013  
+---
+INFO:     Started server process [5136]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49675 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2403:6200:88a2:ddc8:1df3:5345:e2d8:35c7:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/pair HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/pair HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+(trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+INFO:     127.0.0.1:54760 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54760 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54760 - "POST /api/v1/bridge/devices/4d5815a2-1bb1-4e82-9c78-8df0f11f3c53/invoke HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56354 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56354 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56354 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56354 - "POST /api/v1/workflows/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56354 - "GET /api/v1/workflows/5d7a880b-3ec3-45f7-8c88-2445f66a6c7b HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57487 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57487 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57487 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57487 - "POST /api/v1/workflows/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57487 - "GET /api/v1/workflows/5c140c30-e04a-44e8-b4f1-d1f79ce0d0dc HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60902 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60902 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60902 - "POST /api/v1/bridge/devices/4d5815a2-1bb1-4e82-9c78-8df0f11f3c53/invoke HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62768 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62768 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62768 - "POST /api/v1/bridge/devices/4d5815a2-1bb1-4e82-9c78-8df0f11f3c53/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59280 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59280 - "GET /api/v1/bridge/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59280 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59280 - "POST /api/v1/workflows/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59280 - "GET /api/v1/workflows/0b9a5359-cc5e-436a-81f9-b69cffb78aed HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62667 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62667 - "GET /api/v1/workflows/0b9a5359-cc5e-436a-81f9-b69cffb78aed HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/pair HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53335 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55728 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     2a06:98c0:3600::103:0 - "POST /api/v1/bridge/device-session HTTP/1.1" 200 OK

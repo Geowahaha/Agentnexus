@@ -1,0 +1,793 @@
+
+{"openapi":"3.1.0","info":{"title":"AgentNexus","version":"0.1.0"},"paths":{"/api/v1/auth/register":{"post":{"tags":["a
+uth"],"summary":"Register","operationId":"register_api_v1_auth_register_post","requestBody":{"content":{"application/js
+on":{"schema":{"$ref":"#/components/schemas/UserCreate"}}},"required":true},"responses":{"201":{"description":"Successf
+ul Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/User"}}}},"422":{"description":"Vali
+dation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v
+1/auth/login":{"post":{"tags":["auth"],"summary":"Login","operationId":"login_api_v1_auth_login_post","requestBody":{"c
+ontent":{"application/json":{"schema":{"$ref":"#/components/schemas/UserLogin"}}},"required":true},"responses":{"200":{
+"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Token"}}}},"4
+22":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidat
+ionError"}}}}}}},"/api/v1/auth/me":{"get":{"tags":["auth"],"summary":"Get 
+Me","operationId":"get_me_api_v1_auth_me_get","responses":{"200":{"description":"Successful Response","content":{"appli
+cation/json":{"schema":{"$ref":"#/components/schemas/User"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/billing/confi
+g":{"get":{"tags":["billing"],"summary":"Get Billing 
+Config","operationId":"get_billing_config_api_v1_billing_config_get","responses":{"200":{"description":"Successful Resp
+onse","content":{"application/json":{"schema":{"$ref":"#/components/schemas/BillingConfigResponse"}}}}}}},"/api/v1/bill
+ing/wallet":{"get":{"tags":["billing"],"summary":"Get 
+Wallet","operationId":"get_wallet_api_v1_billing_wallet_get","responses":{"200":{"description":"Successful Response","c
+ontent":{"application/json":{"schema":{"$ref":"#/components/schemas/Wallet"}}}}},"security":[{"HTTPBearer":[]}]}},"/api
+/v1/billing/transactions":{"get":{"tags":["billing"],"summary":"List Transactions","operationId":"list_transactions_api
+_v1_billing_transactions_get","security":[{"HTTPBearer":[]}],"parameters":[{"name":"limit","in":"query","required":fals
+e,"schema":{"type":"integer","maximum":200,"minimum":1,"default":50,"title":"Limit"}}],"responses":{"200":{"description
+":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content"
+:{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/billing/earnings":{"g
+et":{"tags":["billing"],"summary":"Get 
+Earnings","operationId":"get_earnings_api_v1_billing_earnings_get","responses":{"200":{"description":"Successful Respon
+se","content":{"application/json":{"schema":{"$ref":"#/components/schemas/EarningsSummary"}}}}},"security":[{"HTTPBeare
+r":[]}]}},"/api/v1/billing/earnings/transfer":{"post":{"tags":["billing"],"summary":"Transfer Earnings","operationId":"
+transfer_earnings_api_v1_billing_earnings_transfer_post","requestBody":{"content":{"application/json":{"schema":{"$ref"
+:"#/components/schemas/TransferEarningsRequest"}}},"required":true},"responses":{"200":{"description":"Successful Respo
+nse","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Wallet"}}}},"422":{"description":"Validation
+ Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"H
+TTPBearer":[]}]}},"/api/v1/billing/estimate":{"post":{"tags":["billing"],"summary":"Estimate Cost","operationId":"estim
+ate_cost_api_v1_billing_estimate_post","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/sch
+emas/EstimateRequest"}}},"required":true},"responses":{"200":{"description":"Successful Response","content":{"applicati
+on/json":{"schema":{"$ref":"#/components/schemas/CostEstimate"}}}},"422":{"description":"Validation Error","content":{"
+application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"HTTPBearer":[]}]}},"/
+api/v1/billing/topup":{"post":{"tags":["billing"],"summary":"Top Up","operationId":"top_up_api_v1_billing_topup_post","
+requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/TopUpRequest"}}},"required":true},"
+responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/sc
+hemas/Wallet"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components
+/schemas/HTTPValidationError"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/billing/stripe/checkout":{"post":{"tags":[
+"billing"],"summary":"Create Stripe Checkout","operationId":"create_stripe_checkout_api_v1_billing_stripe_checkout_post
+","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/StripeCheckoutRequest"}}},"requi
+red":true},"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/c
+omponents/schemas/StripeCheckoutResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"s
+chema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/health":{"get"
+:{"tags":["health"],"summary":"Health 
+Check","operationId":"health_check_api_v1_health_get","responses":{"200":{"description":"Successful Response","content"
+:{"application/json":{"schema":{"additionalProperties":{"type":"string"},"type":"object","title":"Response Health 
+Check Api V1 Health Get"}}}}}}},"/api/v1/workflows/run":{"post":{"tags":["workflows"],"summary":"Run Workflow","operati
+onId":"run_workflow_api_v1_workflows_run_post","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/compon
+ents/schemas/WorkflowRunRequest"}}},"required":true},"responses":{"200":{"description":"Successful Response","content":
+{"application/json":{"schema":{"$ref":"#/components/schemas/WorkflowRunResponse"}}}},"422":{"description":"Validation E
+rror","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"HTT
+PBearer":[]}]}},"/api/v1/workflows/{workflow_id}":{"get":{"tags":["workflows"],"summary":"Get Workflow Status","operati
+onId":"get_workflow_status_api_v1_workflows__workflow_id__get","security":[{"HTTPBearer":[]}],"parameters":[{"name":"wo
+rkflow_id","in":"path","required":true,"schema":{"type":"string","title":"Workflow 
+Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/compo
+nents/schemas/WorkflowRunResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":
+{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/workflows/{workflow_id}/resume":{"post":{"tags":["wo
+rkflows"],"summary":"Resume Workflow","operationId":"resume_workflow_api_v1_workflows__workflow_id__resume_post","secur
+ity":[{"HTTPBearer":[]}],"parameters":[{"name":"workflow_id","in":"path","required":true,"schema":{"type":"string","tit
+le":"Workflow Id"}}],"requestBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/schem
+as/WorkflowResumeRequest"}}}},"responses":{"200":{"description":"Successful Response","content":{"application/json":{"s
+chema":{"$ref":"#/components/schemas/WorkflowRunResponse"}}}},"422":{"description":"Validation Error","content":{"appli
+cation/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/agents/{agent_id}/profile":{"
+get":{"tags":["portfolio"],"summary":"Get Agent Profile","operationId":"get_agent_profile_api_v1_agents__agent_id__prof
+ile_get","security":[{"HTTPBearer":[]}],"parameters":[{"name":"agent_id","in":"path","required":true,"schema":{"type":"
+string","title":"Agent Id"}},{"name":"include_private","in":"query","required":false,"schema":{"type":"boolean","defaul
+t":false,"title":"Include Private"}}],"responses":{"200":{"description":"Successful Response","content":{"application/j
+son":{"schema":{"$ref":"#/components/schemas/AgentProfile"}}}},"422":{"description":"Validation Error","content":{"appl
+ication/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/agents/{agent_id}/portfolio"
+:{"post":{"tags":["portfolio"],"summary":"Add Portfolio Item","operationId":"add_portfolio_item_api_v1_agents__agent_id
+__portfolio_post","security":[{"HTTPBearer":[]}],"parameters":[{"name":"agent_id","in":"path","required":true,"schema":
+{"type":"string","title":"Agent Id"}}],"requestBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"
+#/components/schemas/PortfolioItemCreate"}}}},"responses":{"201":{"description":"Successful Response","content":{"appli
+cation/json":{"schema":{"$ref":"#/components/schemas/PortfolioItem"}}}},"422":{"description":"Validation Error","conten
+t":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/agents/{agent_id}/p
+ortfolio/{item_id}":{"put":{"tags":["portfolio"],"summary":"Update Portfolio Item","operationId":"update_portfolio_item
+_api_v1_agents__agent_id__portfolio__item_id__put","security":[{"HTTPBearer":[]}],"parameters":[{"name":"agent_id","in"
+:"path","required":true,"schema":{"type":"string","title":"Agent 
+Id"}},{"name":"item_id","in":"path","required":true,"schema":{"type":"string","title":"Item Id"}}],"requestBody":{"requ
+ired":true,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/PortfolioItemUpdate"}}}},"responses":{
+"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Portfo
+lioItem"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/sche
+mas/HTTPValidationError"}}}}}},"delete":{"tags":["portfolio"],"summary":"Delete Portfolio Item","operationId":"delete_p
+ortfolio_item_api_v1_agents__agent_id__portfolio__item_id__delete","security":[{"HTTPBearer":[]}],"parameters":[{"name"
+:"agent_id","in":"path","required":true,"schema":{"type":"string","title":"Agent 
+Id"}},{"name":"item_id","in":"path","required":true,"schema":{"type":"string","title":"Item 
+Id"}}],"responses":{"204":{"description":"Successful Response"},"422":{"description":"Validation Error","content":{"app
+lication/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/agents":{"post":{"tags":["a
+gents"],"summary":"Create Agent","operationId":"create_agent_api_v1_agents_post","security":[{"HTTPBearer":[]}],"reques
+tBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/AgentCreate"}}}},"respons
+es":{"201":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/A
+gent"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas
+/HTTPValidationError"}}}}}},"get":{"tags":["agents"],"summary":"List Agents","operationId":"list_agents_api_v1_agents_g
+et","parameters":[{"name":"active_only","in":"query","required":false,"schema":{"type":"boolean","default":true,"title"
+:"Active Only"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"typ
+e":"array","items":{"$ref":"#/components/schemas/Agent"},"title":"Response List Agents Api V1 Agents 
+Get"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/
+HTTPValidationError"}}}}}}},"/api/v1/agents/{agent_id}":{"get":{"tags":["agents"],"summary":"Get Agent","operationId":"
+get_agent_api_v1_agents__agent_id__get","parameters":[{"name":"agent_id","in":"path","required":true,"schema":{"type":"
+string","title":"Agent Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"s
+chema":{"$ref":"#/components/schemas/AgentDetail"}}}},"422":{"description":"Validation Error","content":{"application/j
+son":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"put":{"tags":["agents"],"summary":"Update Agen
+t","operationId":"update_agent_api_v1_agents__agent_id__put","security":[{"HTTPBearer":[]}],"parameters":[{"name":"agen
+t_id","in":"path","required":true,"schema":{"type":"string","title":"Agent Id"}}],"requestBody":{"required":true,"conte
+nt":{"application/json":{"schema":{"$ref":"#/components/schemas/AgentUpdate"}}}},"responses":{"200":{"description":"Suc
+cessful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Agent"}}}},"422":{"description"
+:"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"d
+elete":{"tags":["agents"],"summary":"Delete Agent","operationId":"delete_agent_api_v1_agents__agent_id__delete","securi
+ty":[{"HTTPBearer":[]}],"parameters":[{"name":"agent_id","in":"path","required":true,"schema":{"type":"string","title":
+"Agent Id"}}],"responses":{"204":{"description":"Successful Response"},"422":{"description":"Validation Error","content
+":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/marketplace/agents":
+{"get":{"tags":["marketplace"],"summary":"List Marketplace Agents","operationId":"list_marketplace_agents_api_v1_market
+place_agents_get","parameters":[{"name":"active_only","in":"query","required":false,"schema":{"type":"boolean","default
+":true,"title":"Active Only"}},{"name":"owner_id","in":"query","required":false,"schema":{"anyOf":[{"type":"string"},{"
+type":"null"}],"title":"Owner Id"}},{"name":"category","in":"query","required":false,"schema":{"anyOf":[{"type":"string
+"},{"type":"null"}],"title":"Category"}},{"name":"max_price","in":"query","required":false,"schema":{"anyOf":[{"type":"
+number","minimum":0.0},{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"},{"type":"null"}],"title":"Max 
+Price"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"arra
+y","items":{"$ref":"#/components/schemas/Agent"},"title":"Response List Marketplace Agents Api V1 Marketplace Agents 
+Get"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/
+HTTPValidationError"}}}}}}},"/api/v1/expert-skills":{"get":{"tags":["expert-skills"],"summary":"List Expert Skills","op
+erationId":"list_expert_skills_api_v1_expert_skills_get","parameters":[{"name":"category","in":"query","required":false
+,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Category"}}],"responses":{"200":{"description":"Success
+ful Response","content":{"application/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/ExpertSkill
+Detail"},"title":"Response List Expert Skills Api V1 Expert Skills Get"}}}},"422":{"description":"Validation Error","co
+ntent":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/expert-skills/{
+skill_id}":{"get":{"tags":["expert-skills"],"summary":"Get Expert Skill","operationId":"get_expert_skill_api_v1_expert_
+skills__skill_id__get","parameters":[{"name":"skill_id","in":"path","required":true,"schema":{"type":"string","title":"
+Skill Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#
+/components/schemas/ExpertSkillDetail"}}}},"422":{"description":"Validation Error","content":{"application/json":{"sche
+ma":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/expert-skills/{skill_id}/run":{"post":{"tags":["
+expert-skills"],"summary":"Run Expert Skill","operationId":"run_expert_skill_api_v1_expert_skills__skill_id__run_post",
+"security":[{"HTTPBearer":[]}],"parameters":[{"name":"skill_id","in":"path","required":true,"schema":{"type":"string","
+title":"Skill Id"}}],"requestBody":{"required":true,"content":{"application/json":{"schema":{"type":"object","additiona
+lProperties":true,"title":"Payload"}}}},"responses":{"200":{"description":"Successful 
+Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application
+/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/creators/me/summary":{"get":{"tags"
+:["creators"],"summary":"Get Creator Summary","operationId":"get_creator_summary_api_v1_creators_me_summary_get","respo
+nses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas
+/CreatorSummary"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/creators/me/skills":{"get":{"tags":["creators"],"summar
+y":"List Creator Skills","operationId":"list_creator_skills_api_v1_creators_me_skills_get","responses":{"200":{"descrip
+tion":"Successful Response","content":{"application/json":{"schema":{"items":{"$ref":"#/components/schemas/CreatorSkill
+Item"},"type":"array","title":"Response List Creator Skills Api V1 Creators Me Skills 
+Get"}}}}},"security":[{"HTTPBearer":[]}]},"post":{"tags":["creators"],"summary":"Create Creator Skill","operationId":"c
+reate_creator_skill_api_v1_creators_me_skills_post","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/c
+omponents/schemas/ExpertSkillCreate"}}},"required":true},"responses":{"201":{"description":"Successful Response","conte
+nt":{"application/json":{"schema":{"$ref":"#/components/schemas/ExpertSkill"}}}},"422":{"description":"Validation Error
+","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"HTTPBea
+rer":[]}]}},"/api/v1/creators/me/skills/{skill_id}":{"patch":{"tags":["creators"],"summary":"Update Creator Skill","ope
+rationId":"update_creator_skill_api_v1_creators_me_skills__skill_id__patch","security":[{"HTTPBearer":[]}],"parameters"
+:[{"name":"skill_id","in":"path","required":true,"schema":{"type":"string","title":"Skill Id"}}],"requestBody":{"requir
+ed":true,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ExpertSkillUpdate"}}}},"responses":{"200
+":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/ExpertSkil
+l"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HT
+TPValidationError"}}}}}},"delete":{"tags":["creators"],"summary":"Delete Creator Skill","operationId":"delete_creator_s
+kill_api_v1_creators_me_skills__skill_id__delete","security":[{"HTTPBearer":[]}],"parameters":[{"name":"skill_id","in":
+"path","required":true,"schema":{"type":"string","title":"Skill Id"}}],"responses":{"204":{"description":"Successful 
+Response"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schema
+s/HTTPValidationError"}}}}}}},"/api/v1/creators/me/analytics":{"get":{"tags":["creators"],"summary":"Get Creator Analyt
+ics","operationId":"get_creator_analytics_api_v1_creators_me_analytics_get","security":[{"HTTPBearer":[]}],"parameters"
+:[{"name":"period","in":"query","required":false,"schema":{"type":"string","pattern":"^(day|week|month)$","default":"we
+ek","title":"Period"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema"
+:{"$ref":"#/components/schemas/CreatorAnalytics"}}}},"422":{"description":"Validation Error","content":{"application/js
+on":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/creators/me/payouts":{"get":{"tags":["
+creators"],"summary":"Get Creator Payouts","operationId":"get_creator_payouts_api_v1_creators_me_payouts_get","response
+s":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Cr
+eatorPayouts"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/creators/me/reviews":{"get":{"tags":["creators"],"summary"
+:"Get Creator Reviews","operationId":"get_creator_reviews_api_v1_creators_me_reviews_get","responses":{"200":{"descript
+ion":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/CreatorReviewsSummary"
+}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/creators/me/tools":{"get":{"tags":["creators"],"summary":"List Creator 
+Tools","operationId":"list_creator_tools_api_v1_creators_me_tools_get","responses":{"200":{"description":"Successful Re
+sponse","content":{"application/json":{"schema":{"items":{"$ref":"#/components/schemas/CustomTool"},"type":"array","tit
+le":"Response List Creator Tools Api V1 Creators Me Tools Get"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/creators/
+me/mcp-servers":{"get":{"tags":["creators"],"summary":"List Creator Mcp Servers","operationId":"list_creator_mcp_server
+s_api_v1_creators_me_mcp_servers_get","responses":{"200":{"description":"Successful Response","content":{"application/j
+son":{"schema":{"items":{"$ref":"#/components/schemas/MCPServer"},"type":"array","title":"Response List Creator Mcp 
+Servers Api V1 Creators Me Mcp Servers Get"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/creators/me/reviews/inbox":{
+"get":{"tags":["review-inbox"],"summary":"Get Review Inbox","operationId":"get_review_inbox_api_v1_creators_me_reviews_
+inbox_get","security":[{"HTTPBearer":[]}],"parameters":[{"name":"status","in":"query","required":false,"schema":{"anyOf
+":[{"type":"string"},{"type":"null"}],"title":"Status"}},{"name":"rating","in":"query","required":false,"schema":{"anyO
+f":[{"type":"integer","maximum":5,"minimum":1},{"type":"null"}],"title":"Rating"}},{"name":"search","in":"query","requi
+red":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Search"}},{"name":"sort","in":"query","requir
+ed":false,"schema":{"type":"string","pattern":"^(newest|unanswered|response_time)$","default":"newest","title":"Sort"}}
+],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components
+/schemas/ReviewInboxResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$re
+f":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/creators/me/reviews/inbox/badge":{"get":{"tags":["review-
+inbox"],"summary":"Get Review Inbox Badge","operationId":"get_review_inbox_badge_api_v1_creators_me_reviews_inbox_badge
+_get","responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/compon
+ents/schemas/ReviewNotificationBadge"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/creators/me/reviews/quick-replies"
+:{"get":{"tags":["review-inbox"],"summary":"List Quick Replies","operationId":"list_quick_replies_api_v1_creators_me_re
+views_quick_replies_get","responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema
+":{"items":{"$ref":"#/components/schemas/QuickReply"},"type":"array","title":"Response List Quick Replies Api V1 
+Creators Me Reviews Quick Replies 
+Get"}}}}},"security":[{"HTTPBearer":[]}]},"post":{"tags":["review-inbox"],"summary":"Create Quick Reply","operationId":
+"create_quick_reply_api_v1_creators_me_reviews_quick_replies_post","requestBody":{"content":{"application/json":{"schem
+a":{"$ref":"#/components/schemas/QuickReplyCreate"}}},"required":true},"responses":{"201":{"description":"Successful Re
+sponse","content":{"application/json":{"schema":{"$ref":"#/components/schemas/QuickReply"}}}},"422":{"description":"Val
+idation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"securit
+y":[{"HTTPBearer":[]}]}},"/api/v1/creators/me/reviews/quick-replies/{reply_id}":{"patch":{"tags":["review-inbox"],"summ
+ary":"Update Quick Reply","operationId":"update_quick_reply_api_v1_creators_me_reviews_quick_replies__reply_id__patch",
+"security":[{"HTTPBearer":[]}],"parameters":[{"name":"reply_id","in":"path","required":true,"schema":{"type":"string","
+title":"Reply Id"}}],"requestBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/schem
+as/QuickReplyUpdate"}}}},"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema
+":{"$ref":"#/components/schemas/QuickReply"}}}},"422":{"description":"Validation Error","content":{"application/json":{
+"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"delete":{"tags":["review-inbox"],"summary":"Delete 
+Quick Reply","operationId":"delete_quick_reply_api_v1_creators_me_reviews_quick_replies__reply_id__delete","security":[
+{"HTTPBearer":[]}],"parameters":[{"name":"reply_id","in":"path","required":true,"schema":{"type":"string","title":"Repl
+y Id"}}],"responses":{"204":{"description":"Successful Response"},"422":{"description":"Validation Error","content":{"a
+pplication/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/creators/me/reviews/notif
+ication-settings":{"get":{"tags":["review-inbox"],"summary":"Get Notification Settings","operationId":"get_notification
+_settings_api_v1_creators_me_reviews_notification_settings_get","responses":{"200":{"description":"Successful Response"
+,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/ReviewNotificationSettings"}}}}},"security":[{"H
+TTPBearer":[]}]},"put":{"tags":["review-inbox"],"summary":"Update Notification Settings","operationId":"update_notifica
+tion_settings_api_v1_creators_me_reviews_notification_settings_put","requestBody":{"content":{"application/json":{"sche
+ma":{"$ref":"#/components/schemas/ReviewNotificationSettings"}}},"required":true},"responses":{"200":{"description":"Su
+ccessful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/ReviewNotificationSettings"}}}
+},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPVal
+idationError"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/creators/me/reviews/attachments/{attachment_id}/download":
+{"get":{"tags":["review-inbox"],"summary":"Download Review Attachment","operationId":"download_review_attachment_api_v1
+_creators_me_reviews_attachments__attachment_id__download_get","security":[{"HTTPBearer":[]}],"parameters":[{"name":"at
+tachment_id","in":"path","required":true,"schema":{"type":"string","title":"Attachment 
+Id"}}],"responses":{"200":{"description":"Successful 
+Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application
+/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/creators/me/reviews/{review_id}/thr
+ead":{"get":{"tags":["review-inbox"],"summary":"Get Review Thread","operationId":"get_review_thread_api_v1_creators_me_
+reviews__review_id__thread_get","security":[{"HTTPBearer":[]}],"parameters":[{"name":"review_id","in":"path","required"
+:true,"schema":{"type":"string","title":"Review Id"}}],"responses":{"200":{"description":"Successful Response","content
+":{"application/json":{"schema":{"$ref":"#/components/schemas/ReviewThread"}}}},"422":{"description":"Validation Error"
+,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/creators/me
+/reviews/{review_id}/reply":{"post":{"tags":["review-inbox"],"summary":"Reply To Review","operationId":"reply_to_review
+_api_v1_creators_me_reviews__review_id__reply_post","security":[{"HTTPBearer":[]}],"parameters":[{"name":"review_id","i
+n":"path","required":true,"schema":{"type":"string","title":"Review Id"}}],"requestBody":{"required":true,"content":{"m
+ultipart/form-data":{"schema":{"$ref":"#/components/schemas/Body_reply_to_review_api_v1_creators_me_reviews__review_id_
+_reply_post"}}}},"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref
+":"#/components/schemas/ThreadMessage"}}}},"422":{"description":"Validation Error","content":{"application/json":{"sche
+ma":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/creators/me/reviews/{review_id}/resolve":{"post"
+:{"tags":["review-inbox"],"summary":"Resolve Review","operationId":"resolve_review_api_v1_creators_me_reviews__review_i
+d__resolve_post","security":[{"HTTPBearer":[]}],"parameters":[{"name":"review_id","in":"path","required":true,"schema":
+{"type":"string","title":"Review Id"}}],"responses":{"200":{"description":"Successful 
+Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application
+/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/reviews/me/workflow/{workflow_id}/e
+ligibility":{"get":{"tags":["buyer-reviews"],"summary":"Get Workflow Review Eligibility","operationId":"get_workflow_re
+view_eligibility_api_v1_reviews_me_workflow__workflow_id__eligibility_get","security":[{"HTTPBearer":[]}],"parameters":
+[{"name":"workflow_id","in":"path","required":true,"schema":{"type":"string","title":"Workflow 
+Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/compo
+nents/schemas/WorkflowReviewEligibility"}}}},"422":{"description":"Validation Error","content":{"application/json":{"sc
+hema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/reviews/me":{"get":{"tags":["buyer-reviews"],"
+summary":"List My 
+Reviews","operationId":"list_my_reviews_api_v1_reviews_me_get","responses":{"200":{"description":"Successful Response",
+"content":{"application/json":{"schema":{"items":{"$ref":"#/components/schemas/BuyerReviewItem"},"type":"array","title"
+:"Response List My Reviews Api V1 Reviews Me 
+Get"}}}}},"security":[{"HTTPBearer":[]}]},"post":{"tags":["buyer-reviews"],"summary":"Submit Review","operationId":"sub
+mit_review_api_v1_reviews_me_post","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas
+/BuyerReviewSubmit"}}},"required":true},"responses":{"201":{"description":"Successful Response","content":{"application
+/json":{"schema":{"$ref":"#/components/schemas/BuyerReviewSubmitted"}}}},"422":{"description":"Validation Error","conte
+nt":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"HTTPBearer":[]}
+]}},"/api/v1/reviews/me/{review_id}/thread":{"get":{"tags":["buyer-reviews"],"summary":"Get Buyer Thread","operationId"
+:"get_buyer_thread_api_v1_reviews_me__review_id__thread_get","security":[{"HTTPBearer":[]}],"parameters":[{"name":"revi
+ew_id","in":"path","required":true,"schema":{"type":"string","title":"Review 
+Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/compo
+nents/schemas/ReviewThread"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref"
+:"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/reviews/me/{review_id}/reply":{"post":{"tags":["buyer-revie
+ws"],"summary":"Reply In Thread","operationId":"reply_in_thread_api_v1_reviews_me__review_id__reply_post","security":[{
+"HTTPBearer":[]}],"parameters":[{"name":"review_id","in":"path","required":true,"schema":{"type":"string","title":"Revi
+ew Id"}}],"requestBody":{"required":true,"content":{"multipart/form-data":{"schema":{"$ref":"#/components/schemas/Body_
+reply_in_thread_api_v1_reviews_me__review_id__reply_post"}}}},"responses":{"200":{"description":"Successful Response","
+content":{"application/json":{"schema":{"$ref":"#/components/schemas/ThreadMessage"}}}},"422":{"description":"Validatio
+n Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/rev
+iews/me/attachments/{attachment_id}/download":{"get":{"tags":["buyer-reviews"],"summary":"Download Buyer Attachment","o
+perationId":"download_buyer_attachment_api_v1_reviews_me_attachments__attachment_id__download_get","security":[{"HTTPBe
+arer":[]}],"parameters":[{"name":"attachment_id","in":"path","required":true,"schema":{"type":"string","title":"Attachm
+ent Id"}}],"responses":{"200":{"description":"Successful 
+Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application
+/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/notifications/badge":{"get":{"tags"
+:["notifications"],"summary":"Get Notification Badge","operationId":"get_notification_badge_api_v1_notifications_badge_
+get","responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/compone
+nts/schemas/NotificationBadge"}}}}},"security":[{"HTTPBearer":[]}]}},"/api/v1/notifications":{"get":{"tags":["notificat
+ions"],"summary":"List Notifications","operationId":"list_notifications_api_v1_notifications_get","security":[{"HTTPBea
+rer":[]}],"parameters":[{"name":"limit","in":"query","required":false,"schema":{"type":"integer","maximum":100,"minimum
+":1,"default":30,"title":"Limit"}}],"responses":{"200":{"description":"Successful Response","content":{"application/jso
+n":{"schema":{"$ref":"#/components/schemas/NotificationListResponse"}}}},"422":{"description":"Validation Error","conte
+nt":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/notifications/mark
+-read":{"post":{"tags":["notifications"],"summary":"Mark Notifications Read","operationId":"mark_notifications_read_api
+_v1_notifications_mark_read_post","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/
+MarkNotificationsReadRequest"}}},"required":true},"responses":{"200":{"description":"Successful Response","content":{"a
+pplication/json":{"schema":{"$ref":"#/components/schemas/NotificationBadge"}}}},"422":{"description":"Validation Error"
+,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}},"security":[{"HTTPBear
+er":[]}]}},"/api/v1/showcases":{"get":{"tags":["showcases"],"summary":"List Showcases","operationId":"list_showcases_ap
+i_v1_showcases_get","parameters":[{"name":"category","in":"query","required":false,"schema":{"anyOf":[{"type":"string"}
+,{"type":"null"}],"title":"Category"}},{"name":"featured_only","in":"query","required":false,"schema":{"type":"boolean"
+,"default":false,"title":"Featured Only"}}],"responses":{"200":{"description":"Successful Response","content":{"applica
+tion/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/SkillShowcase"},"title":"Response List 
+Showcases Api V1 Showcases Get"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$
+ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/showcases/{showcase_id}":{"get":{"tags":["showcases"],"
+summary":"Get Showcase","operationId":"get_showcase_api_v1_showcases__showcase_id__get","parameters":[{"name":"showcase
+_id","in":"path","required":true,"schema":{"type":"string","title":"Showcase 
+Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/compo
+nents/schemas/SkillShowcase"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref
+":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/custom-tools":{"post":{"tags":["custom-tools"],"summary":"
+Create Custom Tool","operationId":"create_custom_tool_api_v1_custom_tools_post","security":[{"HTTPBearer":[]}],"request
+Body":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/CustomToolCreate"}}}},"res
+ponses":{"201":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schem
+as/CustomTool"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/component
+s/schemas/HTTPValidationError"}}}}}},"get":{"tags":["custom-tools"],"summary":"List Custom Tools","operationId":"list_c
+ustom_tools_api_v1_custom_tools_get","parameters":[{"name":"active_only","in":"query","required":false,"schema":{"type"
+:"boolean","default":true,"title":"Active Only"}},{"name":"owner_id","in":"query","required":false,"schema":{"anyOf":[{
+"type":"string"},{"type":"null"}],"title":"Owner Id"}}],"responses":{"200":{"description":"Successful Response","conten
+t":{"application/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/CustomTool"},"title":"Response 
+List Custom Tools Api V1 Custom Tools Get"}}}},"422":{"description":"Validation Error","content":{"application/json":{"
+schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/custom-tools/{tool_id}":{"get":{"tags":["cus
+tom-tools"],"summary":"Get Custom Tool","operationId":"get_custom_tool_api_v1_custom_tools__tool_id__get","parameters":
+[{"name":"tool_id","in":"path","required":true,"schema":{"type":"string","title":"Tool 
+Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/compo
+nents/schemas/CustomTool"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"
+#/components/schemas/HTTPValidationError"}}}}}},"put":{"tags":["custom-tools"],"summary":"Update Custom Tool","operatio
+nId":"update_custom_tool_api_v1_custom_tools__tool_id__put","security":[{"HTTPBearer":[]}],"parameters":[{"name":"tool_
+id","in":"path","required":true,"schema":{"type":"string","title":"Tool Id"}}],"requestBody":{"required":true,"content"
+:{"application/json":{"schema":{"$ref":"#/components/schemas/CustomToolUpdate"}}}},"responses":{"200":{"description":"S
+uccessful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/CustomTool"}}}},"422":{"descr
+iption":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}
+}}}},"delete":{"tags":["custom-tools"],"summary":"Delete Custom Tool","operationId":"delete_custom_tool_api_v1_custom_t
+ools__tool_id__delete","security":[{"HTTPBearer":[]}],"parameters":[{"name":"tool_id","in":"path","required":true,"sche
+ma":{"type":"string","title":"Tool Id"}}],"responses":{"204":{"description":"Successful 
+Response"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schema
+s/HTTPValidationError"}}}}}}},"/api/v1/mcp-servers":{"post":{"tags":["mcp-servers"],"summary":"Create Mcp Server","oper
+ationId":"create_mcp_server_api_v1_mcp_servers_post","security":[{"HTTPBearer":[]}],"requestBody":{"required":true,"con
+tent":{"application/json":{"schema":{"$ref":"#/components/schemas/MCPServerCreate"}}}},"responses":{"201":{"description
+":"Successful Response","content":{"application/json":{"schema":{"$ref":"#/components/schemas/MCPServer"}}}},"422":{"de
+scription":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError
+"}}}}}},"get":{"tags":["mcp-servers"],"summary":"List Mcp Servers","operationId":"list_mcp_servers_api_v1_mcp_servers_g
+et","parameters":[{"name":"active_only","in":"query","required":false,"schema":{"type":"boolean","default":true,"title"
+:"Active Only"}},{"name":"owner_id","in":"query","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}]
+,"title":"Owner Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":
+{"type":"array","items":{"$ref":"#/components/schemas/MCPServer"},"title":"Response List Mcp Servers Api V1 Mcp 
+Servers Get"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/components/
+schemas/HTTPValidationError"}}}}}}},"/api/v1/mcp-servers/{server_id}":{"get":{"tags":["mcp-servers"],"summary":"Get 
+Mcp Server","operationId":"get_mcp_server_api_v1_mcp_servers__server_id__get","parameters":[{"name":"server_id","in":"p
+ath","required":true,"schema":{"type":"string","title":"Server Id"}}],"responses":{"200":{"description":"Successful Res
+ponse","content":{"application/json":{"schema":{"$ref":"#/components/schemas/MCPServer"}}}},"422":{"description":"Valid
+ation Error","content":{"application/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"put":{"t
+ags":["mcp-servers"],"summary":"Update Mcp Server","operationId":"update_mcp_server_api_v1_mcp_servers__server_id__put"
+,"security":[{"HTTPBearer":[]}],"parameters":[{"name":"server_id","in":"path","required":true,"schema":{"type":"string"
+,"title":"Server Id"}}],"requestBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/sc
+hemas/MCPServerUpdate"}}}},"responses":{"200":{"description":"Successful Response","content":{"application/json":{"sche
+ma":{"$ref":"#/components/schemas/MCPServer"}}}},"422":{"description":"Validation Error","content":{"application/json":
+{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}},"delete":{"tags":["mcp-servers"],"summary":"Delete 
+Mcp Server","operationId":"delete_mcp_server_api_v1_mcp_servers__server_id__delete","security":[{"HTTPBearer":[]}],"par
+ameters":[{"name":"server_id","in":"path","required":true,"schema":{"type":"string","title":"Server 
+Id"}}],"responses":{"204":{"description":"Successful Response"},"422":{"description":"Validation Error","content":{"app
+lication/json":{"schema":{"$ref":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/mcp-servers/{server_id}/too
+ls":{"get":{"tags":["mcp-servers"],"summary":"List Mcp Server Tools","operationId":"list_mcp_server_tools_api_v1_mcp_se
+rvers__server_id__tools_get","parameters":[{"name":"server_id","in":"path","required":true,"schema":{"type":"string","t
+itle":"Server 
+Id"}},{"name":"active_only","in":"query","required":false,"schema":{"type":"boolean","default":true,"title":"Active 
+Only"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array
+","items":{"$ref":"#/components/schemas/MCPTool"},"title":"Response List Mcp Server Tools Api V1 Mcp Servers  Server 
+Id  Tools Get"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref":"#/component
+s/schemas/HTTPValidationError"}}}}}}},"/api/v1/mcp-servers/{server_id}/sync-tools":{"post":{"tags":["mcp-servers"],"sum
+mary":"Sync Mcp Server Tools","operationId":"sync_mcp_server_tools_api_v1_mcp_servers__server_id__sync_tools_post","sec
+urity":[{"HTTPBearer":[]}],"parameters":[{"name":"server_id","in":"path","required":true,"schema":{"type":"string","tit
+le":"Server Id"}}],"responses":{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"ty
+pe":"array","items":{"$ref":"#/components/schemas/MCPTool"},"title":"Response Sync Mcp Server Tools Api V1 Mcp Servers 
+ Server Id  Sync Tools Post"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"$ref
+":"#/components/schemas/HTTPValidationError"}}}}}}},"/api/v1/tools":{"get":{"tags":["tools"],"summary":"List 
+Tools","operationId":"list_tools_api_v1_tools_get","responses":{"200":{"description":"Successful Response","content":{"
+application/json":{"schema":{"items":{"$ref":"#/components/schemas/ToolResponse"},"type":"array","title":"Response 
+List Tools Api V1 Tools 
+Get"}}}}}}},"/":{"get":{"summary":"Root","operationId":"root__get","responses":{"200":{"description":"Successful Respon
+se","content":{"application/json":{"schema":{"additionalProperties":{"type":"string"},"type":"object","title":"Response
+ Root  Get"}}}}}}}},"components":{"schemas":{"Agent":{"properties":{"name":{"type":"string","maxLength":120,"minLength"
+:1,"title":"Name"},"description":{"type":"string","minLength":1,"title":"Description"},"role":{"type":"string","minLeng
+th":1,"title":"Role","description":"Agent persona, e.g. SEO Pro, Content 
+Writer"},"llm_model":{"type":"string","minLength":1,"title":"Llm Model","description":"LLM model identifier, e.g. 
+gpt-4o"},"tools":{"items":{"type":"string"},"type":"array","title":"Tools"},"is_active":{"type":"boolean","title":"Is A
+ctive","default":true},"price_usd_per_run":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Pric
+e Usd Per Run","default":"0"},"capabilities":{"items":{"type":"string"},"type":"array","title":"Capabilities"},"categor
+y":{"anyOf":[{"type":"string","maxLength":80},{"type":"null"}],"title":"Category"},"id":{"type":"string","title":"Id"},
+"owner_id":{"type":"string","title":"Owner Id"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["name","desc
+ription","role","llm_model","id","owner_id","created_at","updated_at"],"title":"Agent"},"AgentCharge":{"properties":{"a
+gent_id":{"type":"string","title":"Agent Id"},"agent_name":{"type":"string","title":"Agent 
+Name"},"owner_id":{"type":"string","title":"Owner 
+Id"},"price_usd_per_run":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Price Usd Per 
+Run"},"product_type":{"type":"string","title":"Product Type","default":"agent"}},"type":"object","required":["agent_id"
+,"agent_name","owner_id","price_usd_per_run"],"title":"AgentCharge"},"AgentCreate":{"properties":{"name":{"type":"strin
+g","maxLength":120,"minLength":1,"title":"Name"},"description":{"type":"string","minLength":1,"title":"Description"},"r
+ole":{"type":"string","minLength":1,"title":"Role","description":"Agent persona, e.g. SEO Pro, Content 
+Writer"},"llm_model":{"type":"string","minLength":1,"title":"Llm Model","description":"LLM model identifier, e.g. 
+gpt-4o"},"tools":{"items":{"type":"string"},"type":"array","title":"Tools"},"is_active":{"type":"boolean","title":"Is A
+ctive","default":true},"price_usd_per_run":{"anyOf":[{"type":"number","minimum":0.0},{"type":"string","pattern":"^(?!^[
+-+.]*$)[+-]?0*\\d*\\.?\\d*$"}],"title":"Price Usd Per Run","default":"0"},"capabilities":{"items":{"type":"string"},"ty
+pe":"array","title":"Capabilities"},"category":{"anyOf":[{"type":"string","maxLength":80},{"type":"null"}],"title":"Cat
+egory"}},"type":"object","required":["name","description","role","llm_model"],"title":"AgentCreate","description":"Payl
+oad for creating a new marketplace agent."},"AgentDetail":{"properties":{"name":{"type":"string","maxLength":120,"minLe
+ngth":1,"title":"Name"},"description":{"type":"string","minLength":1,"title":"Description"},"role":{"type":"string","mi
+nLength":1,"title":"Role","description":"Agent persona, e.g. SEO Pro, Content 
+Writer"},"llm_model":{"type":"string","minLength":1,"title":"Llm Model","description":"LLM model identifier, e.g. 
+gpt-4o"},"tools":{"items":{"type":"string"},"type":"array","title":"Tools"},"is_active":{"type":"boolean","title":"Is A
+ctive","default":true},"price_usd_per_run":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Pric
+e Usd Per Run","default":"0"},"capabilities":{"items":{"type":"string"},"type":"array","title":"Capabilities"},"categor
+y":{"anyOf":[{"type":"string","maxLength":80},{"type":"null"}],"title":"Category"},"id":{"type":"string","title":"Id"},
+"owner_id":{"type":"string","title":"Owner Id"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated 
+At"},"owner_name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Owner Name"}},"type":"object","required":["name
+","description","role","llm_model","id","owner_id","created_at","updated_at"],"title":"AgentDetail"},"AgentProfile":{"p
+roperties":{"agent_id":{"type":"string","title":"Agent Id"},"stats":{"$ref":"#/components/schemas/AgentStats"},"portfol
+io":{"items":{"$ref":"#/components/schemas/PortfolioItem"},"type":"array","title":"Portfolio"}},"type":"object","requir
+ed":["agent_id","stats","portfolio"],"title":"AgentProfile"},"AgentStats":{"properties":{"portfolio_count":{"type":"int
+eger","title":"Portfolio Count","default":0},"total_hires":{"type":"integer","title":"Total Hires","default":0}},"type"
+:"object","title":"AgentStats"},"AgentUpdate":{"properties":{"name":{"anyOf":[{"type":"string","maxLength":120,"minLeng
+th":1},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string","minLength":1},{"type":"null"}],"title
+":"Description"},"role":{"anyOf":[{"type":"string","minLength":1},{"type":"null"}],"title":"Role"},"llm_model":{"anyOf"
+:[{"type":"string","minLength":1},{"type":"null"}],"title":"Llm Model"},"tools":{"anyOf":[{"items":{"type":"string"},"t
+ype":"array"},{"type":"null"}],"title":"Tools"},"is_active":{"anyOf":[{"type":"boolean"},{"type":"null"}],"title":"Is A
+ctive"},"price_usd_per_run":{"anyOf":[{"type":"number","minimum":0.0},{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\
+\d*\\.?\\d*$"},{"type":"null"}],"title":"Price Usd Per Run"},"capabilities":{"anyOf":[{"items":{"type":"string"},"type"
+:"array"},{"type":"null"}],"title":"Capabilities"},"category":{"anyOf":[{"type":"string","maxLength":80},{"type":"null"
+}],"title":"Category"}},"type":"object","title":"AgentUpdate"},"AnalyticsDataPoint":{"properties":{"period_start":{"typ
+e":"string","format":"date","title":"Period 
+Start"},"earnings_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Earnings Usd"},"runs":{"
+type":"integer","title":"Runs"}},"type":"object","required":["period_start","earnings_usd","runs"],"title":"AnalyticsDa
+taPoint"},"BillingConfigResponse":{"properties":{"stripe_enabled":{"type":"boolean","title":"Stripe 
+Enabled"},"demo_topup_enabled":{"type":"boolean","title":"Demo Topup 
+Enabled"},"platform_fee_percent":{"type":"number","title":"Platform Fee 
+Percent"},"signup_credits_usd":{"type":"number","title":"Signup Credits Usd"}},"type":"object","required":["stripe_enab
+led","demo_topup_enabled","platform_fee_percent","signup_credits_usd"],"title":"BillingConfigResponse"},"Body_reply_in_
+thread_api_v1_reviews_me__review_id__reply_post":{"properties":{"body":{"type":"string","minLength":1,"title":"Body"},"
+files":{"items":{"type":"string","contentMediaType":"application/octet-stream"},"type":"array","title":"Files","default
+":[]}},"type":"object","required":["body"],"title":"Body_reply_in_thread_api_v1_reviews_me__review_id__reply_post"},"Bo
+dy_reply_to_review_api_v1_creators_me_reviews__review_id__reply_post":{"properties":{"body":{"type":"string","minLength
+":1,"title":"Body"},"files":{"items":{"type":"string","contentMediaType":"application/octet-stream"},"type":"array","ti
+tle":"Files","default":[]}},"type":"object","required":["body"],"title":"Body_reply_to_review_api_v1_creators_me_review
+s__review_id__reply_post"},"BuyerReviewItem":{"properties":{"id":{"type":"string","title":"Id"},"expert_skill_id":{"typ
+e":"string","title":"Expert Skill Id"},"skill_name":{"type":"string","title":"Skill 
+Name"},"skill_slug":{"type":"string","title":"Skill Slug"},"rating":{"type":"integer","title":"Rating"},"comment":{"typ
+e":"string","title":"Comment"},"status":{"type":"string","title":"Status"},"workflow_id":{"anyOf":[{"type":"string"},{"
+type":"null"}],"title":"Workflow Id"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated 
+At"},"has_creator_reply":{"type":"boolean","title":"Has Creator 
+Reply","default":false},"unread_replies":{"type":"integer","title":"Unread Replies","default":0}},"type":"object","requ
+ired":["id","expert_skill_id","skill_name","skill_slug","rating","comment","status","workflow_id","created_at","updated
+_at"],"title":"BuyerReviewItem"},"BuyerReviewSubmit":{"properties":{"workflow_id":{"type":"string","minLength":1,"title
+":"Workflow Id"},"expert_skill_id":{"type":"string","minLength":1,"title":"Expert Skill Id"},"rating":{"type":"integer"
+,"maximum":5.0,"minimum":1.0,"title":"Rating"},"comment":{"type":"string","maxLength":5000,"minLength":3,"title":"Comme
+nt"}},"type":"object","required":["workflow_id","expert_skill_id","rating","comment"],"title":"BuyerReviewSubmit"},"Buy
+erReviewSubmitted":{"properties":{"review":{"$ref":"#/components/schemas/BuyerReviewItem"},"message":{"type":"string","
+title":"Message","default":"Review submitted successfully"}},"type":"object","required":["review"],"title":"BuyerReview
+Submitted"},"CostEstimate":{"properties":{"marketplace_cost_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\
+.?\\d*$","title":"Marketplace Cost 
+Usd"},"estimated_llm_cost_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Estimated Llm 
+Cost Usd","default":"0"},"estimated_total_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"
+Estimated Total 
+Usd"},"agent_charges":{"items":{"$ref":"#/components/schemas/AgentCharge"},"type":"array","title":"Agent 
+Charges"},"current_balance_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Current 
+Balance Usd"},"sufficient_balance":{"type":"boolean","title":"Sufficient Balance"}},"type":"object","required":["market
+place_cost_usd","estimated_total_usd","agent_charges","current_balance_usd","sufficient_balance"],"title":"CostEstimate
+"},"CreatorActivityItem":{"properties":{"id":{"type":"string","title":"Id"},"activity_type":{"type":"string","title":"A
+ctivity Type"},"title":{"type":"string","title":"Title"},"detail":{"anyOf":[{"type":"string"},{"type":"null"}],"title":
+"Detail"},"amount_usd":{"anyOf":[{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"},{"type":"null"}],"titl
+e":"Amount Usd"},"created_at":{"type":"string","format":"date-time","title":"Created At"}},"type":"object","required":[
+"id","activity_type","title","created_at"],"title":"CreatorActivityItem"},"CreatorAnalytics":{"properties":{"period":{"
+type":"string","title":"Period"},"data_points":{"items":{"$ref":"#/components/schemas/AnalyticsDataPoint"},"type":"arra
+y","title":"Data 
+Points"},"top_skills":{"items":{"$ref":"#/components/schemas/CreatorTopSkill"},"type":"array","title":"Top 
+Skills"},"average_runs_per_day":{"type":"number","title":"Average Runs Per 
+Day"},"conversion_rate":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Conversion 
+Rate"},"conversion_tracked":{"type":"boolean","title":"Conversion Tracked","default":false}},"type":"object","required"
+:["period","data_points","top_skills","average_runs_per_day"],"title":"CreatorAnalytics"},"CreatorEarning":{"properties
+":{"id":{"type":"string","title":"Id"},"creator_id":{"type":"string","title":"Creator 
+Id"},"buyer_id":{"type":"string","title":"Buyer Id"},"agent_id":{"type":"string","title":"Agent 
+Id"},"product_type":{"type":"string","title":"Product 
+Type","default":"agent"},"workflow_id":{"type":"string","title":"Workflow 
+Id"},"gross_amount_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Gross Amount 
+Usd"},"platform_fee_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Platform Fee 
+Usd"},"net_amount_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Net Amount 
+Usd"},"created_at":{"type":"string","format":"date-time","title":"Created At"}},"type":"object","required":["id","creat
+or_id","buyer_id","agent_id","workflow_id","gross_amount_usd","platform_fee_usd","net_amount_usd","created_at"],"title"
+:"CreatorEarning"},"CreatorPayoutHistoryItem":{"properties":{"id":{"type":"string","title":"Id"},"amount_usd":{"type":"
+string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Amount 
+Usd"},"transaction_type":{"type":"string","title":"Transaction Type"},"description":{"type":"string","title":"Descripti
+on"},"created_at":{"type":"string","format":"date-time","title":"Created At"}},"type":"object","required":["id","amount
+_usd","transaction_type","description","created_at"],"title":"CreatorPayoutHistoryItem"},"CreatorPayouts":{"properties"
+:{"earnings_balance_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Earnings Balance 
+Usd"},"total_earned_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Total Earned 
+Usd"},"minimum_payout_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Minimum Payout 
+Usd"},"can_request_payout":{"type":"boolean","title":"Can Request Payout"},"payout_history":{"items":{"$ref":"#/compone
+nts/schemas/CreatorPayoutHistoryItem"},"type":"array","title":"Payout History"}},"type":"object","required":["earnings_
+balance_usd","total_earned_usd","minimum_payout_usd","can_request_payout","payout_history"],"title":"CreatorPayouts"},"
+CreatorReviewsSummary":{"properties":{"average_rating":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Average 
+Rating"},"review_count":{"type":"integer","title":"Review Count"},"reviews":{"items":{"$ref":"#/components/schemas/Skil
+lReview"},"type":"array","title":"Reviews"}},"type":"object","required":["average_rating","review_count","reviews"],"ti
+tle":"CreatorReviewsSummary"},"CreatorSkillItem":{"properties":{"id":{"type":"string","title":"Id"},"slug":{"type":"str
+ing","title":"Slug"},"name":{"type":"string","title":"Name"},"description":{"type":"string","title":"Description"},"cat
+egory":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Category"},"pack_slug":{"type":"string","title":"Pack 
+Slug"},"crew_config":{"additionalProperties":true,"type":"object","title":"Crew Config"},"capabilities":{"items":{"type
+":"string"},"type":"array","title":"Capabilities"},"price_usd_per_run":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*
+\\d*\\.?\\d*$","title":"Price Usd Per Run","default":"0"},"owner_id":{"type":"string","title":"Owner 
+Id"},"is_active":{"type":"boolean","title":"Is 
+Active","default":true},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"},"stats":{"$ref":"#/components/schemas/Cre
+atorSkillStats"}},"type":"object","required":["id","slug","name","description","pack_slug","owner_id","created_at","upd
+ated_at"],"title":"CreatorSkillItem"},"CreatorSkillStats":{"properties":{"total_runs":{"type":"integer","title":"Total 
+Runs","default":0},"total_earnings_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Total 
+Earnings Usd","default":"0"},"average_rating":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Average 
+Rating"},"review_count":{"type":"integer","title":"Review Count","default":0}},"type":"object","title":"CreatorSkillSta
+ts"},"CreatorSummary":{"properties":{"total_earnings_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$
+","title":"Total Earnings 
+Usd"},"earnings_balance_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Earnings Balance 
+Usd"},"total_runs":{"type":"integer","title":"Total Runs"},"active_skills":{"type":"integer","title":"Active 
+Skills"},"total_skills":{"type":"integer","title":"Total 
+Skills"},"average_rating":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Average 
+Rating"},"review_count":{"type":"integer","title":"Review Count"},"top_skill_this_month":{"anyOf":[{"$ref":"#/component
+s/schemas/CreatorTopSkill"},{"type":"null"}]},"recent_activity":{"items":{"$ref":"#/components/schemas/CreatorActivityI
+tem"},"type":"array","title":"Recent 
+Activity"},"minimum_payout_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Minimum Payout 
+Usd","default":"10"},"platform_fee_percent":{"type":"number","title":"Platform Fee Percent"}},"type":"object","required
+":["total_earnings_usd","earnings_balance_usd","total_runs","active_skills","total_skills","average_rating","review_cou
+nt","platform_fee_percent"],"title":"CreatorSummary"},"CreatorTopSkill":{"properties":{"skill_id":{"type":"string","tit
+le":"Skill Id"},"skill_name":{"type":"string","title":"Skill Name"},"runs":{"type":"integer","title":"Runs"},"earnings_
+usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Earnings Usd"}},"type":"object","required"
+:["skill_id","skill_name","runs","earnings_usd"],"title":"CreatorTopSkill"},"CustomTool":{"properties":{"name":{"type":
+"string","maxLength":120,"minLength":1,"pattern":"^[a-z][a-z0-9_]*$","title":"Name"},"description":{"type":"string","mi
+nLength":1,"title":"Description"},"tool_type":{"type":"string","enum":["http","mcp"],"title":"Tool Type"},"config":{"ad
+ditionalProperties":true,"type":"object","title":"Config"},"is_active":{"type":"boolean","title":"Is 
+Active","default":true},"id":{"type":"string","title":"Id"},"owner_id":{"type":"string","title":"Owner 
+Id"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["name","desc
+ription","tool_type","id","owner_id","created_at","updated_at"],"title":"CustomTool"},"CustomToolCreate":{"properties":
+{"name":{"type":"string","maxLength":120,"minLength":1,"pattern":"^[a-z][a-z0-9_]*$","title":"Name"},"description":{"ty
+pe":"string","minLength":1,"title":"Description"},"tool_type":{"type":"string","enum":["http","mcp"],"title":"Tool Type
+"},"config":{"additionalProperties":true,"type":"object","title":"Config"},"is_active":{"type":"boolean","title":"Is Ac
+tive","default":true}},"type":"object","required":["name","description","tool_type"],"title":"CustomToolCreate","descri
+ption":"Payload for registering a custom tool."},"CustomToolUpdate":{"properties":{"description":{"anyOf":[{"type":"str
+ing","minLength":1},{"type":"null"}],"title":"Description"},"config":{"anyOf":[{"additionalProperties":true,"type":"obj
+ect"},{"type":"null"}],"title":"Config"},"is_active":{"anyOf":[{"type":"boolean"},{"type":"null"}],"title":"Is Active"}
+},"type":"object","title":"CustomToolUpdate"},"EarningsSummary":{"properties":{"earnings_balance_usd":{"type":"string",
+"pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Earnings Balance 
+Usd"},"total_earned_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Total Earned 
+Usd"},"platform_fee_percent":{"type":"number","title":"Platform Fee 
+Percent"},"recent_earnings":{"items":{"$ref":"#/components/schemas/CreatorEarning"},"type":"array","title":"Recent Earn
+ings"}},"type":"object","required":["earnings_balance_usd","total_earned_usd","platform_fee_percent","recent_earnings"]
+,"title":"EarningsSummary"},"EstimateRequest":{"properties":{"workflow_type":{"type":"string","enum":["single_agent","m
+ulti_agent","marketplace_run","expert_skill"],"title":"Workflow 
+Type","default":"single_agent"},"agent_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Agent Id"},"agents":{"
+anyOf":[{"items":{"type":"string"},"type":"array"},{"type":"null"}],"title":"Agents"},"expert_skill_id":{"anyOf":[{"typ
+e":"string"},{"type":"null"}],"title":"Expert Skill Id"}},"type":"object","title":"EstimateRequest"},"ExpertSkill":{"pr
+operties":{"id":{"type":"string","title":"Id"},"slug":{"type":"string","title":"Slug"},"name":{"type":"string","title":
+"Name"},"description":{"type":"string","title":"Description"},"category":{"anyOf":[{"type":"string"},{"type":"null"}],"
+title":"Category"},"pack_slug":{"type":"string","title":"Pack 
+Slug"},"crew_config":{"additionalProperties":true,"type":"object","title":"Crew Config"},"capabilities":{"items":{"type
+":"string"},"type":"array","title":"Capabilities"},"price_usd_per_run":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*
+\\d*\\.?\\d*$","title":"Price Usd Per Run","default":"0"},"owner_id":{"type":"string","title":"Owner 
+Id"},"is_active":{"type":"boolean","title":"Is 
+Active","default":true},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["id","slug",
+"name","description","pack_slug","owner_id","created_at","updated_at"],"title":"ExpertSkill"},"ExpertSkillCreate":{"pro
+perties":{"name":{"type":"string","maxLength":200,"minLength":1,"title":"Name"},"slug":{"type":"string","maxLength":120
+,"minLength":1,"pattern":"^[a-z][a-z0-9-]*$","title":"Slug"},"description":{"type":"string","minLength":1,"title":"Desc
+ription"},"category":{"anyOf":[{"type":"string","maxLength":80},{"type":"null"}],"title":"Category"},"pack_slug":{"type
+":"string","maxLength":120,"title":"Pack Slug","default":"custom"},"price_usd_per_run":{"anyOf":[{"type":"number","mini
+mum":0.0},{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"}],"title":"Price Usd Per Run","default":"0"},"
+capabilities":{"items":{"type":"string"},"type":"array","title":"Capabilities"}},"type":"object","required":["name","sl
+ug","description"],"title":"ExpertSkillCreate"},"ExpertSkillDetail":{"properties":{"id":{"type":"string","title":"Id"},
+"slug":{"type":"string","title":"Slug"},"name":{"type":"string","title":"Name"},"description":{"type":"string","title":
+"Description"},"category":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Category"},"pack_slug":{"type":"string"
+,"title":"Pack Slug"},"crew_config":{"additionalProperties":true,"type":"object","title":"Crew Config"},"capabilities":
+{"items":{"type":"string"},"type":"array","title":"Capabilities"},"price_usd_per_run":{"type":"string","pattern":"^(?!^
+[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Price Usd Per Run","default":"0"},"owner_id":{"type":"string","title":"Owner 
+Id"},"is_active":{"type":"boolean","title":"Is 
+Active","default":true},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated 
+At"},"skill_preview":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Skill 
+Preview"},"reference_count":{"type":"integer","title":"Reference 
+Count","default":0},"owner_name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Owner 
+Name"},"pipeline_steps":{"items":{"$ref":"#/components/schemas/PipelineStepInfo"},"type":"array","title":"Pipeline Step
+s"}},"type":"object","required":["id","slug","name","description","pack_slug","owner_id","created_at","updated_at"],"ti
+tle":"ExpertSkillDetail"},"ExpertSkillUpdate":{"properties":{"name":{"anyOf":[{"type":"string","maxLength":200,"minLeng
+th":1},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string","minLength":1},{"type":"null"}],"title
+":"Description"},"category":{"anyOf":[{"type":"string","maxLength":80},{"type":"null"}],"title":"Category"},"price_usd_
+per_run":{"anyOf":[{"type":"number","minimum":0.0},{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"},{"ty
+pe":"null"}],"title":"Price Usd Per Run"},"is_active":{"anyOf":[{"type":"boolean"},{"type":"null"}],"title":"Is Active"
+},"capabilities":{"anyOf":[{"items":{"type":"string"},"type":"array"},{"type":"null"}],"title":"Capabilities"}},"type":
+"object","title":"ExpertSkillUpdate"},"HTTPValidationError":{"properties":{"detail":{"items":{"$ref":"#/components/sche
+mas/ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"},"MCPServer":{"pr
+operties":{"name":{"type":"string","maxLength":120,"minLength":1,"pattern":"^[a-z][a-z0-9_-]*$","title":"Name"},"descri
+ption":{"type":"string","minLength":1,"title":"Description"},"transport":{"type":"string","enum":["sse","stdio","http"]
+,"title":"Transport"},"config":{"additionalProperties":true,"type":"object","title":"Config"},"is_active":{"type":"bool
+ean","title":"Is 
+Active","default":true},"id":{"type":"string","title":"Id"},"owner_id":{"type":"string","title":"Owner 
+Id"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["name","desc
+ription","transport","id","owner_id","created_at","updated_at"],"title":"MCPServer"},"MCPServerCreate":{"properties":{"
+name":{"type":"string","maxLength":120,"minLength":1,"pattern":"^[a-z][a-z0-9_-]*$","title":"Name"},"description":{"typ
+e":"string","minLength":1,"title":"Description"},"transport":{"type":"string","enum":["sse","stdio","http"],"title":"Tr
+ansport"},"config":{"additionalProperties":true,"type":"object","title":"Config"},"is_active":{"type":"boolean","title"
+:"Is Active","default":true}},"type":"object","required":["name","description","transport"],"title":"MCPServerCreate","
+description":"Payload for registering an MCP server."},"MCPServerUpdate":{"properties":{"description":{"anyOf":[{"type"
+:"string","minLength":1},{"type":"null"}],"title":"Description"},"transport":{"anyOf":[{"type":"string","enum":["sse","
+stdio","http"]},{"type":"null"}],"title":"Transport"},"config":{"anyOf":[{"additionalProperties":true,"type":"object"},
+{"type":"null"}],"title":"Config"},"is_active":{"anyOf":[{"type":"boolean"},{"type":"null"}],"title":"Is Active"}},"typ
+e":"object","title":"MCPServerUpdate"},"MCPTool":{"properties":{"id":{"type":"string","title":"Id"},"mcp_server_id":{"t
+ype":"string","title":"Mcp Server Id"},"tool_name":{"type":"string","title":"Tool 
+Name"},"qualified_name":{"type":"string","title":"Qualified Name"},"description":{"type":"string","title":"Description"
+},"input_schema":{"additionalProperties":true,"type":"object","title":"Input 
+Schema"},"is_active":{"type":"boolean","title":"Is 
+Active"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["id","mcp_se
+rver_id","tool_name","qualified_name","description","input_schema","is_active","created_at","updated_at"],"title":"MCPT
+ool"},"MarkNotificationsReadRequest":{"properties":{"ids":{"items":{"type":"string"},"type":"array","title":"Ids"}},"ty
+pe":"object","title":"MarkNotificationsReadRequest"},"NotificationBadge":{"properties":{"unread_count":{"type":"integer
+","title":"Unread Count"}},"type":"object","required":["unread_count"],"title":"NotificationBadge"},"NotificationEvent"
+:{"properties":{"id":{"type":"string","title":"Id"},"event_type":{"type":"string","title":"Event Type"},"title":{"type"
+:"string","title":"Title"},"body":{"type":"string","title":"Body"},"payload":{"additionalProperties":true,"type":"objec
+t","title":"Payload"},"is_read":{"type":"boolean","title":"Is 
+Read"},"created_at":{"type":"string","format":"date-time","title":"Created At"}},"type":"object","required":["id","even
+t_type","title","body","is_read","created_at"],"title":"NotificationEvent"},"NotificationListResponse":{"properties":{"
+items":{"items":{"$ref":"#/components/schemas/NotificationEvent"},"type":"array","title":"Items"},"unread_count":{"type
+":"integer","title":"Unread Count"}},"type":"object","required":["items","unread_count"],"title":"NotificationListRespo
+nse"},"PipelineStepInfo":{"properties":{"id":{"type":"string","title":"Id"},"title":{"type":"string","title":"Title"},"
+step_type":{"type":"string","title":"Step 
+Type"},"tool_or_model":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Tool Or Model"}},"type":"object","required
+":["id","title","step_type"],"title":"PipelineStepInfo"},"PortfolioItem":{"properties":{"id":{"type":"string","title":"
+Id"},"agent_id":{"type":"string","title":"Agent Id"},"workflow_id":{"type":"string","title":"Workflow Id"},"title":{"ty
+pe":"string","title":"Title"},"summary":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Summary"},"task_preview":
+{"type":"string","title":"Task Preview"},"output_preview":{"type":"string","title":"Output 
+Preview"},"workflow_type":{"type":"string","title":"Workflow Type"},"is_public":{"type":"boolean","title":"Is 
+Public"},"sort_order":{"type":"integer","title":"Sort 
+Order"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["id","agent_
+id","workflow_id","title","task_preview","output_preview","workflow_type","is_public","sort_order","created_at","update
+d_at"],"title":"PortfolioItem"},"PortfolioItemCreate":{"properties":{"workflow_id":{"type":"string","minLength":1,"titl
+e":"Workflow Id"},"title":{"anyOf":[{"type":"string","maxLength":200},{"type":"null"}],"title":"Title"},"summary":{"any
+Of":[{"type":"string","maxLength":2000},{"type":"null"}],"title":"Summary"},"is_public":{"type":"boolean","title":"Is P
+ublic","default":true}},"type":"object","required":["workflow_id"],"title":"PortfolioItemCreate"},"PortfolioItemUpdate"
+:{"properties":{"title":{"anyOf":[{"type":"string","maxLength":200,"minLength":1},{"type":"null"}],"title":"Title"},"su
+mmary":{"anyOf":[{"type":"string","maxLength":2000},{"type":"null"}],"title":"Summary"},"is_public":{"anyOf":[{"type":"
+boolean"},{"type":"null"}],"title":"Is 
+Public"},"sort_order":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Sort Order"}},"type":"object","title":"Por
+tfolioItemUpdate"},"QuickReply":{"properties":{"id":{"type":"string","title":"Id"},"title":{"type":"string","title":"Ti
+tle"},"body":{"type":"string","title":"Body"},"sort_order":{"type":"integer","title":"Sort 
+Order"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["id","title"
+,"body","sort_order","created_at","updated_at"],"title":"QuickReply"},"QuickReplyCreate":{"properties":{"title":{"type"
+:"string","maxLength":120,"minLength":1,"title":"Title"},"body":{"type":"string","minLength":1,"title":"Body"}},"type":
+"object","required":["title","body"],"title":"QuickReplyCreate"},"QuickReplyUpdate":{"properties":{"title":{"anyOf":[{"
+type":"string","maxLength":120,"minLength":1},{"type":"null"}],"title":"Title"},"body":{"anyOf":[{"type":"string","minL
+ength":1},{"type":"null"}],"title":"Body"},"sort_order":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Sort Ord
+er"}},"type":"object","title":"QuickReplyUpdate"},"ReviewAttachment":{"properties":{"id":{"type":"string","title":"Id"}
+,"file_name":{"type":"string","title":"File Name"},"content_type":{"type":"string","title":"Content 
+Type"},"file_size":{"type":"integer","title":"File Size"},"download_url":{"type":"string","title":"Download 
+Url"},"created_at":{"type":"string","format":"date-time","title":"Created At"}},"type":"object","required":["id","file_
+name","content_type","file_size","download_url","created_at"],"title":"ReviewAttachment"},"ReviewInboxItem":{"propertie
+s":{"id":{"type":"string","title":"Id"},"expert_skill_id":{"type":"string","title":"Expert Skill 
+Id"},"skill_name":{"type":"string","title":"Skill Name"},"buyer_id":{"type":"string","title":"Buyer 
+Id"},"buyer_name":{"type":"string","title":"Buyer 
+Name"},"buyer_avatar_url":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Buyer Avatar 
+Url"},"rating":{"type":"integer","title":"Rating"},"comment_preview":{"type":"string","title":"Comment 
+Preview"},"status":{"type":"string","title":"Status"},"is_read":{"type":"boolean","title":"Is 
+Read"},"workflow_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Workflow 
+Id"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated 
+At"},"first_response_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"First Response 
+At"},"response_time_hours":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Response Time 
+Hours"},"message_count":{"type":"integer","title":"Message Count","default":1}},"type":"object","required":["id","exper
+t_skill_id","skill_name","buyer_id","buyer_name","rating","comment_preview","status","is_read","workflow_id","created_a
+t","updated_at"],"title":"ReviewInboxItem"},"ReviewInboxResponse":{"properties":{"stats":{"$ref":"#/components/schemas/
+ReviewInboxStats"},"items":{"items":{"$ref":"#/components/schemas/ReviewInboxItem"},"type":"array","title":"Items"}},"t
+ype":"object","required":["stats","items"],"title":"ReviewInboxResponse"},"ReviewInboxStats":{"properties":{"average_ra
+ting":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Average 
+Rating"},"total_reviews":{"type":"integer","title":"Total Reviews"},"unread_count":{"type":"integer","title":"Unread 
+Count"},"response_rate_percent":{"type":"number","title":"Response Rate 
+Percent"},"average_response_time_hours":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Average Response Time 
+Hours"},"average_response_time_label":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Average Response Time Label
+"}},"type":"object","required":["average_rating","total_reviews","unread_count","response_rate_percent","average_respon
+se_time_hours"],"title":"ReviewInboxStats"},"ReviewNotificationBadge":{"properties":{"unread_count":{"type":"integer","
+title":"Unread Count"},"notify_mode":{"type":"string","title":"Notify Mode"}},"type":"object","required":["unread_count
+","notify_mode"],"title":"ReviewNotificationBadge"},"ReviewNotificationSettings":{"properties":{"notify_mode":{"type":"
+string","title":"Notify Mode","default":"all"}},"type":"object","title":"ReviewNotificationSettings"},"ReviewThread":{"
+properties":{"review_id":{"type":"string","title":"Review Id"},"expert_skill_id":{"type":"string","title":"Expert 
+Skill Id"},"skill_name":{"type":"string","title":"Skill Name"},"buyer_id":{"type":"string","title":"Buyer 
+Id"},"buyer_name":{"type":"string","title":"Buyer Name"},"rating":{"type":"integer","title":"Rating"},"status":{"type":
+"string","title":"Status"},"messages":{"items":{"$ref":"#/components/schemas/ThreadMessage"},"type":"array","title":"Me
+ssages"},"first_response_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"First Response 
+At"},"resolved_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Resolved At"}},"type":"ob
+ject","required":["review_id","expert_skill_id","skill_name","buyer_id","buyer_name","rating","status","messages"],"tit
+le":"ReviewThread"},"SkillReview":{"properties":{"id":{"type":"string","title":"Id"},"expert_skill_id":{"type":"string"
+,"title":"Expert Skill Id"},"skill_name":{"type":"string","title":"Skill 
+Name"},"buyer_id":{"type":"string","title":"Buyer Id"},"buyer_name":{"type":"string","title":"Buyer Name"},"rating":{"t
+ype":"integer","title":"Rating"},"comment":{"type":"string","title":"Comment"},"workflow_id":{"anyOf":[{"type":"string"
+},{"type":"null"}],"title":"Workflow Id"},"created_at":{"type":"string","format":"date-time","title":"Created At"}},"ty
+pe":"object","required":["id","expert_skill_id","skill_name","buyer_id","buyer_name","rating","comment","workflow_id","
+created_at"],"title":"SkillReview"},"SkillShowcase":{"properties":{"id":{"type":"string","title":"Id"},"expert_skill_id
+":{"type":"string","title":"Expert Skill 
+Id"},"title":{"type":"string","title":"Title"},"site_name":{"type":"string","title":"Site 
+Name"},"site_url":{"type":"string","title":"Site Url"},"summary":{"type":"string","title":"Summary"},"metric_label":{"a
+nyOf":[{"type":"string"},{"type":"null"}],"title":"Metric 
+Label"},"metric_value":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Metric Value"},"highlights":{"items":{"typ
+e":"string"},"type":"array","title":"Highlights"},"sort_order":{"type":"integer","title":"Sort 
+Order","default":0},"is_featured":{"type":"boolean","title":"Is 
+Featured","default":false},"is_active":{"type":"boolean","title":"Is 
+Active","default":true},"workflow_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Workflow 
+Id"},"sample_output":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Sample Output"},"deliverables":{"items":{"ty
+pe":"string"},"type":"array","title":"Deliverables"},"stats":{"additionalProperties":{"type":"string"},"type":"object",
+"title":"Stats"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"},"skill":{"anyOf":[{"$ref":"#/components/s
+chemas/SkillShowcaseSkillSummary"},{"type":"null"}]}},"type":"object","required":["id","expert_skill_id","title","site_
+name","site_url","summary","created_at","updated_at"],"title":"SkillShowcase"},"SkillShowcaseSkillSummary":{"properties
+":{"id":{"type":"string","title":"Id"},"slug":{"type":"string","title":"Slug"},"name":{"type":"string","title":"Name"},
+"category":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Category"},"price_usd_per_run":{"type":"string","title
+":"Price Usd Per Run"}},"type":"object","required":["id","slug","name","price_usd_per_run"],"title":"SkillShowcaseSkill
+Summary"},"StripeCheckoutRequest":{"properties":{"amount_usd":{"anyOf":[{"type":"number","maximum":1000.0,"exclusiveMin
+imum":0.0},{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"}],"title":"Amount Usd"}},"type":"object","req
+uired":["amount_usd"],"title":"StripeCheckoutRequest"},"StripeCheckoutResponse":{"properties":{"checkout_url":{"type":"
+string","title":"Checkout Url"},"session_id":{"type":"string","title":"Session Id"}},"type":"object","required":["check
+out_url","session_id"],"title":"StripeCheckoutResponse"},"ThreadMessage":{"properties":{"id":{"type":"string","title":"
+Id"},"sender_id":{"type":"string","title":"Sender Id"},"sender_name":{"type":"string","title":"Sender 
+Name"},"sender_role":{"type":"string","title":"Sender Role"},"body":{"type":"string","title":"Body"},"attachments":{"it
+ems":{"$ref":"#/components/schemas/ReviewAttachment"},"type":"array","title":"Attachments"},"created_at":{"type":"strin
+g","format":"date-time","title":"Created At"},"is_initial_review":{"type":"boolean","title":"Is Initial Review","defaul
+t":false}},"type":"object","required":["id","sender_id","sender_name","sender_role","body","created_at"],"title":"Threa
+dMessage"},"Token":{"properties":{"access_token":{"type":"string","title":"Access 
+Token"},"token_type":{"type":"string","title":"Token Type","default":"bearer"}},"type":"object","required":["access_tok
+en"],"title":"Token"},"ToolResponse":{"properties":{"name":{"type":"string","title":"Name"},"description":{"type":"stri
+ng","title":"Description"},"source":{"type":"string","title":"Source"}},"type":"object","required":["name","description
+","source"],"title":"ToolResponse"},"TopUpRequest":{"properties":{"amount_usd":{"anyOf":[{"type":"number","maximum":100
+0.0,"exclusiveMinimum":0.0},{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"}],"title":"Amount Usd"}},"ty
+pe":"object","required":["amount_usd"],"title":"TopUpRequest"},"TransferEarningsRequest":{"properties":{"amount_usd":{"
+anyOf":[{"type":"number","exclusiveMinimum":0.0},{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"},{"type
+":"null"}],"title":"Amount Usd"}},"type":"object","title":"TransferEarningsRequest"},"User":{"properties":{"id":{"type"
+:"string","title":"Id"},"email":{"type":"string","title":"Email"},"full_name":{"type":"string","maxLength":120,"minLeng
+th":1,"title":"Full Name"},"role":{"type":"string","title":"Role"},"is_active":{"type":"boolean","title":"Is 
+Active"},"created_at":{"type":"string","format":"date-time","title":"Created 
+At"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["id","email"
+,"full_name","role","is_active","created_at","updated_at"],"title":"User"},"UserCreate":{"properties":{"email":{"type":
+"string","format":"email","title":"Email"},"full_name":{"type":"string","maxLength":120,"minLength":1,"title":"Full Nam
+e"},"password":{"type":"string","maxLength":128,"minLength":8,"title":"Password"}},"type":"object","required":["email",
+"full_name","password"],"title":"UserCreate"},"UserLogin":{"properties":{"email":{"type":"string","format":"email","tit
+le":"Email"},"password":{"type":"string","maxLength":128,"minLength":1,"title":"Password"}},"type":"object","required":
+["email","password"],"title":"UserLogin"},"ValidationError":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{
+"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string
+","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required"
+:["loc","msg","type"],"title":"ValidationError"},"Wallet":{"properties":{"user_id":{"type":"string","title":"User 
+Id"},"balance_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Balance 
+Usd"},"earnings_balance_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Earnings Balance 
+Usd"},"updated_at":{"type":"string","format":"date-time","title":"Updated At"}},"type":"object","required":["user_id","
+balance_usd","earnings_balance_usd","updated_at"],"title":"Wallet"},"WorkflowBilling":{"properties":{"workflow_id":{"ty
+pe":"string","title":"Workflow 
+Id"},"marketplace_cost_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Marketplace Cost 
+Usd"},"llm_cost_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Llm Cost 
+Usd"},"total_charged_usd":{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$","title":"Total Charged Usd"},"
+balance_after_usd":{"anyOf":[{"type":"string","pattern":"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"},{"type":"null"}],"title":"
+Balance After Usd"},"charged":{"type":"boolean","title":"Charged","default":false},"creator_payouts":{"items":{"$ref":"
+#/components/schemas/CreatorEarning"},"type":"array","title":"Creator Payouts"}},"type":"object","required":["workflow_
+id","marketplace_cost_usd","llm_cost_usd","total_charged_usd"],"title":"WorkflowBilling"},"WorkflowResumeRequest":{"pro
+perties":{"feedback":{"type":"string","minLength":1,"title":"Feedback","description":"Use 'approve' to accept the 
+draft or provide revision feedback"}},"type":"object","required":["feedback"],"title":"WorkflowResumeRequest"},"Workflo
+wReviewEligibility":{"properties":{"eligible":{"type":"boolean","title":"Eligible"},"reason":{"anyOf":[{"type":"string"
+},{"type":"null"}],"title":"Reason"},"workflow_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Workflow 
+Id"},"workflow_status":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Workflow 
+Status"},"expert_skill_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Expert Skill 
+Id"},"skill_name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Skill 
+Name"},"skill_slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Skill 
+Slug"},"already_reviewed":{"type":"boolean","title":"Already Reviewed","default":false},"existing_review":{"anyOf":[{"$
+ref":"#/components/schemas/BuyerReviewItem"},{"type":"null"}]}},"type":"object","required":["eligible"],"title":"Workfl
+owReviewEligibility"},"WorkflowRunRequest":{"properties":{"task_description":{"type":"string","minLength":1,"title":"Ta
+sk Description"},"workflow_type":{"type":"string","enum":["single_agent","multi_agent","marketplace_run","expert_skill"
+],"title":"Workflow Type","default":"single_agent"},"task_context":{"anyOf":[{"additionalProperties":true,"type":"objec
+t"},{"type":"null"}],"title":"Task Context"},"agent_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Agent 
+Id"},"agent_role":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Agent Role"},"agents":{"anyOf":[{"items":{"type
+":"string"},"type":"array"},{"type":"null"}],"title":"Agents","description":"Agent UUIDs for multi_agent 
+workflow"},"expert_skill_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Expert Skill 
+Id","description":"Expert skill UUID for expert_skill 
+workflow"},"require_human_approval":{"type":"boolean","title":"Require Human Approval","description":"Pause workflow 
+for human review before completion","default":false}},"type":"object","required":["task_description"],"title":"Workflow
+RunRequest"},"WorkflowRunResponse":{"properties":{"workflow_id":{"type":"string","title":"Workflow Id"},"status":{"type
+":"string","title":"Status"},"final_output":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Final 
+Output"},"total_tokens":{"type":"integer","title":"Total 
+Tokens","default":0},"total_cost_usd":{"type":"number","title":"Total Cost 
+Usd","default":0.0},"execution_time_seconds":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Execution Time 
+Seconds"},"error_message":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Error 
+Message"},"agent_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Agent 
+Id"},"agents_used":{"anyOf":[{"items":{"type":"string"},"type":"array"},{"type":"null"}],"title":"Agents Used"},"interm
+ediate_results":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Intermediate 
+Results"},"human_prompt":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Human 
+Prompt"},"workflow_type":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Workflow 
+Type"},"expert_skill_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Expert Skill Id"},"billing":{"anyOf":[{"
+$ref":"#/components/schemas/WorkflowBilling"},{"type":"null"}]}},"type":"object","required":["workflow_id","status"],"t
+itle":"WorkflowRunResponse"}},"securitySchemes":{"HTTPBearer":{"type":"http","scheme":"bearer"}}}}
+

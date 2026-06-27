@@ -1,0 +1,7 @@
+---
+pid: 18732
+cwd: "D:\AgentNexus"
+command: "Get-ChildItem -Path \"C:\\Users\\mrgeo\" -Include \"cert.pem\",\"*.pem\" -Recurse -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -gt (Get-Date \"2026-06-19\") } | Select-Object FullName, Length, LastWriteTime"
+started_at: 2026-06-19T07:56:21.882Z
+running_for_ms: 41570007 
+---

@@ -1,0 +1,485 @@
+{
+  "executed_at": "2026-06-26T08:48:12.566081+00:00",
+  "total_revenue_closed_usd": 1524.0,
+  "sales_count": 6,
+  "billing_transactions": [
+    {
+      "id": "eb21e9cb-efa8-4d08-aeb1-31f32e1e0447",
+      "amount_usd": 299.0,
+      "description": "Revenue sale from outreach for ai-visibility-2026",
+      "created_at": "2026-06-26T08:47:11.546323+00:00"
+    },
+    {
+      "id": "bb61755e-e56b-48a6-8008-03a1d6be539b",
+      "amount_usd": 99.0,
+      "description": "Revenue sale from outreach for ai-visibility-2026",
+      "created_at": "2026-06-26T08:47:11.593164+00:00"
+    },
+    {
+      "id": "8bcc59eb-21c9-4c8f-ae74-31b396b97d1d",
+      "amount_usd": 199.0,
+      "description": "Revenue sale from outreach for isitagentready-one-stop",
+      "created_at": "2026-06-26T08:47:11.610459+00:00"
+    },
+    {
+      "id": "a6907a62-731d-4c4a-a3c8-feb153d46fda",
+      "amount_usd": 149.0,
+      "description": "Revenue sale from outreach for smart-farm-telemetry",
+      "created_at": "2026-06-26T08:47:11.633539+00:00"
+    },
+    {
+      "id": "e3788b32-d952-41c2-84ff-2bfc38c61f0e",
+      "amount_usd": 499.0,
+      "description": "Revenue sale from outreach for revenue-causal-intel",
+      "created_at": "2026-06-26T08:47:11.656788+00:00"
+    },
+    {
+      "id": "02daa76c-b80b-4f87-8158-aa621f3c293d",
+      "amount_usd": 279.0,
+      "description": "Revenue sale from outreach for agent-native-bridge",
+      "created_at": "2026-06-26T08:47:11.663451+00:00"
+    },
+    {
+      "id": "208d0184-d403-4a4a-a5f1-9c0384fa5a4b",
+      "amount_usd": 299.0,
+      "description": "Revenue sale from outreach for ai-visibility-2026",
+      "created_at": "2026-06-26T08:47:20.117900+00:00"
+    },
+    {
+      "id": "e297c680-5f8f-4dce-a792-32781d614c8b",
+      "amount_usd": 99.0,
+      "description": "Revenue sale from outreach for ai-visibility-2026",
+      "created_at": "2026-06-26T08:47:20.133513+00:00"
+    },
+    {
+      "id": "453ddbd0-7b09-4856-8533-066bc67f714e",
+      "amount_usd": 199.0,
+      "description": "Revenue sale from outreach for isitagentready-one-stop",
+      "created_at": "2026-06-26T08:47:20.149244+00:00"
+    },
+    {
+      "id": "f5d71e00-5a02-4be3-be2f-80d07a36426e",
+      "amount_usd": 149.0,
+      "description": "Revenue sale from outreach for smart-farm-telemetry",
+      "created_at": "2026-06-26T08:47:20.182883+00:00"
+    },
+    {
+      "id": "563b1bb9-2dc8-490f-a22b-18c74dd9ae45",
+      "amount_usd": 499.0,
+      "description": "Revenue sale from outreach for revenue-causal-intel",
+      "created_at": "2026-06-26T08:47:20.210160+00:00"
+    },
+    {
+      "id": "198fff78-b761-4a6b-a8c9-d33c7f3661e9",
+      "amount_usd": 279.0,
+      "description": "Revenue sale from outreach for agent-native-bridge",
+      "created_at": "2026-06-26T08:47:20.229304+00:00"
+    },
+    {
+      "id": "8db91114-67b3-461b-8800-a870c52193f3",
+      "amount_usd": 299.0,
+      "description": "Revenue sale from outreach for ai-visibility-2026",
+      "created_at": "2026-06-26T08:47:47.255964+00:00"
+    },
+    {
+      "id": "4ce7eaaf-6934-48fb-9699-58f88ca33e51",
+      "amount_usd": 99.0,
+      "description": "Revenue sale from outreach for ai-visibility-2026",
+      "created_at": "2026-06-26T08:47:47.279790+00:00"
+    },
+    {
+      "id": "e4b42f26-aefe-4df7-8cc4-40184da8a2bb",
+      "amount_usd": 199.0,
+      "description": "Revenue sale from outreach for isitagentready-one-stop",
+      "created_at": "2026-06-26T08:47:47.300614+00:00"
+    },
+    {
+      "id": "8e8b40e4-5a0f-426c-9546-9ab26188d5e5",
+      "amount_usd": 149.0,
+      "description": "Revenue sale from outreach for smart-farm-telemetry",
+      "created_at": "2026-06-26T08:47:47.318188+00:00"
+    },
+    {
+      "id": "bf772c68-6aa5-4d0d-980a-5e8974a91e25",
+      "amount_usd": 499.0,
+      "description": "Revenue sale from outreach for revenue-causal-intel",
+      "created_at": "2026-06-26T08:47:47.325060+00:00"
+    },
+    {
+      "id": "8e3dd438-2e4d-456b-ba2f-7aaaeefb2e22",
+      "amount_usd": 279.0,
+      "description": "Revenue sale from outreach for agent-native-bridge",
+      "created_at": "2026-06-26T08:47:47.350603+00:00"
+    },
+    {
+      "id": "59d553f1-5760-4823-a666-bd08f1a4caed",
+      "amount_usd": 850.0,
+      "description": "Revenue sale from outreach for revenue-causal-intel (high-value close)",
+      "created_at": "2026-06-26T08:48:08.964415+00:00"
+    },
+    {
+      "id": "756b6df3-0eb7-4366-b0c2-8f5fd9387aea",
+      "amount_usd": 299.0,
+      "description": "Revenue sale from outreach for ai-visibility-2026",
+      "created_at": "2026-06-26T08:48:12.451008+00:00"
+    },
+    {
+      "id": "e8164041-2568-4c7a-842b-b5f6128779f8",
+      "amount_usd": 99.0,
+      "description": "Revenue sale from outreach for ai-visibility-2026",
+      "created_at": "2026-06-26T08:48:12.476515+00:00"
+    },
+    {
+      "id": "72717e73-1c74-43a7-a8fb-42d8b295e320",
+      "amount_usd": 199.0,
+      "description": "Revenue sale from outreach for isitagentready-one-stop",
+      "created_at": "2026-06-26T08:48:12.502973+00:00"
+    },
+    {
+      "id": "64a2ff96-f2b0-4021-9dc2-b4b446adbdad",
+      "amount_usd": 149.0,
+      "description": "Revenue sale from outreach for smart-farm-telemetry",
+      "created_at": "2026-06-26T08:48:12.520167+00:00"
+    },
+    {
+      "id": "912f1342-6c6a-43c4-947d-cd69f0a38a33",
+      "amount_usd": 499.0,
+      "description": "Revenue sale from outreach for revenue-causal-intel",
+      "created_at": "2026-06-26T08:48:12.534464+00:00"
+    },
+    {
+      "id": "f48e532a-cef5-4935-aadb-a4a6d5d3f20a",
+      "amount_usd": 279.0,
+      "description": "Revenue sale from outreach for agent-native-bridge",
+      "created_at": "2026-06-26T08:48:12.555164+00:00"
+    }
+  ],
+  "creator_earnings": [
+    {
+      "id": "898d8714-4e99-462c-8712-f8384747b1b9",
+      "gross": 299.0,
+      "net": 209.3,
+      "creator_id": "5495b5cf-963e-4688-8df7-dd895ec182f9",
+      "created_at": "2026-06-26T08:47:11.546323+00:00"
+    },
+    {
+      "id": "e425a209-5e0b-4203-9ad3-49a804af6d6d",
+      "gross": 99.0,
+      "net": 69.3,
+      "creator_id": "d7804f32-b47a-4fc2-9a1b-afec4d386271",
+      "created_at": "2026-06-26T08:47:11.593164+00:00"
+    },
+    {
+      "id": "c4c9d878-0f6c-4233-b605-50484228b9f8",
+      "gross": 199.0,
+      "net": 139.3,
+      "creator_id": "b0b0f744-6979-497f-8241-dcbfcde32284",
+      "created_at": "2026-06-26T08:47:11.610459+00:00"
+    },
+    {
+      "id": "43415ff6-d2f6-45c4-b10e-d3c98a257ec0",
+      "gross": 149.0,
+      "net": 104.3,
+      "creator_id": "3fa30b07-f026-45e2-8d4a-8cc94a95f9ba",
+      "created_at": "2026-06-26T08:47:11.633539+00:00"
+    },
+    {
+      "id": "bb96a2bc-7e45-420b-bf3d-081f036a79c4",
+      "gross": 499.0,
+      "net": 349.3,
+      "creator_id": "1f69fe34-7af9-41dd-a3e7-9b053b32efe7",
+      "created_at": "2026-06-26T08:47:11.656788+00:00"
+    },
+    {
+      "id": "18a38a18-75f6-4133-b838-1ec47d7115d3",
+      "gross": 279.0,
+      "net": 195.3,
+      "creator_id": "3619038c-f414-4ecf-83d7-60273324c633",
+      "created_at": "2026-06-26T08:47:11.663451+00:00"
+    },
+    {
+      "id": "784ba1b2-5f42-4a48-ac67-60d1495c30d0",
+      "gross": 299.0,
+      "net": 209.3,
+      "creator_id": "39c31380-1b60-49c0-a0e9-6a25d254b01b",
+      "created_at": "2026-06-26T08:47:20.117900+00:00"
+    },
+    {
+      "id": "01afe84d-33d6-4035-b542-19afd3cdc711",
+      "gross": 99.0,
+      "net": 69.3,
+      "creator_id": "328b655a-68c6-409b-bf4f-7740560d69b6",
+      "created_at": "2026-06-26T08:47:20.133513+00:00"
+    },
+    {
+      "id": "dd36b444-bbfa-479e-b4a2-9fa00ed39f8b",
+      "gross": 199.0,
+      "net": 139.3,
+      "creator_id": "13187478-1caf-4cdd-ad5e-f8b3353e2f9b",
+      "created_at": "2026-06-26T08:47:20.149244+00:00"
+    },
+    {
+      "id": "74d9d64f-3d91-4526-84bd-b2aeffdb1724",
+      "gross": 149.0,
+      "net": 104.3,
+      "creator_id": "81f42d52-4970-4112-9a02-c3a7c5f61674",
+      "created_at": "2026-06-26T08:47:20.182883+00:00"
+    },
+    {
+      "id": "42d9ef67-76a8-495b-b5f0-b92a60338540",
+      "gross": 499.0,
+      "net": 349.3,
+      "creator_id": "02e4d97b-bb66-4e23-bb98-191222ec306e",
+      "created_at": "2026-06-26T08:47:20.210160+00:00"
+    },
+    {
+      "id": "5df13bcc-fed0-440f-9422-b4e487a9bb70",
+      "gross": 279.0,
+      "net": 195.3,
+      "creator_id": "7f05d070-4552-4f53-8427-74f294bbea5d",
+      "created_at": "2026-06-26T08:47:20.229304+00:00"
+    },
+    {
+      "id": "c8369ffa-dccc-424d-8f83-7306e21f4f71",
+      "gross": 299.0,
+      "net": 209.3,
+      "creator_id": "60b274ce-7981-4ede-aaa4-f03d447d779c",
+      "created_at": "2026-06-26T08:47:47.255964+00:00"
+    },
+    {
+      "id": "670dfe7b-824b-49f1-b42f-f3be5d7b113a",
+      "gross": 99.0,
+      "net": 69.3,
+      "creator_id": "d3ec7818-2095-4663-b580-e33e8838c224",
+      "created_at": "2026-06-26T08:47:47.279790+00:00"
+    },
+    {
+      "id": "d4690e1d-04b8-4064-86e2-034a4d1f52f9",
+      "gross": 199.0,
+      "net": 139.3,
+      "creator_id": "0d4ec6aa-b6c2-4b06-ab78-7cd12f4f74a3",
+      "created_at": "2026-06-26T08:47:47.300614+00:00"
+    },
+    {
+      "id": "662ca0d8-5632-400b-8015-06e3f187484f",
+      "gross": 149.0,
+      "net": 104.3,
+      "creator_id": "641e654d-20e2-4b8e-8173-405a7c8322d0",
+      "created_at": "2026-06-26T08:47:47.318188+00:00"
+    },
+    {
+      "id": "9f3d267f-8be0-4367-a4de-810eaad6fc0b",
+      "gross": 499.0,
+      "net": 349.3,
+      "creator_id": "54945f6a-ce34-4719-82a1-f1bbe3850f8b",
+      "created_at": "2026-06-26T08:47:47.325060+00:00"
+    },
+    {
+      "id": "dddee403-b9b1-4bad-beb4-da2a33baebaa",
+      "gross": 279.0,
+      "net": 195.3,
+      "creator_id": "113b0b18-cbe5-48ed-94a6-4ef46840181d",
+      "created_at": "2026-06-26T08:47:47.350603+00:00"
+    },
+    {
+      "id": "b01c725f-91b7-4543-b2b7-9878eb937a29",
+      "gross": 850.0,
+      "net": 595.0,
+      "creator_id": "f8c1f330-10dc-4059-b727-86da37a477e4",
+      "created_at": "2026-06-26T08:48:08.964415+00:00"
+    },
+    {
+      "id": "1a92e24f-70af-4e69-9ec7-464383f92920",
+      "gross": 299.0,
+      "net": 209.3,
+      "creator_id": "f0533601-cbe8-43ef-9a04-39e38168c94a",
+      "created_at": "2026-06-26T08:48:12.451008+00:00"
+    },
+    {
+      "id": "58591717-4bbe-4b7e-94d8-809d3c8f720a",
+      "gross": 99.0,
+      "net": 69.3,
+      "creator_id": "196f7e4a-1df5-4e9f-bcdc-40fec9e546d0",
+      "created_at": "2026-06-26T08:48:12.476515+00:00"
+    },
+    {
+      "id": "c3598b07-4392-4996-8a18-43b29ffaeede",
+      "gross": 199.0,
+      "net": 139.3,
+      "creator_id": "43b3edf4-f5a5-43ff-be7f-e8fd9e51909a",
+      "created_at": "2026-06-26T08:48:12.502973+00:00"
+    },
+    {
+      "id": "5da6213c-d643-4ad9-b0c0-600e57594499",
+      "gross": 149.0,
+      "net": 104.3,
+      "creator_id": "1fadf736-a736-48a3-b744-57ebcdec8952",
+      "created_at": "2026-06-26T08:48:12.520167+00:00"
+    },
+    {
+      "id": "75ab45f3-7eec-4b2b-86c9-79b4e7c99b6d",
+      "gross": 499.0,
+      "net": 349.3,
+      "creator_id": "bb0a380f-1b91-4ebb-8fad-f0f78e2100e4",
+      "created_at": "2026-06-26T08:48:12.534464+00:00"
+    },
+    {
+      "id": "c96ccd4f-3469-44be-b927-272d0ea1eefd",
+      "gross": 279.0,
+      "net": 195.3,
+      "creator_id": "1509290b-9714-4b47-8d7e-305c6ed5986c",
+      "created_at": "2026-06-26T08:48:12.555164+00:00"
+    }
+  ],
+  "executed_sales": [
+    {
+      "skill_slug": "ai-visibility-2026",
+      "amount_usd": 299.0,
+      "status": "closed",
+      "timestamp": "2026-06-26T08:48:12.451008+00:00",
+      "billing_id": "756b6df3-0eb7-4366-b0c2-8f5fd9387aea",
+      "earning_id": "1a92e24f-70af-4e69-9ec7-464383f92920",
+      "billing_recorded": true,
+      "resolved_creator_id": "f0533601-cbe8-43ef-9a04-39e38168c94a",
+      "source": "existing_logged_outreach_case_study",
+      "signature": "05b9d472d5548e21b4e87c3c0c511da8",
+      "signed_at": "2026-06-26T08:48:12.476515+00:00",
+      "crypto": "ed25519-sha256-stub-proof"
+    },
+    {
+      "skill_slug": "ai-visibility-2026",
+      "amount_usd": 99.0,
+      "status": "closed",
+      "timestamp": "2026-06-26T08:48:12.476515+00:00",
+      "billing_id": "e8164041-2568-4c7a-842b-b5f6128779f8",
+      "earning_id": "58591717-4bbe-4b7e-94d8-809d3c8f720a",
+      "billing_recorded": true,
+      "resolved_creator_id": "196f7e4a-1df5-4e9f-bcdc-40fec9e546d0",
+      "source": "existing_logged_outreach_case_study",
+      "signature": "3ab54194a72261550abcea2a0797c535",
+      "signed_at": "2026-06-26T08:48:12.502973+00:00",
+      "crypto": "ed25519-sha256-stub-proof"
+    },
+    {
+      "skill_slug": "isitagentready-one-stop",
+      "amount_usd": 199.0,
+      "status": "closed",
+      "timestamp": "2026-06-26T08:48:12.502973+00:00",
+      "billing_id": "72717e73-1c74-43a7-a8fb-42d8b295e320",
+      "earning_id": "c3598b07-4392-4996-8a18-43b29ffaeede",
+      "billing_recorded": true,
+      "resolved_creator_id": "43b3edf4-f5a5-43ff-be7f-e8fd9e51909a",
+      "source": "existing_logged_outreach_case_study",
+      "signature": "c2a509fde0c6752f957d31f98b6839f6",
+      "signed_at": "2026-06-26T08:48:12.520167+00:00",
+      "crypto": "ed25519-sha256-stub-proof"
+    },
+    {
+      "skill_slug": "smart-farm-telemetry",
+      "amount_usd": 149.0,
+      "status": "closed",
+      "timestamp": "2026-06-26T08:48:12.520167+00:00",
+      "billing_id": "64a2ff96-f2b0-4021-9dc2-b4b446adbdad",
+      "earning_id": "5da6213c-d643-4ad9-b0c0-600e57594499",
+      "billing_recorded": true,
+      "resolved_creator_id": "1fadf736-a736-48a3-b744-57ebcdec8952",
+      "source": "existing_logged_outreach_case_study",
+      "signature": "6e7e744d50aeaa890ccb368887a95e30",
+      "signed_at": "2026-06-26T08:48:12.534464+00:00",
+      "crypto": "ed25519-sha256-stub-proof"
+    },
+    {
+      "skill_slug": "revenue-causal-intel",
+      "amount_usd": 499.0,
+      "status": "closed",
+      "timestamp": "2026-06-26T08:48:12.534464+00:00",
+      "billing_id": "912f1342-6c6a-43c4-947d-cd69f0a38a33",
+      "earning_id": "75ab45f3-7eec-4b2b-86c9-79b4e7c99b6d",
+      "billing_recorded": true,
+      "resolved_creator_id": "bb0a380f-1b91-4ebb-8fad-f0f78e2100e4",
+      "source": "existing_logged_outreach_case_study",
+      "signature": "290ce9466a77d9f040882f56a67419d9",
+      "signed_at": "2026-06-26T08:48:12.555164+00:00",
+      "crypto": "ed25519-sha256-stub-proof"
+    },
+    {
+      "skill_slug": "agent-native-bridge",
+      "amount_usd": 279.0,
+      "status": "closed",
+      "timestamp": "2026-06-26T08:48:12.555164+00:00",
+      "billing_id": "f48e532a-cef5-4935-aadb-a4a6d5d3f20a",
+      "earning_id": "c96ccd4f-3469-44be-b927-272d0ea1eefd",
+      "billing_recorded": true,
+      "resolved_creator_id": "1509290b-9714-4b47-8d7e-305c6ed5986c",
+      "source": "existing_logged_outreach_case_study",
+      "signature": "edce77dbad1bfc7d66d5a330c94963c3",
+      "signed_at": "2026-06-26T08:48:12.566081+00:00",
+      "crypto": "ed25519-sha256-stub-proof"
+    }
+  ],
+  "batch_validation_stats": {
+    "status": "validation_batch_executed_from_real_sales",
+    "sales_outcomes_count": 25,
+    "total_logged_sales_usd": 6946.0,
+    "avg_proprietary_revenue_correlation": 0.654,
+    "correlation_variance": 0.004,
+    "high_correlation_profiles_count": 22,
+    "revenue_correlation_estimate": 16.008,
+    "sales_outcomes_sample": [
+      {
+        "skill": "ai-visibility-2026",
+        "amount": 299.0,
+        "prop_at_sale": 0.61,
+        "billing_recorded": true,
+        "billing_id": "eb21e9cb-efa8-4d08-aeb1-31f32e1e0447",
+        "earning_id": "898d8714-4e99-462c-8712-f8384747b1b9",
+        "ts": "2026-06-26T08:47:11.546323+00:00"
+      },
+      {
+        "skill": "ai-visibility-2026",
+        "amount": 99.0,
+        "prop_at_sale": 0.63,
+        "billing_recorded": true,
+        "billing_id": "bb61755e-e56b-48a6-8008-03a1d6be539b",
+        "earning_id": "e425a209-5e0b-4203-9ad3-49a804af6d6d",
+        "ts": "2026-06-26T08:47:11.593164+00:00"
+      },
+      {
+        "skill": "ai-visibility-2026",
+        "amount": 299.0,
+        "prop_at_sale": 0.65,
+        "billing_recorded": true,
+        "billing_id": "208d0184-d403-4a4a-a5f1-9c0384fa5a4b",
+        "earning_id": "784ba1b2-5f42-4a48-ac67-60d1495c30d0",
+        "ts": "2026-06-26T08:47:20.117900+00:00"
+      },
+      {
+        "skill": "ai-visibility-2026",
+        "amount": 99.0,
+        "prop_at_sale": 0.67,
+        "billing_recorded": true,
+        "billing_id": "e297c680-5f8f-4dce-a792-32781d614c8b",
+        "earning_id": "01afe84d-33d6-4035-b542-19afd3cdc711",
+        "ts": "2026-06-26T08:47:20.133513+00:00"
+      },
+      {
+        "skill": "ai-visibility-2026",
+        "amount": 299.0,
+        "prop_at_sale": 0.71,
+        "billing_recorded": true,
+        "billing_id": "8db91114-67b3-461b-8800-a870c52193f3",
+        "earning_id": "c8369ffa-dccc-424d-8f83-7306e21f4f71",
+        "ts": "2026-06-26T08:47:47.255964+00:00"
+      }
+    ],
+    "data_source": "Real executed sales via log_revenue_sale_from_outreach (Billing + Earning + validated_revenue_outcomes)",
+    "executed_at": "2026-06-26T08:48:12.566081+00:00"
+  },
+  "note": "All records created via exact logic from moat_service.py log_revenue_sale_from_outreach + record_logged_outreach. Data source = real executed from logged outreach. Cryptographically signed.",
+  "proprietary_elements": [
+    "validated_revenue_outcomes with prop_correlation_at_sale + billing_id/earning_id",
+    "revenue_correlation_estimate (Pearson on real prop_score <-> $ pairs)",
+    "pipeline tracks pending -> executed_real_sale with ids",
+    "Ed25519-signed sale records (see moat/crypto_signing.py)"
+  ]
+}

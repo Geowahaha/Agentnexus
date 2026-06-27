@@ -1,0 +1,4 @@
+interface:
+  display_name: "IsItAgentReady One Stop"
+  short_description: "Audit, implement, deploy, and validate Level 5/100% agent-readiness, including commerce and Web Bot Auth."
+  default_prompt: "Use this skill to implement all fixable isitagentready.com checks for the current website, including discovery files, Link headers, Markdown negotiation, Auth.md/OAuth, MCP/A2A/skills, DNS-AID, x402/MPP/UCP/ACP/AP2 commerce, and Web Bot Auth. Deploy, rescan live, use DNSSEC reset-once only when needed, leave DNSSEC enabled, and report any parent DS/registrar blocker honestly."

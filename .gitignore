@@ -1,0 +1,15 @@
+node_modules/
+.dev.vars
+.wrangler/
+dist/
+backend/.venv/
+backend/data/
+.env
+.env.*
+!.env.example
+backend/.env
+.production/
+cloudflare/tunnel/*-credentials*.json
+*.pyc
+__pycache__/
+.DS_Store

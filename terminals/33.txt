@@ -1,0 +1,17 @@
+---
+pid: 34304
+cwd: "D:\AgentNexus"
+command: "cd D:\\successcasting.com; npx next start -p 3456"
+started_at: 2026-06-18T12:37:08.937Z
+running_for_ms: 64745006 
+---
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3456
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3456)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3456
+}

@@ -1,0 +1,12 @@
+---
+pid: 18128
+cwd: "D:\AgentNexus"
+command: "$sshKey = \"$env:USERPROFILE\\.ssh\\ssh-key-2026-03-21_Oracle_Geomonkey.key\"
+$patch = \"D:\\AgentNexus\\.production\\agentnexus-env-patch.env\"
+scp -i $sshKey -o BatchMode=yes $patch root@43.128.75.149:/tmp/agentnexus-env-patch.env
+ssh -i $sshKey -o BatchMode=yes root@43.128.75.149 \"set -euo pipefail; for key in GITHUB_TOKEN CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID; do if grep -q \\\"^\\${key}=\\\" /opt/agentnexus/.env 2>/dev/null; then grep -v \\\"^\\${key}=\\\" /opt/agentnexus/.env > /tmp/agentnexus.env.tmp; mv /tmp/agentnexus.env.tmp /opt/agentnexus/.env; fi; done; cat /tmp/agentnexus-env-patch.env >> /opt/agentnexus/.env; rm -f /tmp/agentnexus-env-patch.env; cd /opt/agentnexus && docker-compose -f docker-compose.prod.yml up -d --force-recreate api; grep -E '^(GITHUB_TOKEN|CLOUDFLARE_API_TOKEN|CLOUDFLARE_ACCOUNT_ID|GIT_TOKEN)=' /opt/agentnexus/.env | sed 's/=.*/=***SET***/'\""
+started_at: 2026-06-21T15:51:41.868Z
+running_for_ms: 80550001 
+---
+C:\WINDOWS\System32\OpenSSH\scp.exe: stat local "D:/AgentNexus/.production/agentnexus-env-patch.env": No such file or directory
+client_loop: send disconnect: Connection reset

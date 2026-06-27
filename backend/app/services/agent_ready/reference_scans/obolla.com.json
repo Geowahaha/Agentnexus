@@ -1,0 +1,460 @@
+{
+  "url": "https://obolla.com/",
+  "overall": 52,
+  "grade": "F",
+  "summary": "เว็บไซต์นี้มีปัญหาหลายประการ รวมถึงการขาดเนื้อหาสาระ การไม่มีแท็ก H1 การไม่มี schema types และการไม่มีรูปภาพสำหรับ Open Graph // This website has several issues, including lack of substantive content, missing H1 tag, missing schema types, and missing Open Graph image.",
+  "categories": [
+    {
+      "name": "Technical SEO (Google 2026)",
+      "score": 51,
+      "grade": "F",
+      "findings": [
+        {
+          "check": "H1 heading",
+          "status": "fail",
+          "severity": "medium",
+          "detail": "ไม่มีแท็ก H1 ในหน้าเว็บไซต์",
+          "fix": "เพิ่มแท็ก H1 ที่อธิบายเนื้อหาของหน้าเว็บไซต์"
+        },
+        {
+          "check": "Canonical URL",
+          "status": "fail",
+          "severity": "low",
+          "detail": "ไม่มีแท็ก canonical ในหน้าเว็บไซต์",
+          "fix": "เพิ่มแท็ก canonical ที่ชี้ไปที่ URL ของหน้าเว็บไซต์"
+        },
+        {
+          "check": "Structured data (JSON-LD)",
+          "status": "fail",
+          "severity": "high",
+          "detail": "ไม่มี JSON-LD ในหน้าเว็บไซต์",
+          "fix": "เพิ่ม JSON-LD ที่อธิบายเนื้อหาของหน้าเว็บไซต์"
+        },
+        {
+          "check": "Substantive content (>=400 words)",
+          "status": "fail",
+          "severity": "critical",
+          "detail": "ไม่มีเนื้อหาสาระในหน้าเว็บไซต์",
+          "fix": "เพิ่มเนื้อหาสาระที่มีคุณภาพและความยาวเหมาะสม"
+        }
+      ]
+    },
+    {
+      "name": "AI Search / GEO-AEO",
+      "score": 12,
+      "grade": "F",
+      "findings": [
+        {
+          "check": "Depth for AI citation (>=600 words)",
+          "status": "fail",
+          "severity": "critical",
+          "detail": "ไม่มีเนื้อหาสาระในหน้าเว็บไซต์",
+          "fix": "เพิ่มเนื้อหาสาระที่มีคุณภาพและความยาวเหมาะสม"
+        },
+        {
+          "check": "FAQ / question-style content",
+          "status": "fail",
+          "severity": "high",
+          "detail": "ไม่มีเนื้อหาสไตล์ FAQ ในหน้าเว็บไซต์",
+          "fix": "เพิ่มเนื้อหาสไตล์ FAQ ที่ช่วยให้ผู้ใช้เข้าใจเนื้อหาของหน้าเว็บไซต์"
+        },
+        {
+          "check": "Schema types present",
+          "status": "fail",
+          "severity": "high",
+          "detail": "ไม่มี schema types ในหน้าเว็บไซต์",
+          "fix": "เพิ่ม schema types ที่อธิบายเนื้อหาของหน้าเว็บไซต์"
+        }
+      ]
+    },
+    {
+      "name": "AI Crawler Access",
+      "score": 88,
+      "grade": "B",
+      "findings": [
+        {
+          "check": "Crawlable content present",
+          "status": "fail",
+          "severity": "medium",
+          "detail": "ไม่มีเนื้อหาสาระในหน้าเว็บไซต์",
+          "fix": "เพิ่มเนื้อหาสาระที่มีคุณภาพและความยาวเหมาะสม"
+        }
+      ]
+    },
+    {
+      "name": "Social Sharing & Open Graph",
+      "score": 50,
+      "grade": "F",
+      "findings": [
+        {
+          "check": "og:image",
+          "status": "fail",
+          "severity": "high",
+          "detail": "ไม่มีรูปภาพสำหรับ Open Graph",
+          "fix": "เพิ่มรูปภาพที่อธิบายเนื้อหาของหน้าเว็บไซต์"
+        },
+        {
+          "check": "Twitter card",
+          "status": "fail",
+          "severity": "medium",
+          "detail": "ไม่มี Twitter card ในหน้าเว็บไซต์",
+          "fix": "เพิ่ม Twitter card ที่ช่วยให้ผู้ใช้เข้าใจเนื้อหาของหน้าเว็บไซต์"
+        }
+      ]
+    }
+  ],
+  "footprint": {
+    "summary": "เว็บไซต์นี้มีปัญหาหลายประการ รวมถึงการขาดเนื้อหาสาระ การไม่มีแท็ก H1 การไม่มี schema types และการไม่มีรูปภาพสำหรับ Open Graph",
+    "items": [
+      {
+        "label": "sitemapUrlCount",
+        "value": "3",
+        "state": "warn"
+      }
+    ],
+    "notes": [
+      "ควรเพิ่มเนื้อหาสาระที่มีคุณภาพและความยาวเหมาะสม",
+      "ควรเพิ่ม schema types ที่อธิบายเนื้อหาของหน้าเว็บไซต์",
+      "ควรเพิ่มรูปภาพที่อธิบายเนื้อหาของหน้าเว็บไซต์"
+    ]
+  },
+  "_scoring": "deterministic_rubric",
+  "_engine_provider": "groq",
+  "_checks": [
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "HTTPS",
+      "status": "pass",
+      "severity": "high",
+      "detail": ""
+    },
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "Title tag",
+      "status": "pass",
+      "severity": "high",
+      "detail": "length 28"
+    },
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "Meta description",
+      "status": "pass",
+      "severity": "medium",
+      "detail": "length 100"
+    },
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "Mobile viewport",
+      "status": "pass",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "H1 heading",
+      "status": "fail",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "Canonical URL",
+      "status": "fail",
+      "severity": "low",
+      "detail": ""
+    },
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "Structured data (JSON-LD)",
+      "status": "fail",
+      "severity": "high",
+      "detail": ""
+    },
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "Image alt text",
+      "status": "pass",
+      "severity": "low",
+      "detail": ""
+    },
+    {
+      "category": "Technical SEO (Google 2026)",
+      "check": "Substantive content (>=400 words)",
+      "status": "fail",
+      "severity": "critical",
+      "detail": "~4 words"
+    },
+    {
+      "category": "AI Search / GEO-AEO",
+      "check": "Depth for AI citation (>=600 words)",
+      "status": "fail",
+      "severity": "critical",
+      "detail": "~4 words"
+    },
+    {
+      "category": "AI Search / GEO-AEO",
+      "check": "FAQ / question-style content",
+      "status": "fail",
+      "severity": "high",
+      "detail": ""
+    },
+    {
+      "category": "AI Search / GEO-AEO",
+      "check": "Schema types present",
+      "status": "fail",
+      "severity": "high",
+      "detail": ""
+    },
+    {
+      "category": "AI Search / GEO-AEO",
+      "check": "Answer/entity schema (FAQ/Article/LocalBusiness)",
+      "status": "fail",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "category": "AI Search / GEO-AEO",
+      "check": "Freshness signal",
+      "status": "fail",
+      "severity": "low",
+      "detail": ""
+    },
+    {
+      "category": "AI Search / GEO-AEO",
+      "check": "Baseline content (>=300 words)",
+      "status": "fail",
+      "severity": "high",
+      "detail": "~4 words"
+    },
+    {
+      "category": "AI Search / GEO-AEO",
+      "check": "Shareable description",
+      "status": "pass",
+      "severity": "low",
+      "detail": ""
+    },
+    {
+      "category": "AI Crawler Access",
+      "check": "robots.txt present",
+      "status": "pass",
+      "severity": "high",
+      "detail": ""
+    },
+    {
+      "category": "AI Crawler Access",
+      "check": "Sitemap present",
+      "status": "pass",
+      "severity": "high",
+      "detail": ""
+    },
+    {
+      "category": "AI Crawler Access",
+      "check": "llms.txt present",
+      "status": "pass",
+      "severity": "low",
+      "detail": ""
+    },
+    {
+      "category": "AI Crawler Access",
+      "check": "AI/search bots not blocked",
+      "status": "pass",
+      "severity": "critical",
+      "detail": "none blocked"
+    },
+    {
+      "category": "AI Crawler Access",
+      "check": "Crawlable content present",
+      "status": "fail",
+      "severity": "medium",
+      "detail": "~4 words"
+    },
+    {
+      "category": "Social Sharing & Open Graph",
+      "check": "og:title",
+      "status": "pass",
+      "severity": "high",
+      "detail": ""
+    },
+    {
+      "category": "Social Sharing & Open Graph",
+      "check": "og:description",
+      "status": "pass",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "category": "Social Sharing & Open Graph",
+      "check": "og:image",
+      "status": "fail",
+      "severity": "high",
+      "detail": ""
+    },
+    {
+      "category": "Social Sharing & Open Graph",
+      "check": "Twitter card",
+      "status": "fail",
+      "severity": "medium",
+      "detail": ""
+    },
+    {
+      "category": "Performance / Core Web Vitals",
+      "check": "PageSpeed / Core Web Vitals verified",
+      "status": "pass",
+      "severity": "info",
+      "detail": "64/100"
+    }
+  ],
+  "_category_scores": {
+    "Technical SEO (Google 2026)": 51,
+    "AI Search / GEO-AEO": 12,
+    "AI Crawler Access": 88,
+    "Social Sharing & Open Graph": 50
+  },
+  "_performance": 64,
+  "_performance_verified": true,
+  "_performance_lite": {
+    "source": "AI Mark public fetch performance-lite",
+    "verified_core_web_vitals": false,
+    "available": true,
+    "score": 100,
+    "html_fetch_ms": 21,
+    "html_kb": 2.2,
+    "html_bytes": 2251,
+    "compression": "",
+    "cache_control": "public, max-age=0, must-revalidate",
+    "content_type": "text/html",
+    "resource_hints": 2,
+    "script_count": 2,
+    "stylesheet_count": 2,
+    "image_count": 0,
+    "note": "This is low-resource public fetch evidence, not Lighthouse or Core Web Vitals. It keeps the scan useful when PSI quota is unavailable."
+  },
+  "_score_status": "verified",
+  "_score_note": "",
+  "_verification": {
+    "score_status": "verified",
+    "missing_evidence": [],
+    "cannot_infer_from_public_scan": [
+      "traffic_source_attribution",
+      "GA4_sessions",
+      "Google_Search_Console_clicks_queries",
+      "ad_spend_or_CAC",
+      "actual_AI_citations_without_live_probe"
+    ],
+    "score_guardrail": "All weighted score components used by the deterministic rubric were available."
+  },
+  "scanned_at": "2026-06-27 01:12 UTC",
+  "_fetch": {
+    "home": {
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://obolla.com/",
+      "error": null
+    },
+    "alternateHome": {
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://www.obolla.com/",
+      "error": null
+    },
+    "robots": {
+      "status": 200,
+      "present": true
+    },
+    "sitemap": {
+      "status": 200,
+      "present": true
+    },
+    "llms": {
+      "status": 200,
+      "present": true
+    }
+  },
+  "_migration": {
+    "requestedUrl": "https://obolla.com/",
+    "finalUrl": "https://obolla.com/",
+    "finalHost": "obolla.com",
+    "canonical": "",
+    "canonicalHost": "",
+    "canonicalHostMismatch": false,
+    "ogUrl": "",
+    "ogHost": "",
+    "ogHostMismatch": false,
+    "robotsSitemapLines": [
+      "https://obolla.com/sitemap.xml"
+    ],
+    "sitemapUrlCount": 3,
+    "sitemapSampleUrls": [
+      "https://obolla.com/",
+      "https://obolla.com/marketplace",
+      "https://obolla.com/agent-ready-pro"
+    ],
+    "sitemapHosts": [
+      "obolla.com"
+    ],
+    "sitemapHostMismatch": false,
+    "alternateHostUrl": "https://www.obolla.com/",
+    "alternateHostStatus": 200,
+    "alternateHostFinalUrl": "https://www.obolla.com/",
+    "alternateHostServes200WithoutRedirectToFinalHost": true,
+    "duplicateHostRisk": true,
+    "sameBareDomainButWwwSplit": false,
+    "indexCoverageWarning": "Sitemap has only a few URLs. Public search may only know the homepage and may keep older snippets until Google recrawls. Verify URL Inspection / Coverage in Google Search Console."
+  },
+  "_cwv": {
+    "source": "lab (Lighthouse)",
+    "performanceScore": 64,
+    "lcp": {
+      "value": 4957,
+      "rating": null
+    },
+    "inp": null,
+    "cls": {
+      "value": 0.22,
+      "rating": null
+    },
+    "ttfb": null,
+    "cached": true,
+    "cache_status": "hit",
+    "cache_ttl_seconds": 86400,
+    "cached_at": "2026-06-26T12:48:07.765Z"
+  },
+  "_isitagentready": {
+    "level": 5,
+    "level_name": "Agent-Native",
+    "percent": 95,
+    "pass": 20,
+    "fail": 1,
+    "total": 21,
+    "is_commerce": false,
+    "verify_url": "https://isitagentready.com/",
+    "gaps": [
+      {
+        "category": "discoverability",
+        "id": "dnsAid",
+        "status": "fail",
+        "message": "DNS for AI Discovery (DNS-AID) records found, but DNSSEC was not validated"
+      }
+    ]
+  },
+  "_pagespeed": {
+    "source": "lab (Lighthouse)",
+    "performanceScore": 64,
+    "lcp": {
+      "value": 4957,
+      "rating": null
+    },
+    "inp": null,
+    "cls": {
+      "value": 0.22,
+      "rating": null
+    },
+    "ttfb": null,
+    "cached": true,
+    "cache_status": "hit",
+    "cache_ttl_seconds": 86400,
+    "cached_at": "2026-06-26T12:48:07.765Z"
+  },
+  "_rateRemaining": 3,
+  "_credits_charged": true
+}

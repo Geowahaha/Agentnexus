@@ -1,0 +1,11 @@
+---
+pid: 26364
+cwd: "D:\AgentNexus"
+command: "cd \"D:\\Pinpoint web\\pinpointapp\" && node .\\scripts\\sync-pages-secrets.mjs 2>&1 | Select-String -Pattern \"^(Syncing GROQ|Done\\.|No allowed)\""
+started_at: 2026-06-18T07:08:30.576Z
+running_for_ms: 84345007 
+---
+
+Syncing GROQ_API_KEY...
+Done. synced=25 skipped=27
+

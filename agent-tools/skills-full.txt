@@ -1,0 +1,80 @@
+=== fable5-coding-agent-premium ===
+NAME: Fable-5 Coding Agent Pro
+DESC: Fable-5-style coding agent Pro ($5/run): plan ΓåÆ implement ΓåÆ review ΓåÆ QA. Cloud OpenAI GPT-4.1 (plan + code) + Grok 3 Mini (review + QA) ΓÇö no GPU or Ollama required. Inspired by Fable-5 trace patterns.
+
+=== fable5-coding-agent ===
+NAME: Fable-5 Coding Agent (Free ΓÇö Local LoRA)
+DESC: Free local Fable-5 LoRA: plan ΓåÆ implement ΓåÆ review ΓåÆ QA on hotdogs/qwen3.6-27b-fable5-lora (Ollama, $0 run + $0 LLM). Adapter: https://huggingface.co/hotdogs/qwen3.6-27b-fable5-lora ┬╖ Traces: https://huggingface.co/datasets/Glint-Research/Fable-5-traces ┬╖ No cloud fallback.
+
+=== ai-visibility-2026 ===
+NAME: AI Visibility Audit 2026
+DESC: $2.50/run ΓÇö agency-grade AI visibility audit with deterministic AIBotAuth scan, Claude audit, Gemini fix pack, and Grok QA. Every run includes a public proof badge. Live clients: successcasting.com and pinpointaccountingservice.com (88/100 proof on file).
+
+=== seo-expert-analysis ===
+NAME: SEO Expert Analysis
+DESC: Professional SEO Expert Analysis: multi-agent competitor research, content gap analysis, technical SEO audit, Core Web Vitals assessment, and prioritized action plan with impact forecasts ΓÇö delivered as a client-ready report.
+
+=== audit-bottle-neck-www ===
+NAME: FIX Web
+DESC: # AI Visibility & Agentic SEO Skill
+
+## Objective
+
+Improve AI discoverability, search visibility, and agent compatibility for a production manufacturing website while preserving privacy and preventing unintended AI training.
+
+---
+
+# Scope
+
+* AI crawler optimization
+* Agent-ready metadata
+* Technical SEO corrections
+* Header policy standardization
+* Analytics validation
+* Production-safe deployment
+* Post-release verification
+
+---
+
+# Audit Findings
+
+### AI Policy
+
+* Inconsistent AI directives acr
+
+=== content-pipeline-for-creators ===
+NAME: Content  Creators
+DESC: Research ΓåÆ draft ΓåÆ edit ΓåÆ publish checklist for a recurring task.
+
+=== ai-lineart-youtube-kemlife ===
+NAME: α╕èα╣êα╕¡α╕ç YouTube α╕üα╕▓α╕úα╣îα╕òα╕╣α╕Öα╕Ñα╕▓α╕óα╣Çα╕¬α╣ëα╕Ö AI
+DESC: α╣Çα╕ùα╕íα╣Çα╕₧α╕Ñα╕òα╕èα╣êα╕¡α╕ç YouTube faceless ΓÇö α╕½α╕▓α╣Çα╕úα╕╖α╣êα╕¡α╕ç ΓåÆ α╕Üα╕ù timestamp ΓåÆ prompt α╕áα╕▓α╕₧ MS Paint 16:9 ΓåÆ QA α╕¢α╕Ñα╣êα╕¡α╕óα╕äα╕Ñα╕┤α╕¢. Buyer α╕úα╕▒α╕Ö Higgsfield/CapCut α╣Çα╕¡α╕ç ΓÇö agent α╕êα╕▒α╕öα╕Üα╕ùα╣üα╕Ñα╕░ prompt α╣âα╕½α╣ë.
+
+=== ai-lineart-facebook-reel-kemlife ===
+NAME: Facebook Reels α╕üα╕▓α╕úα╣îα╕òα╕╣α╕Öα╕Ñα╕▓α╕óα╣Çα╕¬α╣ëα╕Ö AI
+DESC: α╣Çα╕ùα╕íα╣Çα╕₧α╕Ñα╕ò Facebook Reels faceless ΓÇö hook ΓåÆ α╕Üα╕ù 30ΓÇô90s ΓåÆ prompt α╕áα╕▓α╕₧ MS Paint 9:16 ΓåÆ caption/hashtag + QA. Buyer α╕úα╕▒α╕Ö Higgsfield/CapCut α╣Çα╕¡α╕ç ΓÇö agent α╕êα╕▒α╕öα╕Üα╕ùα╣üα╕Ñα╕░ prompt α╣âα╕½α╣ë.
+
+=== image-post-creator ===
+NAME: Image Post Creator
+DESC: α╕¬α╕úα╣ëα╕▓α╕çα╣éα╕₧α╕¬α╕òα╣îα╕úα╕╣α╕¢α╕áα╕▓α╕₧α╣éα╕ïα╣Çα╕èα╕╡α╕óα╕Ñ ΓÇö α╕íα╕╕α╕í hook ΓåÆ α╣üα╕äα╕¢α╕èα╕▒α╕Ö + CTA + alt text + hashtag ΓåÆ prompt α╕áα╕▓α╕₧ ΓåÆ **α╕¬α╕úα╣ëα╕▓α╕çα╕úα╕╣α╕¢α╕êα╕úα╕┤α╕çα╕öα╣ëα╕ºα╕ó Grok Imagine** ΓåÆ QA α╕üα╣êα╕¡α╕Öα╣éα╕₧α╕¬α╕òα╣î. α╕úα╕¡α╕çα╕úα╕▒α╕Ü Instagram, Facebook, LinkedIn.
+
+=== short-post-creator ===
+NAME: Short Post Creator
+DESC: α╕¬α╕úα╣ëα╕▓α╕çα╣éα╕₧α╕¬α╕òα╣îα╕éα╣ëα╕¡α╕äα╕ºα╕▓α╕íα╕¬α╕▒α╣ëα╕Ö ΓÇö α╕íα╕╕α╕í + α╕éα╣ëα╕¡α╕êα╕│α╕üα╕▒α╕öα╣üα╕₧α╕Ñα╕òα╕ƒα╕¡α╕úα╣îα╕í ΓåÆ α╕úα╣êα╕▓α╕ç 3 α╣üα╕Üα╕Ü hook α╕òα╣êα╕▓α╕çα╕üα╕▒α╕Ö ΓåÆ α╕éα╕▒α╕öα╣Çα╕üα╕Ñα╕▓α╣éα╕₧α╕¬α╕òα╣îα╕½α╕Ñα╕▒α╕ü + backup (+ thread α╕ûα╣ëα╕▓α╕éα╕¡) ΓåÆ QA α╕üα╣êα╕¡α╕Öα╣éα╕₧α╕¬α╕òα╣î. α╕úα╕¡α╕çα╕úα╕▒α╕Ü X, Threads, LinkedIn, Facebook.
+
+=== travel-photo-monetization-explorer ===
+NAME: Travel Photo Monetization Explorer
+DESC: Discover various creative and profitable ways to utilize your travel photographs, turning your passion into a rewarding endeavor.
+
+=== quality-check-flow-smart-famers ===
+NAME: Quality check flow ΓÇö Smart Famers
+DESC: α╕òα╕úα╕ºα╕êα╕çα╕▓α╕Öα╕üα╣êα╕¡α╕Öα╕¬α╣êα╕çα╕íα╕¡α╕Üα╕¬α╕│α╕½α╕úα╕▒α╕Ü  Smart Farming α╕ïα╕╢α╣êα╕çα╕íα╕▒α╕Öα╕íα╕╡α╕¡α╕╕α╕ôα╕½α╕áα╕╣α╕íα╕┤ UV index α╣üα╕¬α╕çα╣üα╕öα╕ö α╕íα╕╡ Fertilizer α╕íα╕╡α╕äα╕ºα╕▓α╕íα╕èα╕╖α╣ëα╕Öα╣âα╕Öα╕¡α╕▓α╕üα╕▓α╕¿ α╕äα╕ºα╕▓α╕íα╕èα╕╖α╣ëα╕Öα╣âα╕Öα╕öα╕┤α╕Ö α╣üα╕Ñα╕░α╕¡α╕╖α╣êα╕Öα╣å
+
+=== fix-bot-ai-free ===
+NAME: Fix Bot AI ΓÇö Free Agent Scan
+DESC: Free Agent-Ready scan ΓÇö isitagentready.com-style scorecard, P0/P1/P2 fixes, paste-ready robots.txt, llms.txt, agents.txt, and a shareable AIBotAuth proof URL. Verified on successcasting.com and pinpointaccountingservice.com. Upgrade to Auto Fix Pro ($9.99) for full Level-5 deploy pack.
+
+=== agent-ready-auto-fix ===
+NAME: Agent-Ready Auto Fix Pro
+DESC: $9.99/run ΓÇö Agent-Ready Auto Fix Pro: gap map, full deploy pack (robots, llms, protocol, commerce layer), stack deploy guide, and re-verify checklist. Includes proof badge. Reference: successcasting.com 25%ΓåÆ100% Level 5. Live proof: Pinpoint Accounting 88/100.
+

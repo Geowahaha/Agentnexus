@@ -1,0 +1,701 @@
+---
+pid: 7108
+cwd: "D:\AgentNexus"
+command: "Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force -ErrorAction SilentlyContinue }; Start-Sleep -Seconds 1; Set-Location D:\\AgentNexus\\backend; .\\run.ps1"
+started_at: 2026-06-17T15:42:52.506Z
+running_for_ms: 86400002 
+---
+INFO:     Started server process [26628]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52906 - "GET /api/v1/marketplace/agents?category=seo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52904 - "GET /api/v1/showcases?category=seo HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52905 - "GET /api/v1/expert-skills?category=seo HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 78, in list_expert_skills
+    return [await _to_detail(skill, user_repository=user_repository) for skill in skills]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 58, in _to_detail
+    owner = await user_repository.get_by_id(skill.owner_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 55, in get_by_id
+    return self._to_schema(row) if row else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 21, in _to_schema
+    return User(
+           ^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for User
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='system@agentnexus.local', input_type=str]
+INFO:     127.0.0.1:52046 - "GET /api/v1/expert-skills?category=quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52047 - "GET /api/v1/marketplace/agents?category=quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65432 - "GET /api/v1/showcases?category=quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52608 - "GET /api/v1/showcases?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52609 - "GET /api/v1/expert-skills?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52610 - "GET /api/v1/marketplace/agents?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50904 - "GET /api/v1/showcases?category=research HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50905 - "GET /api/v1/expert-skills?category=research HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50906 - "GET /api/v1/marketplace/agents?category=research HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56787 - "GET /api/v1/showcases?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59530 - "GET /api/v1/expert-skills?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59531 - "GET /api/v1/marketplace/agents?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57402 - "GET /api/v1/agents/11111111-1111-4111-8111-111111111102 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53266 - "POST /api/v1/billing/estimate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53267 - "POST /api/v1/billing/estimate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58629 - "GET /api/v1/agents/11111111-1111-4111-8111-111111111102 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51073 - "GET /api/v1/agents/11111111-1111-4111-8111-111111111102/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49676 - "GET /api/v1/agents/11111111-1111-4111-8111-111111111102/profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51523 - "POST /api/v1/workflows/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59719 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63925 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57405 - "GET /api/v1/workflows/8b4aacae-a1df-4852-ba41-868efc4ee2b0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57044 - "GET /api/v1/workflows/8b4aacae-a1df-4852-ba41-868efc4ee2b0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59973 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50647 - "GET /api/v1/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58086 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58085 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 78, in list_expert_skills
+    return [await _to_detail(skill, user_repository=user_repository) for skill in skills]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 58, in _to_detail
+    owner = await user_repository.get_by_id(skill.owner_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 55, in get_by_id
+    return self._to_schema(row) if row else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 21, in _to_schema
+    return User(
+           ^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for User
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='system@agentnexus.local', input_type=str]
+INFO:     127.0.0.1:58087 - "GET /api/v1/expert-skills HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:58088 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50717 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59298 - "GET /api/v1/expert-skills HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 78, in list_expert_skills
+    return [await _to_detail(skill, user_repository=user_repository) for skill in skills]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 58, in _to_detail
+    owner = await user_repository.get_by_id(skill.owner_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 55, in get_by_id
+    return self._to_schema(row) if row else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 21, in _to_schema
+    return User(
+           ^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for User
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='system@agentnexus.local', input_type=str]
+INFO:     127.0.0.1:57099 - "GET /api/v1/expert-skills?category=research HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57100 - "GET /api/v1/marketplace/agents?category=research HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54106 - "GET /api/v1/showcases?category=research HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65321 - "GET /api/v1/showcases?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51090 - "GET /api/v1/expert-skills?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51091 - "GET /api/v1/marketplace/agents?category=content HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49857 - "GET /api/v1/showcases?category=quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64218 - "GET /api/v1/expert-skills?category=quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64219 - "GET /api/v1/marketplace/agents?category=quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54871 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54873 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 78, in list_expert_skills
+    return [await _to_detail(skill, user_repository=user_repository) for skill in skills]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 58, in _to_detail
+    owner = await user_repository.get_by_id(skill.owner_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 55, in get_by_id
+    return self._to_schema(row) if row else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 21, in _to_schema
+    return User(
+           ^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for User
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='system@agentnexus.local', input_type=str]
+INFO:     127.0.0.1:54872 - "GET /api/v1/expert-skills HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:64542 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 78, in list_expert_skills
+    return [await _to_detail(skill, user_repository=user_repository) for skill in skills]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 58, in _to_detail
+    owner = await user_repository.get_by_id(skill.owner_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 55, in get_by_id
+    return self._to_schema(row) if row else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 21, in _to_schema
+    return User(
+           ^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for User
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='system@agentnexus.local', input_type=str]
+INFO:     127.0.0.1:64544 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64543 - "GET /api/v1/expert-skills HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:64549 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60880 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 78, in list_expert_skills
+    return [await _to_detail(skill, user_repository=user_repository) for skill in skills]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 58, in _to_detail
+    owner = await user_repository.get_by_id(skill.owner_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 55, in get_by_id
+    return self._to_schema(row) if row else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 21, in _to_schema
+    return User(
+           ^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for User
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='system@agentnexus.local', input_type=str]
+INFO:     127.0.0.1:56689 - "GET /api/v1/expert-skills HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:64546 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64545 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59945 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59915 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61069 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55451 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55452 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55453 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 78, in list_expert_skills
+    return [await _to_detail(skill, user_repository=user_repository) for skill in skills]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 58, in _to_detail
+    owner = await user_repository.get_by_id(skill.owner_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 55, in get_by_id
+    return self._to_schema(row) if row else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 21, in _to_schema
+    return User(
+           ^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for User
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='system@agentnexus.local', input_type=str]
+INFO:     127.0.0.1:56818 - "GET /api/v1/expert-skills HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:55626 - "GET /api/v1/marketplace/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62764 - "GET /api/v1/showcases HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56529 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62765 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58729 - "GET /api/v1/expert-skills HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:49750 - "GET /api/v1/billing/wallet HTTP/1.1" 200 OK
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1162, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1620, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1609, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 2047, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1629, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 1218, in handle
+    await app(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 143, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 129, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 683, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\fastapi\routing.py", line 337, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 78, in list_expert_skills
+    return [await _to_detail(skill, user_repository=user_repository) for skill in skills]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\api\v1\expert_skills.py", line 58, in _to_detail
+    owner = await user_repository.get_by_id(skill.owner_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 55, in get_by_id
+    return self._to_schema(row) if row else None
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\AgentNexus\backend\app\repositories\user_repository.py", line 21, in _to_schema
+    return User(
+           ^^^^^
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for User
+email
+  value is not a valid email address: The part after the @-sign is a special-use or reserved name that cannot be used with email. [type=value_error, input_value='system@agentnexus.local', input_type=str]
+
+---
+exit_code: -1
+elapsed_ms: 86400002
+ended_at: 2026-06-18T15:42:48.836Z
+---

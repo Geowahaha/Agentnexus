@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none" role="img" aria-label="OBOLLA">
+  <rect x="1" y="1" width="46" height="46" rx="11" fill="#FAF7F2" stroke="#8B9A7B" stroke-width="1.5"/>
+  <rect x="22" y="30" width="4" height="12" rx="1" fill="#B85C38"/>
+  <polygon points="24,10 38,30 10,30" fill="#6B7F6A"/>
+  <polygon points="24,16 33,27 15,27" fill="#8B9A7B"/>
+  <polygon points="24,20 29,25 19,25" fill="#A8B5A0"/>
+  <circle cx="35" cy="13" r="4.5" fill="#C67B5C" opacity="0.9"/>
+  <ellipse cx="14" cy="36" rx="6" ry="3" fill="#C9A9A6" opacity="0.55"/>
+  <text x="58" y="32" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" letter-spacing="0.12em" fill="#1A2118">OBOLLA</text>
+</svg>

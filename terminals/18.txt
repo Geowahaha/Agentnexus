@@ -1,0 +1,19 @@
+---
+pid: 23904
+cwd: "D:\AgentNexus"
+command: "Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force -ErrorAction SilentlyContinue }; Start-Sleep -Seconds 1; Set-Location D:\\AgentNexus\\backend; .\\run.ps1"
+started_at: 2026-06-17T15:51:14.193Z
+running_for_ms: 86400003 
+---
+INFO:     Started server process [28328]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:61065 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62267 - "GET /api/v1/creators/me/summary HTTP/1.1" 404 Not Found
+
+---
+exit_code: -1
+elapsed_ms: 86400003
+ended_at: 2026-06-18T15:51:10.588Z
+---

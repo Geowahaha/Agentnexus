@@ -1,0 +1,12 @@
+---
+pid: 20976
+cwd: "D:\AgentNexus"
+command: "Test-NetConnection -ComputerName 43.128.75.149 -Port 8883 -WarningAction SilentlyContinue | Select-Object TcpTestSucceeded, RemotePort"
+started_at: 2026-06-22T06:45:22.171Z
+running_for_ms: 27019992 
+---
+
+TcpTestSucceeded RemotePort
+---------------- ----------
+           False       8883
+

@@ -1,0 +1,124 @@
+Production is updated and verified. Here is the full report.
+
+Before bottlenecks
+
+┌───────────────────────┬──────────────────────────────────────────────────┐
+│ Issue                 │ Status before                                    │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ agents.txt            │ 404                                              │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ ai.txt policy         │ ai-train=yes (mixed signal)                      │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ Content-Signal header │ Missing on all pages                             │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ robots.txt            │ Missing Applebot; policy not in headers          │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ llms.txt              │ Bare URLs, no agents.txt, limited service intent │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ Homepage H1           │ 2 (sr-only + carousel h1)                        │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ /products H1          │ 0 in server HTML (client-only hero)              │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ WebMCP hints          │ Not present                                      │
+├───────────────────────┼──────────────────────────────────────────────────┤
+│ GA4                   │ gtag/js string count = 2 in raw HTML             │
+└───────────────────────┴──────────────────────────────────────────────────┘
+
+Files changed
+
+┌─────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────┐
+│ File                                            │ Change                                                                      │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ lib/seo/aiPolicy.ts                             │ New — shared policy: ai-train=no, search=yes, ai-input=yes                  │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ app/agents.txt/route.ts                         │ New — machine-readable agent guide                                          │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ app/ai.txt/route.ts                             │ Policy → ai-train=no; links agents.txt; Content-Signal                      │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ app/llms.txt/route.ts                           │ Markdown links, service intent, policy lines, agents.txt link               │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ app/robots.ts                                   │ Added Applebot; reordered AI crawlers                                       │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ next.config.ts                                  │ Content-Signal on HTML, policy files, robots.txt; agents.txt in Link header │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ app/(marketing)/page.tsx                        │ WebMCP RFQ form hints (server-rendered)                                     │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ app/(marketing)/SuccessCastingHome.tsx          │ Carousel heading h1 → h2                                                    │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ app/(marketing)/products/page.tsx               │ Server-rendered sr-only H1                                                  │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ app/(marketing)/products/ProductsPageClient.tsx │ Hero h1 → h2                                                                │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ components/analytics/Ga4Deferred.tsx            │ Global window.__scGa4Loaded guard                                           │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ components/home/AiSalesChatPanel.tsx            │ WebMCP data-tool* on RFQ chat form                                          │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+│ scripts/purge-cf-cache.ps1                      │ Purge URLs for llms.txt, ai.txt, agents.txt                                 │
+└─────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────┘
+
+Headers changed
+
+Content-Signal: ai-train=no, search=yes, ai-input=yes now on:
+
+• /, /products, /products/*, /blog, /blog/*
+• /robots.txt, /llms.txt, /ai.txt, /agents.txt
+
+Link header now includes </agents.txt>; rel="agents-txt". Static assets unchanged; HTML still uses no-store for deploy freshness.
+
+Live verification (post-deploy)
+
+scripts\audit-ai-visibility-pack\audit-ai-visibility\scripts\verify-portable.bat  ✓
+scripts\audit-ai-visibility-pack\audit-ai-visibility\scripts\audit-ai-visibility.bat  ✓ (both runs)
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────┬────────────────────────────────────────┐
+│ Check                                                                                        │ Result                                 │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ Root → https://www.successcasting.com/                                                       │ 200                                    │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ robots.txt / llms.txt / ai.txt / agents.txt / sitemap.xml                                    │ 200                                    │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ All AI bots (GPTBot, ClaudeBot, Google-Extended, OAI-SearchBot, ChatGPT-User, PerplexityBot) │ 200 + Content-Signal                   │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ Policy consistency                                                                           │ ai-train=no everywhere; no ai-input=no │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ llms.txt                                                                                     │ H1 ✓, 27 Markdown links                │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ Homepage H1                                                                                  │ 1                                      │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ /products H1                                                                                 │ 1                                      │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ WebMCP hints                                                                                 │ Present                                │
+├──────────────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────┤
+│ likelyIssues                                                                                 │ []                                     │
+└──────────────────────────────────────────────────────────────────────────────────────────────┴────────────────────────────────────────┘
+
+GA4 duplication — verified, not changed further
+
+• Only one executable <script id="ga4-deferred-loader"> in live HTML.
+• The audit’s gtag script count: 2 is a false positive from the URL string appearing in both the inline script and the Next.js RSC payload — not two loaders.
+• Added window.__scGa4Loaded as a safety guard; no duplicate page_view expected at runtime.
+
+Risks / notes
+
+• Sitemap does not carry Content-Signal (XML route; not in header rules). Low impact.
+• Cloudflare HTML cache rule can still serve stale pages up to ~4h if purge fails — post-deploy purge ran successfully.
+• WebMCP server hints are in a sr-only form; the interactive AI chat widget is client-rendered and won’t appear in no-JS crawls.
+• Audit skill pack extracted to scripts/audit-ai-visibility-pack/ for future runs.
+
+Traffic lift hypothesis
+
+Strongest likely contributors, in order:
+
+1. Crawl eligibility — consistent ai-input=yes + all major AI bots allowed with 200 responses.
+2. Agent discoverability — new agents.txt, richer llms.txt (27 links), unified policy files.
+3. Content-Signal header — explicit opt-out of training while allowing search/citation grounding.
+4. On-page SEO — single stable H1, /products H1 for crawlers, product pages already have H1 + schema + RFQ CTAs.
+5. WebMCP hints — minor agentic UX signal; unscored by audit.
+
+Phrase as evidence-weighted, not guaranteed causality.
+
+Next checks (GA4 / Search Console / Cloudflare)
+
+• GA4: source/medium for chatgpt.com, perplexity.ai, claude.ai, organic; landing pages /, /products/*, /blog/*; confirm single page_view per session.
+• Search Console: resubmit https://www.successcasting.com/sitemap.xml; watch indexed pages (expect 13); URL-inspect material pages.
+• Cloudflare: Analytics → crawl requests from GPTBot/ClaudeBot/PerplexityBot; confirm no 403/522 on www; re-purge if edge cache looks stale after future deploys.

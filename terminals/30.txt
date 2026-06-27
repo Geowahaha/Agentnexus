@@ -1,0 +1,27 @@
+---
+pid: 25064
+cwd: "D:\AgentNexus"
+command: "ssh -i \"C:\\Users\\mrgeo\\.ssh\\ssh-key-2026-03-21_Oracle_Geomonkey.key\" root@43.128.75.149 \"grep -rl 'CLOUDFLARE_API_TOKEN\\|CLOUDFLARE_ACCOUNT_API_TOKEN\\|CF_API_TOKEN' /opt /root 2>/dev/null | head -20\""
+started_at: 2026-06-18T08:42:26.740Z
+running_for_ms: 78799997 
+---
+/opt/blutenstein-portal/.env.bak.20260502101608
+/opt/blutenstein-portal/.env.bak.20260502085853
+/opt/blutenstein-portal/.env
+/opt/blutenstein-portal/.env.bak.20260502105036
+/opt/blutenstein-portal/.env.example
+/opt/blutenstein-portal/.env.bak.20260502101436
+/opt/blutenstein-portal/.env.bak.20260502101511
+/opt/blutenstein-portal/app/main.py.bak.20260529175750
+/opt/blutenstein-portal/app/main.py.bak.20260530024039
+/opt/blutenstein-portal/app/main.py.bak.20260529200737
+/opt/blutenstein-portal/app/main.py
+/opt/blutenstein-portal/app/__pycache__/main.cpython-312.pyc
+/opt/blutenstein-portal/app/main.py.bak.20260529191758
+/opt/blutenstein-portal/app/main.py.bak.20260529190016
+/opt/blutenstein-portal/app/main.py.bak.20260529185850
+/opt/blutenstein-portal/app/main.py.bak.20260530023520
+/opt/successcasting-factory/.env.bak.20260502101608
+/opt/successcasting-factory/.env.bak.20260502085853
+/opt/successcasting-factory/.env
+/opt/successcasting-factory/.env.bak.20260502105036

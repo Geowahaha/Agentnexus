@@ -1,0 +1,239 @@
+
+<!DOCTYPE html><!--i1U4net4u4agzNF9rQFjw--><html lang="th" class="__variable_7012d0 __variable_09a04b h-full 
+antialiased"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link 
+rel="preload" href="/_next/static/media/c9e6921c7fc300d8-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link 
+rel="preload" href="/_next/static/media/f196b1e65fee88ed-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link 
+rel="preload" as="image" 
+imageSrcSet="/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=16&amp;q=75 16w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=32&amp;q=75 32w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=48&amp;q=75 48w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=64&amp;q=75 64w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=96&amp;q=75 96w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=128&amp;q=75 128w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=256&amp;q=75 256w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=384&amp;q=75 384w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=640&amp;q=75 640w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=750&amp;q=75 750w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=828&amp;q=75 828w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=1080&amp;q=75 1080w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=1200&amp;q=75 1200w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=1920&amp;q=75 1920w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=2048&amp;q=75 2048w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=3840&amp;q=75 3840w" 
+imageSizes="56px" fetchPriority="high"/><link rel="preload" as="image" 
+imageSrcSet="/_next/image?url=%2Fsuccesscasting-assets%2Fgpt-hero%2Fmolten-pour-1.webp&amp;w=640&amp;q=75 640w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Fgpt-hero%2Fmolten-pour-1.webp&amp;w=750&amp;q=75 750w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Fgpt-hero%2Fmolten-pour-1.webp&amp;w=828&amp;q=75 828w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Fgpt-hero%2Fmolten-pour-1.webp&amp;w=1080&amp;q=75 1080w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Fgpt-hero%2Fmolten-pour-1.webp&amp;w=1200&amp;q=75 1200w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Fgpt-hero%2Fmolten-pour-1.webp&amp;w=1920&amp;q=75 1920w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Fgpt-hero%2Fmolten-pour-1.webp&amp;w=2048&amp;q=75 2048w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Fgpt-hero%2Fmolten-pour-1.webp&amp;w=3840&amp;q=75 3840w" 
+imageSizes="100vw" fetchPriority="high"/><link rel="stylesheet" href="/_next/static/css/ef0e81a444e99495.css" 
+data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" 
+href="/_next/static/chunks/webpack-056069ad0882da71.js"/><script 
+src="/_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js" async=""></script><script 
+src="/_next/static/chunks/1255-dfb5f8d642ae4426.js" async=""></script><script 
+src="/_next/static/chunks/main-app-6c375904e7918faf.js" async=""></script><script 
+src="/_next/static/chunks/2262-ae6f6cb3f19ffa74.js" async=""></script><script 
+src="/_next/static/chunks/app/layout-e494deede42e747c.js" async=""></script><script 
+src="/_next/static/chunks/2619-04bc32f026a0d946.js" async=""></script><script 
+src="/_next/static/chunks/5239-0a1ac76c84eea57d.js" async=""></script><script 
+src="/_next/static/chunks/app/(marketing)/page-5592875200df0ffd.js" async=""></script><meta name="next-size-adjust" 
+content=""/><title>รับหล่อเหล็กอุตสาหกรรมทุกชนิด | 
+โรงหล่อเหล็ก Success Casting</title><meta name="description" content="Success Casting 
+รับจ้างผลิตงานหล่อโลหะ งานหล่อทราย 
+ชิ้นส่วนเครื่องจักร และอะไหล่ตามแบบ 
+รองรับ FC15-30, FCD45-70, Sc46, S45c, S50c, Mo4140, 4340, SCMn, Cr2828, ASTM A532 Class A, Ni-Hard, 1.4777 
+และ 1.4823 รับงานตั้งแต่ 1 ชิ้น โทร 098-636-2356 หรือ 
+06-3989-1165 LINE @SCNW"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="keywords" content="รับ�
+�ล่อเหล็ก,รับหล่อโลหะ,รับหล่อเหล็กอุตสาหก�
+�รม,โรงหล่อเหล็ก,รับจ้างผลิตงานหล่อโลหะ,รั�
+��หล่อเหล็กตามแบบ,งานหล่อทราย,รับหล่อเหล็ก 
+1 ชิ้น,รับหล่อ 
+pulley,หล่ออะไหล่เครื่องจักร,เหล็กหล่อ 
+FC,เหล็กหล่อเหนียว FCD,เหล็กทนสึก 
+Cr2828,เหล็กทนความร้อน 1.4777 1.4823,OEM casting parts Thailand,metal casting factory 
+Thailand"/><link rel="canonical" href="https://www.successcasting.com"/><meta name="mobile-web-app-capable" 
+content="yes"/><meta name="apple-mobile-web-app-title" content="Success Casting"/><meta 
+name="apple-mobile-web-app-status-bar-style" content="default"/><meta property="og:title" 
+content="รับหล่อเหล็กอุตสาหกรรมทุกชนิด | 
+โรงหล่อเหล็ก Success Casting"/><meta property="og:description" content="Success Casting 
+รับจ้างผลิตงานหล่อโลหะ งานหล่อทราย 
+ชิ้นส่วนเครื่องจักร และอะไหล่ตามแบบ 
+รองรับ FC15-30, FCD45-70, Sc46, S45c, S50c, Mo4140, 4340, SCMn, Cr2828, ASTM A532 Class A, Ni-Hard, 1.4777 
+และ 1.4823 รับงานตั้งแต่ 1 ชิ้น โทร 098-636-2356 หรือ 
+06-3989-1165 LINE @SCNW"/><meta property="og:url" content="https://www.successcasting.com"/><meta 
+property="og:site_name" content="Success Casting"/><meta property="og:locale" content="th_TH"/><meta 
+property="og:image" content="https://www.successcasting.com/successcasting-assets/gpt-hero/molten-pour-1.webp"/><meta 
+property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta 
+property="og:image:alt" content="Success Casting molten metal foundry service"/><meta property="og:type" 
+content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" 
+content="รับหล่อเหล็กอุตสาหกรรมทุกชนิด | 
+โรงหล่อเหล็ก Success Casting"/><meta name="twitter:description" content="Success Casting 
+รับจ้างผลิตงานหล่อโลหะ งานหล่อทราย 
+ชิ้นส่วนเครื่องจักร และอะไหล่ตามแบบ 
+รองรับ FC15-30, FCD45-70, Sc46, S45c, S50c, Mo4140, 4340, SCMn, Cr2828, ASTM A532 Class A, Ni-Hard, 1.4777 
+และ 1.4823 รับงานตั้งแต่ 1 ชิ้น โทร 098-636-2356 หรือ 
+06-3989-1165 LINE @SCNW"/><meta name="twitter:image" 
+content="https://www.successcasting.com/successcasting-assets/gpt-hero/molten-pour-1.webp"/><link rel="icon" 
+href="/favicon.ico" type="image/x-icon" sizes="16x16"/><link rel="icon" href="/favicon.ico"/><script 
+src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="forge-surface flex 
+min-h-full flex-col"><div hidden=""><!--$--><!--/$--></div><main class="flex-1"><h1 
+class="sr-only">โรงหล่อเหล็ก รับหล่อโลหะ — Success Casting</h1><main 
+class="bg-white text-zinc-800"><header class="pointer-events-none fixed inset-x-0 top-0 z-50 px-4 py-4 
+text-white"><div class="mx-auto flex max-w-6xl items-center justify-between gap-4"><a class="pointer-events-auto flex 
+items-center gap-3 rounded-2xl border border-white/10 bg-black/35 px-3 py-2 shadow-2xl backdrop-blur-md transition 
+hover:bg-black/55" href="/"><span class="grid h-12 w-12 place-items-center overflow-hidden rounded-full bg-transparent 
+p-0 shadow-[0_0_0_1px_rgba(255,255,255,0.72),0_0_10px_rgba(255,255,255,0.28),0_0_18px_rgba(249,115,22,0.22)] sm:h-14 
+sm:w-14"><img alt="Success Casting logo" fetchPriority="high" width="56" height="56" decoding="sync" data-nimg="1" 
+class="h-full w-full scale-[1.22] object-cover 
+[filter:drop-shadow(0_0_1px_rgba(255,255,255,0.92))_drop-shadow(0_0_4px_rgba(249,115,22,0.42))]" 
+style="color:transparent" sizes="56px" 
+srcSet="/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=16&amp;q=75 16w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=32&amp;q=75 32w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=48&amp;q=75 48w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=64&amp;q=75 64w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=96&amp;q=75 96w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=128&amp;q=75 128w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=256&amp;q=75 256w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=384&amp;q=75 384w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=640&amp;q=75 640w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=750&amp;q=75 750w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=828&amp;q=75 828w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=1080&amp;q=75 1080w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=1200&amp;q=75 1200w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=1920&amp;q=75 1920w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=2048&amp;q=75 2048w, 
+/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=3840&amp;q=75 3840w" 
+src="/_next/image?url=%2Fsuccesscasting-assets%2Flogo%2Fsuccess-logo-header.webp&amp;w=3840&amp;q=75"/></span><span 
+class="leading-tight"><span class="block text-lg font-semibold tracking-tight sm:text-2xl">Success 
+Casting</span></span></a><div class="pointer-events-auto flex items-center gap-2"><button type="button" class="flex 
+h-12 items-center gap-2 rounded-2xl border border-white/15 bg-black/45 px-3 te
+
+... (output truncated) ...
+
+ญด้านโลหะวิทยาและกระบวนการหล่อที่สั่ง
+สมมายาวนาน\"}]]}],[\"$\",\"div\",\"รับตั้งแต่ 1 
+ชิ้น\",{\"className\":\"rounded-xl border border-white/10 bg-[#1c1b1b] 
+p-5\",\"children\":[[\"$\",\"p\",null,{\"className\":\"font-bold 
+text-[#e8b84b]\",\"children\":\"รับตั้งแต่ 1 
+ชิ้น\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 text-sm leading-7 
+text-zinc-400\",\"children\":\"ไม่มีขั้นต่ำ เหมาะกับงานซ่อมบำ
+รุงและอะไหล่ทดแทนที่ผลิตไม่แล้ว\"}]]}],[\"$\",\"div\",\"�
+��รบวงจรในที่เดียว\",{\"className\":\"rounded-xl border border-white/10 bg-[#1c1b1b] 
+p-5\",\"children\":[[\"$\",\"p\",null,{\"className\":\"font-bold text-[#e8b84b]\",\"children\":\"ครบวงจร�
+��นที่เดียว\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 text-sm leading-7 
+text-zinc-400\",\"children\":\"ออกแบบแม่พิมพ์ หล่อ กลึง 
+และส่งมอบ ลูกค้าไม่ต้องหาซับคอนแทรคหลายเ�
+��้า\"}]]}],[\"$\",\"div\",\"วัสดุครบทุกกลุ่ม\",{\"className\":\"rounded-xl border 
+border-white/10 bg-[#1c1b1b] p-5\",\"children\":[[\"$\",\"p\",null,{\"className\":\"font-bold text-[#e8b84b]\",\"childr
+en\":\"วัสดุครบทุกกลุ่ม\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 text-sm leading-7 
+text-zinc-400\",\"children\":\"FC · FCD · Cast Steel · Carbon Steel · Alloy Steel · ทนสึก · 
+ทนความร้อน ในโรงงานเดียว\"}]]}],[\"$\",\"div\",\"ตอบสนองร
+วดเร็ว\",{\"className\":\"rounded-xl border border-white/10 bg-[#1c1b1b] 
+p-5\",\"children\":[[\"$\",\"p\",null,{\"className\":\"font-bold 
+text-[#e8b84b]\",\"children\":\"ตอบสนองรวดเร็ว\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 
+text-sm leading-7 
+text-zinc-400\",\"children\":\"ประเมินราคาภายในเวลาทำการ 
+ติดต่อง่ายผ่าน LINE @SCNW\"}]]}],[\"$\",\"div\",\"ตั้งอยู่ใกล้ก�
+�ุงเทพฯ\",{\"className\":\"rounded-xl border border-white/10 bg-[#1c1b1b] 
+p-5\",\"children\":[[\"$\",\"p\",null,{\"className\":\"font-bold text-[#e8b84b]\",\"children\":\"ตั้งอยู�
+��ใกล้กรุงเทพฯ\"}],[\"$\",\"p\",null,{\"className\":\"mt-2 text-sm leading-7 
+text-zinc-400\",\"children\":\"บางบ่อ สมุทรปราการ สะดวกรับ-ส่ง�
+��ิ้นงานและตรวจรับงานด้วยตนเอง\"}]]}]]}]]}]\n"])</script><scrip
+t>self.__next_f.push([1,"16:[\"$\",\"p\",null,{\"className\":\"text-right text-xs 
+text-zinc-600\",\"children\":\"อัปเดตเนื้อหาล่าสุด: มิถุนายน 
+2569 · Success Casting / Success Network Co., Ltd.\"}]\n20:T682,"])</script><script>self.__next_f.push([1,"{\"@context
+\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"รับหล่อเหล็กอุตสาหกร
+รมและชิ้นส่วนเครื่องจักรตามแบบ\",\"provider\":{\"@id\":\"ht
+tps://www.successcasting.com/#organization\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"Thailand\"},\"serviceTyp
+e\":\"Industrial metal casting, sand casting, cast iron parts and machine component 
+casting\",\"description\":\"Success Casting รับจ้างผลิตงานหล่อโลหะ 
+งานหล่อทราย ชิ้นส่วนเครื่องจักร 
+และอะไหล่ตามแบบ รองรับ FC15-30, FCD45-70, Sc46, S45c, S50c, Mo4140, 4340, 
+SCMn, Cr2828, ASTM A532 Class A, Ni-Hard, 1.4777 และ 1.4823 รับงานตั้งแต่ 1 
+ชิ้น โทร 098-636-2356 หรือ 06-3989-1165 LINE @SCNW\",\"hasOfferCatalog\":{\"@type\":\"OfferCatalo
+g\",\"name\":\"กลุ่มวัสดุที่รับผลิต\",\"itemListElement\":[{\"@type\":\"Offer\"
+,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"FC15-30 เหล็กหล่อเทา\"}},{\"@type\":\"Offer\
+",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"FCD45-70 เหล็กหล่อเหนียว\"}},{\"@type
+\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Sc46 / S45c / S50c / Mo4140 / 4340 / SCMn เหล็�
+�กล้าหล่อ\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Cr2828, ASTM A532 
+Class A, Ni-Hard 
+เหล็กทนสึก\"}},{\"@type\":\"Offer\",\"itemOffered\":{\"@type\":\"Service\",\"name\":\"1.4777 / 
+1.4823 เหล็กทนความร้อน\"}}]}}"])</script><script>self.__next_f.push([1,"17:[\"$\",\"scrip
+t\",\"0\",{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"$20\"}}]\n"])</script><script>sel
+f.__next_f.push([1,"18:[\"$\",\"script\",\"1\",{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\
+":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"FAQPage\\\",\\\"mainEntity\\\":[{\\\"@type\\\":\\\"Q
+uestion\\\",\\\"name\\\":\\\"Success Casting รับหล่อเหล็กตามแบบหรือไม�
+�\\\",\\\"acceptedAnswer\\\":{\\\"@type\\\":\\\"Answer\\\",\\\"text\\\":\\\"รับหล่อเหล็กแล�
+��โลหะตามแบบ จาก drawing รูปชิ้นงาน 
+หรืออะไหล่เดิม พร้อมช่วยประเมินวัสดุ 
+กระบวนการผลิต และงานกลึงก่อนเสนอราคา\\\"}},{\\\"@
+type\\\":\\\"Question\\\",\\\"name\\\":\\\"รับงานหล่อจำนวนน้อยได้ไหม\
+\\",\\\"acceptedAnswer\\\":{\\\"@type\\\":\\\"Answer\\\",\\\"text\\\":\\\"รับบริการงานหล่
+อตั้งแต่ 1 ชิ้น เหมาะกับงานซ่อมบำรุง 
+งานตัวอย่าง และชิ้นส่วนเครื่องจักรที่ต้อ�
+��ผลิตทดแทนจากของจริงหรือแบบ drawing\\\"}},{\\\"@type\\\":\\\"Quest
+ion\\\",\\\"name\\\":\\\"วัสดุที่รับผลิตมีอะไรบ้าง\\\",\\\"acceptedAn
+swer\\\":{\\\"@type\\\":\\\"Answer\\\",\\\"text\\\":\\\"รองรับวัสดุ FC15-30, FCD45-70, Sc46, 
+S45c, S50c, Mo4140, 4340, SCMn, Cr2828, ASTM A532 Class A, Ni-Hard, 1.4777 และ 1.4823\\\"}},{\\\"@type\\\":\\\"Qu
+estion\\\",\\\"name\\\":\\\"ต้องส่งข้อมูลอะไรเพื่อประเมินร�
+��คา\\\",\\\"acceptedAnswer\\\":{\\\"@type\\\":\\\"Answer\\\",\\\"text\\\":\\\"ส่งรูปชิ้นงา
+น แบบ drawing ขนาด วัสดุ จำนวนที่ต้องการ 
+และรายละเอียดงานกลึงหรือสภาพใช้งาน ผ่าน 
+LINE @SCNW หรือโทรติดต่อทีมงาน\\\"}}]}\"}}]\n"])</script><script>self.__next_f.pu
+sh([1,"19:[\"$\",\"script\",\"2\",{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@con
+text\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"WebSite\\\",\\\"name\\\":\\\"Success Casting\\\",\\\"url\\\":\\\"
+https://www.successcasting.com\\\",\\\"inLanguage\\\":\\\"th-TH\\\",\\\"potentialAction\\\":{\\\"@type\\\":\\\"SearchAc
+tion\\\",\\\"target\\\":\\\"https://www.successcasting.com/products?search={search_term_string}\\\",\\\"query-input\\\"
+:\\\"required name=search_term_string\\\"}}\"}}]\n1a:[\"$\",\"$L21\",null,{\"children\":[\"$L22\",[\"$\",\"$L23\",null,
+{\"promise\":\"$@24\"}]]}]\n"])</script><script>self.__next_f.push([1,"1c:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"
+}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><sc
+ript>self.__next_f.push([1,"22:null\n"])</script><script>self.__next_f.push([1,"25:I[80622,[],\"IconMark\"]\n"])</scrip
+t><script>self.__next_f.push([1,"24:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"รับหล่อเห�
+�็กอุตสาหกรรมทุกชนิด | โรงหล่อเหล็ก Success 
+Casting\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Success Casting 
+รับจ้างผลิตงานหล่อโลหะ งานหล่อทราย 
+ชิ้นส่วนเครื่องจักร และอะไหล่ตามแบบ 
+รองรับ FC15-30, FCD45-70, Sc46, S45c, S50c, Mo4140, 4340, SCMn, Cr2828, ASTM A532 Class A, Ni-Hard, 1.4777 
+และ 1.4823 รับงานตั้งแต่ 1 ชิ้น โทร 098-636-2356 หรือ 
+06-3989-1165 LINE @SCNW\"}],[\"$\",\"link\",\"2\",{\"rel\":\"manifest\",\"href\":\"/manifest.webmanifest\",\"crossOrigi
+n\":\"$undefined\"}],[\"$\",\"meta\",\"3\",{\"name\":\"keywords\",\"content\":\"รับหล่อเหล็ก,�
+�ับหล่อโลหะ,รับหล่อเหล็กอุตสาหกรรม,โรงหล่�
+�เหล็ก,รับจ้างผลิตงานหล่อโลหะ,รับหล่อเหล็�
+�ตามแบบ,งานหล่อทราย,รับหล่อเหล็ก 1 
+ชิ้น,รับหล่อ 
+pulley,หล่ออะไหล่เครื่องจักร,เหล็กหล่อ 
+FC,เหล็กหล่อเหนียว FCD,เหล็กทนสึก 
+Cr2828,เหล็กทนความร้อน 1.4777 1.4823,OEM casting parts Thailand,metal casting factory Tha
+iland\"}],[\"$\",\"link\",\"4\",{\"rel\":\"canonical\",\"href\":\"https://www.successcasting.com\"}],[\"$\",\"meta\",\"
+5\",{\"name\":\"mobile-web-app-capable\",\"content\":\"yes\"}],[\"$\",\"meta\",\"6\",{\"name\":\"apple-mobile-web-app-t
+itle\",\"content\":\"Success Casting\"}],[\"$\",\"meta\",\"7\",{\"name\":\"apple-mobile-web-app-status-bar-style\",\"co
+ntent\":\"default\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:title\",\"content\":\"รับหล่อเหล็�
+��อุตสาหกรรมทุกชนิด | โรงหล่อเหล็ก Success 
+Casting\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:description\",\"content\":\"Success Casting 
+รับจ้างผลิตงานหล่อโลหะ งานหล่อทราย 
+ชิ้นส่วนเครื่องจักร และอะไหล่ตามแบบ 
+รองรับ FC15-30, FCD45-70, Sc46, S45c, S50c, Mo4140, 4340, SCMn, Cr2828, ASTM A532 Class A, Ni-Hard, 1.4777 
+และ 1.4823 รับงานตั้งแต่ 1 ชิ้น โทร 098-636-2356 หรือ 
+06-3989-1165 LINE @SCNW\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:url\",\"content\":\"https://www.successcasting.co
+m\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:site_name\",\"content\":\"Success Casting\"}],[\"$\",\"meta\",\"12\",{\
+"property\":\"og:locale\",\"content\":\"th_TH\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:image\",\"content\":\"https
+://www.successcasting.com/successcasting-assets/gpt-hero/molten-pour-1.webp\"}],[\"$\",\"meta\",\"14\",{\"property\":\"
+og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"15\",{\"property\":\"og:image:height\",\"content\":\"630\"}],
+[\"$\",\"meta\",\"16\",{\"property\":\"og:image:alt\",\"content\":\"Success Casting molten metal foundry service\"}],[\
+"$\",\"meta\",\"17\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:car
+d\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:title\",\"content\":\"รับห
+ล่อเหล็กอุตสาหกรรมทุกชนิด | โรงหล่อเหล็ก 
+Success Casting\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:description\",\"content\":\"Success Casting 
+รับจ้างผลิตงานหล่อโลหะ งานหล่อทราย 
+ชิ้นส่วนเครื่องจักร และอะไหล่ตามแบบ 
+รองรับ FC15-30, FCD45-70, Sc46, S45c, S50c, Mo4140, 4340, SCMn, Cr2828, ASTM A532 Class A, Ni-Hard, 1.4777 
+และ 1.4823 รับงานตั้งแต่ 1 ชิ้น โทร 098-636-2356 หรือ 
+06-3989-1165 LINE @SCNW\"}],[\"$\",\"meta\",\"21\",{\"name\":\"twitter:image\",\"content\":\"https://www.successcasting
+.com/successcasting-assets/gpt-hero/molten-pour-1.webp\"}],[\"$\",\"link\",\"22\",{\"rel\":\"icon\",\"href\":\"/favicon
+.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}],[\"$\",\"link\",\"23\",{\"rel\":\"icon\",\"href\":\"/favicon.ico
+\"}],[\"$\",\"$L25\",\"24\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"
+1f:\"$24:metadata\"\n"])</script></body></html>
+

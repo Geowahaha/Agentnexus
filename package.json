@@ -1,0 +1,28 @@
+{
+  "name": "agentnexus",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AgentNexus — AI Expert Skills Marketplace",
+  "scripts": {
+    "build:frontend": "npm run build --prefix frontend",
+    "sync:bridge-assets": "node scripts/sync-bridge-assets.mjs",
+    "build": "npm run sync:bridge-assets && npm run build:frontend",
+    "dev:cf": "npm run build:frontend && wrangler dev",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy-obolla.ps1",
+    "deploy:obolla": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy-obolla.ps1",
+    "deploy:obolla:dry": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy-obolla.ps1 -DryRun",
+    "deploy:backend:vps": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy-backend-vps.ps1",
+    "deploy:production": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy-production.ps1 -StartStack",
+    "backup:db": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/backup-db-vps.ps1",
+    "tunnel:setup": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup-named-tunnel.ps1 -InstallService",
+    "tunnel:setup:dry": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup-named-tunnel.ps1",
+    "deploy:pages": "npm run build:frontend && wrangler pages deploy frontend/dist --project-name=agentnexus-dev",
+    "cf:login": "wrangler login",
+    "cf:whoami": "wrangler whoami"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250617.0",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.20.0"
+  }
+}

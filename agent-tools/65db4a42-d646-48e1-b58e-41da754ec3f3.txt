@@ -1,0 +1,443 @@
+================================================================================
+ai-visibility-2026/SKILL.md
+================================================================================
+---
+name: ai-visibility-2026
+description: Expert digital-marketing-agency playbook for making any website, brand, or social account rank in the AI-search era (2026 algorithms). Use this skill whenever the user asks about SEO, AEO, GEO, AIO, AI Overviews, AI Mode, LLM citations, AI crawlers, llms.txt, agent-readiness, Markdown for Agents, Content Signals, Web Bot Auth, MCP discovery, agentic commerce (x402/ACP/UCP), building a new website "the right way today", launching a social/brand account, auditing a site's AI visibility score, or asks "what must I build to be found by ChatGPT/Perplexity/Claude/Gemini/Google AI". Also trigger when interpreting agent-readiness scan results or designing scanner/audit features.
+---
+
+# AI Visibility 2026 — Agency-Grade Playbook
+
+The 2026 discovery landscape is **five stacked layers**. A site that wins only layer 1 is invisible to half the buyers. Score each layer, fix bottom-up, and always ship the fix file, never just the finding.
+
+| # | Layer | Who reads it | Core artifacts |
+|---|---|---|---|
+| 1 | Classic SEO | Googlebot, Bingbot | titles, schema, CWV, links |
+| 2 | AI answer citation (AEO/GEO) | AI Overviews, AI Mode, ChatGPT, Perplexity, Claude | answer blocks, entities, E-E-A-T, freshness |
+| 3 | AI crawler access | GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended | robots.txt, Content-Signals, llms.txt, WAF rules |
+| 4 | Agent readiness | Autonomous agents, MCP clients | Markdown negotiation, Link headers, /.well-known/* discovery, MCP Server Card, Agent Skills, WebMCP |
+| 5 | Agentic commerce | Buying agents | x402, ACP, UCP, MPP, Pay-Per-Crawl |
+
+## Workflow
+
+1. **Identify the scenario** and read the matching reference (read more than one if the task spans layers):
+   - New website build, or fixing an existing site → `references/new-website-blueprint.md` (day-one checklist + copy-paste files)
+   - Getting cited by Google AI Overviews / AI Mode / LLMs → `references/ai-overviews-geo.md` (citation algorithm data + content formulas)
+   - Agent-readiness, well-known endpoints, scanner results, MCP/commerce protocols → `references/agent-readiness.md` (every standard, exact paths, minimal valid files)
+   - New social/brand account launch or social algorithm strategy → `references/social-branding-2026.md`
+   - Building scanner/audit features, packaging or pricing agency services, certification/badge programs, Pay-Per-Crawl advisory → `references/agency-productization.md` (exact check specs + service ladder)
+   - Building/registering/operating a verified bot or signed agent with cryptographic identity (Web Bot Auth, RFC 9421), Cloudflare Bot Directory submission, key directory setup, crawltest validation, delisting/activity rules → `references/verified-bot-operations.md`
+2. **Score before prescribing.** When a site is given, check it (fetch robots.txt, llms.txt, homepage head, key /.well-known paths) or interpret the user's scan output. Map every finding to a layer.
+3. **Prioritize bottom-up within budget.** Layer 3 blockers (bots blocked by WAF/robots) zero-out layers 2 and 4 — fix access first, then citation content, then agent discovery, then commerce.
+4. **Ship fixes, not advice.** Every recommendation must come with the actual file content (robots.txt, llms.txt, JSON-LD, Link header line, well-known JSON) ready to deploy, using the templates in the references. Localize to the user's market and language (e.g., Thai SMEs: Thai content, LINE OA, PromptPay context).
+5. **Define proof.** State the measurable check that verifies each fix (re-scan score, citation probe query, `curl -H "Accept: text/markdown"` test, DoH lookup).
+
+## Non-negotiable 2026 rules (apply in every answer)
+
+- **Answer-block formula** for any content meant to be cited: question heading → 20–40 word direct answer → 2–3 sentences of reasoning → list/table. Self-contained passages of ~134–167 words are the extraction unit AI engines lift.
+- **One source of truth on access:** robots.txt + Content-Signal directives declare policy; CDN/WAF must agree. The #1 silent killer is a WAF blocking AI bots while robots.txt allows them.
+- **Markdown negotiation is now table stakes on Cloudflare:** `Accept: text/markdown` should return `Content-Type: text/markdown` (one dashboard toggle in AI Crawl Control — but check the default Content-Signal it sets: `ai-train=yes, search=yes, ai-input=yes`).
+- **E-E-A-T applies to ALL content categories** since the Dec 2025 core update, not just YMYL. Named authors, dates, citations to authoritative sources, and consistent entity identity (same NAP everywhere) are mandatory filters, not bonuses.
+- **Freshness compounds:** content under ~3 months old is ~3× more likely to be cited; add visible "Updated" dates and actually update.
+- **No fake compliance:** never recommend stuffing well-known files a site can't honor (e.g., an MCP Server Card pointing at no server). Empty discovery endpoints damage agent trust.
+
+## Quick layer diagnosis from symptoms
+
+- "Traffic down but rankings stable" → layer 2 (AI Overviews absorbing clicks; optimize for citation, measure share-of-voice in AI answers).
+- "AI chatbots never mention us" → layers 2+3 (run citation probes; check bot access; check entity consistency).
+- "Scanner says Level 1 / low agent score" → layer 4 (work through agent-readiness.md top-down: Markdown negotiation and Link headers first — they're cheapest).
+- "Want agents to buy from us" → layer 5 (only after 1–4 are solid).
+
+
+================================================================================
+ai-visibility-2026/references/new-website-blueprint.md
+================================================================================
+# "If I build a new website TODAY" — Day-One Blueprint (2026)
+
+Use this when a user starts a new site (or relaunches) and wants it born AI-visible. Output a concrete build plan with the actual files. Order matters: foundation → access → citation content → agent layer.
+
+## Phase 0 — Decisions before code
+1. **One canonical host** (pick `www` or apex, 301 the other; the redirect chain in scan results costs trust and crawl budget).
+2. **Entity identity locked:** exact business name, address, phone, hours, geo — written once, reused EVERYWHERE (site footer, schema, Google Business Profile, Facebook, LINE OA, directories). NAP inconsistency is a hard E-E-A-T penalty.
+3. **Stack:** static-first (Astro/Eleventy/plain HTML on Cloudflare Pages or equivalent CDN). Server-rendered HTML — AI crawlers don't reliably execute JS; content must exist in the initial HTML response. Real text, never text-in-images (product specs as images are invisible to every layer).
+4. **Language:** primary market language first-class (e.g., Thai), English as secondary with hreflang — AI engines answer in the asker's language from same-language sources.
+
+## Phase 1 — Foundation (classic SEO, day 1)
+- HTTPS + HSTS; mobile viewport; <2.5s LCP (compress images to WebP/AVIF, minimal JS).
+- Per page: unique `<title>` ≤60 chars, meta description 140–160, exactly one H1, logical H2/H3 (phrased as buyer questions where natural), canonical tag, descriptive alt text on every image.
+- `sitemap.xml` referenced from robots.txt; submit to Google Search Console + Bing Webmaster (Bing feeds ChatGPT/Copilot — do not skip Bing).
+- JSON-LD in every page head: `LocalBusiness`/`Organization` (full NAP, geo, openingHours, `sameAs` to all profiles), plus `FAQPage` on pages with answer blocks, `Product`/`Service` with real specs, `Article` with author + dates.
+
+## Phase 2 — Access files (day 1, copy-paste from agent-readiness.md §1)
+- robots.txt with explicit AI-bot rules + `Content-Signal` + Sitemap line.
+- `/llms.txt` curated map; plan `/llms-full.txt` when content volume justifies.
+- Verify WAF/bot settings allow the AI roster (test fetch per UA).
+- `_headers` (or server config): security headers + `Link:` rel="llms-txt" (add api-catalog later if/when an API exists).
+- Enable Markdown for Agents if on Cloudflare (review Content-Signal default).
+
+## Phase 3 — Citation content (weeks 1–4, the revenue layer)
+- Every commercial page: 3–7 answer blocks (formula in ai-overviews-geo.md) targeting real buyer questions in the buyer's words.
+- One **proof asset** per service: original photos, real numbers (capacity, tolerances, lead times, prices/ranges), named people. First-hand specificity is the moat — commodity text gets filtered.
+- Author/About pages with credentials; visible "Updated" dates with a real update cadence (refresh top pages quarterly — <3-month-old content cites ~3× more).
+- 5–10 citation-probe questions written down on launch day = your baseline scoreboard.
+
+## Phase 4 — Agent layer (month 2)
+- Cloudflare AI Search instance over the site → public ask endpoint → publish MCP Server Card at `/.well-known/mcp/server-card.json`.
+- WebMCP tool for the #1 conversion action (quote request / booking).
+- DNS-AID SVCB records (`_index._agents`, `_mcp._agents`) pointing at the live endpoint; enable DNSSEC.
+- Optional: Agent Skills index; ACP discovery if e-commerce.
+
+## Launch-day verification checklist (the proof)
+```
+curl -s https://site/robots.txt            # AI rules + Content-Signal + Sitemap present
+curl -s https://site/llms.txt              # 200, valid markdown map
+curl -sI https://site/ | grep -i link      # Link headers
+curl -sH "Accept: text/markdown" https://site/ -D- | grep -i content-type   # text/markdown
+curl -sA "GPTBot" -o /dev/null -w "%{http_code}" https://site/              # 200 not 403 (repeat per bot UA)
+```
+Then: run an agent-readiness scan (target Level 3+), Rich Results test for schema, PSI mobile ≥85, and the citation-probe baseline.
+
+## Anti-patterns (refuse to build these)
+- JS-only rendering of core content; specs as images; PDF-only product data.
+- Doorway/AI-spun page farms; fake authors; schema describing content that isn't visibly on the page.
+- Discovery files pointing at dead endpoints (worse than absent).
+- Blocking all AI bots "for safety" on a business that lives on being found.
+
+
+================================================================================
+ai-visibility-2026/references/agent-readiness.md
+================================================================================
+# Layers 3–5 — AI Crawler Access, Agent Readiness & Agentic Commerce (2026 standards)
+
+Every standard below is something live scanners (e.g., isitagentready.com-style tools, Cloudflare's 12-check rubric) actually test. For each: what it is, the exact path/header, a minimal valid implementation, and whether a typical SMB should ship it. Implement honestly — never publish discovery files pointing at capabilities that don't exist.
+
+## Table of contents
+1. Layer 3 — Access: robots.txt AI rules · Content Signals · llms.txt · WAF alignment · Cloudflare AI Crawl Control · Web Bot Auth
+2. Layer 4 — Discovery: Markdown for Agents · Link headers (RFC 8288) · DNS-AID · API Catalog (RFC 9727) · OAuth/OIDC discovery · auth.md · MCP Server Card · Agent Skills index · WebMCP · NLWeb/AI Search
+3. Layer 5 — Commerce: Pay-Per-Crawl · x402 · MPP · UCP · ACP
+4. Priority matrix for SMBs
+
+---
+
+## 1. LAYER 3 — ACCESS
+
+### robots.txt with explicit AI bot rules
+Wildcard `User-Agent: *` technically covers AI bots, but explicit rules score higher on audits and let you differentiate training vs search crawlers. The 2026 bot roster to address: GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User, Google-Extended, GoogleOther, Bingbot, Meta-ExternalAgent, Amazonbot, Applebot-Extended, Bytespider, CCBot.
+
+Standard SMB policy (visibility-maximizing — allow search/answer crawlers, owner decides on training):
+```
+# Answer/search engine crawlers — ALLOW (these drive citations & customers)
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Training-only crawlers — owner's choice (Allow for max visibility; Disallow to withhold training data)
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Disallow: /
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Sitemap: https://example.com/sitemap.xml
+```
+
+### Content Signals (contentsignals.org, IETF draft)
+Machine-readable usage policy inside robots.txt (or as an HTTP `Content-Signal` response header). Three directives: `search` (indexing/answering), `ai-input` (RAG/agentic use at inference), `ai-train` (model training). Cloudflare can inject these network-wide. **Caveat:** enabling Cloudflare's Markdown for Agents currently sets `Content-Signal: ai-train=yes, search=yes, ai-input=yes` by default on converted responses — review before toggling if the client restricts training use.
+
+### llms.txt (+ llms-full.txt)
+`/llms.txt` = curated markdown map of the site for LLMs: H1 site name, blockquote summary, sections of `[Title](url): one-line description`. `/llms-full.txt` = full flattened content. Not a Google ranking input; widely read by other engines/agents and dirt-cheap. Keep it in sync with the sitemap. Cloudflare's own docs ship both per-product — the reference implementation pattern.
+
+### WAF / bot-management alignment (the #1 silent killer)
+Audit finding seen constantly: robots.txt allows AI bots while the WAF/bot-fight-mode blocks them with 403s. Verify with real fetches per bot UA (a bot-access tester), and in Cloudflare: AI Crawl Control → per-crawler allow/block decisions; check Security Events for blocked AI UAs. Declared policy and enforced policy must match — scanners and bot operators both notice hypocrisy.
+
+### Cloudflare AI Crawl Control (free, all plans)
+Dashboard surface for: per-AI-crawler allow/block, crawler analytics (who fetches what, how often — your leading indicator of AI visibility), robots.txt violation tracking, Pay-Per-Crawl (private beta, HTTP 402), and the Markdown for Agents toggle. For any Cloudflare-hosted client this is step 1 of an engagement: read the analytics before changing anything.
+
+### Web Bot Auth (RFC 9421 HTTP Message Signatures)
+Cryptographic bot identity replacing spoofable user-agents; backed by Cloudflare + GoDaddy (with ANS). Site-owner side: mostly *consume* verification (Cloudflare Verified Bots). Publishing `/.well-known/http-message-signatures-directory` matters if you OPERATE a bot/agent (e.g., a scanner product should sign its own crawls — differentiator for an audit-tool vendor). For a normal SMB site: skip; rely on CDN verification.
+
+---
+
+## 2. LAYER 4 — DISCOVERY & AGENT INTERACTION
+
+### Markdown for Agents (content negotiation)
+Request with `Accept: text/markdown` → response `Content-Type: text/markdown` (+ optional `x-markdown-tokens`). Cuts agent token cost ~80%. On Cloudflare Pro/Business: one toggle in AI Crawl Control (edge converts HTML→MD on the fly, YAML frontmatter from meta tags + body markdown; cacheable). Self-hosted: middleware that converts or serves pre-rendered `.md` siblings (Cloudflare docs pattern: every page also at `<url>/index.md`). Test: `curl -sH "Accept: text/markdown" https://site/ -D- | grep -i content-type`. Note the Google dissent (Mueller: HTML is fine for bots; markdown strips schema) — recommendation: enable it for agent efficiency, keep HTML canonical and schema-complete; it's additive, not a replacement.
+
+### Link headers (RFC 8288) — cheapest score win
+Homepage response headers advertising agent resources:
+```
+Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="llms-txt", </docs/api>; rel="service-doc"
+```
+On Cloudflare Pages: add to `_headers` file under `/`. Only advertise paths that exist.
+
+### DNS-AID (DNS for AI Discovery, IETF draft)
+SVCB/HTTPS (type 64/65) records at `_index._agents.<domain>`, `_mcp._agents.<domain>`, `_a2a._agents.<domain>` with alpn/endpoint params; DNSSEC-signed zone. Lets agents discover services before any HTTP request. Trivial to add in Cloudflare DNS once you HAVE an agent endpoint; meaningless without one. Verify via DoH: `https://cloudflare-dns.com/dns-query?name=_index._agents.example.com&type=SVCB` with `accept: application/dns-json`.
+
+### API Catalog — RFC 9727
+`/.well-known/api-catalog`, `Content-Type: application/linkset+json`:
+```json
+{"linkset":[{"anchor":"https://example.com/api","service-desc":[{"href":"https://example.com/openapi.json","type":"application/openapi+json"}],"service-doc":[{"href":"https://example.com/docs/api"}],"status":[{"href":"https://example.com/api/health"}]}]}
+```
+Ship only if a public API exists.
+
+### OAuth/OIDC discovery (RFC 8414) + Protected Resource Metadata (RFC 9728) + auth.md
+For sites with protected APIs agents should authenticate to: `/.well-known/oauth-authorization-server` (issuer, authorization_endpoint, token_endpoint, jwks_uri, grant_types_supported), `/.well-known/oauth-protected-resource` (resource, authorization_servers, scopes_supported), and human/agent-readable `/auth.md` (WorkOS convention) with registration instructions + `agent_auth` block (register_uri, identity/credential types). Required plumbing for any remote MCP server with auth; skip for brochure sites.
+
+### MCP Server Card (SEP-1649 / PR 2127)
+`/.well-known/mcp/server-card.json`: serverInfo (name, version), transport endpoint (streamable HTTP URL), capabilities (tools/resources/prompts). THE discovery hook for the MCP ecosystem. For SMBs the realistic path is Cloudflare **AI Search** (managed: index your site → instance exposes a built-in MCP endpoint + public search endpoint + embeddable UI snippets) — you get a legitimate MCP server for "search/ask this business" without writing one, then publish the card pointing at it. (AI Search instances after Apr 2026 include managed storage + web crawling of your site as a data source; also supports NLWeb.)
+
+### Agent Skills index (Agent Skills Discovery RFC v0.2.0, Cloudflare)
+`/.well-known/agent-skills/index.json` (legacy: `/.well-known/skills/index.json`): `$schema` + `skills` array, each {name, type, description, url, sha256 digest}. Publish downloadable skills teaching agents to use your service (e.g., "how to request a casting quote"). High-leverage for tool/SaaS vendors; optional for local SMBs.
+
+### WebMCP (W3C Web Machine Learning CG / Chrome)
+In-page JS: `navigator.modelContext.provideContext({tools:[{name, description, inputSchema, execute}]})` exposing site actions (request_quote, check_stock, book_slot) to browser-resident agents. Detected by scanners on page load. Early but cheap: a single quote-form tool is a real differentiator and converts agent visits into leads.
+
+### Site search for agents — Cloudflare AI Search
+Managed natural-language search over your content (Workers binding, REST, public endpoint, MCP). For agencies: deploy per-client instances ("ask this website anything") = instant layer-4 capability + the backing service for the MCP Server Card. NLWeb integration available.
+
+---
+
+## 3. LAYER 5 — AGENTIC COMMERCE (emerging; informational on most scanners, doesn't affect score yet)
+
+- **Pay-Per-Crawl** (Cloudflare, private beta): respond 402 to AI crawlers; allow/charge/block per bot. The monetization counterpart to blocking.
+- **x402** (Coinbase et al.): HTTP 402 payment flow middleware (@x402/express|hono|next + facilitator + wallet); agents pay per request autonomously.
+- **MPP** (Machine Payment Protocol): `/openapi.json` with `x-payment-info` extensions per operation {intent: charge|session, method: tempo|stripe|lightning|card, amount, currency}; SDKs mppx/pympp.
+- **UCP**: `/.well-known/ucp` profile (version, services, capabilities, endpoints).
+- **ACP** (Agentic Commerce Protocol — OpenAI/Stripe lineage): `/.well-known/acp.json` {protocol:{name:"acp",version}, api_base_url, transports, capabilities.services}; lets ChatGPT-class agents discover checkout. **Watch this one for e-commerce clients** — when instant checkout via agents scales, early ACP adopters take the order flow.
+- Strategy: layer 5 only after 1–4 are solid; for stores, ACP + Stripe is the pragmatic first move; x402/MPP for API products.
+
+---
+
+## 4. PRIORITY MATRIX (typical SMB/SME, e.g., a Thai factory site scoring "Level 1")
+
+| Priority | Item | Effort | Score/impact |
+|---|---|---|---|
+| P0 | WAF/robots alignment — verify every major AI bot gets 200 | 1h | Unblocks everything |
+| P0 | robots.txt: explicit AI rules + Content-Signal + Sitemap | 30m | Bot Access 2/2 |
+| P0 | llms.txt (+ keep in sync) | 1h | Discoverability |
+| P1 | Markdown for Agents toggle (Cloudflare) — review Content-Signal default | 15m | Content 1/1 |
+| P1 | Link headers via `_headers` | 15m | Discoverability |
+| P1 | Answer blocks + FAQ/LocalBusiness schema (layer 2 work) | days | Citations = revenue |
+| P2 | Cloudflare AI Search instance → public ask endpoint + MCP Server Card | 0.5–1d | API/MCP from 0/7 → real capability |
+| P2 | WebMCP quote/contact tool | 0.5d | Agent→lead conversion |
+| P2 | DNS-AID records pointing at the MCP endpoint (DNSSEC on) | 30m | Discoverability 4/4 |
+| P3 | Agent Skills index; auth.md/OAuth metadata if protected API exists | varies | Completeness |
+| P3 | ACP/x402 if commerce | varies | Future order flow |
+
+Expected movement on a 12-check agent-readiness rubric: Level 1 (~21) → Level 3+ (70+) with P0–P2 done.
+
+
+================================================================================
+ai-visibility-2026/references/verified-bot-operations.md
+================================================================================
+# Operating a Verified Bot / Signed Agent on Cloudflare (2026)
+
+Use when building, registering, or operating an audit/crawler bot that needs cryptographic identity (Web Bot Auth) and listing in the Cloudflare Bots & Agents Directory. Battle-tested from registering AIBotAuth (the audit bot in this stack).
+
+## The two identities — pick ONE per bot (cannot be both)
+- **Verified Bot** = directed by the bot OWNER (search crawlers, monitoring, audit tools). This is what an audit/visibility scanner is.
+- **Signed Agent** = carries out a goal directed by the END USER (autonomous agents acting per-user, e.g. an AI that books/buys on someone's behalf). Different policy, different registration.
+- A single bot/keyid cannot register as both. If a product needs both surfaces (e.g. an audit bot AND a per-user agent), run them as separate bots with separate keys.
+
+## Verification methods (choose by hosting reality)
+- **Web Bot Auth (Request Signature)** — RFC 9421 Ed25519 HTTP Message Signatures. REQUIRED choice when the bot runs on shared egress IPs (Cloudflare Workers/Pages, most serverless). Form label may read "Request signature (beta)".
+- **IP validation (Reverse DNS / IP List)** — only viable when you control dedicated, stable egress IPs. Do NOT pick this on Pages/Workers — egress is Cloudflare's shared pool and verification will fail.
+
+## Web Bot Auth implementation checklist (what actually passes)
+1. Ed25519 keypair; kid = RFC 7638 JWK thumbprint. On workerd: strip `alg`/`use`/`key_ops` before `crypto.subtle.importKey` (workerd rejects `alg:"Ed25519"`; spec value is `EdDSA`, but stripping is safest).
+2. Key directory at `/.well-known/http-message-signatures-directory`, media type `application/http-message-signatures-directory+json`, body `{"keys":[<public JWK>]}`. Serve only PUBLIC keys (has `x`, never `d`).
+3. **Directory self-signature** differs from request signatures:
+   - Directory: component list `("@authority";req "signature-agent")`, `tag="http-message-signatures-directory"`, include `nonce` (32 random bytes, base64), `@authority` derived from the INCOMING request host.
+   - Outgoing requests: plain `("@authority" "signature-agent")`, `tag="web-bot-auth"`, plus `Signature-Agent: "<origin>"`.
+4. Sign every TARGET-site fetch with `signedFetch`; NEVER sign requests that wear another bot's User-Agent (bot-simulation/comparison modes stay unsigned — signing them is identity fraud).
+5. Fail-open: missing key ⇒ plain fetch, so audits never break on identity.
+
+## Validate BEFORE submitting (don't guess)
+- `curl -sD- -o NUL "https://<origin>/.well-known/http-message-signatures-directory?v=x"` — confirm 200, correct media type, `Signature-Agent`, `("@authority";req ...)`, tag, nonce, Signature.
+- **Cloudflare's live validator:** sign a GET to `https://crawltest.com/cdn-cgi/web-bot-auth`. Expected **401** = "unknown public key…for keyid" = format ACCEPTED, key just not registered yet → ready to submit. **400** = format problem (check field presence, @authority;req, alg). **200** = already registered.
+- CLI option: `cargo install http-signature-directory` then validate the directory.
+
+## The submission form (Manage Account → Configurations → Bot Submission Form)
+Account-level, not zone-level. Fields:
+- Bot name; "I own this bot"; **Bot documentation URL** = a public /bot page describing the bot (REQUIRED-quality: identity, UA, policy, opt-out, key-directory link, TH/EN if relevant).
+- **Short description: HARD LIMIT 120 chars.** Write it tight up front.
+- Bot type: Verified Bot.
+- **Crawler category** (sticky, shows on Radar — pick honestly; Cloudflare reserves the right to re-assign if behavior differs):
+  - Audit/visibility/monitoring tool → `Monitoring & Analytics` ("uptime, performance, traffic metrics").
+  - SEO analysis tool → `Search Engine Optimization` (Lighthouse/GTmetrix/Pingdom class).
+  - NEVER pick `AI Crawler`/`AI Search`/`AI Assistant` for a tool that promises no training-data collection — it contradicts the policy and many sites auto-block those categories.
+  - Other categories: Academic Research, Accessibility, Advertising & Marketing, Aggregator, Archiver, Feed Fetcher, Page Preview, Search Engine Crawler, Security, Social Media Marketing, Webhooks, Other.
+- Verification method: Request signature (beta).
+- **Validation instructions** = the key-directory URL.
+- UA header values (optional, recommended): full UA string, press Enter to chip it.
+- UA match pattern (optional, recommended): a substring matching all the bot's UAs (e.g. the bot name), press Enter.
+
+## Post-approval operating rules (the part everyone misses)
+- Approval → listed on Cloudflare Radar verified-bots directory. Use this as public proof / sales asset.
+- **DELISTING RISK:** a listed bot is delisted if Cloudflare sees NO traffic from it for a period (inactive IPs drop in ~24h). **You must run real signed scans regularly to stay listed.** Operationally: schedule recurring real audits (your own properties + customer scans) so the identity stays warm. A registered-but-idle bot quietly falls off.
+- Benefit once verified: excluded from Bot Fight Mode by default, and sites can allow/segment you via `cf.verified_bot_category` in WAF rules — i.e. far fewer WAF blocks on your scans.
+- Re-verify the directory + crawltest after ANY change to domain, keys, or signing code (regressions hide in merges — directory signature params are the usual casualty).
+
+## Strategic note for an audit-bot business
+Verified-bot status is a moat amplifier, not the moat: it makes the scanner trustworthy and un-spoofable, which lets you sell a signed "verified by <you>" proof certificate and own the rubric. The durable asset is the accumulating scan dataset + the standard you publish, not the signature itself. Keep the bot active (delisting rule) and version your audit standard publicly.
+
+
+================================================================================
+ai-visibility-2026/references/agency-productization.md
+================================================================================
+# Agency Productization — Turning the 2026 Stack into Sellable Services & Scanner Features
+
+Use this when the user is an agency/tool-builder (not just a site owner): designing audit/scanner features, packaging services, or pricing AI-visibility work. Written for first-mover markets (e.g., Thai SMEs) where nobody else scores these layers yet.
+
+## 1. Scanner check specs — Layer 3/4 checks to implement (exact test logic)
+
+Each check: request → pass condition → fail message → the fix artifact your tool should auto-generate (finding must ship with the fix).
+
+| Check | Test | Pass | Auto-generated fix |
+|---|---|---|---|
+| AI bot live access (per bot) | GET / with each AI bot UA (GPTBot, ClaudeBot, OAI-SearchBot, Claude-SearchBot, PerplexityBot, ChatGPT-User, Google-Extended, Bingbot) | HTTP 200 + same content as browser UA (compare title/word count; flag cloaking & 403/503/challenge pages) | WAF allowlist instructions per CDN + corrected robots.txt |
+| robots.txt AI rules | GET /robots.txt; parse User-agent groups | Explicit rules for ≥5 major AI bots (wildcard-only = partial credit) | Full 2026 robots.txt |
+| Content Signals | Parse robots.txt for `Content-Signal:` lines; also check `Content-Signal` response header on / | Valid `search/ai-input/ai-train` directives present | Directive line matching owner's stated policy |
+| llms.txt | GET /llms.txt | 200, text/markdown or text/plain, H1 + ≥1 link section; cross-check links resolve | Generated llms.txt from sitemap + page summaries |
+| Markdown negotiation | GET / with `Accept: text/markdown` | `Content-Type: text/markdown` (record `x-markdown-tokens` if present; report token savings vs HTML) | Cloudflare toggle instructions OR .md sibling-page middleware |
+| Link headers (RFC 8288) | HEAD /; parse `Link` header | ≥1 relevant rel (llms-txt, api-catalog, service-doc) pointing at a 200 resource | `_headers` / nginx config line |
+| Well-known sweep | GET /.well-known/{api-catalog, mcp/server-card.json, agent-skills/index.json, oauth-authorization-server, oauth-protected-resource, acp.json, ucp, http-message-signatures-directory} + /auth.md + /openapi.json | Per-file: 200 + correct content-type + minimal schema validity; ALSO verify advertised endpoints respond (dead pointer = worse than absent, score negative) | Minimal valid file for each the client can honestly support |
+| DNS-AID | DoH (cloudflare-dns.com/dns-query, accept: application/dns-json) SVCB/HTTPS/TXT at `_index._agents.`, `_mcp._agents.`, `_a2a._agents.` on apex + www; check AD flag for DNSSEC | ≥1 valid record whose endpoint answers | DNS record values + DNSSEC enablement steps |
+| WebMCP | Headless render; check `navigator.modelContext` tool registrations after load | ≥1 tool with name/description/inputSchema/execute | Starter quote-form tool JS snippet |
+| Bot identity (advanced) | Check /.well-known/http-message-signatures-directory | 200 + valid JWKS-style directory | n/a for most SMBs; note as informational |
+
+Scoring guidance: weight access checks (bot 200s, robots) highest — they gate everything; well-knowns score only when honest (live endpoints); commerce protocols informational-only until adoption matures. Re-scan after fix = the before/after proof artifact.
+
+**Differentiator for the scanner itself:** sign your own scanner's requests with Web Bot Auth (RFC 9421) and publish your directory. You become one of the first verified-identity audit bots — gets you through bot defenses legitimately and is a credibility line in every report.
+
+## 2. The flagship upsell — "Agent-Ready in Half a Day" (MCP via Cloudflare AI Search)
+
+Package: index the client's site in a Cloudflare AI Search instance (managed storage + web crawl + built-in MCP endpoint + public ask endpoint + embeddable search UI) → publish MCP Server Card → add DNS-AID records → re-scan. Client goes from 0/7 on API/MCP discovery to a working "ask this business anything" capability without writing a server. Deliverables: the live ask widget on their site, the server card, the re-scan certificate. This is the highest perceived-value/effort ratio service in the 2026 stack.
+
+## 3. Service ladder (first-mover SME market template)
+
+1. **Free scan** (lead magnet) → shareable score page with the agency's branding = viral loop. Add an embeddable **"Agent-Ready" badge** (score + level, links to the scan) — every client site that displays it is a backlink + advertisement; certification framing creates the category and the agency owns the rubric.
+2. **Fix Pack** (fixed price): P0/P1 items — robots/Content-Signals/llms.txt/WAF alignment/Link headers/Markdown toggle + schema. Deliver before/after scan as proof.
+3. **Citation Engine** (monthly): answer-block content production in the market language + monthly citation probes across engines + share-of-voice report. The probe report IS the retention product — visibility scores are abstract; "Gemini named your competitor, not you, for 'โรงหล่อทราย โคราช'" is visceral.
+4. **Agent-Ready upgrade** (project): the §2 package.
+5. **Commerce-Ready** (project, e-commerce only): ACP discovery + Stripe/PromptPay flow when agentic checkout reaches the market.
+
+Localization notes (Thai SME archetype): bundle LINE OA setup/rich menu into Fix Pack (the conversion channel), PromptPay for billing, Google Business Profile + NAP cleanup as mandatory P0 (entity layer), probe queries written in Thai buyer phrasing.
+
+## 4. Monetization advisory you can sell to publishers
+
+For content-heavy clients losing traffic to AI: present the three-way choice per crawler — allow (visibility), block (withhold), charge (Cloudflare Pay-Per-Crawl 402 / x402). Most SMEs should allow answer-engines and decide deliberately on training bots; media/IP clients are the charge candidates. Charging consulting fees to configure this is a real 2026 service line.
+
+
+================================================================================
+ai-visibility-2026/references/ai-overviews-geo.md
+================================================================================
+# Layer 2 — Google AI Overviews, AI Mode & LLM Citation (AEO/GEO), 2026
+
+## The market reality (use these numbers when making the business case)
+
+- AI Overviews appear on ~25–48% of queries (depending on study/quarter, doubling year-over-year) and reach ~2B monthly users.
+- Organic CTR drops 34–61% on queries where an AI Overview appears — uncited pages absorb the loss.
+- BUT: pages **cited inside** the AI Overview earn ~35% more clicks than a traditional ranking alone, and AI-referred traffic converts ~5× better (≈14% vs ≈3%) because the visitor arrives pre-qualified.
+- ~74–76% of citations come from top-10 organic results — classic SEO still feeds the pool — yet ~14% of cited URLs don't rank organically at all, and many citations come from positions 4–20+. Citation is a separate track from rank-chasing.
+- Content under ~3 months old is ~3× more likely to be cited. Freshness is a citation factor.
+- Since the December 2025 core update, E-E-A-T requirements extend to ALL content categories.
+- Google's own 2026 AI Optimization Guide confirms: there is no secret separate AI ranking system — quality + technical hygiene win both tracks; the difference is the citation pool reaches beyond the top 10, so extractability and trust decide who gets lifted.
+
+## The citation selection factors (ranked by evidence strength)
+
+1. **Semantic completeness** — self-contained passages (~134–167 words) that fully answer the query with no external context needed. Strongest single predictor.
+2. **Extractable structure** — answer blocks, question headings (H2/H3 phrased as real buyer questions), lists, tables, comparison grids. The AI lifts units, not pages.
+3. **E-E-A-T & entity density** — named author with credentials, organization entity consistent across the web (same name/address/phone/profile everywhere), ~15+ recognized entities per 1,000 words (named tools, standards, places, people, products).
+4. **Multi-modal** — text + original images (+ video where natural) + structured data on the same page lifts selection substantially.
+5. **Authoritative outbound citations** — pages that cite credible sources are themselves more trusted for citation.
+6. **Freshness** — visible updated dates backed by real changes.
+7. **Position in page** — ~44% of LLM citations come from the first 30% of the text. Front-load the answer; never bury the lede under a story intro.
+
+## The answer-block formula (use verbatim as the content template)
+
+```
+## [Exact buyer question as the heading]
+[Direct answer in 1–2 sentences, 20–40 words.]
+[2–3 sentences of reasoning, evidence, or context — include a statistic or named source.]
+[Optional: list or table covering the variants/edge cases.]
+```
+
+Every commercial page needs 3–7 of these blocks targeting the questions buyers actually ask AI engines ("best sand casting factory in Thailand for 50kg aluminum parts", "lead time for custom casting", "how to check casting quality").
+
+## Schema that matters for citation
+
+- `Organization` / `LocalBusiness` with full NAP, `sameAs` links to all social profiles, geo coordinates.
+- `FAQPage` mirroring the on-page answer blocks (must match visible text).
+- `Article`/`Product` with `author`, `datePublished`, `dateModified`.
+- `HowTo` only where genuine procedures exist.
+- Keep schema in HTML — note that pure-markdown bot views strip JSON-LD, one reason HTML stays the canonical version (see agent-readiness.md, Markdown for Agents caveats).
+
+## Measuring layer 2 (define proof, not vibes)
+
+- **Citation probes:** monthly, ask each engine (AI Overviews via incognito search, ChatGPT search, Perplexity, Claude w/ search, Gemini) 5–10 real buyer questions; record brand named? domain cited? position? which competitors appear?
+- **Share of voice** = your citations ÷ total citations across your probe set; trend it.
+- Track AI-referral traffic separately (utm/referrer patterns: chatgpt.com, perplexity.ai, gemini, copilot) — conversion rate here is the money metric.
+- Server logs / Cloudflare AI Crawl Control analytics: are GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot actually fetching (and how often)? Crawl frequency is the leading indicator of citation.
+
+## What Google explicitly killed (don't recommend these)
+
+- Separate "AI versions" of pages for ranking purposes (the guide and Googlers reject special markup/files as ranking inputs — llms.txt etc. matter for *other engines and agents*, not Google ranking).
+- Commodity content: generic how-tos identical to hundreds of existing pages. First-hand experience, proprietary data, and real photos are what Google names as the durable differentiator.
+- Keyword-density tactics, AI-spun bulk pages, fake authors.
+
+
+================================================================================
+ai-visibility-2026/references/social-branding-2026.md
+================================================================================
+# "If I launch a new social/brand account TODAY" — 2026 Algorithm Rules
+
+Use for new brand accounts or social strategy. Core 2026 shift: social platforms are now (a) AI training/answer sources, (b) search engines in their own right, and (c) entity-verification signals for E-E-A-T. A brand's social graph feeds its AI citability.
+
+## Universal rules (all platforms)
+1. **Entity consistency first:** same handle, name, bio facts, NAP, and link across every platform; all profiles listed in the website's `sameAs` schema. AI systems cross-verify identity — mismatches lower trust everywhere.
+2. **Native > links:** every algorithm suppresses outbound links in primary content; deliver value in-platform, link in comments/bio/stories.
+3. **Watch-time & saves beat likes:** rankers optimize retention (3-sec hold, completion rate) and "meaningful" actions (saves, shares, replies). Design the first 1–3 seconds as the hook; design content people save (checklists, specs, price guides).
+4. **Reply speed is a ranking factor** (and a conversion one): platforms reward accounts that respond fast; pin a response-time promise.
+5. **Search-optimize inside platforms:** captions/titles/on-screen text carry keywords — TikTok/IG/YouTube are where under-35 buyers search; their content also surfaces in Google and AI answers.
+6. **Consistency over volume:** sustainable cadence (e.g., 3 quality posts/week) outperforms bursts; algorithms model account reliability.
+7. **Proof content wins:** behind-the-scenes process, real results, named humans. Same E-E-A-T logic as the web — first-hand experience is the differentiator AI and audiences both reward.
+
+## Platform notes (2026)
+- **Facebook:** organic page reach ~1–6%; Meaningful Social Interactions reward conversation-starting posts, native video (esp. Reels), and fast replies. Groups and Messenger/LINE-style direct channels carry the actual relationship. For Thai SMEs, Facebook remains the discovery surface; pair with LINE OA as the conversion/CRM channel (rich menu, auto-reply, broadcast — where the quote actually happens).
+- **Instagram:** Reels + carousels (saves); SEO-keyword captions; alt text on images.
+- **TikTok:** search-intent content ("how to choose X") has long shelf life; completion rate dominates; reply-with-video to comments compounds reach.
+- **YouTube:** the second-largest search engine and a primary AI-answer source; long-form how-tos + Shorts funnels; chapters and transcripts make content extractable (and citable).
+- **LinkedIn:** for B2B (e.g., industrial casting buyers): founder/engineer personal accounts outperform company pages; document-format posts (carousels) and comment-led distribution.
+- **X:** real-time + Grok visibility; threads with concrete data get quoted.
+
+## Launch sequence for a new brand account
+1. Register the same handle everywhere (even unused platforms — entity squatting protection).
+2. Complete EVERY profile field; bio = who/what/where/proof + one CTA link (or link-in-bio page on your own domain).
+3. Add all profiles to website `sameAs` schema + footer; link back from each profile to the site (entity loop closed).
+4. Publish 9–12 foundation posts before promotion: 3 proof (process/results), 3 answer-content (top buyer questions — recycled from website answer blocks), 3 people (founder, team, customers).
+5. Pick ONE primary platform by audience (Thai local B2C: Facebook+LINE; B2B export: LinkedIn+YouTube) — win one before adding more.
+6. Measure: saves, shares, profile→site clicks, DM/LINE conversations started — not follower count. Tie to the website citation probes: brands with active social entities get named more in AI answers.
+
+## Social ↔ AI visibility loop
+Answer blocks on the site become carousel/video scripts; social proof (reviews, UGC, named customers) becomes website E-E-A-T evidence; consistent entity across both is what lets AI engines confidently say "this business exists, is reputable, and is located here." Audit both together, always.
+
+

@@ -1,0 +1,1482 @@
+<!doctype html>
+<html
+  lang="th"
+  data-title-th="สำนักงานบัญชี กรุงเทพ 2026 | บัญชี ภาษี จดบริษัท"
+  data-title-en="Accounting Firm in Bangkok | Tax, DBD, and Business Support | Pinpoint"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050508" />
+    <meta name="google-site-verification" content="suOAhYAasY1XscXT9LFBgjN_j76JdbUnZ1Zl0sj3jzU" />
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<title>สำนักงานบัญชี กรุงเทพ 2026 | บัญชี ภาษี จดบริษัท</title>
+    <meta
+      name="description"
+      content="สำนักงานบัญชีกรุงเทพ ห้วยขวาง รัชดา ดูแลบัญชีรายเดือน ภาษี จดบริษัท DBD วีซ่า Work Permit พร้อมเช็กลิสต์เอกสาร โทร/LINE ได้ทันที"
+      data-th="สำนักงานบัญชีกรุงเทพ ห้วยขวาง รัชดา ดูแลบัญชีรายเดือน ภาษี จดบริษัท DBD วีซ่า Work Permit พร้อมเช็กลิสต์เอกสาร โทร/LINE ได้ทันที"
+      data-en="Bangkok accounting firm for bookkeeping, tax, company registration, DBD changes, and business-license support for Thai and international businesses."
+    />
+    <meta
+      name="keywords"
+      content="สำนักงานบัญชี กรุงเทพ, สำนักงานบัญชี ห้วยขวาง, รับทำบัญชี รัชดา, ภาษี, จดทะเบียนบริษัท, DBD, work permit, ใบอนุญาตธุรกิจ, ปิดบริษัท"
+      data-th="สำนักงานบัญชี กรุงเทพ, สำนักงานบัญชี ห้วยขวาง, รับทำบัญชี รัชดา, ภาษี, จดทะเบียนบริษัท, DBD, work permit, ใบอนุญาตธุรกิจ, ปิดบริษัท"
+      data-en="bangkok accounting firm, accounting office huai khwang, tax advisory bangkok, company registration bangkok, DBD amendment, work permit, business license"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pinpoint Accounting & Service, Ltd." />
+    <meta
+      property="og:title"
+      content="สำนักงานบัญชี กรุงเทพ 2026 | บัญชี ภาษี จดบริษัท"
+      data-th="สำนักงานบัญชี กรุงเทพ 2026 | บัญชี ภาษี จดบริษัท"
+      data-en="Accounting Firm in Bangkok | Tax, DBD, and Business Support | Pinpoint"
+    />
+    <meta
+      property="og:description"
+      content="สำนักงานบัญชีกรุงเทพ ห้วยขวาง รัชดา ดูแลบัญชีรายเดือน ภาษี จดบริษัท DBD วีซ่า Work Permit พร้อมเช็กลิสต์เอกสาร โทร/LINE ได้ทันที"
+      data-th="สำนักงานบัญชีกรุงเทพ ห้วยขวาง รัชดา ดูแลบัญชีรายเดือน ภาษี จดบริษัท DBD วีซ่า Work Permit พร้อมเช็กลิสต์เอกสาร โทร/LINE ได้ทันที"
+      data-en="Bangkok accounting and business-compliance support for bookkeeping, tax, DBD, visa/work permit, and licensing."
+    />
+    <meta property="og:url" content="https://pinpointaccountingservice.com/" />
+    <meta property="og:locale" content="th_TH" />
+    <meta property="og:image" content="https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png" />
+    <meta property="og:image:secure_url" content="https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pinpoint Accounting & Service - Bangkok accounting, tax, company registration, DBD, visa and work permit support" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@PinpointAcct" />
+    <meta name="twitter:creator" content="@PinpointAcct" />
+    <meta name="twitter:domain" content="pinpointaccountingservice.com" />
+    <meta name="twitter:url" content="https://pinpointaccountingservice.com/" />
+    <meta
+      name="twitter:title"
+      content="สำนักงานบัญชี กรุงเทพ 2026 | บัญชี ภาษี จดบริษัท"
+      data-th="สำนักงานบัญชี กรุงเทพ 2026 | บัญชี ภาษี จดบริษัท"
+      data-en="Accounting Firm in Bangkok | Tax, DBD, and Business Support | Pinpoint"
+    />
+    <meta
+      name="twitter:description"
+      content="สำนักงานบัญชีกรุงเทพ ห้วยขวาง รัชดา ดูแลบัญชีรายเดือน ภาษี จดบริษัท DBD วีซ่า Work Permit พร้อมเช็กลิสต์เอกสาร โทร/LINE ได้ทันที"
+      data-th="สำนักงานบัญชีกรุงเทพ ห้วยขวาง รัชดา ดูแลบัญชีรายเดือน ภาษี จดบริษัท DBD วีซ่า Work Permit พร้อมเช็กลิสต์เอกสาร โทร/LINE ได้ทันที"
+      data-en="Bangkok accounting and business-compliance support for bookkeeping, tax, DBD, visa/work permit, and licensing."
+    />
+    <meta name="twitter:image" content="https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png" />
+    <meta name="twitter:image:src" content="https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png" />
+    <meta name="twitter:image:alt" content="Pinpoint Accounting & Service - Bangkok accounting, tax, company registration, DBD, visa and work permit support" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="สำนักงานบัญชี กรุงเทพ 2026 | บัญชี ภาษี จดบริษัท" />
+    <meta property="twitter:description" content="สำนักงานบัญชีกรุงเทพ ห้วยขวาง รัชดา ดูแลบัญชีรายเดือน ภาษี จดบริษัท DBD วีซ่า Work Permit พร้อมเช็กลิสต์เอกสาร โทร/LINE ได้ทันที" />
+    <meta property="twitter:image" content="https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png" />
+    <meta property="twitter:site" content="@PinpointAcct" />
+    <meta property="twitter:creator" content="@PinpointAcct" />
+    <link rel="canonical" href="https://pinpointaccountingservice.com/" />
+    <link rel="me" href="https://maps.app.goo.gl/ZgQJbSdcryvowz1K6" />
+    <link rel="me" href="https://www.dataforthai.com/company/0105566083811/" />
+    <link rel="me" href="https://datawarehouse.dbd.go.th/company/profile/0105566083811" />
+    <link rel="me" href="https://lin.ee/58aU8oE" />
+    <link rel="me" href="https://line.me/R/ti/p/@413dqpcq" />
+    <link rel="llms" type="text/plain" href="https://pinpointaccountingservice.com/llms.txt" />
+    <link rel="ai" type="text/plain" href="https://pinpointaccountingservice.com/ai.txt" />
+    <link rel="alternate" type="text/plain" title="AI Agent Policy" href="https://pinpointaccountingservice.com/agents.txt" />
+    <link rel="alternate" hreflang="th" href="https://pinpointaccountingservice.com/" />
+    <link rel="alternate" hreflang="en" href="https://pinpointaccountingservice.com/en" />
+    <link rel="alternate" hreflang="x-default" href="https://pinpointaccountingservice.com/en" />
+    
+    <link rel="alternate" type="text/plain" title="LLM Summary" href="https://pinpointaccountingservice.com/llms.txt" />
+    <link rel="alternate" type="text/plain" title="AI Summary" href="https://pinpointaccountingservice.com/ai.txt" />
+    <link rel="alternate" type="application/rss+xml" title="Pinpoint Blog Feed" href="https://pinpointaccountingservice.com/feed.xml" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/jpeg" href="/assets/logo-original.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preload" as="image" href="/assets/logo-original-96.webp" type="image/webp" />
+    <style>
+      :root{--pf-bg:#050508;--pf-surface:rgba(255,255,255,.04);--pf-border:rgba(255,255,255,.12);--pf-ink:#f7f7f5;--pf-ink-secondary:rgba(255,255,255,.72);--pf-accent:#d4a853}
+      *{box-sizing:border-box}
+      html,body{margin:0;min-height:100%}
+      body{background:#050508;color:var(--pf-ink);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.6}
+      img{display:block;max-width:100%}
+      .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 24px;background:rgba(5,5,8,.72);border-bottom:1px solid var(--pf-border);backdrop-filter:blur(14px)}
+      .brand,.nav,.nav-actions,.hero-actions{display:flex;align-items:center;gap:14px}
+      .brand{color:inherit;text-decoration:none}
+      .brand-logo{width:48px;height:48px;border-radius:12px;object-fit:cover}
+      .brand-copy{display:grid;line-height:1.25}
+      .brand-status,.eyebrow,.kicker{color:var(--pf-accent);font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+      .brand-copy strong{font-size:.95rem}
+      .brand-copy span:last-child,.nav a{color:var(--pf-ink-secondary);font-size:.9rem;text-decoration:none}
+      .page-wrap{overflow:hidden}
+      .section{width:min(1180px,calc(100vw - 40px));margin:0 auto;padding:64px 0}
+      .page-hero{min-height:calc(100svh - 72px);padding-top:clamp(28px,4vw,40px)}
+      .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.9fr);gap:18px;align-items:stretch}
+      .hero-copy{display:grid;gap:16px}
+      .brand-badge{display:inline-flex;width:fit-content;border:1px solid rgba(184,142,73,.34);border-radius:999px;padding:8px 12px;background:rgba(184,142,73,.12);color:#fff;font-size:.86rem;font-weight:800}
+      h1,h2,h3{margin:0;line-height:1.16}
+      .page-hero h1{font-size:clamp(2rem,10vw,3.1rem);line-height:1.08}
+      .hero-copy p{max-width:68ch;margin:0;color:var(--pf-ink-secondary);font-size:1rem;line-height:1.72}
+      .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border-radius:999px;padding:11px 16px;text-decoration:none;font-weight:800}
+      .btn-primary,.btn-emphasis{background:var(--pf-accent);color:#050508}
+      .btn-secondary{border:1px solid var(--pf-border);color:var(--pf-ink)}
+      .hero-aside{display:grid;gap:16px;align-content:start;padding:18px;border:1px solid var(--pf-border);border-radius:20px;background:var(--pf-surface)}
+      .hero-image img{width:100%;height:auto;border-radius:16px}
+      @media (max-width:760px){.topbar{padding:12px 18px}.nav,.nav-actions{display:none}.section{width:min(100% - 22px,1180px);padding:44px 0}.hero-grid{grid-template-columns:1fr}.hero-copy{gap:14px}.page-hero h1{font-size:clamp(2rem,11vw,3rem)}.hero-actions{align-items:stretch;flex-direction:column}.brand-copy span:last-child{display:none}}
+    </style>
+    <link rel="preload" href="/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/styles.min.css" /></noscript>
+    <script>
+      window.PINPOINT_CONFIG = {
+        lineOaUrl: "https://line.me/R/ti/p/@413dqpcq",
+        emailLeadEnabled: true,
+        ga4MeasurementId: "G-T1N30W3D87",
+        googleAdsId: "",
+        googleAdsLeadLabel: "",
+        metaPixelId: ""
+      };
+    </script>
+    
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://pinpointaccountingservice.com/"
+          }
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://pinpointaccountingservice.com/#website",
+            "url": "https://pinpointaccountingservice.com/",
+            "name": "Pinpoint Accounting & Service, Ltd.",
+            "alternateName": ["Pinpoint Accounting", "Bangkok accounting firm"],
+            "publisher": { "@id": "https://pinpointaccountingservice.com/#organization" },
+            "about": { "@id": "https://pinpointaccountingservice.com/#accounting-service" },
+            "inLanguage": "th-TH",
+            "sameAs": [
+              "https://maps.app.goo.gl/ZgQJbSdcryvowz1K6",
+              "https://www.dataforthai.com/company/0105566083811/",
+              "https://datawarehouse.dbd.go.th/company/profile/0105566083811",
+              "https://lin.ee/58aU8oE",
+              "https://line.me/R/ti/p/@413dqpcq"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://pinpointaccountingservice.com/#webpage",
+            "url": "https://pinpointaccountingservice.com/",
+            "name": "สำนักงานบัญชี กรุงเทพ | Bangkok Accounting Firm | Pinpoint Accounting",
+            "description": "สำนักงานบัญชีกรุงเทพ ห้วยขวาง รัชดา สำหรับบัญชีรายเดือน ภาษี จดบริษัท DBD วีซ่า Work Permit และใบอนุญาตธุรกิจ",
+            "dateModified": "2026-06-02",
+            "isPartOf": { "@id": "https://pinpointaccountingservice.com/#website" },
+            "author": { "@id": "https://pinpointaccountingservice.com/#organization" },
+            "publisher": { "@id": "https://pinpointaccountingservice.com/#organization" },
+            "copyrightHolder": { "@id": "https://pinpointaccountingservice.com/#organization" },
+            "about": { "@id": "https://pinpointaccountingservice.com/#accounting-service" },
+            "mainEntity": { "@id": "https://pinpointaccountingservice.com/#accounting-service" },
+            "citation": [
+              "https://www.dataforthai.com/company/0105566083811/",
+              "https://datawarehouse.dbd.go.th/company/profile/0105566083811",
+              "https://www.dbd.go.th",
+              "https://www.rd.go.th"
+            ],
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png",
+              "width": 1200,
+              "height": 630
+            },
+            "inLanguage": "th-TH",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", ".section-header p", "#homepage-faq summary"]
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://pinpointaccountingservice.com/#organization",
+            "name": "Pinpoint Accounting & Service, Ltd.",
+            "legalName": "บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด",
+            "alternateName": "Pinpoint Accounting",
+            "url": "https://pinpointaccountingservice.com",
+            "logo": "https://pinpointaccountingservice.com/assets/logo-original-large.jpg",
+            "image": "https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png",
+            "telephone": "+66-92-749-7442",
+            "taxID": "0105566083811",
+            "identifier": [
+              {
+                "@type": "PropertyValue",
+                "propertyID": "Thailand company registration number",
+                "value": "0105566083811"
+              }
+            ],
+            "foundingDate": "2023-04-25",
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Clients served",
+                "value": "500+"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Team experience",
+                "value": "10+ years"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Primary service area",
+                "value": "Huai Khwang, Ratchada, Bangkok, Thailand"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "294 Soi Yoo Charoen 29, Ratchadaphisek 18 Rd., Sam Sen Nok",
+              "addressLocality": "Huai Khwang",
+              "addressRegion": "Bangkok",
+              "postalCode": "10310",
+              "addressCountry": "TH"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+66-92-749-7442",
+                "contactType": "customer service",
+                "areaServed": "TH",
+                "availableLanguage": ["th", "en"]
+              }
+            ],
+            "sameAs": [
+              "https://www.google.com/maps/place/Pinpoint+Accounting+%26+Service/@13.7840081,100.5782497,17z/data=!4m6!3m5!1s0x30e29d00262a74ed:0x5b5584cbcca9e140!8m2!3d13.7840081!4d100.58083!16s%2Fg%2F11z16wqw8s",
+              "https://maps.app.goo.gl/ZgQJbSdcryvowz1K6",
+              "https://lin.ee/58aU8oE",
+              "https://line.me/R/ti/p/@413dqpcq",
+              "https://www.dataforthai.com/company/0105566083811/",
+              "https://datawarehouse.dbd.go.th/company/profile/0105566083811"
+            ],
+            "knowsAbout": [
+              "บัญชีรายเดือน",
+              "ภาษีมูลค่าเพิ่ม",
+              "ภาษีหัก ณ ที่จ่าย",
+              "จดทะเบียนบริษัท",
+              "เปลี่ยนแปลงข้อมูล DBD",
+              "วีซ่าและ Work Permit",
+              "ใบอนุญาตธุรกิจ",
+              "company registration Thailand",
+              "accounting firm Bangkok"
+            ]
+          },
+          {
+            "@type": "AccountingService",
+            "@id": "https://pinpointaccountingservice.com/#accounting-service",
+            "name": "Pinpoint Accounting & Service, Ltd.",
+            "legalName": "บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด",
+            "url": "https://pinpointaccountingservice.com/",
+            "description": "สำนักงานบัญชีในห้วยขวาง รัชดา กรุงเทพ ให้บริการบัญชีรายเดือน ภาษี จดทะเบียนบริษัท เปลี่ยนแปลง DBD วีซ่า Work Permit ใบอนุญาตธุรกิจ และงานปิดบริษัทสำหรับผู้ประกอบการไทยและต่างชาติ",
+            "slogan": "Accounting, tax, DBD, visa, work permit, and business support for Bangkok and Thailand.",
+            "image": "https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png",
+            "logo": "https://pinpointaccountingservice.com/assets/logo-original-large.jpg",
+            "telephone": "+66-92-749-7442",
+            "identifier": [
+              {
+                "@type": "PropertyValue",
+                "propertyID": "Thailand company registration number",
+                "value": "0105566083811"
+              }
+            ],
+            "priceRange": "ประเมินตามขอบเขตงาน",
+            "parentOrganization": { "@id": "https://pinpointaccountingservice.com/#organization" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "294 Soi Yoo Charoen 29, Ratchadaphisek 18 Rd., Sam Sen Nok",
+              "addressLocality": "Huai Khwang",
+              "addressRegion": "Bangkok",
+              "postalCode": "10310",
+              "addressCountry": "TH"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 13.7840081,
+              "longitude": 100.58083
+            },
+            "hasMap": "https://maps.app.goo.gl/ZgQJbSdcryvowz1K6",
+            "areaServed": [
+              { "@type": "City", "name": "Bangkok" },
+              { "@type": "AdministrativeArea", "name": "Huai Khwang" },
+              { "@type": "AdministrativeArea", "name": "Ratchada" },
+              { "@type": "AdministrativeArea", "name": "Rama 9" },
+              { "@type": "Country", "name": "Thailand" }
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+              }
+            ],
+            "availableLanguage": ["th", "en"],
+            "sameAs": [
+              "https://www.google.com/maps/place/Pinpoint+Accounting+%26+Service/@13.7840081,100.5782497,17z/data=!4m6!3m5!1s0x30e29d00262a74ed:0x5b5584cbcca9e140!8m2!3d13.7840081!4d100.58083!16s%2Fg%2F11z16wqw8s",
+              "https://maps.app.goo.gl/ZgQJbSdcryvowz1K6",
+              "https://lin.ee/58aU8oE",
+              "https://line.me/R/ti/p/@413dqpcq",
+              "https://www.dataforthai.com/company/0105566083811/",
+              "https://datawarehouse.dbd.go.th/company/profile/0105566083811"
+            ],
+            "serviceType": [
+              "Monthly accounting",
+              "Tax filing",
+              "Company registration",
+              "DBD amendments",
+              "Visa and work permit",
+              "Business licenses",
+              "Company dissolution"
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://pinpointaccountingservice.com/#local-business",
+            "name": "Pinpoint Accounting & Service, Ltd.",
+            "legalName": "บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด",
+            "url": "https://pinpointaccountingservice.com/",
+            "telephone": "+66-92-749-7442",
+            "image": "https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png",
+            "identifier": [
+              {
+                "@type": "PropertyValue",
+                "propertyID": "Thailand company registration number",
+                "value": "0105566083811"
+              }
+            ],
+            "priceRange": "ประเมินตามขอบเขตงาน",
+            "branchOf": { "@id": "https://pinpointaccountingservice.com/#organization" },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "6",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "294 Soi Yoo Charoen 29, Ratchadaphisek 18 Rd., Sam Sen Nok",
+              "addressLocality": "Huai Khwang",
+              "addressRegion": "Bangkok",
+              "postalCode": "10310",
+              "addressCountry": "TH"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 13.7840081,
+              "longitude": 100.58083
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+              }
+            ],
+            "areaServed": ["Huai Khwang", "Ratchada", "Bangkok", "Thailand"],
+            "sameAs": [
+              "https://www.google.com/maps/place/Pinpoint+Accounting+%26+Service/@13.7840081,100.5782497,17z/data=!4m6!3m5!1s0x30e29d00262a74ed:0x5b5584cbcca9e140!8m2!3d13.7840081!4d100.58083!16s%2Fg%2F11z16wqw8s",
+              "https://maps.app.goo.gl/ZgQJbSdcryvowz1K6",
+              "https://lin.ee/58aU8oE",
+              "https://line.me/R/ti/p/@413dqpcq",
+              "https://www.dataforthai.com/company/0105566083811/",
+              "https://datawarehouse.dbd.go.th/company/profile/0105566083811"
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://pinpointaccountingservice.com/#core-services",
+            "name": "Core accounting and business services",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "item": { "@id": "https://pinpointaccountingservice.com/#service-monthly-accounting" } },
+              { "@type": "ListItem", "position": 2, "item": { "@id": "https://pinpointaccountingservice.com/#service-company-registration" } },
+              { "@type": "ListItem", "position": 3, "item": { "@id": "https://pinpointaccountingservice.com/#service-dbd-amendments" } },
+              { "@type": "ListItem", "position": 4, "item": { "@id": "https://pinpointaccountingservice.com/#service-visa-work-permit" } },
+              { "@type": "ListItem", "position": 5, "item": { "@id": "https://pinpointaccountingservice.com/#service-business-licenses" } }
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://pinpointaccountingservice.com/#service-monthly-accounting",
+            "name": "บัญชีรายเดือน ภาษี และปิดงบ",
+            "alternateName": "Monthly accounting and tax filing in Bangkok",
+            "serviceType": "Monthly accounting",
+            "provider": { "@id": "https://pinpointaccountingservice.com/#accounting-service" },
+            "areaServed": "Bangkok and Thailand",
+            "url": "https://pinpointaccountingservice.com/monthly-accounting",
+            "description": "ดูแลบันทึกบัญชีรายเดือน ภาษีซื้อขาย ภาษีหัก ณ ที่จ่าย เอกสารประกอบ และการเตรียมข้อมูลสำหรับปิดงบ"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://pinpointaccountingservice.com/#service-company-registration",
+            "name": "จดทะเบียนบริษัท",
+            "alternateName": "Company registration in Thailand",
+            "serviceType": "Company registration",
+            "provider": { "@id": "https://pinpointaccountingservice.com/#accounting-service" },
+            "areaServed": "Thailand",
+            "url": "https://pinpointaccountingservice.com/company-registration",
+            "description": "ช่วยเตรียมข้อมูลและเอกสารสำหรับจดทะเบียนจัดตั้งบริษัทกับ DBD สำหรับผู้ประกอบการไทยและต่างชาติ"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://pinpointaccountingservice.com/#service-dbd-amendments",
+            "name": "เปลี่ยนแปลงข้อมูล DBD",
+            "alternateName": "DBD amendments",
+            "serviceType": "DBD amendments",
+            "provider": { "@id": "https://pinpointaccountingservice.com/#accounting-service" },
+            "areaServed": "Thailand",
+            "url": "https://pinpointaccountingservice.com/dbd-amendments",
+            "description": "เปลี่ยนกรรมการ เพิ่มทุน ย้ายที่ตั้ง แก้ไขวัตถุประสงค์ และจัดชุดเอกสารนิติบุคคลให้ถูกต้อง"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://pinpointaccountingservice.com/#service-visa-work-permit",
+            "name": "วีซ่าและ Work Permit",
+            "alternateName": "Visa and work permit support",
+            "serviceType": "Visa and work permit",
+            "provider": { "@id": "https://pinpointaccountingservice.com/#accounting-service" },
+            "areaServed": "Thailand",
+            "url": "https://pinpointaccountingservice.com/visa-work-permit",
+            "description": "ประสานงานเอกสารฝั่งบริษัทและผู้ยื่นสำหรับวีซ่า Work Permit และการต่ออายุที่เกี่ยวข้อง"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://pinpointaccountingservice.com/#service-business-licenses",
+            "name": "ใบอนุญาตธุรกิจ",
+            "alternateName": "Business license support",
+            "serviceType": "Business licenses",
+            "provider": { "@id": "https://pinpointaccountingservice.com/#accounting-service" },
+            "areaServed": "Thailand",
+            "url": "https://pinpointaccountingservice.com/business-licenses",
+            "description": "ช่วยเช็กเงื่อนไข เอกสาร และลำดับการยื่นใบอนุญาตสำหรับกิจการที่ต้องประสานหลายหน่วยงาน"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://pinpointaccountingservice.com/#homepage-faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "สำนักงานบัญชีในห้วยขวางมีบริการอะไรบ้าง?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pinpoint ให้บริการบัญชีรายเดือน ภาษีซื้อขาย ภาษีหัก ณ ที่จ่าย ปิดงบ จดทะเบียนบริษัท เปลี่ยนแปลงข้อมูล DBD วีซ่า Work Permit ใบอนุญาตธุรกิจ และงานปิดบริษัท โดยดูแลลูกค้าในห้วยขวาง รัชดา กรุงเทพ และทั่วไทย"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ค่าบริการบัญชีรายเดือนเริ่มต้นเท่าไหร่?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ค่าบริการขึ้นอยู่กับจำนวนเอกสาร ประเภทภาษี จำนวนบัญชีธนาคาร และขอบเขตรายงานที่ต้องการ ทีมจะประเมินหลังทราบลักษณะธุรกิจและปริมาณเอกสารจริงเพื่อให้ราคาเหมาะกับงาน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "จดทะเบียนบริษัทใช้เวลากี่วัน?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ระยะเวลาขึ้นอยู่กับความพร้อมของชื่อบริษัท ผู้ถือหุ้น กรรมการ ที่ตั้ง และเอกสารประกอบ หากข้อมูลครบ ทีมสามารถช่วยจัดลำดับเอกสารและแจ้งขั้นตอนยื่น DBD ให้ชัดเจนก่อนเริ่มงาน"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "รองรับลูกค้าต่างชาติหรือบริษัทที่ต้องใช้ภาษาอังกฤษไหม?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "รองรับ ทีมสามารถสื่อสารได้ทั้งภาษาไทยและอังกฤษ เหมาะกับบริษัทที่มีผู้บริหารหรือพนักงานต่างชาติ รวมถึงเคสจดทะเบียนบริษัท วีซ่า Work Permit และเอกสารธุรกิจในไทย"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ต้องเตรียมเอกสารอะไรก่อนเริ่มทำบัญชีรายเดือน?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "โดยทั่วไปควรเตรียมเอกสารขาย เอกสารซื้อ รายการธนาคาร เอกสารค่าใช้จ่าย ภาษีที่เคยยื่น และข้อมูลบริษัท ทีมจะช่วยเช็กว่าส่วนใดครบแล้วและส่วนใดควรจัดเพิ่ม"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Pinpoint ดูแลพื้นที่ไหนบ้าง?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "สำนักงานตั้งอยู่ที่ห้วยขวาง รัชดา กรุงเทพ และให้บริการลูกค้าในกรุงเทพ เช่น รัชดา พระราม 9 สุทธิสาร ลาดพร้าว ดินแดง อโศก สุขุมวิท รวมถึงลูกค้าต่างจังหวัดที่ทำงานผ่านเอกสารออนไลน์ได้"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://pinpointaccountingservice.com/#publisher",
+        "name": "Pinpoint Accounting & Service, Ltd.",
+        "legalName": "บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด",
+        "url": "https://pinpointaccountingservice.com/",
+        "logo": "https://pinpointaccountingservice.com/assets/logo-original-large.jpg",
+        "image": "https://pinpointaccountingservice.com/assets/images/og-pinpoint-accounting-1200x630.png",
+        "telephone": "+66-92-749-7442",
+        "taxID": "0105566083811",
+        "foundingDate": "2023-04-25",
+        "sameAs": [
+          "https://www.google.com/maps/place/Pinpoint+Accounting+%26+Service/@13.7840081,100.5782497,17z/data=!4m6!3m5!1s0x30e29d00262a74ed:0x5b5584cbcca9e140!8m2!3d13.7840081!4d100.58083!16s%2Fg%2F11z16wqw8s",
+          "https://maps.app.goo.gl/ZgQJbSdcryvowz1K6",
+          "https://line.me/R/ti/p/@413dqpcq",
+          "https://www.dataforthai.com/company/0105566083811/",
+          "https://datawarehouse.dbd.go.th/company/profile/0105566083811"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "294 Soi Yoo Charoen 29, Ratchadaphisek 18 Rd., Sam Sen Nok",
+          "addressLocality": "Huai Khwang",
+          "addressRegion": "Bangkok",
+          "postalCode": "10310",
+          "addressCountry": "TH"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+66-92-749-7442",
+          "contactType": "customer service",
+          "areaServed": "TH",
+          "availableLanguage": ["th", "en"]
+        }
+      }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1N30W3D87"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-T1N30W3D87');
+    </script>
+  </head>
+  <body
+    class="home-page"
+    data-title-th="สำนักงานบัญชี กรุงเทพ 2026 | บัญชี ภาษี จดบริษัท"
+    data-title-en="Accounting Firm in Bangkok | Tax, DBD, and Business Support | Pinpoint"
+  >
+    <a class="skip-link" href="#main-content" data-th="ข้ามไปยังเนื้อหาหลัก" data-en="Skip to main content">ข้ามไปยังเนื้อหาหลัก</a>
+    <header class="topbar">
+      <a class="brand" href="/">
+        <picture>
+          <source type="image/webp" srcset="/assets/logo-original-96.webp" />
+          <img class="brand-logo" src="/assets/logo-original.jpg" alt="Pinpoint logo" decoding="async" width="96" height="96" fetchpriority="high" />
+        </picture>
+        <div class="brand-copy">
+          <span class="brand-status" data-th="สำนักงานบัญชีและภาษี" data-en="Accounting and tax support">สำนักงานบัญชีและภาษี</span>
+          <strong>Pinpoint Accounting &amp; Service, Ltd.</strong>
+          <span
+            data-th="บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด"
+            data-en="บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด"
+            >บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด</span
+          >
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/services" data-th="บริการ" data-en="Services">บริการ</a>
+        <a href="/about" data-th="เกี่ยวกับเรา" data-en="About">เกี่ยวกับเรา</a>
+        <a href="/resources" data-th="แหล่งอ้างอิง" data-en="Resources">แหล่งอ้างอิง</a>
+        <a href="/faq" data-th="คำถามที่พบบ่อย" data-en="FAQ">คำถามที่พบบ่อย</a>
+        <a href="/blog" data-th="บทความ" data-en="Blog">บทความ</a>
+        <a href="/contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="#lead-form" data-th="ขอรับคำปรึกษา" data-en="Request consultation">ขอรับคำปรึกษา</a>
+        <a class="lang-toggle" href="/en" rel="alternate" hreflang="en" aria-label="English version">EN</a>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-wrap">
+      <section class="section page-hero">
+        <div class="hero-grid bento-hero">
+          <div class="hero-copy">
+            <span class="brand-badge" data-th="ที่ปรึกษาบัญชี ภาษี และจดทะเบียนธุรกิจ" data-en="Accounting, tax, and business registration support">
+              ที่ปรึกษาบัญชี ภาษี และจดทะเบียนธุรกิจ
+            </span>
+            <span class="eyebrow" data-th="TRUSTED ACCOUNTING, TAX &amp; BUSINESS COMPLIANCE" data-en="TRUSTED ACCOUNTING, TAX &amp; BUSINESS COMPLIANCE">
+              TRUSTED ACCOUNTING, TAX &amp; BUSINESS COMPLIANCE
+            </span>
+            <span class="eyebrow" data-th="อัปเดตล่าสุด: มิถุนายน 2026" data-en="Last updated: June 2026">
+              อัปเดตล่าสุด: มิถุนายน 2026
+            </span>
+            <h1
+              data-th="สำนักงานบัญชี กรุงเทพ สำหรับบัญชี ภาษี และจดบริษัท"
+              data-en="Full-service accounting, tax & business registration"
+            >
+              สำนักงานบัญชี กรุงเทพ สำหรับบัญชี ภาษี และจดบริษัท
+            </h1>
+            <p
+              data-th="Pinpoint Accounting & Service คือ สำนักงานบัญชี กรุงเทพ ย่าน ห้วยขวาง รัชดา สำหรับ เจ้าของธุรกิจ ที่ต้องการ ทีมดูแล บัญชีรายเดือน ภาษี จดทะเบียนบริษัท DBD วีซ่า Work Permit ใบอนุญาตธุรกิจ payroll social security และ ปิดงบ พร้อม เช็กลิสต์เอกสาร ขั้นตอนเริ่มงาน และ ช่องทางติดต่อ ทีมจริง ก่อนตัดสินใจใช้บริการ"
+              data-en="Monthly accounting, tax, company registration, visas, work permits, and business licenses for clients across Thailand."
+            >
+              Pinpoint Accounting & Service คือ สำนักงานบัญชี กรุงเทพ ย่าน ห้วยขวาง รัชดา สำหรับ เจ้าของธุรกิจ ที่ต้องการ ทีมดูแล บัญชีรายเดือน ภาษี จดทะเบียนบริษัท DBD วีซ่า Work Permit ใบอนุญาตธุรกิจ payroll social security และ ปิดงบ พร้อม เช็กลิสต์เอกสาร ขั้นตอนเริ่มงาน และ ช่องทางติดต่อ ทีมจริง ก่อนตัดสินใจใช้บริการ
+            </p>
+            <p class="byline" data-th="By Pinpoint Accounting & Service team · ตรวจทานล่าสุด 2 มิถุนายน 2026" data-en="By Pinpoint Accounting & Service team · Reviewed June 2, 2026">
+              By Pinpoint Accounting &amp; Service team · ตรวจทานล่าสุด 2 มิถุนายน 2026
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:0927497442" data-th="โทร 092-749-7442" data-en="Call 092-749-7442">โทร 092-749-7442</a>
+              <a class="btn btn-secondary line-chat" href="https://lin.ee/58aU8oE" target="_blank" rel="noreferrer" data-th="คุยผ่าน LINE OA" data-en="Chat via LINE OA">คุยผ่าน LINE OA</a>
+              <a class="btn btn-emphasis" href="/services" data-th="ดูหน้ารายละเอียดบริการ" data-en="Open full services page">ดูหน้ารายละเอียดบริการ</a>
+            </div>
+            <div class="hero-trust">
+              <span data-th="ที่ตั้งห้วยขวาง รัชดา กรุงเทพ" data-en="Huai Khwang, Ratchada, Bangkok base">ที่ตั้งห้วยขวาง รัชดา กรุงเทพ</span>
+              <span data-th="รองรับไทย/อังกฤษ" data-en="Thai / English support">รองรับไทย/อังกฤษ</span>
+              <span data-th="ดูแลลูกค้าทั่วไทย" data-en="Serving Bangkok and nationwide">ดูแลลูกค้าทั่วไทย</span>
+            </div>
+          </div>
+          <div class="hero-aside">
+            <div class="stat-grid bento-stats">
+              <article class="stat-card">
+                <strong data-th="500+" data-en="500+">500+</strong>
+                <p data-th="ลูกค้าที่ให้ความไว้วางใจ" data-en="Clients served">ลูกค้าที่ให้ความไว้วางใจ</p>
+              </article>
+              <article class="stat-card">
+                <strong data-th="10+" data-en="10+">10+</strong>
+                <p data-th="ปีประสบการณ์" data-en="Years experience">ปีประสบการณ์</p>
+              </article>
+              <article class="stat-card">
+                <strong data-th="24/7" data-en="24/7">24/7</strong>
+                <p data-th="AI Support" data-en="AI Support">AI Support</p>
+              </article>
+              <article class="stat-card">
+                <strong data-th="TH/EN" data-en="TH/EN">TH/EN</strong>
+                <p data-th="รองรับ 2 ภาษา" data-en="Bilingual support">รองรับ 2 ภาษา</p>
+              </article>
+            </div>
+          </div>
+          <aside class="hero-aside">
+            <div class="hero-image">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="/assets/images/hero-workspace-480.webp 480w, /assets/images/hero-workspace-720.webp 720w, /assets/images/hero-workspace-960.webp 960w"
+                  sizes="(max-width: 760px) 92vw, 360px"
+                />
+                <img src="/assets/images/hero-workspace.jpg" alt="Pinpoint professional workspace" width="1800" height="2699" decoding="async" loading="lazy" fetchpriority="low">
+              </picture>
+            </div>
+            <h2 class="hero-aside-title" data-th="เหตุผลที่ลูกค้าเลือกใช้บริการของเรา" data-en="Why clients choose our team">เหตุผลที่ลูกค้าเลือกใช้บริการของเรา</h2>
+            <ul class="checklist">
+              <li data-th="ขอบเขตงานชัดเจน พร้อมเอกสารตัวอย่าง" data-en="Clear scope with practical document examples">ขอบเขตงานชัดเจน พร้อมเอกสารตัวอย่าง</li>
+              <li data-th="ประเมินงานเร็วตามสถานการณ์จริง" data-en="Fast assessment based on real business scenarios">ประเมินงานเร็วตามสถานการณ์จริง</li>
+              <li data-th="บทความและแหล่งอ้างอิงทางการให้ตรวจสอบ" data-en="Articles and official references to verify before starting">บทความและแหล่งอ้างอิงทางการให้ตรวจสอบ</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="kicker" data-th="BUSINESS TYPES WE SUPPORT" data-en="BUSINESS TYPES WE SUPPORT">BUSINESS TYPES WE SUPPORT</p>
+          <h2 data-th="ประเภทธุรกิจที่ Pinpoint ดูแลเป็นประจำ" data-en="Business categories we support regularly">
+            ประเภทธุรกิจที่ Pinpoint ดูแลเป็นประจำ
+          </h2>
+          <p
+            data-th="เลื่อนดูสไลด์เพื่อดูตัวอย่างกลุ่มธุรกิจที่เราให้บริการ ทั้งด้านบัญชี ภาษี จดทะเบียน และงานกำกับดูแลเอกสารธุรกิจ"
+            data-en="Browse the slider to see business groups we support across accounting, tax, registration, and compliance workflows."
+          >
+            เลื่อนดูสไลด์เพื่อดูตัวอย่างกลุ่มธุรกิจที่เราให้บริการ ทั้งด้านบัญชี ภาษี จดทะเบียน และงานกำกับดูแลเอกสารธุรกิจ
+          </p>
+        </div>
+
+        <div class="biz-slider" data-biz-slider>
+          <button class="biz-nav prev" type="button" data-biz-prev aria-label="Previous slide">‹</button>
+          <div class="biz-viewport">
+            <div class="biz-track" data-biz-track>
+              <article class="biz-slide">
+                <div class="biz-visual">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/biz/construction-360.webp 360w, /assets/images/biz/construction-640.webp 640w" sizes="(max-width: 760px) 85vw, 360px" />
+                    <img src="/assets/images/biz/construction.jpg" alt="ธุรกิจรับเหมาก่อสร้าง" loading="lazy" decoding="async" width="800" height="600">
+                  </picture>
+                </div>
+                <div class="biz-copy">
+                  <h3 data-th="ธุรกิจรับเหมาก่อสร้าง" data-en="Construction contractors and project-based businesses">ธุรกิจรับเหมาก่อสร้าง</h3>
+                  <p data-th="ดูแลงานบัญชีรายเดือน ต้นทุนโครงการ ภาษีหัก ณ ที่จ่าย เอกสารผู้รับเหมา และการจัดชุดเอกสารให้พร้อมตรวจสอบตามงวดงาน" data-en="Monthly accounting, project-cost tracking, withholding tax, subcontractor documentation, and audit-ready records for progress-based projects.">
+                    ดูแลงานบัญชีรายเดือน ต้นทุนโครงการ ภาษีหัก ณ ที่จ่าย เอกสารผู้รับเหมา และการจัดชุดเอกสารให้พร้อมตรวจสอบตามงวดงาน
+                  </p>
+                </div>
+              </article>
+
+              <article class="biz-slide">
+                <div class="biz-visual">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/biz/restaurant-360.webp 360w, /assets/images/biz/restaurant-640.webp 640w" sizes="(max-width: 760px) 85vw, 360px" />
+                    <img src="/assets/images/biz/restaurant.jpg" alt="ร้านอาหาร คาเฟ่ และธุรกิจบริการ" loading="lazy" decoding="async" width="800" height="600">
+                  </picture>
+                </div>
+                <div class="biz-copy">
+                  <h3 data-th="ร้านอาหาร คาเฟ่ และธุรกิจบริการ" data-en="Restaurants, cafes, and service businesses">ร้านอาหาร คาเฟ่ และธุรกิจบริการ</h3>
+                  <p data-th="ดูแลบัญชีรายเดือน ภาษีซื้อ-ขาย ใบอนุญาตที่เกี่ยวข้อง และเตรียมเอกสารให้พร้อมตรวจสอบ" data-en="Monthly accounting, VAT, related licenses, and audit-ready documentation support.">
+                    ดูแลบัญชีรายเดือน ภาษีซื้อ-ขาย ใบอนุญาตที่เกี่ยวข้อง และเตรียมเอกสารให้พร้อมตรวจสอบ
+                  </p>
+                </div>
+              </article>
+
+              <article class="biz-slide">
+                <div class="biz-visual">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/biz/ecommerce-360.webp 360w, /assets/images/biz/ecommerce-640.webp 640w" sizes="(max-width: 760px) 85vw, 360px" />
+                    <img src="/assets/images/biz/ecommerce.jpg" alt="E-commerce และร้านค้าออนไลน์" loading="lazy" decoding="async" width="800" height="600">
+                  </picture>
+                </div>
+                <div class="biz-copy">
+                  <h3 data-th="E-commerce และร้านค้าออนไลน์" data-en="E-commerce and online stores">E-commerce และร้านค้าออนไลน์</h3>
+                  <p data-th="เหมาะกับธุรกิจที่มีรายการซื้อ-ขายจำนวนมาก ต้องการระบบ VAT และรายงานกระแสเงินสดที่ชัดเจน" data-en="High-volume sales businesses requiring clear VAT workflow and cash-flow visibility.">
+                    เหมาะกับธุรกิจที่มีรายการซื้อ-ขายจำนวนมาก ต้องการระบบ VAT และรายงานกระแสเงินสดที่ชัดเจน
+                  </p>
+                </div>
+              </article>
+
+              <article class="biz-slide">
+                <div class="biz-visual">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/biz/import-export-360.webp 360w, /assets/images/biz/import-export-640.webp 640w" sizes="(max-width: 760px) 85vw, 360px" />
+                    <img src="/assets/images/biz/import-export.jpg" alt="นำเข้า-ส่งออก และบริษัทเทรดดิ้ง" loading="lazy" decoding="async" width="800" height="600">
+                  </picture>
+                </div>
+                <div class="biz-copy">
+                  <h3 data-th="นำเข้า-ส่งออก และบริษัทเทรดดิ้ง" data-en="Import-export and trading companies">นำเข้า-ส่งออก และบริษัทเทรดดิ้ง</h3>
+                  <p data-th="ช่วยวางโครงสร้างภาษีและเอกสารธุรกรรมระหว่างประเทศ พร้อมการจัดการเอกสารนิติบุคคลกับ DBD" data-en="Tax/document structure for cross-border transactions and DBD corporate compliance support.">
+                    ช่วยวางโครงสร้างภาษีและเอกสารธุรกรรมระหว่างประเทศ พร้อมการจัดการเอกสารนิติบุคคลกับ DBD
+                  </p>
+                </div>
+              </article>
+
+              <article class="biz-slide">
+                <div class="biz-visual">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/biz/startup-360.webp 360w, /assets/images/biz/startup-640.webp 640w" sizes="(max-width: 760px) 85vw, 360px" />
+                    <img src="/assets/images/biz/startup.jpg" alt="Startup และบริษัทเทคโนโลยี" loading="lazy" decoding="async" width="800" height="600">
+                  </picture>
+                </div>
+                <div class="biz-copy">
+                  <h3 data-th="Startup และบริษัทเทคโนโลยี" data-en="Startups and technology companies">Startup และบริษัทเทคโนโลยี</h3>
+                  <p data-th="วางระบบหลังบ้านให้ขยายทีมได้เร็ว ครอบคลุม payroll ประกันสังคม และการปิดงบตามรอบธุรกิจ" data-en="Scalable back-office setup covering payroll, social security, and period-end closing.">
+                    วางระบบหลังบ้านให้ขยายทีมได้เร็ว ครอบคลุม payroll ประกันสังคม และการปิดงบตามรอบธุรกิจ
+                  </p>
+                </div>
+              </article>
+
+              <article class="biz-slide">
+                <div class="biz-visual">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/biz/consulting-360.webp 360w, /assets/images/biz/consulting-640.webp 640w" sizes="(max-width: 760px) 85vw, 360px" />
+                    <img src="/assets/images/biz/consulting.jpg" alt="ที่ปรึกษา เอเจนซี และวิชาชีพอิสระ" loading="lazy" decoding="async" width="800" height="600">
+                  </picture>
+                </div>
+                <div class="biz-copy">
+                  <h3 data-th="ที่ปรึกษา เอเจนซี และวิชาชีพอิสระ" data-en="Consulting firms, agencies, and professional practices">ที่ปรึกษา เอเจนซี และวิชาชีพอิสระ</h3>
+                  <p data-th="ปรับระบบเอกสารรายรับ-รายจ่ายและภาษีให้พร้อมใช้งานจริง ลดภาระงานหลังบ้านของทีมผู้บริหาร" data-en="Practical revenue-expense and tax workflow that reduces admin burden for leadership teams.">
+                    ปรับระบบเอกสารรายรับ-รายจ่ายและภาษีให้พร้อมใช้งานจริง ลดภาระงานหลังบ้านของทีมผู้บริหาร
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="biz-nav next" type="button" data-biz-next aria-label="Next slide">›</button>
+        </div>
+        <div class="biz-dots" data-biz-dots></div>
+      </section>
+
+      <section class="section service-showcase">
+        <div class="section-header">
+          <p class="kicker" data-th="บริการหลักของเรา" data-en="OUR CORE SERVICES">บริการหลักของเรา</p>
+          <h2 data-th="บริการที่ลูกค้ามักใช้กับเราเป็นประจำ" data-en="The services clients most often trust us with">
+            บริการที่ลูกค้ามักใช้กับเราเป็นประจำ
+          </h2>
+          <p
+            data-th="หากคุณกำลังมองหาคนช่วยเรื่องบัญชี ภาษี จดทะเบียนบริษัท วีซ่า หรือใบอนุญาตธุรกิจ ส่วนนี้จะช่วยให้เห็นภาพว่าเราเข้าไปช่วยงานอะไรได้บ้าง"
+            data-en="If you need help with accounting, tax, company registration, visas, or business licenses, this section shows where our team can step in and help."
+          >
+            หากคุณกำลังมองหาคนช่วยเรื่องบัญชี ภาษี จดทะเบียนบริษัท วีซ่า หรือใบอนุญาตธุรกิจ ส่วนนี้จะช่วยให้เห็นภาพว่าเราเข้าไปช่วยงานอะไรได้บ้าง
+          </p>
+        </div>
+
+        <div class="service-slider" data-service-slider>
+          <button class="service-nav prev" type="button" data-service-prev aria-label="Previous service">‹</button>
+          <div class="service-viewport">
+            <div class="service-track" data-service-track>
+              <article class="service-card">
+                <div class="service-card-img">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/services/accounting-320.webp 320w, /assets/images/services/accounting-512.webp 512w" sizes="(max-width: 760px) 78vw, 256px" />
+                    <img src="/assets/images/services/accounting.jpg" alt="บัญชีและภาษี" loading="lazy" decoding="async" width="800" height="500">
+                  </picture>
+                </div>
+                <div class="service-card-body">
+                  <span class="chip" data-th="บัญชี + ภาษี" data-en="Accounting + Tax">บัญชี + ภาษี</span>
+                  <h3 data-th="บัญชีรายเดือน ภาษี และปิดงบ" data-en="Monthly bookkeeping, tax, and year-end closing">บัญชีรายเดือน ภาษี และปิดงบ</h3>
+                  <p data-th="เหมาะกับธุรกิจที่ต้องการให้บัญชีเป็นระเบียบ ยื่นภาษีตรงเวลา และมีข้อมูลพร้อมใช้เมื่อต้องตรวจสอบ" data-en="For businesses that want organized books, on-time tax filing, and records that are ready when reviewed.">เหมาะกับธุรกิจที่ต้องการให้บัญชีเป็นระเบียบ ยื่นภาษีตรงเวลา และมีข้อมูลพร้อมใช้เมื่อต้องตรวจสอบ</p>
+                  <ul class="checklist">
+                    <li data-th="ดูแลบันทึกบัญชีรายเดือนและเอกสารประกอบ" data-en="Monthly bookkeeping and supporting document handling">ดูแลบันทึกบัญชีรายเดือนและเอกสารประกอบ</li>
+                    <li data-th="เตรียมภาษีซื้อ-ขาย ภาษีหัก ณ ที่จ่าย และภาษีที่เกี่ยวข้อง" data-en="VAT, withholding tax, and related tax preparation">เตรียมภาษีซื้อ-ขาย ภาษีหัก ณ ที่จ่าย และภาษีที่เกี่ยวข้อง</li>
+                    <li data-th="ช่วยเตรียมข้อมูลสำหรับปิดงบและงานตรวจสอบ" data-en="Preparation for year-end closing and audit support">ช่วยเตรียมข้อมูลสำหรับปิดงบและงานตรวจสอบ</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-card-img">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/services/registration-320.webp 320w, /assets/images/services/registration-512.webp 512w" sizes="(max-width: 760px) 78vw, 256px" />
+                    <img src="/assets/images/services/registration.jpg" alt="จดทะเบียนบริษัทและ DBD" loading="lazy" decoding="async" width="800" height="500">
+                  </picture>
+                </div>
+                <div class="service-card-body">
+                  <span class="chip" data-th="จดทะเบียน + DBD" data-en="Corporate + DBD">จดทะเบียน + DBD</span>
+                  <h3 data-th="จดทะเบียนบริษัทและเปลี่ยนแปลงข้อมูลนิติบุคคล" data-en="Company registration and DBD amendments">จดทะเบียนบริษัทและเปลี่ยนแปลงข้อมูลนิติบุคคล</h3>
+                  <p data-th="เหมาะกับผู้เริ่มธุรกิจ หรือบริษัทที่ต้องแก้ไขข้อมูลกับ DBD ให้ถูกต้องและทันเวลา" data-en="For founders starting a company or businesses that need accurate and timely DBD updates.">เหมาะกับผู้เริ่มธุรกิจ หรือบริษัทที่ต้องแก้ไขข้อมูลกับ DBD ให้ถูกต้องและทันเวลา</p>
+                  <ul class="checklist">
+                    <li data-th="จดทะเบียนจัดตั้งบริษัทและเริ่มต้นเอกสารนิติบุคคล" data-en="Company incorporation and initial corporate setup">จดทะเบียนจัดตั้งบริษัทและเริ่มต้นเอกสารนิติบุคคล</li>
+                    <li data-th="เปลี่ยนกรรมการ เพิ่มทุน ย้ายที่ตั้ง และแก้ไขข้อมูลบริษัท" data-en="Director, capital, address, and corporate-record changes">เปลี่ยนกรรมการ เพิ่มทุน ย้ายที่ตั้ง และแก้ไขข้อมูลบริษัท</li>
+                    <li data-th="ปิดบริษัทและงานชำระบัญชี" data-en="Company dissolution and liquidation support">ปิดบริษัทและงานชำระบัญชี</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-card-img">
+                  <picture>
+                    <source type="image/webp" srcset="/assets/images/services/visa-320.webp 320w, /assets/images/services/visa-512.webp 512w" sizes="(max-width: 760px) 78vw, 256px" />
+                    <img src="/assets/images/services/visa.jpg" alt="วีซ่าและใบอนุญาต" loading="lazy" decoding="async" width="800" height="500">
+                  </picture>
+                </div>
+                <div class="service-card-body">
+                  <span class="chip" data-th="วีซ่า + ใบอนุญาต" data-en="Visa + License">วีซ่า + ใบอนุญาต</span>
+                  <h3 data-th="วีซ่า Work Permit และใบอนุญาตที่เกี่ยวข้องกับธุรกิจ" data-en="Visa, work permit, and business-license support">วีซ่า Work Permit และใบอนุญาตที่เกี่ยวข้องกับธุรกิจ</h3>
+                  <p data-th="เหมาะกับบริษัทที่มีพนักงานต่างชาติ หรือมีกิจการที่ต้องใช้ใบอนุญาตเฉพาะก่อนเปิดดำเนินงาน" data-en="For businesses with foreign staff or operations that need specific licenses before launch.">เหมาะกับบริษัทที่มีพนักงานต่างชาติ หรือมีกิจการที่ต้องใช้ใบอนุญาตเฉพาะก่อนเปิดดำเนินงาน</p>
+                  <ul class="checklist">
+                    <li data-th="เช็กเอกสารฝั่งบริษัทและฝั่งผู้ยื่นให้ครบก่อนยื่นจริง" data-en="Document checklist review for both company and applicant sides">เช็กเอกสารฝั่งบริษัทและฝั่งผู้ยื่นให้ครบก่อนยื่นจริง</li>
+                    <li data-th="ดูแลงานวีซ่าและ Work Permit สำหรับผู้บริหารหรือพนักงานต่างชาติ" data-en="Visa and work permit support for foreign executives and staff">ดูแลงานวีซ่าและ Work Permit สำหรับผู้บริหารหรือพนักงานต่างชาติ</li>
+                    <li data-th="ช่วยประสานเรื่องใบอนุญาตและการต่ออายุที่เกี่ยวข้องกับกิจการ" data-en="License coordination and renewal support for regulated businesses">ช่วยประสานเรื่องใบอนุญาตและการต่ออายุที่เกี่ยวข้องกับกิจการ</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="service-nav next" type="button" data-service-next aria-label="Next service">›</button>
+        </div>
+        <div class="service-dots" data-service-dots></div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="kicker" data-th="BANGKOK ACCOUNTING FOCUS" data-en="BANGKOK ACCOUNTING FOCUS">BANGKOK ACCOUNTING FOCUS</p>
+          <h2 data-th="สำนักงานบัญชี กรุงเทพ ที่ช่วยให้เจ้าของธุรกิจเห็นภาพงานตั้งแต่เอกสารแรก" data-en="Bangkok accounting support that clarifies the work from the first document">
+            สำนักงานบัญชี กรุงเทพ ที่ช่วยให้เจ้าของธุรกิจเห็นภาพงานตั้งแต่เอกสารแรก
+          </h2>
+          <p
+            data-th="หลายธุรกิจไม่ได้ต้องการแค่คนยื่นภาษี แต่ต้องการทีมที่ช่วยจัดระบบเอกสาร รายรับ รายจ่าย ภาษีมูลค่าเพิ่ม ภาษีหัก ณ ที่จ่าย เงินเดือน ประกันสังคม และงาน DBD ให้เชื่อมกันตั้งแต่ต้น Pinpoint จึงเริ่มจากการดูประเภทกิจการ ปริมาณเอกสาร รอบภาษี สถานะนิติบุคคล และเป้าหมายของเจ้าของธุรกิจ แล้วแยกงานเป็นส่วนที่ต้องทำทันที งานที่ควรวางระบบ และงานที่ต้องประสานหน่วยงานรัฐ"
+            data-en="Many business owners need more than tax filing. They need a team that connects sales documents, purchase records, VAT, withholding tax, payroll, social security, and DBD work from the start. Pinpoint begins by reviewing business type, document volume, tax cycles, company status, and the owner's goal before separating urgent work, system setup, and government coordination."
+          >
+            หลายธุรกิจไม่ได้ต้องการแค่คนยื่นภาษี แต่ต้องการทีมที่ช่วยจัดระบบเอกสาร รายรับ รายจ่าย ภาษีมูลค่าเพิ่ม ภาษีหัก ณ ที่จ่าย เงินเดือน ประกันสังคม และงาน DBD ให้เชื่อมกันตั้งแต่ต้น Pinpoint จึงเริ่มจากการดูประเภทกิจการ ปริมาณเอกสาร รอบภาษี สถานะนิติบุคคล และเป้าหมายของเจ้าของธุรกิจ แล้วแยกงานเป็นส่วนที่ต้องทำทันที งานที่ควรวางระบบ และงานที่ต้องประสานหน่วยงานรัฐ
+          </p>
+        </div>
+        <div class="split-grid">
+          <article class="panel">
+            <h3 data-th="เหมาะกับธุรกิจที่ต้องการความต่อเนื่อง ไม่ใช่แก้ปัญหาเฉพาะหน้า" data-en="Built for businesses that need continuity, not one-off fixes">
+              เหมาะกับธุรกิจที่ต้องการความต่อเนื่อง ไม่ใช่แก้ปัญหาเฉพาะหน้า
+            </h3>
+            <p
+              data-th="งานบัญชีรายเดือนที่ดีควรทำให้เจ้าของกิจการรู้ว่าเอกสารอะไรควรเก็บ เอกสารอะไรเสี่ยงตกหล่น และภาษีรอบถัดไปต้องเตรียมอะไรล่วงหน้า ทีมจึงช่วยวาง checklist สำหรับเอกสารขาย เอกสารซื้อ รายการธนาคาร ค่าใช้จ่าย เงินเดือน และเอกสารภาษี เพื่อให้การปิดงบและการตรวจสอบทำได้เป็นระบบขึ้น"
+              data-en="Good monthly accounting should show business owners what to keep, what is likely missing, and what the next tax cycle requires. The team maps sales records, purchase records, bank movements, expenses, payroll, and tax documents into a working checklist so year-end closing and review work can stay organized."
+            >
+              งานบัญชีรายเดือนที่ดีควรทำให้เจ้าของกิจการรู้ว่าเอกสารอะไรควรเก็บ เอกสารอะไรเสี่ยงตกหล่น และภาษีรอบถัดไปต้องเตรียมอะไรล่วงหน้า ทีมจึงช่วยวาง checklist สำหรับเอกสารขาย เอกสารซื้อ รายการธนาคาร ค่าใช้จ่าย เงินเดือน และเอกสารภาษี เพื่อให้การปิดงบและการตรวจสอบทำได้เป็นระบบขึ้น
+            </p>
+            <p
+              data-th="ก่อนเริ่มงาน ทีมจะถามเรื่องรอบบัญชีเดิม โปรแกรมที่ใช้ ช่องทางรับเงิน จำนวนใบกำกับภาษี รายการขายออนไลน์ รายการนำเข้า ส่งออก และสถานะการยื่นแบบ เพื่อให้ประเมินได้ว่าเคสควรเริ่มจากการจัดเอกสารย้อนหลัง การตั้งระบบรายเดือน หรือการแก้จุดเสี่ยงก่อนยื่นภาษีรอบถัดไป"
+              data-en="Before starting, the team checks the current accounting period, software, payment channels, tax invoices, online sales, import-export records, and filing status. This helps decide whether the case should begin with backlog cleanup, monthly system setup, or risk review before the next tax filing."
+            >
+              ก่อนเริ่มงาน ทีมจะถามเรื่องรอบบัญชีเดิม โปรแกรมที่ใช้ ช่องทางรับเงิน จำนวนใบกำกับภาษี รายการขายออนไลน์ รายการนำเข้า ส่งออก และสถานะการยื่นแบบ เพื่อให้ประเมินได้ว่าเคสควรเริ่มจากการจัดเอกสารย้อนหลัง การตั้งระบบรายเดือน หรือการแก้จุดเสี่ยงก่อนยื่นภาษีรอบถัดไป
+            </p>
+          </article>
+          <article class="panel">
+            <h3 data-th="รองรับงานธุรกิจไทยและต่างชาติที่ต้องประสานหลายเรื่องพร้อมกัน" data-en="Support for Thai and foreign-owned businesses with multi-step cases">
+              รองรับงานธุรกิจไทยและต่างชาติที่ต้องประสานหลายเรื่องพร้อมกัน
+            </h3>
+            <p
+              data-th="สำหรับผู้ประกอบการต่างชาติหรือบริษัทที่มีทีมหลายภาษา งานบัญชีมักเชื่อมกับการจดทะเบียนบริษัท การเปลี่ยนแปลง DBD วีซ่า Work Permit ใบอนุญาตธุรกิจ และเอกสารภายในบริษัท Pinpoint ช่วยแยกขอบเขตงานเป็นขั้นตอนที่สื่อสารง่าย ทั้งภาษาไทยและอังกฤษ เพื่อให้ผู้บริหารเห็น timeline เอกสาร และความรับผิดชอบของแต่ละฝ่ายก่อนเริ่มดำเนินการจริง"
+              data-en="For foreign-owned companies or bilingual teams, accounting work often connects with company registration, DBD amendments, visa, work permit, business licenses, and internal company documents. Pinpoint separates the work into clear Thai and English steps so management can understand timelines, documents, and responsibilities before execution."
+            >
+              สำหรับผู้ประกอบการต่างชาติหรือบริษัทที่มีทีมหลายภาษา งานบัญชีมักเชื่อมกับการจดทะเบียนบริษัท การเปลี่ยนแปลง DBD วีซ่า Work Permit ใบอนุญาตธุรกิจ และเอกสารภายในบริษัท Pinpoint ช่วยแยกขอบเขตงานเป็นขั้นตอนที่สื่อสารง่าย ทั้งภาษาไทยและอังกฤษ เพื่อให้ผู้บริหารเห็น timeline เอกสาร และความรับผิดชอบของแต่ละฝ่ายก่อนเริ่มดำเนินการจริง
+            </p>
+            <p
+              data-th="หากเคสเกี่ยวข้องกับกรรมการต่างชาติ ผู้ถือหุ้นต่างชาติ ที่อยู่บริษัท หรือใบอนุญาตเฉพาะ ทีมจะช่วยแยกเอกสารฝั่งบริษัท เอกสารฝั่งบุคคล และเอกสารที่ต้องตรวจสอบกับหน่วยงานรัฐ เพื่อให้การคุยงานไม่ปนกันระหว่างบัญชี ภาษี DBD และ immigration workflow"
+              data-en="When a case involves foreign directors, foreign shareholders, registered address details, or regulated licenses, the team separates company-side documents, person-side documents, and items that must be checked with government agencies, keeping accounting, tax, DBD, and immigration workflows clear."
+            >
+              หากเคสเกี่ยวข้องกับกรรมการต่างชาติ ผู้ถือหุ้นต่างชาติ ที่อยู่บริษัท หรือใบอนุญาตเฉพาะ ทีมจะช่วยแยกเอกสารฝั่งบริษัท เอกสารฝั่งบุคคล และเอกสารที่ต้องตรวจสอบกับหน่วยงานรัฐ เพื่อให้การคุยงานไม่ปนกันระหว่างบัญชี ภาษี DBD และ immigration workflow
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="kicker">ENGLISH SERVICE SUMMARY</p>
+          <h2>Accounting firm in Bangkok for Thai and foreign-owned businesses</h2>
+          <p>
+            Pinpoint Accounting &amp; Service, Ltd. supports business owners who need accounting, tax, company registration, DBD amendments, visa, work permit, business license, payroll, social security, audit preparation, and company dissolution support in Thailand. The office is based in Huai Khwang, Ratchada, Bangkok, and works with both Thai entrepreneurs and international teams that need clear Thai-English communication before submitting documents to government agencies.
+          </p>
+        </div>
+        <div class="split-grid">
+          <article class="panel">
+            <h3>Monthly accounting, tax filing, and year-end closing</h3>
+            <p>
+              For recurring accounting work, the team reviews sales records, purchase records, bank statements, payroll documents, VAT filings, withholding tax, social security, and supporting documents before setting the monthly workflow. This helps business owners understand what must be prepared each month, what is missing, and what should be corrected before the next tax filing or year-end closing cycle.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Company registration, DBD changes, and business documents</h3>
+            <p>
+              For company registration and corporate changes, Pinpoint helps separate the information needed for shareholders, directors, registered address, objectives, capital, signing authority, and DBD submissions. This is useful for founders, growing SMEs, foreign-owned companies, and businesses that need to coordinate accounting records with legal company documents.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Visa, work permit, and licensing coordination</h3>
+            <p>
+              When a case involves a foreign director, foreign employee, work permit renewal, visa extension, regulated business license, or multiple government touchpoints, the team maps company-side documents, applicant-side documents, tax status, and timing dependencies. The goal is to make the next step clear before the client starts collecting or signing documents.
+            </p>
+          </article>
+          <article class="panel">
+            <h3>Service area and communication</h3>
+            <p>
+              Primary local search areas include Huai Khwang, Ratchada, Rama 9, Sutthisan, Ladprao, Din Daeng, Asoke, Sukhumvit, and wider Bangkok. Remote support is also available for clients across Thailand when documents can be reviewed online. Communication is available in Thai and English through phone, LINE OA, and the website lead form.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="kicker" data-th="HOW WE WORK" data-en="HOW WE WORK">HOW WE WORK</p>
+          <h2 data-th="กระบวนการเริ่มงานแบบชัดเจนตั้งแต่เคสแรก" data-en="A clear onboarding workflow from your first case">
+            กระบวนการเริ่มงานแบบชัดเจนตั้งแต่เคสแรก
+          </h2>
+          <p
+            data-th="ตัวอย่างเคสที่เจอบ่อยคือธุรกิจเริ่มใหม่ที่ต้องจดบริษัทและวางระบบเอกสารตั้งแต่เดือนแรก ธุรกิจที่รายได้เริ่มโตและต้องเตรียม VAT ให้ถูกต้อง หรือบริษัทต่างชาติที่ต้องเชื่อมบัญชี ภาษี วีซ่า Work Permit และเอกสาร DBD ให้เดินไปพร้อมกัน ทีมจะเริ่มจากภาพรวมธุรกิจ แล้วจัดลำดับงานให้เห็นว่าอะไรเร่งด่วน อะไรควรเตรียมล่วงหน้า และอะไรต้องรอข้อมูลจากเจ้าของกิจการ"
+            data-en="Common cases include new businesses that need company registration and document setup from month one, growing businesses preparing for VAT, and foreign-owned companies that need accounting, tax, visa, work permit, and DBD documents to move together. The team starts with the business context, then separates urgent work, advance preparation, and items waiting for owner input."
+          >
+            ตัวอย่างเคสที่เจอบ่อยคือธุรกิจเริ่มใหม่ที่ต้องจดบริษัทและวางระบบเอกสารตั้งแต่เดือนแรก ธุรกิจที่รายได้เริ่มโตและต้องเตรียม VAT ให้ถูกต้อง หรือบริษัทต่างชาติที่ต้องเชื่อมบัญชี ภาษี วีซ่า Work Permit และเอกสาร DBD ให้เดินไปพร้อมกัน ทีมจะเริ่มจากภาพรวมธุรกิจ แล้วจัดลำดับงานให้เห็นว่าอะไรเร่งด่วน อะไรควรเตรียมล่วงหน้า และอะไรต้องรอข้อมูลจากเจ้าของกิจการ
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="step">
+            <span class="step-number">1</span>
+            <h3 data-th="รับ brief ธุรกิจ" data-en="Collect business brief">รับ brief ธุรกิจ</h3>
+            <p data-th="แยกขอบเขตงานเบื้องต้นจากข้อมูลธุรกิจ" data-en="Define initial scope from your business context.">แยกขอบเขตงานเบื้องต้นจากข้อมูลธุรกิจ</p>
+          </article>
+          <article class="step">
+            <span class="step-number">2</span>
+            <h3 data-th="จัดเช็กลิสต์เอกสาร" data-en="Prepare document checklist">จัดเช็กลิสต์เอกสาร</h3>
+            <p data-th="ระบุเอกสารที่มีและที่ต้องเตรียมเพิ่ม" data-en="Identify existing documents and what still needs preparation.">ระบุเอกสารที่มีและที่ต้องเตรียมเพิ่ม</p>
+          </article>
+          <article class="step">
+            <span class="step-number">3</span>
+            <h3 data-th="กำหนดแผนดำเนินงาน" data-en="Set execution plan">กำหนดแผนดำเนินงาน</h3>
+            <p data-th="แยกงานประจำ/โครงการ และลำดับความสำคัญ" data-en="Separate recurring and project tasks with clear priorities.">แยกงานประจำ/โครงการ และลำดับความสำคัญ</p>
+          </article>
+          <article class="step">
+            <span class="step-number">4</span>
+            <h3 data-th="ติดตามและอัปเดตผล" data-en="Track and update">ติดตามและอัปเดตผล</h3>
+            <p data-th="อัปเดตสถานะงานและขั้นตอนถัดไปอย่างต่อเนื่อง" data-en="Ongoing status updates and clear next steps.">อัปเดตสถานะงานและขั้นตอนถัดไปอย่างต่อเนื่อง</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="kicker" data-th="พื้นที่ให้บริการ" data-en="SERVICE AREA">พื้นที่ให้บริการ</p>
+          <h2 data-th="ดูแลลูกค้าในกรุงเทพและทั่วไทย" data-en="Serving Bangkok and clients nationwide">
+            ดูแลลูกค้าในกรุงเทพและทั่วไทย
+          </h2>
+        </div>
+        <div class="split-grid">
+          <article class="panel">
+            <p class="kicker" data-th="OFFICE & SERVICE AREA" data-en="OFFICE & SERVICE AREA">OFFICE &amp; SERVICE AREA</p>
+            <h3 data-th="ที่ตั้งสำนักงาน" data-en="Office location">
+              ที่ตั้งสำนักงาน
+            </h3>
+            <div class="address-block" style="margin: 14px 0;">
+              <p data-th="294 ซอยอยู่เจริญ 29 ถนนรัชดาภิเษก 18 แขวงสามเสนนอก เขตห้วยขวาง กรุงเทพฯ 10310" data-en="294 Soi Yoo Charoen 29, Ratchadaphisek 18 Rd., Sam Sen Nok, Huai Khwang, Bangkok 10310" style="color: var(--muted); font-size: 0.95rem; line-height: 1.6;">
+                294 ซอยอยู่เจริญ 29 ถนนรัชดาภิเษก 18<br>
+                แขวงสามเสนนอก เขตห้วยขวาง<br>
+                กรุงเทพฯ 10310
+              </p>
+            </div>
+            <div class="keyword-cloud" style="margin-top: 12px;">
+              <span class="tag gold">Huai Khwang</span>
+              <span class="tag gold">Ratchada</span>
+              <span class="tag gold">Bangkok</span>
+              <span class="tag gold" data-th="บริการทั่วไทย" data-en="Nationwide support">บริการทั่วไทย</span>
+            </div>
+            <div class="hero-actions" style="margin-top: 14px;">
+              <a class="btn btn-emphasis" href="/bangkok-accounting" data-th="เปิดหน้าสำนักงานบัญชีกรุงเทพ" data-en="Open Bangkok accounting page">เปิดหน้าสำนักงานบัญชีกรุงเทพ</a>
+              <a class="btn btn-secondary" href="https://maps.app.goo.gl/ZgQJbSdcryvowz1K6" target="_blank" rel="noreferrer" data-th="Open Google Maps" data-en="Open Google Maps">Open Google Maps</a>
+            </div>
+          </article>
+          <article class="panel">
+            <p class="kicker" data-th="HIGH-INTENT SEARCHES" data-en="HIGH-INTENT SEARCHES">HIGH-INTENT SEARCHES</p>
+            <h3 data-th="งานที่ลูกค้ามักติดต่อเรา" data-en="Services clients most often contact us for">
+              งานที่ลูกค้ามักติดต่อเรา
+            </h3>
+            <ul class="checklist">
+              <li data-th="บัญชีรายเดือน กรุงเทพ" data-en="Monthly accounting, Bangkok">บัญชีรายเดือน กรุงเทพ</li>
+              <li data-th="วางแผนบัญชีและภาษี" data-en="Accounting and tax planning">วางแผนบัญชีและภาษี</li>
+              <li data-th="จดทะเบียนบริษัทและเปลี่ยนแปลง DBD" data-en="Company registration and DBD amendments">จดทะเบียนบริษัทและเปลี่ยนแปลง DBD</li>
+              <li data-th="VAT ภาษีหัก ณ ที่จ่าย และปิดงบ" data-en="VAT, withholding tax, and year-end closing">VAT ภาษีหัก ณ ที่จ่าย และปิดงบ</li>
+              <li data-th="วีซ่า Work Permit และใบอนุญาตธุรกิจ" data-en="Visa, work permit, and business licenses">วีซ่า Work Permit และใบอนุญาตธุรกิจ</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="kicker" data-th="GOVERNMENT PARTNERS" data-en="GOVERNMENT PARTNERS">GOVERNMENT PARTNERS</p>
+          <h2 data-th="หน่วยงานที่เราประสานงานด้วย" data-en="Government agencies we coordinate with">
+            หน่วยงานที่เราประสานงานด้วย
+          </h2>
+        </div>
+        <div class="agency-grid">
+          <a class="agency-card" href="https://www.dbd.go.th" target="_blank" rel="noreferrer">
+            <div class="agency-logo"><img src="/assets/images/agencies/dbd.png" alt="DBD" decoding="async" loading="lazy" width="1024" height="1024"></div>
+            <span class="agency-name" data-th="กรมพัฒนาธุรกิจการค้า" data-en="Department of Business Development">กรมพัฒนาธุรกิจการค้า</span>
+          </a>
+          <a class="agency-card" href="https://www.boi.go.th" target="_blank" rel="noreferrer">
+            <div class="agency-logo"><img src="/assets/images/agencies/boi.png" alt="BOI" decoding="async" loading="lazy" width="357" height="140"></div>
+            <span class="agency-name" data-th="สำนักงานคณะกรรมการส่งเสริมการลงทุน" data-en="Board of Investment">สำนักงานคณะกรรมการส่งเสริมการลงทุน</span>
+          </a>
+          <a class="agency-card" href="https://www.rd.go.th" target="_blank" rel="noreferrer">
+            <div class="agency-logo"><img src="/assets/images/agencies/rd-logo.svg" alt="Revenue Department" decoding="async" loading="lazy" width="512" height="512"></div>
+            <span class="agency-name" data-th="กรมสรรพากร" data-en="Revenue Department">กรมสรรพากร</span>
+          </a>
+          <a class="agency-card" href="https://www.sso.go.th" target="_blank" rel="noreferrer">
+            <div class="agency-logo"><img src="/assets/images/agencies/sso.png" alt="Social Security Office" decoding="async" loading="lazy" width="380" height="362"></div>
+            <span class="agency-name" data-th="สำนักงานประกันสังคม" data-en="Social Security Office">สำนักงานประกันสังคม</span>
+          </a>
+          <a class="agency-card" href="https://www.doe.go.th" target="_blank" rel="noreferrer">
+            <div class="agency-logo"><img src="/assets/images/agencies/doe.png" alt="Department of Employment" decoding="async" loading="lazy" width="381" height="85"></div>
+            <span class="agency-name" data-th="กรมการจัดหางาน" data-en="Department of Employment">กรมการจัดหางาน</span>
+          </a>
+          <a class="agency-card" href="https://bizportal.go.th" target="_blank" rel="noreferrer">
+            <div class="agency-logo"><img src="/assets/images/agencies/bizportal.png" alt="Biz Portal" decoding="async" loading="lazy" width="578" height="367"></div>
+            <span class="agency-name" data-th="Biz Portal" data-en="Biz Portal">Biz Portal</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="kicker" data-th="ENTITY TRUST" data-en="ENTITY TRUST">ENTITY TRUST</p>
+          <h2 data-th="ข้อมูลยืนยันตัวตนสำหรับลูกค้า Google และ AI Search" data-en="Entity trust signals for clients, Google, and AI Search">
+            ข้อมูลยืนยันตัวตนสำหรับลูกค้า Google และ AI Search
+          </h2>
+          <p
+            data-th="Pinpoint แสดงข้อมูลชื่อบริษัท ที่ตั้ง เบอร์โทร พื้นที่ให้บริการ และแหล่งอ้างอิงสาธารณะให้ตรวจสอบได้ เพื่อให้ลูกค้าและระบบค้นหาเข้าใจตรงกันว่าเป็นสำนักงานบัญชีในห้วยขวาง รัชดา กรุงเทพ"
+            data-en="Pinpoint keeps its legal name, office address, phone number, service area, and public reference links visible so clients and search systems can verify the Bangkok accounting entity consistently."
+          >
+            Pinpoint แสดงข้อมูลชื่อบริษัท ที่ตั้ง เบอร์โทร พื้นที่ให้บริการ และแหล่งอ้างอิงสาธารณะให้ตรวจสอบได้ เพื่อให้ลูกค้าและระบบค้นหาเข้าใจตรงกันว่าเป็นสำนักงานบัญชีในห้วยขวาง รัชดา กรุงเทพ
+          </p>
+          <p
+            data-th="ข้อมูลนี้ช่วยลดความสับสนระหว่างชื่อแบรนด์ ชื่อนิติบุคคล เบอร์โทร แผนที่ และพื้นที่ให้บริการ เมื่อลูกค้าค้นหาคำว่า สำนักงานบัญชี ห้วยขวาง รับทำบัญชี รัชดา accounting firm Bangkok หรือ company registration Thailand ระบบจะเห็นข้อมูล NAP และขอบเขตบริการเดียวกันทั้งหน้าเว็บ sitemap llms.txt ai.txt และ schema markup"
+            data-en="These details reduce confusion across brand name, legal name, phone number, map location, and service area. When clients search for accounting office Huai Khwang, accounting firm Bangkok, or company registration Thailand, crawlers can read consistent NAP and service context across the website, sitemap, llms.txt, ai.txt, and schema markup."
+          >
+            ข้อมูลนี้ช่วยลดความสับสนระหว่างชื่อแบรนด์ ชื่อนิติบุคคล เบอร์โทร แผนที่ และพื้นที่ให้บริการ เมื่อลูกค้าค้นหาคำว่า สำนักงานบัญชี ห้วยขวาง รับทำบัญชี รัชดา accounting firm Bangkok หรือ company registration Thailand ระบบจะเห็นข้อมูล NAP และขอบเขตบริการเดียวกันทั้งหน้าเว็บ sitemap llms.txt ai.txt และ schema markup
+          </p>
+        </div>
+        <div class="split-grid">
+          <article class="panel">
+            <p class="kicker" data-th="LEGAL ENTITY" data-en="LEGAL ENTITY">LEGAL ENTITY</p>
+            <h3 data-th="บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด" data-en="Pinpoint Accounting & Service, Ltd.">
+              บริษัท พินพอยต์ แอคเคาน์ติ้ง แอนด์ เซอร์วิส จำกัด
+            </h3>
+            <ul class="checklist">
+              <li data-th="เลขทะเบียนนิติบุคคล: 0105566083811" data-en="Company registration number: 0105566083811">เลขทะเบียนนิติบุคคล: 0105566083811</li>
+              <li data-th="จดทะเบียนเมื่อ 25 เมษายน 2566" data-en="Registered on 25 April 2023">จดทะเบียนเมื่อ 25 เมษายน 2566</li>
+              <li data-th="ที่ตั้ง: 294 ซอยอยู่เจริญ 29 ถนนรัชดาภิเษก 18 แขวงสามเสนนอก เขตห้วยขวาง กรุงเทพฯ 10310" data-en="Office: 294 Soi Yoo Charoen 29, Ratchadaphisek 18 Rd., Sam Sen Nok, Huai Khwang, Bangkok 10310">ที่ตั้ง: 294 ซอยอยู่เจริญ 29 ถนนรัชดาภิเษก 18 แขวงสามเสนนอก เขตห้วยขวาง กรุงเทพฯ 10310</li>
+              <li data-th="โทร: 092-749-7442 | รองรับภาษาไทยและอังกฤษ" data-en="Phone: 092-749-7442 | Thai and English communication">โทร: 092-749-7442 | รองรับภาษาไทยและอังกฤษ</li>
+            </ul>
+            <div class="hero-actions" style="margin-top: 14px;">
+              <a class="btn btn-secondary" href="https://www.dataforthai.com/company/0105566083811/" target="_blank" rel="noreferrer" data-th="ดูข้อมูลทะเบียนบริษัท" data-en="Open company registry reference">ดูข้อมูลทะเบียนบริษัท</a>
+              <a class="btn btn-secondary" href="https://datawarehouse.dbd.go.th/company/profile/0105566083811" target="_blank" rel="noreferrer" data-th="เปิดข้อมูล DBD DataWarehouse" data-en="Open DBD DataWarehouse">เปิดข้อมูล DBD DataWarehouse</a>
+              <a class="btn btn-secondary" href="https://maps.app.goo.gl/ZgQJbSdcryvowz1K6" target="_blank" rel="noreferrer" data-th="ดูที่ตั้งบน Google Maps" data-en="Open Google Maps location">ดูที่ตั้งบน Google Maps</a>
+              <a class="btn btn-secondary" href="/verify-pinpoint-accounting" data-th="หน้าตรวจสอบ Pinpoint" data-en="Verify Pinpoint page">หน้าตรวจสอบ Pinpoint</a>
+            </div>
+          </article>
+          <article class="panel">
+            <p class="kicker" data-th="SERVICE COVERAGE" data-en="SERVICE COVERAGE">SERVICE COVERAGE</p>
+            <h3 data-th="ขอบเขตงานที่เชื่อมกับความต้องการค้นหาจริง" data-en="Service scope aligned with real search intent">
+              ขอบเขตงานที่เชื่อมกับความต้องการค้นหาจริง
+            </h3>
+            <ul class="checklist">
+              <li data-th="บัญชีรายเดือน ภาษีซื้อขาย ภาษีหัก ณ ที่จ่าย และปิดงบ" data-en="Monthly accounting, VAT, withholding tax, and year-end closing">บัญชีรายเดือน ภาษีซื้อขาย ภาษีหัก ณ ที่จ่าย และปิดงบ</li>
+              <li data-th="จดทะเบียนจัดตั้งบริษัท เปลี่ยนแปลง DBD เพิ่มทุน ย้ายที่ตั้ง และปิดบริษัท" data-en="Company registration, DBD amendments, capital changes, address changes, and dissolution">จดทะเบียนจัดตั้งบริษัท เปลี่ยนแปลง DBD เพิ่มทุน ย้ายที่ตั้ง และปิดบริษัท</li>
+              <li data-th="วีซ่า Work Permit ใบอนุญาตธุรกิจ และงานเอกสารสำหรับบริษัทต่างชาติ" data-en="Visa, work permit, business licenses, and documentation for foreign-owned companies">วีซ่า Work Permit ใบอนุญาตธุรกิจ และงานเอกสารสำหรับบริษัทต่างชาติ</li>
+              <li data-th="พื้นที่หลัก: ห้วยขวาง รัชดา พระราม 9 สุทธิสาร ลาดพร้าว ดินแดง อโศก สุขุมวิท และทั่วไทย" data-en="Primary areas: Huai Khwang, Ratchada, Rama 9, Sutthisan, Ladprao, Din Daeng, Asoke, Sukhumvit, and nationwide">พื้นที่หลัก: ห้วยขวาง รัชดา พระราม 9 สุทธิสาร ลาดพร้าว ดินแดง อโศก สุขุมวิท และทั่วไทย</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="answer-blocks">
+        <div class="section-header">
+          <p class="kicker" data-th="DIRECT ANSWERS FOR AI SEARCH" data-en="DIRECT ANSWERS FOR AI SEARCH">DIRECT ANSWERS FOR AI SEARCH</p>
+          <h2 data-th="คำตอบสั้นสำหรับคำถามที่ลูกค้าค้นหาบ่อย" data-en="Short answers for high-intent accounting searches">
+            คำตอบสั้นสำหรับคำถามที่ลูกค้าค้นหาบ่อย
+          </h2>
+          <p
+            data-th="ส่วนนี้สรุปคำตอบแบบตรงประเด็นสำหรับลูกค้าที่กำลังเทียบสำนักงานบัญชี กรุงเทพ และช่วยให้ Google กับ AI Search ดึงข้อมูลไปตอบคำถามได้ชัดขึ้น"
+            data-en="This section provides concise answers for clients comparing Bangkok accounting firms and helps Google and AI Search extract reliable answer snippets."
+          >
+            ส่วนนี้สรุปคำตอบแบบตรงประเด็นสำหรับลูกค้าที่กำลังเทียบสำนักงานบัญชี กรุงเทพ และช่วยให้ Google กับ AI Search ดึงข้อมูลไปตอบคำถามได้ชัดขึ้น
+          </p>
+        </div>
+        <div class="service-grid">
+          <article class="panel">
+            <h3 data-th="ค่าบริการบัญชีรายเดือนในกรุงเทพคิดอย่างไร?" data-en="How much does monthly accounting cost in Bangkok?">
+              ค่าบริการบัญชีรายเดือนในกรุงเทพคิดอย่างไร?
+            </h3>
+            <p
+              data-th="ค่าบริการบัญชีรายเดือนควรประเมินจากจำนวนเอกสาร ประเภทภาษี จำนวนบัญชีธนาคาร ช่องทางขาย และรายงานที่ต้องการ ไม่ควรดูเฉพาะราคาต่ำสุด เพราะงานที่เอกสารเยอะหรือมี VAT, payroll, import-export, หรือหลายสาขาต้องใช้เวลาตรวจสอบมากขึ้น"
+              data-en="Monthly accounting fees in Bangkok should be scoped by document volume, tax types, bank accounts, sales channels, and reporting needs. The cheapest price is not always the right benchmark because VAT, payroll, import-export records, or multi-branch activity usually require more review time."
+            >
+              ค่าบริการบัญชีรายเดือนควรประเมินจากจำนวนเอกสาร ประเภทภาษี จำนวนบัญชีธนาคาร ช่องทางขาย และรายงานที่ต้องการ ไม่ควรดูเฉพาะราคาต่ำสุด เพราะงานที่เอกสารเยอะหรือมี VAT, payroll, import-export, หรือหลายสาขาต้องใช้เวลาตรวจสอบมากขึ้น
+            </p>
+          </article>
+          <article class="panel">
+            <h3 data-th="เริ่มทำบัญชีรายเดือนต้องเตรียมเอกสารอะไร?" data-en="What documents are needed before starting monthly accounting?">
+              เริ่มทำบัญชีรายเดือนต้องเตรียมเอกสารอะไร?
+            </h3>
+            <p
+              data-th="เอกสารเริ่มต้นควรมีเอกสารขาย เอกสารซื้อ รายการธนาคาร เอกสารค่าใช้จ่าย ภาษีที่เคยยื่น ข้อมูลบริษัท และเอกสาร DBD ล่าสุด หากมีระบบขายออนไลน์หรือหลายบัญชีธนาคาร ควรแจ้งตั้งแต่ต้นเพื่อวางวิธีรับส่งข้อมูลให้ถูกต้อง"
+              data-en="Useful starting documents include sales records, purchase records, bank statements, expense documents, prior tax filings, company information, and the latest DBD documents. If the business has online sales or multiple bank accounts, those flows should be disclosed early so the document process is set up correctly."
+            >
+              เอกสารเริ่มต้นควรมีเอกสารขาย เอกสารซื้อ รายการธนาคาร เอกสารค่าใช้จ่าย ภาษีที่เคยยื่น ข้อมูลบริษัท และเอกสาร DBD ล่าสุด หากมีระบบขายออนไลน์หรือหลายบัญชีธนาคาร ควรแจ้งตั้งแต่ต้นเพื่อวางวิธีรับส่งข้อมูลให้ถูกต้อง
+            </p>
+          </article>
+          <article class="panel">
+            <h3 data-th="จดทะเบียนบริษัทในไทยใช้เวลานานแค่ไหน?" data-en="How long does company registration in Thailand take?">
+              จดทะเบียนบริษัทในไทยใช้เวลานานแค่ไหน?
+            </h3>
+            <p
+              data-th="ระยะเวลาขึ้นอยู่กับความพร้อมของชื่อบริษัท ผู้ถือหุ้น กรรมการ ที่ตั้ง ทุนจดทะเบียน และอำนาจลงนาม หากข้อมูลครบ ทีมสามารถจัดลำดับเอกสารและแจ้งขั้นตอน DBD ให้เห็น timeline ก่อนเริ่มดำเนินการจริง"
+              data-en="The timeline depends on readiness of the company name, shareholders, directors, registered address, capital, and signing authority. When the information is complete, the team can map DBD document steps and provide a practical timeline before filing begins."
+            >
+              ระยะเวลาขึ้นอยู่กับความพร้อมของชื่อบริษัท ผู้ถือหุ้น กรรมการ ที่ตั้ง ทุนจดทะเบียน และอำนาจลงนาม หากข้อมูลครบ ทีมสามารถจัดลำดับเอกสารและแจ้งขั้นตอน DBD ให้เห็น timeline ก่อนเริ่มดำเนินการจริง
+            </p>
+          </article>
+          <article class="panel">
+            <h3 data-th="บริษัทต่างชาติควรเลือกสำนักงานบัญชีแบบไหน?" data-en="What should foreign-owned companies look for in a Thai accounting firm?">
+              บริษัทต่างชาติควรเลือกสำนักงานบัญชีแบบไหน?
+            </h3>
+            <p
+              data-th="บริษัทต่างชาติควรเลือกทีมที่อธิบายงานบัญชี ภาษี DBD วีซ่า Work Permit และใบอนุญาตธุรกิจได้ทั้งภาษาไทยและอังกฤษ พร้อมแยกหน้าที่ของบริษัท ผู้ถือหุ้น กรรมการ และผู้ยื่นเอกสารให้ชัดเจนก่อนเริ่มงาน"
+              data-en="Foreign-owned companies should look for a team that can explain accounting, tax, DBD, visa, work permit, and business-license steps in Thai and English, while clearly separating responsibilities for the company, shareholders, directors, and applicants before work starts."
+            >
+              บริษัทต่างชาติควรเลือกทีมที่อธิบายงานบัญชี ภาษี DBD วีซ่า Work Permit และใบอนุญาตธุรกิจได้ทั้งภาษาไทยและอังกฤษ พร้อมแยกหน้าที่ของบริษัท ผู้ถือหุ้น กรรมการ และผู้ยื่นเอกสารให้ชัดเจนก่อนเริ่มงาน
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="homepage-faq">
+        <div class="section-header">
+          <p class="kicker" data-th="FAQ FOR LOCAL SEO & AI ANSWERS" data-en="FAQ FOR LOCAL SEO & AI ANSWERS">FAQ FOR LOCAL SEO &amp; AI ANSWERS</p>
+          <h2 data-th="คำถามที่ลูกค้ามักถามก่อนเลือกสำนักงานบัญชีในกรุงเทพ" data-en="Questions clients ask before choosing an accounting firm in Bangkok">
+            คำถามที่ลูกค้ามักถามก่อนเลือกสำนักงานบัญชีในกรุงเทพ
+          </h2>
+          <p
+            data-th="คำตอบเหล่านี้ช่วยให้ลูกค้าเข้าใจขอบเขตงานเบื้องต้น และช่วยให้ Google กับ AI Search ดึงข้อมูลจากหน้าเว็บได้ชัดเจนขึ้น"
+            data-en="These answers clarify initial scope for clients and make the page easier for Google and AI Search engines to extract accurately."
+          >
+            คำตอบเหล่านี้ช่วยให้ลูกค้าเข้าใจขอบเขตงานเบื้องต้น และช่วยให้ Google กับ AI Search ดึงข้อมูลจากหน้าเว็บได้ชัดเจนขึ้น
+          </p>
+          <p
+            data-th="ถ้าคุณกำลังเทียบสำนักงานบัญชี กรุงเทพ หรือ accounting firm Bangkok ให้ดูสามเรื่องหลักคือความชัดเจนของขอบเขตงาน ความสม่ำเสมอของการติดตามเอกสาร และความสามารถในการอธิบายภาษี DBD วีซ่า Work Permit และใบอนุญาตธุรกิจให้เข้าใจง่ายก่อนเริ่มจ่ายงาน"
+            data-en="If you are comparing a Bangkok accounting firm, focus on clear scope, consistent document follow-up, and the ability to explain tax, DBD, visa, work permit, and business-license steps before work begins."
+          >
+            ถ้าคุณกำลังเทียบสำนักงานบัญชี กรุงเทพ หรือ accounting firm Bangkok ให้ดูสามเรื่องหลักคือความชัดเจนของขอบเขตงาน ความสม่ำเสมอของการติดตามเอกสาร และความสามารถในการอธิบายภาษี DBD วีซ่า Work Permit และใบอนุญาตธุรกิจให้เข้าใจง่ายก่อนเริ่มจ่ายงาน
+          </p>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary data-th="สำนักงานบัญชีในห้วยขวางมีบริการอะไรบ้าง?" data-en="What services does an accounting firm in Huai Khwang provide?">สำนักงานบัญชีในห้วยขวางมีบริการอะไรบ้าง?</summary>
+            <p data-th="Pinpoint ให้บริการบัญชีรายเดือน ภาษีซื้อขาย ภาษีหัก ณ ที่จ่าย ปิดงบ จดทะเบียนบริษัท เปลี่ยนแปลงข้อมูล DBD วีซ่า Work Permit ใบอนุญาตธุรกิจ และงานปิดบริษัท โดยดูแลลูกค้าในห้วยขวาง รัชดา กรุงเทพ และทั่วไทย" data-en="Pinpoint supports monthly accounting, VAT, withholding tax, year-end closing, company registration, DBD amendments, visa and work permit coordination, business licenses, and company dissolution for clients in Huai Khwang, Ratchada, Bangkok, and across Thailand.">
+              Pinpoint ให้บริการบัญชีรายเดือน ภาษีซื้อขาย ภาษีหัก ณ ที่จ่าย ปิดงบ จดทะเบียนบริษัท เปลี่ยนแปลงข้อมูล DBD วีซ่า Work Permit ใบอนุญาตธุรกิจ และงานปิดบริษัท โดยดูแลลูกค้าในห้วยขวาง รัชดา กรุงเทพ และทั่วไทย
+            </p>
+          </details>
+          <details>
+            <summary data-th="ค่าบริการบัญชีรายเดือนเริ่มต้นเท่าไหร่?" data-en="How much does monthly accounting service cost?">ค่าบริการบัญชีรายเดือนเริ่มต้นเท่าไหร่?</summary>
+            <p data-th="ค่าบริการขึ้นอยู่กับจำนวนเอกสาร ประเภทภาษี จำนวนบัญชีธนาคาร และขอบเขตรายงานที่ต้องการ ทีมจะประเมินหลังทราบลักษณะธุรกิจและปริมาณเอกสารจริงเพื่อให้ราคาเหมาะกับงาน" data-en="Pricing depends on document volume, tax types, bank accounts, and reporting scope. The team reviews the actual business context and document volume before proposing a suitable fee.">
+              ค่าบริการขึ้นอยู่กับจำนวนเอกสาร ประเภทภาษี จำนวนบัญชีธนาคาร และขอบเขตรายงานที่ต้องการ ทีมจะประเมินหลังทราบลักษณะธุรกิจและปริมาณเอกสารจริงเพื่อให้ราคาเหมาะกับงาน
+            </p>
+          </details>
+          <details>
+            <summary data-th="จดทะเบียนบริษัทใช้เวลากี่วัน?" data-en="How long does company registration in Thailand take?">จดทะเบียนบริษัทใช้เวลากี่วัน?</summary>
+            <p data-th="ระยะเวลาขึ้นอยู่กับความพร้อมของชื่อบริษัท ผู้ถือหุ้น กรรมการ ที่ตั้ง และเอกสารประกอบ หากข้อมูลครบ ทีมสามารถช่วยจัดลำดับเอกสารและแจ้งขั้นตอนยื่น DBD ให้ชัดเจนก่อนเริ่มงาน" data-en="The timeline depends on the company name, shareholders, directors, registered address, and supporting documents. When the information is ready, the team can map the DBD filing steps clearly before work begins.">
+              ระยะเวลาขึ้นอยู่กับความพร้อมของชื่อบริษัท ผู้ถือหุ้น กรรมการ ที่ตั้ง และเอกสารประกอบ หากข้อมูลครบ ทีมสามารถช่วยจัดลำดับเอกสารและแจ้งขั้นตอนยื่น DBD ให้ชัดเจนก่อนเริ่มงาน
+            </p>
+          </details>
+          <details>
+            <summary data-th="รองรับลูกค้าต่างชาติหรือบริษัทที่ต้องใช้ภาษาอังกฤษไหม?" data-en="Do you support foreign-owned companies and English communication?">รองรับลูกค้าต่างชาติหรือบริษัทที่ต้องใช้ภาษาอังกฤษไหม?</summary>
+            <p data-th="รองรับ ทีมสามารถสื่อสารได้ทั้งภาษาไทยและอังกฤษ เหมาะกับบริษัทที่มีผู้บริหารหรือพนักงานต่างชาติ รวมถึงเคสจดทะเบียนบริษัท วีซ่า Work Permit และเอกสารธุรกิจในไทย" data-en="Yes. The team supports Thai and English communication for businesses with foreign directors or staff, including company registration, visa, work permit, and Thai business-document cases.">
+              รองรับ ทีมสามารถสื่อสารได้ทั้งภาษาไทยและอังกฤษ เหมาะกับบริษัทที่มีผู้บริหารหรือพนักงานต่างชาติ รวมถึงเคสจดทะเบียนบริษัท วีซ่า Work Permit และเอกสารธุรกิจในไทย
+            </p>
+          </details>
+          <details>
+            <summary data-th="ต้องเตรียมเอกสารอะไรก่อนเริ่มทำบัญชีรายเดือน?" data-en="What documents are needed before starting monthly accounting?">ต้องเตรียมเอกสารอะไรก่อนเริ่มทำบัญชีรายเดือน?</summary>
+            <p data-th="โดยทั่วไปควรเตรียมเอกสารขาย เอกสารซื้อ รายการธนาคาร เอกสารค่าใช้จ่าย ภาษีที่เคยยื่น และข้อมูลบริษัท ทีมจะช่วยเช็กว่าส่วนใดครบแล้วและส่วนใดควรจัดเพิ่ม" data-en="Common starting documents include sales records, purchase records, bank statements, expense documents, prior tax filings, and company information. The team can identify what is complete and what should be added.">
+              โดยทั่วไปควรเตรียมเอกสารขาย เอกสารซื้อ รายการธนาคาร เอกสารค่าใช้จ่าย ภาษีที่เคยยื่น และข้อมูลบริษัท ทีมจะช่วยเช็กว่าส่วนใดครบแล้วและส่วนใดควรจัดเพิ่ม
+            </p>
+          </details>
+          <details>
+            <summary data-th="Pinpoint ดูแลพื้นที่ไหนบ้าง?" data-en="Which areas does Pinpoint serve?">Pinpoint ดูแลพื้นที่ไหนบ้าง?</summary>
+            <p data-th="สำนักงานตั้งอยู่ที่ห้วยขวาง รัชดา กรุงเทพ และให้บริการลูกค้าในกรุงเทพ เช่น รัชดา พระราม 9 สุทธิสาร ลาดพร้าว ดินแดง อโศก สุขุมวิท รวมถึงลูกค้าต่างจังหวัดที่ทำงานผ่านเอกสารออนไลน์ได้" data-en="The office is based in Huai Khwang, Ratchada, Bangkok and serves areas such as Ratchada, Rama 9, Sutthisan, Ladprao, Din Daeng, Asoke, Sukhumvit, plus remote clients across Thailand.">
+              สำนักงานตั้งอยู่ที่ห้วยขวาง รัชดา กรุงเทพ และให้บริการลูกค้าในกรุงเทพ เช่น รัชดา พระราม 9 สุทธิสาร ลาดพร้าว ดินแดง อโศก สุขุมวิท รวมถึงลูกค้าต่างจังหวัดที่ทำงานผ่านเอกสารออนไลน์ได้
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section ai-showcase-card">
+        <div class="section-header">
+          <p class="kicker" data-th="AI ASSISTANT" data-en="AI ASSISTANT">AI ASSISTANT</p>
+          <h2 data-th="คุยกับน้องพิณ AI ได้ตลอด 24 ชั่วโมง" data-en="Chat with Nong Pin AI 24/7">
+            คุยกับน้องพิณ AI ได้ตลอด 24 ชั่วโมง
+          </h2>
+          <p data-th="ถามได้ทั้งเรื่องบัญชี ภาษี จดทะเบียนบริษัท เอกสาร DBD และใบอนุญาตธุรกิจ ตอบเป็นภาษาไทยและอังกฤษ" data-en="Ask about accounting, tax, company registration, DBD documents, and business licenses in Thai or English.">
+            ถามได้ทั้งเรื่องบัญชี ภาษี จดทะเบียนบริษัท เอกสาร DBD และใบอนุญาตธุรกิจ ตอบเป็นภาษาไทยและอังกฤษ
+          </p>
+        </div>
+        <div class="hero-actions" style="justify-content:center;margin-top:20px;">
+          <button type="button" class="btn btn-emphasis ai-chat-toggle" data-th="คุยกับน้องพิณ AI" data-en="Chat with Nong Pin AI">คุยกับน้องพิณ AI</button>
+          <a href="/about" class="btn btn-secondary" data-th="เรียนรู้เพิ่มเติม" data-en="Learn more">เรียนรู้เพิ่มเติม</a>
+        </div>
+      </section>
+
+      <section class="section" id="lead-form">
+        <div class="lead-layout">
+          <div class="lead-side">
+            <p class="kicker" data-th="LEAD FORM" data-en="LEAD FORM">LEAD FORM</p>
+            <h2 data-th="ส่งรายละเอียดงาน" data-en="Send your case details">ส่งรายละเอียดงาน</h2>
+            <p data-th="กรอกฟอร์มสั้น ๆ ทีมจะติดต่อกลับพร้อมประเมินขอบเขตงาน" data-en="Fill out the short form and our team will contact you with a scope assessment.">
+              กรอกฟอร์มสั้น ๆ ทีมจะติดต่อกลับพร้อมประเมินขอบเขตงาน
+            </p>
+            <div class="note-box">
+              <h3 data-th="กรอกอะไรบ้าง" data-en="What to include">กรอกอะไรบ้าง</h3>
+              <ul class="checklist compact">
+                <li data-th="บริการที่ต้องการ" data-en="Service needed">บริการที่ต้องการ</li>
+                <li data-th="เอกสารที่มี" data-en="Documents you have">เอกสารที่มี</li>
+                <li data-th="ช่องทางติดต่อ" data-en="Contact preference">ช่องทางติดต่อ</li>
+              </ul>
+            </div>
+          </div>
+
+          <form id="leadForm" class="lead-form" novalidate>
+            <label>
+              <span data-th="ชื่อผู้ติดต่อ" data-en="Contact name">ชื่อผู้ติดต่อ</span>
+              <input id="leadName" name="fullName" type="text" required data-placeholder-th="ชื่อ-นามสกุล" data-placeholder-en="Full name" placeholder="ชื่อ-นามสกุล" />
+            </label>
+            <label>
+              <span data-th="เบอร์โทร" data-en="Phone number">เบอร์โทร</span>
+              <input id="leadPhone" name="phone" type="tel" required data-placeholder-th="เช่น 0927497442" data-placeholder-en="e.g. 0927497442" placeholder="เช่น 0927497442" />
+            </label>
+            <label>
+              <span data-th="อีเมล" data-en="Email">อีเมล</span>
+              <input id="leadEmail" name="email" type="email" data-placeholder-th="you@company.com" data-placeholder-en="you@company.com" placeholder="you@company.com" />
+            </label>
+            <label>
+              <span data-th="ชื่อบริษัท" data-en="Business name">ชื่อบริษัท</span>
+              <input id="leadBusiness" name="businessName" type="text" data-placeholder-th="ชื่อบริษัทหรือชื่อกิจการ" data-placeholder-en="Company or business name" placeholder="ชื่อบริษัทหรือชื่อกิจการ" />
+            </label>
+            <label>
+              <span data-th="บริการที่ต้องการ" data-en="Service needed">บริการที่ต้องการ</span>
+              <select id="leadService" name="serviceNeed">
+                <option value="" data-th="เลือกบริการ" data-en="Select a service">เลือกบริการ</option>
+                <option value="monthly-accounting" data-th="บัญชีรายเดือนและภาษี" data-en="Monthly accounting and tax">บัญชีรายเดือนและภาษี</option>
+                <option value="company-registration" data-th="จดทะเบียนจัดตั้งบริษัท" data-en="Company registration">จดทะเบียนจัดตั้งบริษัท</option>
+                <option value="dbd-amendment" data-th="เปลี่ยนแปลงข้อมูล DBD" data-en="DBD amendment">เปลี่ยนแปลงข้อมูล DBD</option>
+                <option value="visa-work-permit" data-th="วีซ่า / Work Permit" data-en="Visa / work permit">วีซ่า / Work Permit</option>
+                <option value="business-license" data-th="ใบอนุญาตธุรกิจ" data-en="Business license">ใบอนุญาตธุรกิจ</option>
+                <option value="company-dissolution" data-th="ปิดบริษัท" data-en="Company dissolution">ปิดบริษัท</option>
+              </select>
+            </label>
+            <label>
+              <span data-th="ขนาดรายได้ต่อปี" data-en="Annual revenue range">ขนาดรายได้ต่อปี</span>
+              <select id="leadRevenue" name="revenueRange">
+                <option value="" data-th="ยังไม่ระบุ" data-en="Not specified">ยังไม่ระบุ</option>
+                <option value="startup" data-th="เริ่มต้น / ยังไม่เปิดรายได้" data-en="Startup / pre-revenue">เริ่มต้น / ยังไม่เปิดรายได้</option>
+                <option value="under-18m" data-th="ต่ำกว่า 1.8 ล้านบาท" data-en="Under THB 1.8M">ต่ำกว่า 1.8 ล้านบาท</option>
+                <option value="18m-50m" data-th="1.8 - 50 ล้านบาท" data-en="THB 1.8M - 50M">1.8 - 50 ล้านบาท</option>
+                <option value="50m-plus" data-th="มากกว่า 50 ล้านบาท" data-en="Over THB 50M">มากกว่า 50 ล้านบาท</option>
+              </select>
+            </label>
+            <label>
+              <span data-th="ช่องทางติดต่อที่ต้องการ" data-en="Preferred contact channel">ช่องทางติดต่อที่ต้องการ</span>
+              <select id="leadPreferred" name="preferredContact">
+                <option value="phone" data-th="โทรศัพท์" data-en="Phone">โทรศัพท์</option>
+                <option value="line" data-th="LINE OA" data-en="LINE OA">LINE OA</option>
+                <option value="email" data-contact-option="email" data-th="อีเมล" data-en="Email">อีเมล</option>
+              </select>
+            </label>
+            <label class="full">
+              <span data-th="รายละเอียดเพิ่มเติม" data-en="Additional notes">รายละเอียดเพิ่มเติม</span>
+              <textarea id="leadNotes" name="notes" data-placeholder-th="อธิบายประเภทธุรกิจ สิ่งที่ต้องการ และเอกสารที่มีอยู่แล้ว" data-placeholder-en="Describe your case, objective, and existing documents" placeholder="อธิบายประเภทธุรกิจ สิ่งที่ต้องการ และเอกสารที่มีอยู่แล้ว"></textarea>
+            </label>
+            <p class="lead-form-note full" data-th="หากต้องการให้ทีมติดต่อกลับได้เร็วที่สุด แนะนำให้เลือกโทรศัพท์หรือ LINE OA ในช่วงนี้" data-en="For the fastest response right now, please choose phone or LINE OA as your preferred contact channel.">
+              หากต้องการให้ทีมติดต่อกลับได้เร็วที่สุด แนะนำให้เลือกโทรศัพท์หรือ LINE OA ในช่วงนี้
+            </p>
+            <input id="trapField" class="trap-field" name="website_trap" type="text" autocomplete="new-password" tabindex="-1" aria-hidden="true" />
+            <input id="utmSource" type="hidden" name="utmSource" />
+            <input id="utmMedium" type="hidden" name="utmMedium" />
+            <input id="utmCampaign" type="hidden" name="utmCampaign" />
+            <div class="full lead-actions">
+              <button id="leadSubmitBtn" class="btn btn-primary" type="submit" data-th="ส่งข้อมูลให้ทีมงาน" data-en="Send details to the team">ส่งข้อมูลให้ทีมงาน</button>
+              <a class="btn btn-secondary line-chat" href="https://lin.ee/58aU8oE" target="_blank" rel="noreferrer" data-th="คุยผ่าน LINE OA ก่อน" data-en="Open LINE OA first">คุยผ่าน LINE OA ก่อน</a>
+            </div>
+            <p id="leadStatus" class="lead-status full" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <p class="kicker" data-th="BLOG PREVIEW" data-en="BLOG PREVIEW">BLOG PREVIEW</p>
+          <h2 data-th="บทความสำหรับเจ้าของธุรกิจที่อยากจัดการบัญชี ภาษี และเอกสารบริษัทให้ถูกต้อง" data-en="Practical articles for business owners handling accounting, tax, and company documents">บทความสำหรับเจ้าของธุรกิจที่อยากจัดการบัญชี ภาษี และเอกสารบริษัทให้ถูกต้อง</h2>
+        </div>
+        <div class="article-grid">
+          <article class="article-card">
+            <h3 data-th="เริ่มจดบริษัท ต้องเตรียมอะไรบ้าง" data-en="What to prepare before registering a company in Thailand">เริ่มจดบริษัท ต้องเตรียมอะไรบ้าง</h3>
+            <p data-th="รวมเรื่องชื่อบริษัท เอกสารผู้ถือหุ้น ที่ตั้ง และขั้นตอนกับ DBD แบบอ่านแล้วเริ่มเตรียมได้เลย" data-en="A clear guide to company names, shareholder documents, address records, and DBD steps before filing.">รวมเรื่องชื่อบริษัท เอกสารผู้ถือหุ้น ที่ตั้ง และขั้นตอนกับ DBD แบบอ่านแล้วเริ่มเตรียมได้เลย</p>
+            <a class="resource-link" href="/blog/company-registration-thailand-checklist" data-th="อ่านบทความ" data-en="Read article">อ่านบทความ</a>
+          </article>
+          <article class="article-card">
+            <h3 data-th="รายได้เริ่มโต ควรเตรียมเอกสาร VAT อย่างไร" data-en="How to prepare VAT documents when revenue starts growing">รายได้เริ่มโต ควรเตรียมเอกสาร VAT อย่างไร</h3>
+            <p data-th="เหมาะกับธุรกิจที่ใกล้จด VAT และอยากวางเอกสารซื้อ-ขายให้เรียบร้อยตั้งแต่ต้น" data-en="For growing businesses that want purchase and sales tax documents in order before VAT registration.">เหมาะกับธุรกิจที่ใกล้จด VAT และอยากวางเอกสารซื้อ-ขายให้เรียบร้อยตั้งแต่ต้น</p>
+            <a class="resource-link" href="/blog/vat-readiness-thailand" data-th="อ่านบทความ" data-en="Read article">อ่านบทความ</a>
+          </article>
+          <article class="article-card">
+            <h3 data-th="จะทำ Work Permit ให้ต่างชาติ บริษัทต้องเตรียมอะไร" data-en="What a company should prepare for a foreign employee's work permit">จะทำ Work Permit ให้ต่างชาติ บริษัทต้องเตรียมอะไร</h3>
+            <p data-th="สรุปเอกสารฝั่งบริษัทและฝั่งผู้ยื่นที่ควรเตรียมก่อนยื่นจริง เพื่อลดการแก้เอกสารซ้ำ" data-en="A practical checklist for company-side and applicant-side documents before the actual filing.">สรุปเอกสารฝั่งบริษัทและฝั่งผู้ยื่นที่ควรเตรียมก่อนยื่นจริง เพื่อลดการแก้เอกสารซ้ำ</p>
+            <a class="resource-link" href="/blog/visa-work-permit-business-guide" data-th="อ่านบทความ" data-en="Read article">อ่านบทความ</a>
+          </article>
+          <article class="article-card">
+            <h3 data-th="เลือกสำนักงานบัญชีกรุงเทพอย่างไรให้เหมาะกับ SME" data-en="How SMEs should choose a Bangkok accounting firm">เลือกสำนักงานบัญชีกรุงเทพอย่างไรให้เหมาะกับ SME</h3>
+            <p data-th="คำตอบแบบ answer-first สำหรับเจ้าของธุรกิจที่ต้องการตรวจหลักฐานตัวตน ขอบเขตงาน และความพร้อมด้านบัญชี ภาษี DBD วีซ่า Work Permit และใบอนุญาต" data-en="An answer-first guide for checking entity proof, scope, and accounting/tax/DBD readiness before choosing a provider.">คำตอบแบบ answer-first สำหรับเจ้าของธุรกิจที่ต้องการตรวจหลักฐานตัวตน ขอบเขตงาน และความพร้อมด้านบัญชี ภาษี DBD วีซ่า Work Permit และใบอนุญาต</p>
+            <a class="resource-link" href="/bangkok-accounting-firm-answer" data-th="อ่านคู่มือ" data-en="Read guide">อ่านคู่มือ</a>
+          </article>
+        </div>
+        <div class="inline-actions" style="margin-top: 12px;">
+          <a class="btn btn-secondary" href="/blog" data-th="เปิดหน้า Blog ทั้งหมด" data-en="Open full blog">เปิดหน้า Blog ทั้งหมด</a>
+        </div>
+      </section>
+
+      <section class="section cta-band">
+        <p class="kicker" data-th="NEXT STEP" data-en="NEXT STEP">NEXT STEP</p>
+        <h2 data-th="หากคุณกำลังมองหาทีมที่ช่วยดูแลงานบัญชี ภาษี และเอกสารธุรกิจอย่างเป็นระบบ เราพร้อมช่วยเริ่มต้นให้ชัดตั้งแต่เคสแรก" data-en="If you need a team to handle accounting, tax, and business documents systematically, we are ready to help from the very first case.">
+          หากคุณกำลังมองหาทีมที่ช่วยดูแลงานบัญชี ภาษี และเอกสารธุรกิจอย่างเป็นระบบ เราพร้อมช่วยเริ่มต้นให้ชัดตั้งแต่เคสแรก
+        </h2>
+        <p data-th="คุณสามารถดูรายละเอียดบริการ อ่านบทความอ้างอิง และส่งข้อมูลให้ทีมประเมินแนวทางที่เหมาะกับธุรกิจของคุณได้ทันที" data-en="You can review the service details, read reference articles, and send your case to the team for a practical next-step assessment right away.">
+          คุณสามารถดูรายละเอียดบริการ อ่านบทความอ้างอิง และส่งข้อมูลให้ทีมประเมินแนวทางที่เหมาะกับธุรกิจของคุณได้ทันที
+        </p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:0927497442" data-th="โทรคุยกับทีม" data-en="Call the team">โทรคุยกับทีม</a>
+          <a class="btn btn-secondary line-chat" href="https://lin.ee/58aU8oE" target="_blank" rel="noreferrer" data-th="ทัก LINE OA" data-en="Open LINE OA">ทัก LINE OA</a>
+          <a class="btn btn-deep" href="/services" data-th="ดูบริการทั้งหมด" data-en="View all services">ดูบริการทั้งหมด</a>
+        </div>
+      </section>
+    </main>
+
+        <footer class="footer">
+      <div class="footer-grid">
+        <section>
+          <h3>Pinpoint Accounting &amp; Service, Ltd.</h3>
+          <p
+            data-th="ทีมงานบัญชี ภาษี และเอกสารธุรกิจที่เน้นความถูกต้อง ตรงเวลา และการดูแลอย่างมืออาชีพ เพื่อให้ธุรกิจของคุณเดินหน้าได้อย่างมั่นใจ"
+            data-en="Trusted accounting, tax, and business-compliance support focused on accuracy, timeliness, and professional follow-through."
+          >
+            ทีมงานบัญชี ภาษี และเอกสารธุรกิจที่เน้นความถูกต้อง ตรงเวลา และการดูแลอย่างมืออาชีพ เพื่อให้ธุรกิจของคุณเดินหน้าได้อย่างมั่นใจ
+          </p>
+          <p class="trusted-sme-footnote">
+            <a href="https://blutenstein.com/" target="_blank" rel="noopener noreferrer" data-th="Trusted SME verified — by Blutenstein" data-en="Trusted SME verified — by Blutenstein">Trusted SME verified — by Blutenstein</a>
+          </p>
+        </section>
+        <section class="footer-links">
+          <h3 data-th="บริการและข้อมูล" data-en="Services &amp; Info">บริการและข้อมูล</h3>
+          <a href="/bangkok-accounting" data-th="สำนักงานบัญชีกรุงเทพ" data-en="Bangkok Accounting">สำนักงานบัญชีกรุงเทพ</a>
+          <a href="/bangkok-accounting-firm-answer" data-th="วิธีเลือกสำนักงานบัญชี" data-en="How to choose an accounting firm">วิธีเลือกสำนักงานบัญชี</a>
+          <a href="/en" hreflang="en" data-th="English overview" data-en="English overview">English overview</a>
+          <a href="/services">Services</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/resources">Resources</a>
+          <a href="/faq">FAQ</a>
+          <a href="/blog">Blog</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </section>
+        <section class="footer-meta">
+          <h3 data-th="ติดต่อ" data-en="Contact">ติดต่อ</h3>
+          <p>Mobile: 092-749-7442</p>
+          <p>Website: pinpointaccountingservice.com</p>
+          <p
+            class="footer-address"
+            data-th="ที่ตั้งบริษัท: 294 ซอยอยู่เจริญ29 ถนนรัชดาภิเษก18 แขวงสามเสนนอก เขตห้วยขวาง กรุงเทพฯ 10310"
+            data-en="Office: 294 Soi Yoo Charoen 29, Ratchadaphisek 18 Rd., Sam Sen Nok, Huai Khwang, Bangkok 10310"
+          >
+            ที่ตั้งบริษัท: 294 ซอยอยู่เจริญ29 ถนนรัชดาภิเษก18 แขวงสามเสนนอก เขตห้วยขวาง กรุงเทพฯ 10310
+          </p>
+          <p class="footer-profile-links">
+            <a href="https://line.me/R/ti/p/@413dqpcq" target="_blank" rel="me noopener noreferrer">LINE Official Account</a>
+            <a href="https://maps.app.goo.gl/ZgQJbSdcryvowz1K6" target="_blank" rel="me noopener noreferrer">Google Business Profile</a>
+            <a href="https://datawarehouse.dbd.go.th/company/profile/0105566083811" target="_blank" rel="me noopener noreferrer">DBD profile</a>
+            <a href="https://www.dataforthai.com/company/0105566083811/" target="_blank" rel="me noopener noreferrer">DataForThai</a>
+          </p>
+          <a
+            class="map-pin-link"
+            href="https://maps.app.goo.gl/ZgQJbSdcryvowz1K6"
+            target="_blank"
+            rel="noreferrer"
+            data-th="Open Google Maps"
+            data-en="Open Google Maps"
+            >Open Google Maps</a
+          >
+          <p data-th="รองรับภาษาไทยและอังกฤษ" data-en="Thai and English support available">รองรับภาษาไทยและอังกฤษ</p>
+        </section>
+      </div>
+      <p class="copyright">© <span data-current-year>2026</span> Pinpoint Accounting &amp; Service, Ltd.</p>
+    </footer>
+
+    <script src="/tracking.min.js" defer></script>
+    <script src="/app.min.js" defer></script>
+  </body>
+</html>
+
+
+
+
+HTTP 200

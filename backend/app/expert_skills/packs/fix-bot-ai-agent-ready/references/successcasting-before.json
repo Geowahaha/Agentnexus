@@ -1,0 +1,55 @@
+{
+  "label": "before",
+  "scanned_at": "2026-02-10T10:18:00+07:00",
+  "source": "Pre-fix production audit (Succescasting.com case study / Audit web.txt)",
+  "url": "https://successcasting.com",
+  "canonical": "https://www.successcasting.com",
+  "overall_percent": 25,
+  "categories": {
+    "discoverability": { "percent": 25, "pass": 1, "total": 4 },
+    "content": { "percent": 0, "pass": 0, "total": 1 },
+    "bot_access": { "percent": 25, "pass": 1, "total": 4 },
+    "protocol": { "percent": 0, "pass": 0, "total": 3 },
+    "commerce": { "percent": 100, "pass": 0, "total": 0, "note": "N/A — marketing site" }
+  },
+  "checks": {
+    "discoverability": {
+      "robots_txt": { "pass": false, "detail": "Missing Applebot; policy not in headers" },
+      "sitemap": { "pass": true },
+      "link_headers": { "pass": false, "detail": "No llms.txt / agents.txt Link header" },
+      "llms_markdown": { "pass": false, "detail": "Bare URLs, no agents.txt link" }
+    },
+    "content": {
+      "markdown_negotiation": { "pass": false, "detail": "Accept: text/markdown not returning markdown" }
+    },
+    "bot_access": {
+      "ai_bot_rules": { "pass": false, "detail": "Incomplete crawler roster in robots.txt" },
+      "content_signal_header": { "pass": false, "detail": "Missing on all pages" },
+      "policy_consistency": { "pass": false, "detail": "ai.txt ai-train=yes conflicts with desired opt-out" },
+      "all_bots_200": { "pass": true, "detail": "Homepage 200 for major AI UAs" }
+    },
+    "protocol": {
+      "agents_txt": { "pass": false, "detail": "HTTP 404" },
+      "ai_txt": { "pass": false, "detail": "ai-train=yes mixed signal" },
+      "webmcp_hints": { "pass": false, "detail": "No data-tool* on RFQ form" }
+    }
+  },
+  "structure": {
+    "homepage_h1_count": 2,
+    "products_h1_count": 0,
+    "llms_markdown_links": 0
+  },
+  "likely_issues": [
+    "discoverability:robots_txt",
+    "discoverability:link_headers",
+    "discoverability:llms_markdown",
+    "content:markdown_negotiation",
+    "bot_access:ai_bot_rules",
+    "bot_access:content_signal_header",
+    "bot_access:policy_consistency",
+    "protocol:agents_txt",
+    "protocol:ai_txt",
+    "protocol:webmcp_hints"
+  ],
+  "verify_url": "https://isitagentready.com/"
+}

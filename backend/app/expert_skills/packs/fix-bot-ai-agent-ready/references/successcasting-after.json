@@ -1,0 +1,49 @@
+{
+  "label": "after",
+  "source": "isitagentready.com All Checks — live UI 2026-06-21 15:41 ICT",
+  "scanned_at": "2026-06-21T08:41:31.000Z",
+  "url": "https://www.successcasting.com",
+  "canonical": "https://www.successcasting.com",
+  "overall_percent": 100,
+  "isitagentready": {
+    "level": 5,
+    "level_name": "Agent-Native",
+    "pass": 20,
+    "fail": 0,
+    "neutral": 0,
+    "verify_url": "https://isitagentready.com/"
+  },
+  "categories": {
+    "discoverability": { "percent": 100, "pass": 4, "total": 4 },
+    "content": { "percent": 100, "pass": 1, "total": 1 },
+    "bot_access": { "percent": 100, "pass": 2, "total": 2 },
+    "protocol": { "percent": 100, "pass": 7, "total": 7, "label": "API, Auth, MCP & Skill Discovery" },
+    "commerce": { "percent": 100, "pass": 5, "total": 5, "optional": true }
+  },
+  "passing_checks": [
+    "discoverability.robotsTxt",
+    "discoverability.sitemap",
+    "discoverability.linkHeaders",
+    "discoverability.dnsAid",
+    "contentAccessibility.markdownNegotiation",
+    "botAccessControl.robotsTxtAiRules",
+    "botAccessControl.contentSignals",
+    "discovery.apiCatalog",
+    "discovery.oauthDiscovery",
+    "discovery.oauthProtectedResource",
+    "discovery.authMd",
+    "discovery.mcpServerCard",
+    "discovery.agentSkills",
+    "discovery.webMcp",
+    "discovery.a2aAgentCard",
+    "commerce.x402",
+    "commerce.mpp",
+    "commerce.ucp",
+    "commerce.acp",
+    "commerce.ap2"
+  ],
+  "failing_checks": [],
+  "note": "isitagentready UI: 100/100 Level 5 Agent-Native. Commerce marked Optional in UI but scores 100 when product schema detected.",
+  "likely_issues": [],
+  "screenshot": "Succescasting.com case study/Screenshot 2026-06-21 141258 after3 100%.png"
+}

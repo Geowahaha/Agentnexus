@@ -1,0 +1,17 @@
+---
+pid: 13952
+cwd: "D:\AgentNexus"
+command: "cd D:\\AgentNexus\\backend && pip install blake3 -q && python -c \"import blake3, base64; c=b'hello'; ext='txt'; p=base64.b64encode(c).decode('ascii')+ext; print(blake3.blake3(p.encode()).hexdigest()[:32])\""
+started_at: 2026-06-21T10:10:03.700Z
+running_for_ms: 86400010 
+---
+
+[notice] A new release of pip is available: 26.0.1 -> 26.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+f0b3413d4cabb000327fad369003d6a5
+
+---
+exit_code: -1
+elapsed_ms: 86400010
+ended_at: 2026-06-22T10:10:30.365Z
+---

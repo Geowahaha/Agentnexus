@@ -1,0 +1,130 @@
+Goal: Publish DNS for AI Discovery (DNS-AID) records for DNS-based agent discovery
+
+Issue: DNS for AI Discovery (DNS-AID) well-known entrypoint records not found
+
+Fix: Publish DNS for AI Discovery (DNS-AID) records under your domain, for example _index._agents.example.com or _a2a._agents.example.com, using ServiceMode SVCB/HTTPS records with alpn and endpoint parameters. Sign the public discovery zone with DNSSEC so validating resolvers return authenticated data.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/dns-aid/SKILL.md
+
+Docs: https://datatracker.ietf.org/doc/draft-mozleywilliams-dnsop-dnsaid/, https://www.rfc-editor.org/rfc/rfc9460
+
+---
+
+Goal: Declare AI content usage preferences with Content Signals in robots.txt
+
+Issue: No Content Signals found in robots.txt
+
+Fix: Add Content-Signal directives to your robots.txt declaring preferences for ai-train, search, and ai-input. For example:
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+Skill: https://isitagentready.com/.well-known/agent-skills/content-signals/SKILL.md
+
+Docs: https://contentsignals.org/, https://datatracker.ietf.org/doc/draft-romm-aipref-contentsignals/
+
+---
+
+Goal: Publish OAuth/OIDC discovery metadata so agents can authenticate with your APIs
+
+Issue: No OAuth/OIDC discovery metadata found
+
+Fix: If your site has protected APIs, publish /.well-known/openid-configuration (for OpenID Connect) or /.well-known/oauth-authorization-server (for pure OAuth 2.0) with your issuer, authorization_endpoint, token_endpoint, jwks_uri, and grant_types_supported. This allows AI agents to programmatically discover how to authenticate.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/oauth-discovery/SKILL.md
+
+Docs: http://openid.net/specs/openid-connect-discovery-1_0.html, https://www.rfc-editor.org/rfc/rfc8414
+
+---
+
+Goal: Publish OAuth Protected Resource Metadata so agents can discover how to authenticate
+
+Issue: No OAuth Protected Resource Metadata found
+
+Fix: Publish /.well-known/oauth-protected-resource with your resource identifier, authorization_servers (list of OAuth/OIDC issuer URLs that can issue tokens for this resource), and scopes_supported. This tells agents how to obtain access tokens for your protected APIs.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/oauth-protected-resource/SKILL.md
+
+Docs: https://www.rfc-editor.org/rfc/rfc9728
+
+---
+
+Goal: Publish Auth.md metadata for agent registration
+
+Issue: auth.md not found
+
+Fix: Serve /auth.md at the site root with agent registration instructions, publish /.well-known/oauth-protected-resource, and include an agent_auth block in /.well-known/oauth-authorization-server with register_uri, supported identity types, credential types, and claim/revocation URLs where applicable.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/auth-md/SKILL.md
+
+Docs: https://workos.com/auth-md, https://github.com/workos/auth.md
+
+---
+
+Goal: Publish an MCP Server Card for agent discovery
+
+Issue: MCP Server Card not found
+
+Fix: Serve an MCP Server Card (SEP-1649) at /.well-known/mcp/server-card.json with serverInfo (name, version), transport endpoint, and capabilities. The schema is being standardized at https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2127
+
+Skill: https://isitagentready.com/.well-known/agent-skills/mcp-server-card/SKILL.md
+
+Docs: https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2127
+
+---
+
+Goal: Support WebMCP to expose site tools to AI agents via the browser
+
+Issue: No WebMCP tools detected on page load
+
+Fix: Implement the WebMCP API by calling navigator.modelContext.provideContext() with tool definitions that expose your site's key actions to AI agents. Each tool needs a name, description, inputSchema (JSON Schema), and an execute callback function.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/webmcp/SKILL.md
+
+Docs: https://webmachinelearning.github.io/webmcp/, https://developer.chrome.com/blog/webmcp-epp
+
+---
+
+Goal: Support x402 protocol for agent-native HTTP payments
+
+Issue: x402 payment protocol not detected
+
+Fix: Add x402 payment middleware to your API routes to enable AI agents to pay for access via HTTP. Use @x402/express, @x402/hono, or @x402/next middleware with a facilitator URL and wallet address. Protected routes will return HTTP 402 with payment requirements that agents can fulfill automatically.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/x402/SKILL.md
+
+Docs: https://x402.org, https://github.com/coinbase/x402, https://docs.x402.org
+
+---
+
+Goal: Support MPP (Machine Payment Protocol) for agent-native HTTP payments
+
+Issue: MPP payment discovery not detected
+
+Fix: Publish an OpenAPI document at /openapi.json with x-payment-info extensions on payable operations. Each operation should declare intent (charge or session), method (tempo, stripe, lightning, card), amount, and currency. Use the MPP SDK (mppx for TypeScript, pympp for Python) with framework middleware for Hono, Express, Next.js, or Elysia to add MPP payment handling.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/mpp/SKILL.md
+
+Docs: https://mpp.dev, https://paymentauth.org/draft-payment-discovery-00.txt
+
+---
+
+Goal: Enable content payments via Universal Commerce Protocol
+
+Issue: UCP profile not found
+
+Fix: Serve /.well-known/ucp with protocol version, services, capabilities, and endpoints, and ensure spec URLs and schemas are reachable.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/ucp/SKILL.md
+
+Docs: https://ucp.dev/specification/overview/
+
+---
+
+Goal: Publish ACP discovery metadata so agents can discover your commerce API
+
+Issue: ACP discovery document not found
+
+Fix: Serve /.well-known/acp.json at the origin root with protocol.name "acp", protocol.version, api_base_url, supported transports, and capabilities.services so agents can discover your ACP implementation without creating a checkout session first.
+
+Skill: https://isitagentready.com/.well-known/agent-skills/acp/SKILL.md
+
+Docs: https://agenticcommerce.dev, https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/blob/main/rfcs/rfc.discovery.md

@@ -1,0 +1,11 @@
+# Named Cloudflare Tunnel for AgentNexus FastAPI backend.
+# Generated/updated by scripts/setup-named-tunnel.ps1
+# Do not commit tunnel-credentials.json (stored in .production/).
+
+tunnel: REPLACE_TUNNEL_ID
+credentials-file: REPLACE_CREDENTIALS_FILE
+
+ingress:
+  - hostname: REPLACE_HOSTNAME
+    service: http://127.0.0.1:8000
+  - service: http_status:404

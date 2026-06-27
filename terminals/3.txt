@@ -1,0 +1,25 @@
+---
+pid: 7372
+cwd: "D:\AgentNexus"
+command: "$env:PYTHONPATH = \"D:\\AgentNexus\\backend\"; D:\\AgentNexus\\backend\\.venv\\Scripts\\python.exe D:\\AgentNexus\\backend\\scripts\\test_billing.py"
+started_at: 2026-06-17T10:12:05.231Z
+running_for_ms: 86400014 
+---
+(trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "D:\AgentNexus\backend\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+signup wallet: $5.00
+estimate marketplace: $0.0100
+topup balance: $15.00
+transactions: 2
+topup validation: ok
+billing: ok
+
+---
+exit_code: -1
+elapsed_ms: 86400014
+ended_at: 2026-06-18T10:12:31.740Z
+---

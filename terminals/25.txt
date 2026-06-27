@@ -1,0 +1,13 @@
+---
+pid: 16104
+cwd: "D:\AgentNexus"
+command: "cloudflared tunnel --url http://127.0.0.1:8000 2>&1"
+started_at: 2026-06-18T04:18:24.464Z
+running_for_ms: 86400012 
+---
+
+---
+exit_code: -1
+elapsed_ms: 86400012
+ended_at: 2026-06-19T04:18:20.771Z
+---

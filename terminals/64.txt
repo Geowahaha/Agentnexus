@@ -1,0 +1,15 @@
+---
+pid: 33996
+cwd: "D:\AgentNexus"
+command: "& \"C:\\Program Files\\PostgreSQL\\18\\bin\\pg_ctl.exe\" start -D \"C:\\Program Files\\PostgreSQL\\18\\data\" -l \"C:\\Program Files\\PostgreSQL\\18\\data\\log\\startup.log\" -w -t 30 2>&1"
+started_at: 2026-06-21T05:04:28.340Z
+running_for_ms: 86400001 
+---
+waiting for server to start................................. stopped waiting
+pg_ctl: server did not start in time
+
+---
+exit_code: -1
+elapsed_ms: 86400001
+ended_at: 2026-06-22T05:04:54.798Z
+---

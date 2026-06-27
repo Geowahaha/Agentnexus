@@ -1,0 +1,759 @@
+[
+  {
+    "id": "33333333-3333-4333-8333-333333333301",
+    "slug": "ai-visibility-2026",
+    "name": "AI Visibility Audit 2026",
+    "description": "$2.50/run \u2014 agency-grade AI visibility audit with deterministic AIBotAuth scan, Claude audit, Gemini fix pack, and Grok QA. Every run includes a public proof badge. Live clients: successcasting.com and pinpointaccountingservice.com (88/100 proof on file).",
+    "i18n": {},
+    "display_locale": "en",
+    "category": "seo",
+    "pack_slug": "ai-visibility-2026",
+    "crew_config": {
+      "steps": [
+        {
+          "id": "scan",
+          "tool": "mcp.aibotauth.scan",
+          "type": "mcp",
+          "title": "AIBotAuth Scan"
+        },
+        {
+          "id": "analyze",
+          "type": "llm",
+          "model": "claude-sonnet-4-5-20250929",
+          "title": "Auditor"
+        },
+        {
+          "id": "improve",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Fix Pack Generator"
+        },
+        {
+          "id": "qa",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "QA Challenger"
+        }
+      ]
+    },
+    "capabilities": [
+      "seo",
+      "aeo",
+      "geo",
+      "ai-visibility",
+      "agent-readiness",
+      "fix-pack",
+      "robots-txt",
+      "llms-txt",
+      "json-ld",
+      "content-signals"
+    ],
+    "price_usd_per_run": "2.5000",
+    "owner_id": "00000000-0000-4000-8000-000000000001",
+    "is_active": true,
+    "created_at": "2026-06-17T12:40:39.304886Z",
+    "updated_at": "2026-06-17T12:40:39.304886Z",
+    "skill_preview": "---\nname: ai-visibility-2026\ndescription: Expert digital-marketing-agency playbook for making any website, brand, or social account rank in the AI-search era (2026 algorithms). Use this skill whenever the user asks about SEO, AEO, GEO, AIO, AI Overviews, AI Mode, LLM citations, AI crawlers, llms.txt, agent-readiness, Markdown for Agents, Content Signals, Web Bot Auth, MCP discovery, agentic commerce (x402/ACP/UCP), building a new website \"the right way today\", launching a social/brand account, auditing a site's AI visibility score, or asks \"what must I build to be found by ChatGPT/Perplexity/C\u2026",
+    "reference_count": 8,
+    "owner_name": "System",
+    "pipeline_steps": [
+      {
+        "id": "scan",
+        "title": "AIBotAuth Scan",
+        "step_type": "tool",
+        "tool_or_model": "mcp.aibotauth.scan"
+      },
+      {
+        "id": "analyze",
+        "title": "Auditor",
+        "step_type": "model",
+        "tool_or_model": "claude-sonnet-4-5-20250929"
+      },
+      {
+        "id": "improve",
+        "title": "Fix Pack Generator",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "qa",
+        "title": "QA Challenger",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      }
+    ],
+    "attribution": {
+      "charter_summary": "OBOLLA orchestrates agent flows; upstream models, datasets, and tools keep their credit. Free tiers use your GPU or open upstream weights \u2014 we do not re-train without saying so.",
+      "pack_slug": "ai-visibility-2026",
+      "upstream": [
+        {
+          "label": "AIBotAuth Scanner",
+          "href": "https://aibotauth.com",
+          "detail": "Deterministic AI crawler / visibility scan (MCP tool)"
+        },
+        {
+          "label": "SuccessCasting proof",
+          "href": "https://aibotauth.com/proof/successcasting-com-8bb891af45a6",
+          "detail": "Live client proof \u2014 88/100"
+        },
+        {
+          "label": "Pinpoint Accounting proof",
+          "href": "https://aibotauth.com/proof/pinpointaccountingservice-com-c902cb05afc4",
+          "detail": "Live client proof \u2014 88/100"
+        }
+      ],
+      "obolla_layer": "OBOLLA adds: multi-step pipeline, QA gate, marketplace delivery, optional Local Bridge, and billing \u2014 not the upstream weights themselves.",
+      "pricing_honesty": "$2.50/run marketplace fee plus ~$0.12 LLM. Includes Agent-Ready proof URL. Verified on 2 live OBOLLA clients.",
+      "credits_markdown": "# Credits \u2014 AI Visibility Audit\n\n## Scanner\n\n- **[AIBotAuth](https://aibotauth.com)** \u2014 MCP scan tool for AI crawler visibility signals used in the `scan` step.\n\n## OBOLLA layer\n\nMulti-step audit, fix-pack generation, and QA gate. LLM steps use platform-configured models (see `crew_config`)."
+    },
+    "model_tier_runtime": null
+  },
+  {
+    "id": "0da161de-4cd8-4e89-aeb7-f6e02438d3d7",
+    "slug": "audit-bottle-neck-www",
+    "name": "FIX Web",
+    "description": "# AI Visibility & Agentic SEO Skill\n\n## Objective\n\nImprove AI discoverability, search visibility, and agent compatibility for a production manufacturing website while preserving privacy and preventing unintended AI training.\n\n---\n\n# Scope\n\n* AI crawler optimization\n* Agent-ready metadata\n* Technical SEO corrections\n* Header policy standardization\n* Analytics validation\n* Production-safe deployment\n* Post-release verification\n\n---\n\n# Audit Findings\n\n### AI Policy\n\n* Inconsistent AI directives across policy files\n* Missing machine-readable agent manifest\n* Missing response-level AI signaling header\n\n### Crawling\n\n* Major AI crawlers reachable\n* Sitemap available\n* Robots policy incomplete\n\n### SEO\n\n* Homepage contained multiple H1 tags\n* Product listing page lacked server-rendered H1\n* Metadata required refinement\n\n### Analytics\n\n* Multiple GA4 references detected in raw HTML\n* Needed runtime verification before modification\n\n### Agent Support\n\n* No WebMCP-style hints present\n* No machine-readable agent guidance\n\n---\n\n# Implemented Improvements\n\n## Unified AI Policy\n\nConfigured consistent public policy:\n\n```text\nai-train=no\nsearch=yes\nai-input=yes\n```\n\nApplied across:\n\n* robots.txt\n* llms.txt\n* ai.txt\n* agents.txt\n* HTTP response headers\n\n---\n\n## agents.txt\n\nCreated machine-readable agent manifest.\n\nIncludes:\n\n* canonical domain\n* allowed public pages\n* restricted paths\n* citation guidance\n* AI policy declaration\n\n---\n\n## Content-Signal Header\n\nAdded:\n\n```http\nContent-Signal:\nai-train=no,\nsearch=yes,\nai-input=yes\n```\n\nApplied to:\n\n* homepage\n* products\n* blog\n* robots.txt\n* llms.txt\n* ai.txt\n* agents.txt\n\n---\n\n## robots.txt\n\nEnhanced support for:\n\n* GPTBot\n* OAI-SearchBot\n* ChatGPT-User\n* ClaudeBot\n* Claude-User\n* Claude-SearchBot\n* Google-Extended\n* PerplexityBot\n* Applebot\n\nProtected paths:\n\n```text\n/admin\n/api\n/dashboard\n```\n\nAdded sitemap declaration.\n\n---\n\n## llms.txt\n\nImproved structure:\n\n* markdown links\n* service descriptions\n* manufacturing capabilities\n* geographic information\n* agents.txt reference\n\n---\n\n## SEO Corrections\n\nHomepage\n\n* reduced multiple H1 to one\n\nProducts page\n\n* added server-rendered H1\n\nMaintained:\n\n* unique titles\n* schema markup\n* RFQ links\n* internal linking\n\n---\n\n## WebMCP Hints\n\nAdded machine-readable annotations:\n\n```text\ntoolname\ntooldescription\ntoolparamdescription\n```\n\nImplemented on RFQ/contact components.\n\n---\n\n## Analytics Validation\n\nVerified:\n\n* duplicate GA4 execution not occurring\n* multiple string occurrences were serialization artifacts\n\nAdded safety guard:\n\n```javascript\nwindow.__gaLoaded\n```\n\nto prevent duplicate initialization.\n\n---\n\n# Deployment Process\n\nPerformed:\n\n* local build verification\n* production deployment\n* CDN cache purge\n\nPurged:\n\n* /\n* robots.txt\n* llms.txt\n* ai.txt\n* agents.txt\n* sitemap.xml\n* products\n* blog\n\n---\n\n# Verification Checklist\n\nExpected status:\n\n* homepage \u2192 200\n* robots.txt \u2192 200\n* llms.txt \u2192 200\n* ai.txt \u2192 200\n* agents.txt \u2192 200\n* sitemap.xml \u2192 200\n\nChecks:\n\n* AI bots return HTTP 200\n* Content-Signal header exists\n* no ai-input=no directives\n* llms.txt contains markdown links\n* single H1 on homepage\n* single H1 on products page\n* WebMCP hints available\n\n---\n\n# Traffic Growth Hypothesis\n\nPotential contributors:\n\n1. Better AI crawler eligibility\n2. Improved agent discoverability\n3. Consistent AI policies\n4. Stronger semantic page structure\n5. Machine-readable RFQ workflows\n\n---\n\n# Monitoring\n\nObserve:\n\n### Analytics\n\n* AI referral traffic\n* landing pages\n* page_view count\n\n### Search Console\n\n* indexed pages\n* sitemap status\n* URL inspection\n\n### CDN Analytics\n\n* GPTBot requests\n* ClaudeBot requests\n* PerplexityBot requests\n* edge cache freshness\n\n---\n\n# Security Notes\n\nExcluded from documentation:\n\n* API keys\n* tokens\n* passwords\n* hosting credentials\n* analytics credentials\n* private repositories\n* environment files\n* internal documentation\n* deployment secrets\n* build artifacts\n",
+    "i18n": {},
+    "display_locale": "en",
+    "category": "seo",
+    "pack_slug": "custom",
+    "crew_config": {
+      "category": "seo",
+      "input_mode": "url",
+      "pipeline_label": "Scan \u2192 Audit \u2192 Fix Pack \u2192 QA",
+      "run_title": "Run Visibility Audit",
+      "skill_md": "# FIX Web\n\n## Purpose\n# AI Visibility & Agentic SEO Skill\n\n## Objective\n\nImprove AI discoverability, search visibility, and agent compatibility for a production manufacturing website while preserving privacy and preventing unintended AI training.\n\n---\n\n# Scope\n\n* AI crawler optimization\n* Agent-ready metadata\n* Technical SEO corrections\n* Header policy standardization\n* Analytics validation\n* Production-safe deployment\n* Post-release verification\n\n---\n\n# Audit Findings\n\n### AI Policy\n\n* Inconsistent AI directives across policy files\n* Missing machine-readable agent manifest\n* Missing response-level AI signaling header\n\n### Crawling\n\n* Major AI crawlers reachable\n* Sitemap available\n* Robots policy incomplete\n\n### SEO\n\n* Homepage contained multiple H1 tags\n* Product listing page lacked server-rendered H1\n* Metadata required refinement\n\n### Analytics\n\n* Multiple GA4 references detected in raw HTML\n* Needed runtime verification before modification\n\n### Agent Support\n\n* No WebMCP-style hints present\n* No machine-readable agent guidance\n\n---\n\n# Implemented Improvements\n\n## Unified AI Policy\n\nConfigured consistent public policy:\n\n```text\nai-train=no\nsearch=yes\nai-input=yes\n```\n\nApplied across:\n\n* robots.txt\n* llms.txt\n* ai.txt\n* agents.txt\n* HTTP response headers\n\n---\n\n## agents.txt\n\nCreated machine-readable agent manifest.\n\nIncludes:\n\n* canonical domain\n* allowed public pages\n* restricted paths\n* citation guidance\n* AI policy declaration\n\n---\n\n## Content-Signal Header\n\nAdded:\n\n```http\nContent-Signal:\nai-train=no,\nsearch=yes,\nai-input=yes\n```\n\nApplied to:\n\n* homepage\n* products\n* blog\n* robots.txt\n* llms.txt\n* ai.txt\n* agents.txt\n\n---\n\n## robots.txt\n\nEnhanced support for:\n\n* GPTBot\n* OAI-SearchBot\n* ChatGPT-User\n* ClaudeBot\n* Claude-User\n* Claude-SearchBot\n* Google-Extended\n* PerplexityBot\n* Applebot\n\nProtected paths:\n\n```text\n/admin\n/api\n/dashboard\n```\n\nAdded sitemap declaration.\n\n---\n\n## llms.txt\n\nImproved structure:\n\n* markdown links\n* service descriptions\n* manufacturing capabilities\n* geographic information\n* agents.txt reference\n\n---\n\n## SEO Corrections\n\nHomepage\n\n* reduced multiple H1 to one\n\nProducts page\n\n* added server-rendered H1\n\nMaintained:\n\n* unique titles\n* schema markup\n* RFQ links\n* internal linking\n\n---\n\n## WebMCP Hints\n\nAdded machine-readable annotations:\n\n```text\ntoolname\ntooldescription\ntoolparamdescription\n```\n\nImplemented on RFQ/contact components.\n\n---\n\n## Analytics Validation\n\nVerified:\n\n* duplicate GA4 execution not occurring\n* multiple string occurrences were serialization artifacts\n\nAdded safety guard:\n\n```javascript\nwindow.__gaLoaded\n```\n\nto prevent duplicate initialization.\n\n---\n\n# Deployment Process\n\nPerformed:\n\n* local build verification\n* production deployment\n* CDN cache purge\n\nPurged:\n\n* /\n* robots.txt\n* llms.txt\n* ai.txt\n* agents.txt\n* sitemap.xml\n* products\n* blog\n\n---\n\n# Verification Checklist\n\nExpected status:\n\n* homepage \u2192 200\n* robots.txt \u2192 200\n* llms.txt \u2192 200\n* ai.txt \u2192 200\n* agents.txt \u2192 200\n* sitemap.xml \u2192 200\n\nChecks:\n\n* AI bots return HTTP 200\n* Content-Signal header exists\n* no ai-input=no directives\n* llms.txt contains markdown links\n* single H1 on homepage\n* single H1 on products page\n* WebMCP hints available\n\n---\n\n# Traffic Growth Hypothesis\n\nPotential contributors:\n\n1. Better AI crawler eligibility\n2. Improved agent discoverability\n3. Consistent AI policies\n4. Stronger semantic page structure\n5. Machine-readable RFQ workflows\n\n---\n\n# Monitoring\n\nObserve:\n\n### Analytics\n\n* AI referral traffic\n* landing pages\n* page_view count\n\n### Search Console\n\n* indexed pages\n* sitemap status\n* URL inspection\n\n### CDN Analytics\n\n* GPTBot requests\n* ClaudeBot requests\n* PerplexityBot requests\n* edge cache freshness\n\n---\n\n# Security Notes\n\nExcluded from documentation:\n\n* API keys\n* tokens\n* passwords\n* hosting credentials\n* analytics credentials\n* private repositories\n* environment files\n* internal documentation\n* deployment secrets\n* build artifacts\n\n\n## Pipeline\nScan \u2192 Audit \u2192 Fix Pack \u2192 QA\n\n## Category\nseo\n\n## Buyer input\nDescribe the task in plain language \u2014 what to research, draft, edit, or deliver.\n\n## Deliverables\n- Structured output per pipeline step\n- QA-verified before marketplace delivery\n",
+      "steps": [
+        {
+          "id": "scan",
+          "type": "mcp",
+          "tool": "mcp.aibotauth.scan",
+          "title": "AIBotAuth Scan"
+        },
+        {
+          "id": "analyze",
+          "type": "llm",
+          "model": "claude-sonnet-4-5-20250929",
+          "title": "Auditor"
+        },
+        {
+          "id": "improve",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Fix Pack Generator"
+        },
+        {
+          "id": "qa",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "QA Challenger"
+        }
+      ],
+      "runtime_tier_downgraded": false,
+      "requested_model_tier_id": "standard"
+    },
+    "capabilities": [
+      "Web SEO AEO Ai Visibility Audit and Improvement"
+    ],
+    "price_usd_per_run": "4.9900",
+    "owner_id": "32587456-b3ff-44a5-9374-28e5de217043",
+    "is_active": true,
+    "created_at": "2026-06-19T10:51:11.126105Z",
+    "updated_at": "2026-06-19T10:51:11.456995Z",
+    "skill_preview": "# FIX Web\n\n## Purpose\n# AI Visibility & Agentic SEO Skill\n\n## Objective\n\nImprove AI discoverability, search visibility, and agent compatibility for a production manufacturing website while preserving privacy and preventing unintended AI training.\n\n---\n\n# Scope\n\n* AI crawler optimization\n* Agent-ready metadata\n* Technical SEO corrections\n* Header policy standardization\n* Analytics validation\n* Production-safe deployment\n* Post-release verification\n\n---\n\n# Audit Findings\n\n### AI Policy\n\n* Inconsistent AI directives across policy files\n* Missing machine-readable agent manifest\n* Missing response-\u2026",
+    "reference_count": 0,
+    "owner_name": "Geo, Let's go",
+    "pipeline_steps": [
+      {
+        "id": "scan",
+        "title": "AIBotAuth Scan",
+        "step_type": "tool",
+        "tool_or_model": "mcp.aibotauth.scan"
+      },
+      {
+        "id": "analyze",
+        "title": "Auditor",
+        "step_type": "model",
+        "tool_or_model": "claude-sonnet-4-5-20250929"
+      },
+      {
+        "id": "improve",
+        "title": "Fix Pack Generator",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "qa",
+        "title": "QA Challenger",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      }
+    ],
+    "attribution": {
+      "charter_summary": "OBOLLA orchestrates agent flows; upstream models, datasets, and tools keep their credit. Free tiers use your GPU or open upstream weights \u2014 we do not re-train without saying so.",
+      "pack_slug": "custom",
+      "upstream": [],
+      "obolla_layer": "OBOLLA adds: multi-step pipeline, QA gate, marketplace delivery, optional Local Bridge, and billing \u2014 not the upstream weights themselves.",
+      "pricing_honesty": "$4.99/run marketplace fee plus LLM/tool usage via credits.",
+      "credits_markdown": null
+    },
+    "model_tier_runtime": {
+      "downgraded": false,
+      "requested_tier_id": "standard",
+      "effective_tier_id": null,
+      "effective_price_usd": "4.9900",
+      "listed_price_usd": "4.9900",
+      "note_en": null,
+      "note_th": null
+    }
+  },
+  {
+    "id": "71ed95ef-e66b-494e-8575-8f07e42602f1",
+    "slug": "content-pipeline-for-creators",
+    "name": "Content  Creators",
+    "description": "Research \u2192 draft \u2192 edit \u2192 publish checklist for a recurring task.",
+    "i18n": {},
+    "display_locale": "en",
+    "category": "content",
+    "pack_slug": "custom",
+    "crew_config": {
+      "category": "content",
+      "input_mode": "task",
+      "pipeline_label": "Research \u2192 Draft \u2192 Edit \u2192 Publish",
+      "run_title": "Run Content Pipeline",
+      "skill_md": "# Content  Creators\n\n## Purpose\nResearch \u2192 draft \u2192 edit \u2192 publish checklist for a recurring task.\n\n## Pipeline\nResearch \u2192 Draft \u2192 Edit \u2192 Publish\n\n## Category\ncontent\n\n## Buyer input\nDescribe the task in plain language \u2014 what to research, draft, edit, or deliver.\n\n## Deliverables\n- Structured output per pipeline step\n- QA-verified before marketplace delivery\n",
+      "steps": [
+        {
+          "id": "research",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Research"
+        },
+        {
+          "id": "draft",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Draft"
+        },
+        {
+          "id": "edit",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "Edit & Polish"
+        },
+        {
+          "id": "qa",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "QA Gate"
+        }
+      ],
+      "runtime_tier_downgraded": false,
+      "requested_model_tier_id": "standard"
+    },
+    "capabilities": [
+      "content",
+      "research",
+      "editing"
+    ],
+    "price_usd_per_run": "0.9900",
+    "owner_id": "32587456-b3ff-44a5-9374-28e5de217043",
+    "is_active": true,
+    "created_at": "2026-06-20T04:05:51.973981Z",
+    "updated_at": "2026-06-20T04:06:16.833455Z",
+    "skill_preview": "# Content  Creators\n\n## Purpose\nResearch \u2192 draft \u2192 edit \u2192 publish checklist for a recurring task.\n\n## Pipeline\nResearch \u2192 Draft \u2192 Edit \u2192 Publish\n\n## Category\ncontent\n\n## Buyer input\nDescribe the task in plain language \u2014 what to research, draft, edit, or deliver.\n\n## Deliverables\n- Structured output per pipeline step\n- QA-verified before marketplace delivery\n",
+    "reference_count": 0,
+    "owner_name": "Geo, Let's go",
+    "pipeline_steps": [
+      {
+        "id": "research",
+        "title": "Research",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "draft",
+        "title": "Draft",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "edit",
+        "title": "Edit & Polish",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      },
+      {
+        "id": "qa",
+        "title": "QA Gate",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      }
+    ],
+    "attribution": {
+      "charter_summary": "OBOLLA orchestrates agent flows; upstream models, datasets, and tools keep their credit. Free tiers use your GPU or open upstream weights \u2014 we do not re-train without saying so.",
+      "pack_slug": "custom",
+      "upstream": [],
+      "obolla_layer": "OBOLLA adds: multi-step pipeline, QA gate, marketplace delivery, optional Local Bridge, and billing \u2014 not the upstream weights themselves.",
+      "pricing_honesty": "$0.99/run marketplace fee plus LLM/tool usage via credits.",
+      "credits_markdown": null
+    },
+    "model_tier_runtime": {
+      "downgraded": false,
+      "requested_tier_id": "standard",
+      "effective_tier_id": null,
+      "effective_price_usd": "0.9900",
+      "listed_price_usd": "0.9900",
+      "note_en": null,
+      "note_th": null
+    }
+  },
+  {
+    "id": "01466690-7de7-4fb5-868e-3233eb7f605b",
+    "slug": "travel-photo-monetization-explorer",
+    "name": "Travel Photo Monetization Explorer",
+    "description": "Discover various creative and profitable ways to utilize your travel photographs, turning your passion into a rewarding endeavor.",
+    "i18n": {},
+    "display_locale": "en",
+    "category": "content",
+    "pack_slug": "custom",
+    "crew_config": {
+      "steps": [
+        {
+          "id": "research",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Research"
+        },
+        {
+          "id": "draft",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Draft"
+        },
+        {
+          "id": "edit",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "Edit & Polish"
+        },
+        {
+          "id": "qa",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "QA Gate"
+        }
+      ],
+      "category": "content",
+      "skill_md": "### Purpose\nTo guide retirees and new creators in transforming their collection of travel photographs into valuable assets, exploring diverse monetization strategies and creative outlets.\n\n### Pipeline\n1.  **Photo Portfolio Assessment**: Analyze the user's travel photos (or descriptions of their themes, subjects, and styles) to identify strengths, unique perspectives, and potential niches (e.g., landscapes, cultural events, food, architecture, candid moments).\n2.  **Monetization Strategy Brainstorm**: Generate a tailored list of potential avenues for their photos, such as:\n    *   Stock Photography (e.g., Shutterstock, Adobe Stock)\n    *   Print-on-Demand (e.g., Etsy, Redbubble for prints, merchandise)\n    *   Personal Blog/Website (for storytelling, selling prints directly)\n    *   Social Media Licensing (e.g., Instagram, Facebook for brands)\n    *   Local Exhibitions/Art Fairs\n    *   Photo Books/E-books\n    *   Selling to travel agencies or local businesses\n3.  **Action Plan & Resource Guide**: For the chosen strategies, provide actionable steps, recommended platforms, essential tools (e.g., basic editing software), and resources for learning more about copyright and licensing.\n4.  **Engagement & Next Steps**: Encourage the user to select their preferred path and offer guidance on initial setup and promotion.\n\n### Buyer input\n*   Descriptions of your travel photos (e.g., \"mostly landscapes from Europe,\" \"street photography in Asia,\" \"food photos from local markets\").\n*   Your interests and comfort level with technology (e.g., \"comfortable with computers,\" \"prefer simple solutions\").\n*   How much time you're willing to dedicate to this project.\n*   (Optional) A few sample photos or links to an an online gallery.\n\n### Deliverables\nA comprehensive report detailing personalized monetization strategies for your travel photos, including recommended platforms, a step-by-step action plan, and resources to help you get started on your creative journey.",
+      "run_title": "Run Content Pipeline",
+      "engines_en": "Gemini 2.5 Flash + Grok 3 Mini",
+      "engines_th": "Gemini 2.5 Flash + Grok 3 Mini",
+      "input_mode": "task",
+      "model_tier_id": "standard",
+      "pipeline_label": "Photo to Profit Path",
+      "model_tier_label_en": "Standard (default)",
+      "model_tier_label_th": "\u0e21\u0e32\u0e15\u0e23\u0e10\u0e32\u0e19 (\u0e04\u0e48\u0e32\u0e40\u0e23\u0e34\u0e48\u0e21\u0e15\u0e49\u0e19)",
+      "runtime_tier_downgraded": false,
+      "requested_model_tier_id": "standard"
+    },
+    "capabilities": [
+      "content",
+      "research",
+      "editing"
+    ],
+    "price_usd_per_run": "0.1000",
+    "owner_id": "32587456-b3ff-44a5-9374-28e5de217043",
+    "is_active": true,
+    "created_at": "2026-06-20T09:45:40.580954Z",
+    "updated_at": "2026-06-20T09:45:59.822956Z",
+    "skill_preview": "### Purpose\nTo guide retirees and new creators in transforming their collection of travel photographs into valuable assets, exploring diverse monetization strategies and creative outlets.\n\n### Pipeline\n1.  **Photo Portfolio Assessment**: Analyze the user's travel photos (or descriptions of their themes, subjects, and styles) to identify strengths, unique perspectives, and potential niches (e.g., landscapes, cultural events, food, architecture, candid moments).\n2.  **Monetization Strategy Brainstorm**: Generate a tailored list of potential avenues for their photos, such as:\n    *   Stock Photog\u2026",
+    "reference_count": 0,
+    "owner_name": "Geo, Let's go",
+    "pipeline_steps": [
+      {
+        "id": "research",
+        "title": "Research",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "draft",
+        "title": "Draft",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "edit",
+        "title": "Edit & Polish",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      },
+      {
+        "id": "qa",
+        "title": "QA Gate",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      }
+    ],
+    "attribution": {
+      "charter_summary": "OBOLLA orchestrates agent flows; upstream models, datasets, and tools keep their credit. Free tiers use your GPU or open upstream weights \u2014 we do not re-train without saying so.",
+      "pack_slug": "custom",
+      "upstream": [],
+      "obolla_layer": "OBOLLA adds: multi-step pipeline, QA gate, marketplace delivery, optional Local Bridge, and billing \u2014 not the upstream weights themselves.",
+      "pricing_honesty": "$0.10/run marketplace fee plus LLM/tool usage via credits.",
+      "credits_markdown": null
+    },
+    "model_tier_runtime": {
+      "downgraded": false,
+      "requested_tier_id": "standard",
+      "effective_tier_id": "standard",
+      "effective_price_usd": "0.1000",
+      "listed_price_usd": "0.1000",
+      "note_en": null,
+      "note_th": null
+    }
+  },
+  {
+    "id": "4413b1c6-9b20-4be3-89d8-6059942d92b0",
+    "slug": "quality-check-flow-smart-famers",
+    "name": "Quality check flow \u2014 Smart Famers",
+    "description": "\u0e15\u0e23\u0e27\u0e08\u0e07\u0e32\u0e19\u0e01\u0e48\u0e2d\u0e19\u0e2a\u0e48\u0e07\u0e21\u0e2d\u0e1a\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a  Smart Farming \u0e0b\u0e36\u0e48\u0e07\u0e21\u0e31\u0e19\u0e21\u0e35\u0e2d\u0e38\u0e13\u0e2b\u0e20\u0e39\u0e21\u0e34 UV index \u0e41\u0e2a\u0e07\u0e41\u0e14\u0e14 \u0e21\u0e35 Fertilizer \u0e21\u0e35\u0e04\u0e27\u0e32\u0e21\u0e0a\u0e37\u0e49\u0e19\u0e43\u0e19\u0e2d\u0e32\u0e01\u0e32\u0e28 \u0e04\u0e27\u0e32\u0e21\u0e0a\u0e37\u0e49\u0e19\u0e43\u0e19\u0e14\u0e34\u0e19 \u0e41\u0e25\u0e30\u0e2d\u0e37\u0e48\u0e19\u0e46",
+    "i18n": {},
+    "display_locale": "en",
+    "category": "quality",
+    "pack_slug": "custom",
+    "crew_config": {
+      "steps": [
+        {
+          "id": "intake",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Intake"
+        },
+        {
+          "id": "work",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Work"
+        },
+        {
+          "id": "review",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "Review"
+        },
+        {
+          "id": "deliver",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "Deliver"
+        }
+      ],
+      "category": "quality",
+      "skill_md": "",
+      "run_title": "Quality check flow \u2014 \u0e04\u0e19\u0e17\u0e35\u0e48\u0e04\u0e38\u0e13\u0e2d\u0e22\u0e32\u0e01\u0e0a\u0e48\u0e27\u0e22",
+      "input_mode": "task",
+      "value_tier": "starter",
+      "value_score": 8,
+      "model_tier_id": "standard",
+      "pipeline_label": "Checklist \u2192 Run \u2192 Review \u2192 Verdict",
+      "pricing_ceiling_usd": "2.49",
+      "runtime_tier_downgraded": false,
+      "requested_model_tier_id": "standard"
+    },
+    "capabilities": [
+      "agent-flow",
+      "qa"
+    ],
+    "price_usd_per_run": "0.9900",
+    "owner_id": "32587456-b3ff-44a5-9374-28e5de217043",
+    "is_active": true,
+    "created_at": "2026-06-21T05:16:04.226925Z",
+    "updated_at": "2026-06-21T05:20:31.917128Z",
+    "skill_preview": "# Custom Creator Flow\n\nYou are an OBOLLA garden agent \u2014 a multi-step pipeline defined by the creator's SKILL.md playbook.\n\n## How to run\n\n1. Read the buyer's task description carefully.\n2. Follow the pipeline steps in order.\n3. Produce structured, actionable deliverables \u2014 not generic advice.\n4. End with a QA verdict: READY or NEEDS_CORRECTION with a short checklist.\n\n## Principles\n\n- Credit upstream models and tools honestly.\n- Do not claim training weights you only orchestrate.\n- Match the creator's category (content, coding, research, support, quality).\n- Buyers describe tasks in plain lang\u2026",
+    "reference_count": 0,
+    "owner_name": "Geo, Let's go",
+    "pipeline_steps": [
+      {
+        "id": "intake",
+        "title": "Intake",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "work",
+        "title": "Work",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "review",
+        "title": "Review",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      },
+      {
+        "id": "deliver",
+        "title": "Deliver",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      }
+    ],
+    "attribution": {
+      "charter_summary": "OBOLLA orchestrates agent flows; upstream models, datasets, and tools keep their credit. Free tiers use your GPU or open upstream weights \u2014 we do not re-train without saying so.",
+      "pack_slug": "custom",
+      "upstream": [],
+      "obolla_layer": "OBOLLA adds: multi-step pipeline, QA gate, marketplace delivery, optional Local Bridge, and billing \u2014 not the upstream weights themselves.",
+      "pricing_honesty": "$0.99/run marketplace fee plus LLM/tool usage via credits.",
+      "credits_markdown": null
+    },
+    "model_tier_runtime": {
+      "downgraded": false,
+      "requested_tier_id": "standard",
+      "effective_tier_id": "standard",
+      "effective_price_usd": "0.9900",
+      "listed_price_usd": "0.9900",
+      "note_en": null,
+      "note_th": null
+    }
+  },
+  {
+    "id": "33333333-3333-4333-8333-333333333309",
+    "slug": "fix-bot-ai-free",
+    "name": "Fix Bot AI \u2014 Free Agent Scan",
+    "description": "Free Agent-Ready scan \u2014 isitagentready.com-style scorecard, P0/P1/P2 fixes, paste-ready robots.txt, llms.txt, agents.txt, and a shareable AIBotAuth proof URL. Verified on successcasting.com and pinpointaccountingservice.com. Upgrade to Auto Fix Pro ($9.99) for full Level-5 deploy pack.",
+    "i18n": {},
+    "display_locale": "en",
+    "category": "seo",
+    "pack_slug": "fix-bot-ai-agent-ready",
+    "crew_config": {
+      "steps": [
+        {
+          "id": "scan",
+          "tool": "mcp.aibotauth.scan",
+          "type": "mcp",
+          "title": "Agent-Ready Scan"
+        },
+        {
+          "id": "analyze",
+          "type": "llm",
+          "model": "claude-sonnet-4-5-20250929",
+          "title": "Fix Bot Auditor"
+        },
+        {
+          "id": "improve",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Fix Pack Generator"
+        },
+        {
+          "id": "qa",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "QA Gate"
+        }
+      ],
+      "run_cta": "Scan & Prove \u2014 Free",
+      "run_hint": "Free scan + public proof link. Live: successcasting.com & pinpointaccountingservice.com. Upgrade to Auto Fix Pro $9.99 for Level 5 pack.",
+      "run_title": "Run Free Agent Scan",
+      "input_mode": "url",
+      "pipeline_label": "Scan \u2192 Audit \u2192 Fix Pack \u2192 QA",
+      "upgrade_skill_id": "33333333-3333-4333-8333-333333333310"
+    },
+    "capabilities": [
+      "seo",
+      "aeo",
+      "geo",
+      "ai-visibility",
+      "agent-readiness",
+      "fix-pack",
+      "robots-txt",
+      "llms-txt",
+      "content-signals",
+      "free-scan"
+    ],
+    "price_usd_per_run": "0.0000",
+    "owner_id": "00000000-0000-4000-8000-000000000001",
+    "is_active": true,
+    "created_at": "2026-06-21T06:09:11.338463Z",
+    "updated_at": "2026-06-21T06:09:11.338463Z",
+    "skill_preview": "---\nname: fix-bot-ai-agent-ready\ndescription: Free agent-readiness scan and fix pack aligned with isitagentready.com \u2014 robots.txt AI rules, Content Signals, llms.txt, Markdown negotiation, MCP/OAuth discovery, and commerce protocol checks. Use when the user wants a free bot/AI agent scan, Fix Bot AI, isitagentready-style audit, or deployable fixes for ChatGPT/Perplexity/Claude crawlers. Example reference site successcasting.com.\n---\n\n# Fix Bot AI \u2014 Free Agent-Ready Scan\n\nFree marketplace run: **URL in \u2192 agent-readiness scorecard + paste-ready fix files out.**\n\nRubric mirrors [isitagentready.co\u2026",
+    "reference_count": 4,
+    "owner_name": "System",
+    "pipeline_steps": [
+      {
+        "id": "scan",
+        "title": "Agent-Ready Scan",
+        "step_type": "tool",
+        "tool_or_model": "mcp.aibotauth.scan"
+      },
+      {
+        "id": "analyze",
+        "title": "Fix Bot Auditor",
+        "step_type": "model",
+        "tool_or_model": "claude-sonnet-4-5-20250929"
+      },
+      {
+        "id": "improve",
+        "title": "Fix Pack Generator",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "qa",
+        "title": "QA Gate",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      }
+    ],
+    "attribution": {
+      "charter_summary": "OBOLLA orchestrates agent flows; upstream models, datasets, and tools keep their credit. Free tiers use your GPU or open upstream weights \u2014 we do not re-train without saying so.",
+      "pack_slug": "fix-bot-ai-agent-ready",
+      "upstream": [
+        {
+          "label": "isitagentready.com",
+          "href": "https://isitagentready.com/",
+          "detail": "Agent-readiness check taxonomy (Cloudflare scanner reference)"
+        },
+        {
+          "label": "AIBotAuth Scanner",
+          "href": "https://aibotauth.com",
+          "detail": "Deterministic MCP scan + public proof badge"
+        },
+        {
+          "label": "SuccessCasting proof (88/100)",
+          "href": "https://aibotauth.com/proof/successcasting-com-8bb891af45a6",
+          "detail": "Live OBOLLA client \u2014 public Agent-Ready proof"
+        },
+        {
+          "label": "Pinpoint Accounting proof (88/100)",
+          "href": "https://aibotauth.com/proof/pinpointaccountingservice-com-c902cb05afc4",
+          "detail": "Live OBOLLA client \u2014 Thai accounting services site"
+        }
+      ],
+      "obolla_layer": "OBOLLA adds: multi-step pipeline, QA gate, marketplace delivery, optional Local Bridge, and billing \u2014 not the upstream weights themselves.",
+      "pricing_honesty": "Free $0/run \u2014 includes public AIBotAuth proof link. Live clients: successcasting.com & pinpointaccountingservice.com. Upgrade to Auto Fix Pro $9.99 for Level-5 deploy pack.",
+      "credits_markdown": "# Credits \u2014 Fix Bot AI (Free)\n\n| Upstream | Role |\n|----------|------|\n| [isitagentready.com](https://isitagentready.com/) | Public check taxonomy reference (Cloudflare agent-readiness scanner) |\n| [AIBotAuth Scanner](https://aibotauth.com) | Deterministic MCP scan step |\n| [Cloudflare Agents docs](https://developers.cloudflare.com/agents/) | Markdown for Agents, Content Signals, Web Bot Auth |\n| SuccessCasting.com | Documented before/after case study (with owner permission via OBOLLA audit) |\n\nOBOLLA adds: free pipeline orchestration, fix-pack generation, QA gate, marketplace delivery."
+    },
+    "model_tier_runtime": null
+  },
+  {
+    "id": "33333333-3333-4333-8333-333333333310",
+    "slug": "agent-ready-auto-fix",
+    "name": "Agent-Ready Auto Fix Pro",
+    "description": "$9.99/run \u2014 Agent-Ready Auto Fix Pro: gap map, full deploy pack (robots, llms, protocol, commerce layer), stack deploy guide, and re-verify checklist. Includes proof badge. Reference: successcasting.com 25%\u2192100% Level 5. Live proof: Pinpoint Accounting 88/100.",
+    "i18n": {},
+    "display_locale": "en",
+    "category": "seo",
+    "pack_slug": "agent-ready-auto-fix",
+    "crew_config": {
+      "steps": [
+        {
+          "id": "scan",
+          "tool": "mcp.aibotauth.scan",
+          "type": "mcp",
+          "title": "Agent-Ready Scan"
+        },
+        {
+          "id": "analyze",
+          "type": "llm",
+          "model": "claude-sonnet-4-5-20250929",
+          "title": "Gap Mapper"
+        },
+        {
+          "id": "improve",
+          "type": "llm",
+          "model": "gemini-2.5-flash",
+          "title": "Auto Fix Pack"
+        },
+        {
+          "id": "qa",
+          "type": "llm",
+          "model": "grok-3-mini",
+          "title": "Deploy QA"
+        }
+      ],
+      "run_cta": "Fix to Level 5 \u2014 $9.99",
+      "run_hint": "Full Level-5 pack + proof badge. Clients on file: successcasting.com & pinpointaccountingservice.com.",
+      "run_title": "Run Agent-Ready Auto Fix",
+      "input_mode": "url",
+      "pipeline_label": "Scan \u2192 Gap Map \u2192 Fix Pack \u2192 Deploy \u2192 Verify \u2192 QA",
+      "upgrade_skill_id": null
+    },
+    "capabilities": [
+      "seo",
+      "aeo",
+      "geo",
+      "ai-visibility",
+      "agent-readiness",
+      "auto-fix",
+      "fix-pack",
+      "robots-txt",
+      "llms-txt",
+      "content-signals",
+      "commerce-protocols",
+      "mcp-discovery",
+      "x402"
+    ],
+    "price_usd_per_run": "9.9900",
+    "owner_id": "00000000-0000-4000-8000-000000000001",
+    "is_active": true,
+    "created_at": "2026-06-21T09:27:25.363705Z",
+    "updated_at": "2026-06-21T09:27:25.363705Z",
+    "skill_preview": "---\nname: agent-ready-auto-fix\ndescription: Paid agent-readiness auto-fix \u2014 scan any URL with isitagentready.com taxonomy, generate full deployable fix pack (robots, llms, protocol stubs, commerce layer), stack-specific deploy steps, and re-verify checklist. Reference implementation successcasting.com 100% Level 5.\n---\n\n# Agent-Ready Auto Fix Pro\n\n**URL in \u2192 Level 5 fix pack out.** Targets [isitagentready.com](https://isitagentready.com/) All Checks \u2014 same 5 categories buyers see in the UI.\n\n| Category | What we auto-generate |\n|----------|----------------------|\n| Discoverability | robots.txt\u2026",
+    "reference_count": 3,
+    "owner_name": "System",
+    "pipeline_steps": [
+      {
+        "id": "scan",
+        "title": "Agent-Ready Scan",
+        "step_type": "tool",
+        "tool_or_model": "mcp.aibotauth.scan"
+      },
+      {
+        "id": "analyze",
+        "title": "Gap Mapper",
+        "step_type": "model",
+        "tool_or_model": "claude-sonnet-4-5-20250929"
+      },
+      {
+        "id": "improve",
+        "title": "Auto Fix Pack",
+        "step_type": "model",
+        "tool_or_model": "gemini-2.5-flash"
+      },
+      {
+        "id": "qa",
+        "title": "Deploy QA",
+        "step_type": "model",
+        "tool_or_model": "grok-3-mini"
+      }
+    ],
+    "attribution": {
+      "charter_summary": "OBOLLA orchestrates agent flows; upstream models, datasets, and tools keep their credit. Free tiers use your GPU or open upstream weights \u2014 we do not re-train without saying so.",
+      "pack_slug": "agent-ready-auto-fix",
+      "upstream": [
+        {
+          "label": "isitagentready.com",
+          "href": "https://isitagentready.com/",
+          "detail": "Target rubric \u2014 100% Level 5 Agent-Native"
+        },
+        {
+          "label": "SuccessCasting 100% reference",
+          "href": "https://www.successcasting.com",
+          "detail": "Production playbook: 25% \u2192 100% all categories"
+        },
+        {
+          "label": "AIBotAuth Scanner",
+          "href": "https://aibotauth.com",
+          "detail": "Deterministic MCP scan step"
+        }
+      ],
+      "obolla_layer": "OBOLLA adds: multi-step pipeline, QA gate, marketplace delivery, optional Local Bridge, and billing \u2014 not the upstream weights themselves.",
+      "pricing_honesty": "$9.99/run marketplace fee plus LLM via credits. Includes proof badge. Growth Monitor upsell: \u0e3f490/mo on AIBotAuth.",
+      "credits_markdown": null
+    },
+    "model_tier_runtime": null
+  }
+]

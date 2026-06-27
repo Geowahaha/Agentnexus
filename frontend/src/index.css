@@ -1,0 +1,295 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", "Source Sans 3", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Retro botanical — exhibition garden, geometric plants moodboard */
+  --color-surface: #faf7f2;
+  --color-surface-raised: #fffcf7;
+  --color-surface-overlay: #f0ebe0;
+  --color-surface-card: #fffcf7;
+  --color-border: #d4c9b8;
+  --color-muted: #4f5c48;
+  --color-text: #1a2118;
+  --color-text-soft: #3d4a38;
+  --color-accent: #c67b5c;
+  --color-accent-dim: #b85c38;
+  --color-brand: #3d4a3a;
+  --color-market: #6b7f6a;
+  --color-market-hover: #556652;
+  --color-success: #7a9b6e;
+  --color-warning: #c4a035;
+  --color-danger: #b85c4a;
+  --color-bloom: #c9a9a6;
+  --color-bloom-soft: #ede4e2;
+  --color-sky: #b8c5c9;
+  --color-coffee: #b85c38;
+  --color-coffee-soft: #f5e8dc;
+  --color-path: #a8b5a0;
+  --color-terracotta: #c67b5c;
+  --color-sage: #8b9a7b;
+  --color-ochre: #d4b86a;
+
+  /* Remap Tailwind emerald → muted sage (site-wide without per-file edits) */
+  --color-emerald-50: #f2f5f0;
+  --color-emerald-100: #e4ebe0;
+  --color-emerald-200: #c8d5c0;
+  --color-emerald-300: #a8b5a0;
+  --color-emerald-400: #8b9a7b;
+  --color-emerald-500: #6b7f6a;
+  --color-emerald-600: #556652;
+  --color-emerald-700: #455443;
+  --color-emerald-800: #3d4a3a;
+  --color-emerald-900: #2c3328;
+  --color-emerald-950: #1f241c;
+
+  /* Dusty rose */
+  --color-rose-50: #faf5f4;
+  --color-rose-100: #f0e6e4;
+  --color-rose-200: #e0cfcb;
+  --color-rose-300: #c9a9a6;
+  --color-rose-400: #b8928e;
+
+  /* Warm ochre / terracotta */
+  --color-amber-50: #faf6ee;
+  --color-amber-100: #f5e8dc;
+  --color-amber-200: #e8d4b8;
+  --color-amber-300: #d4b86a;
+  --color-amber-400: #c4a035;
+  --color-amber-800: #6b4f2e;
+
+  /* Muted slate (no bright sky) */
+  --color-sky-200: #d4dde0;
+  --color-sky-300: #b8c5c9;
+  --color-sky-400: #9aabb0;
+
+  --color-teal-300: #9aab9e;
+  --color-cyan-300: #a8b8b8;
+  --color-orange-200: #e8cdb8;
+  --color-pink-200: #e4d0cc;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    @apply antialiased;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    color: var(--color-text);
+    background-color: var(--color-surface);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(168, 181, 160, 0.35), transparent 55%),
+      radial-gradient(ellipse 40% 30% at 92% 12%, rgba(198, 123, 92, 0.18), transparent 50%),
+      radial-gradient(ellipse 35% 28% at 6% 20%, rgba(201, 169, 166, 0.2), transparent 45%),
+      radial-gradient(ellipse 45% 35% at 85% 90%, rgba(212, 184, 106, 0.22), transparent 55%),
+      linear-gradient(175deg, #faf7f2 0%, #f5f0e6 42%, #f0ebe0 78%, #ede6d6 100%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: rgba(107, 127, 106, 0.22);
+    color: var(--color-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    color: var(--color-text);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  input,
+  textarea,
+  select {
+    color: var(--color-text);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-muted);
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .text-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  .gumroad-card {
+    @apply rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-card)] transition-all duration-200;
+    box-shadow:
+      0 1px 2px rgba(44, 51, 40, 0.04),
+      0 8px 24px rgba(44, 51, 40, 0.06);
+  }
+
+  .gumroad-card:hover {
+    @apply border-[var(--color-sage)]/60 -translate-y-0.5;
+    box-shadow:
+      0 4px 12px rgba(107, 127, 106, 0.1),
+      0 16px 40px rgba(44, 51, 40, 0.08);
+  }
+
+  .price-pill {
+    @apply inline-flex items-center rounded-md bg-[var(--color-coffee-soft)] px-2 py-0.5 font-mono text-xs font-semibold text-[var(--color-coffee)];
+    border: 1px solid rgba(184, 92, 56, 0.2);
+  }
+
+  .category-pill-active {
+    @apply bg-[var(--color-market)] text-white shadow-sm;
+    box-shadow: 0 1px 3px rgba(85, 102, 82, 0.25);
+  }
+
+  .market-dropdown {
+    @apply rounded-lg border border-[var(--color-border)] bg-white text-[var(--color-text)];
+    box-shadow: 0 8px 24px rgba(44, 51, 40, 0.1);
+  }
+
+  .brand-logo-shell {
+    @apply inline-flex items-center rounded-xl border border-[var(--color-border)] bg-white/90 px-2.5 py-1.5;
+    box-shadow: 0 0 0 1px rgba(107, 127, 106, 0.08);
+  }
+
+  .text-readable {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .text-readable-muted {
+    color: var(--color-text-soft);
+    font-weight: 450;
+  }
+
+  .workflow-step-output {
+    @apply mt-3 max-h-96 overflow-y-auto whitespace-pre-wrap font-sans text-sm font-medium leading-relaxed text-[var(--color-text)];
+  }
+
+  .workflow-output-block {
+    @apply whitespace-pre-wrap font-sans text-sm font-medium leading-relaxed text-[var(--color-text)];
+  }
+
+  .form-label {
+    @apply text-sm font-semibold text-[var(--color-text-soft)];
+  }
+
+  .form-input {
+    @apply w-full rounded-lg border border-[var(--color-border)] bg-white px-3 py-2.5 text-sm font-medium text-[var(--color-text)] placeholder:text-[var(--color-muted)] focus:border-[var(--color-sage)] focus:outline-none focus:ring-2 focus:ring-[var(--color-sage)]/25;
+  }
+
+  .form-section-title {
+    @apply text-sm font-bold uppercase tracking-wider text-[var(--color-text-soft)];
+  }
+
+  .surface-panel {
+    @apply rounded-2xl border border-[var(--color-border)] bg-white/95;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset, 0 10px 30px -15px rgba(44,51,40,0.08);
+  }
+
+  .pro-section {
+    @apply rounded-3xl border border-[var(--color-border)] bg-white/97 p-6 sm:p-8;
+    box-shadow: 0 4px 20px -8px rgba(44,51,40,0.06);
+  }
+
+  .rich-hero {
+    @apply rounded-3xl overflow-hidden border border-[var(--color-border)] bg-white;
+    box-shadow: 0 20px 50px -20px rgba(44,51,40,0.12);
+  }
+
+  .pipeline-step {
+    @apply flex gap-4 rounded-2xl border border-[var(--color-border)] bg-white p-5 transition-all hover:border-[var(--color-sage)]/60 hover:-translate-y-px;
+  }
+
+  .pro-badge {
+    @apply inline-flex items-center rounded-full bg-emerald-50 px-3 py-0.5 text-xs font-semibold text-emerald-800 border border-emerald-200;
+  }
+
+  .garden-card {
+    @apply rounded-2xl border border-[var(--color-border)] bg-white/95 backdrop-blur-sm;
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.9) inset,
+      0 12px 32px rgba(44, 51, 40, 0.07);
+  }
+
+  .coffee-corner {
+    @apply rounded-2xl border border-amber-200/70 bg-gradient-to-br from-amber-50/90 to-[var(--color-coffee-soft)]/60;
+    box-shadow: 0 8px 24px rgba(184, 92, 56, 0.08);
+  }
+
+  .bloom-accent {
+    background: linear-gradient(135deg, rgba(201, 169, 166, 0.14), rgba(168, 181, 160, 0.18));
+  }
+
+  .page-shell {
+    @apply px-4 py-5 sm:px-6 sm:py-9;
+  }
+
+  .touch-target {
+    min-height: 2.75rem;
+  }
+
+  @media (max-width: 640px) {
+    .page-shell {
+      padding-left: 0.85rem;
+      padding-right: 0.85rem;
+    }
+    .rich-hero, .pro-section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .garden-promise {
+    background: linear-gradient(135deg, rgba(168, 181, 160, 0.12), rgba(201, 169, 166, 0.1));
+  }
+
+  .garden-studio {
+    @apply flex flex-col;
+    padding-bottom: max(7.5rem, calc(env(safe-area-inset-bottom, 0px) + 5rem));
+  }
+
+  @media (min-width: 1024px) {
+    .garden-studio {
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  .garden-compose-main {
+    @apply flex flex-col gap-4;
+  }
+
+  .garden-compose-textarea {
+    @apply w-full resize-y rounded-2xl border-2 border-[var(--color-border)] bg-white p-4 text-base font-medium leading-relaxed text-[var(--color-text)] placeholder:text-[var(--color-muted)] focus:border-[var(--color-sage)] focus:outline-none focus:ring-4 focus:ring-[var(--color-sage)]/20;
+    min-height: min(52vh, 28rem);
+  }
+
+  @media (min-width: 768px) {
+    .garden-compose-textarea {
+      min-height: 16rem;
+      @apply text-lg p-5;
+    }
+  }
+
+  .garden-sticky-actions {
+    @apply -mx-1 border-t border-[var(--color-border)]/60 pt-3 sm:mx-0;
+  }
+
+  .garden-companion-dock {
+    @apply fixed inset-x-0 bottom-0 z-30 max-h-[38vh] overflow-y-auto border-t border-amber-200/80 bg-gradient-to-t from-amber-50/98 to-white/95 px-4 py-3 shadow-[0_-8px_24px_rgba(44,51,40,0.08)];
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+  }
+
+  @media (min-width: 1024px) {
+    .garden-companion-dock {
+      display: none;
+    }
+  }
+}

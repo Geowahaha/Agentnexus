@@ -1,0 +1,15 @@
+{
+  "name": "@agentnexus/bridge",
+  "version": "0.1.0",
+  "description": "AgentNexus Local Bridge — connect your machine to the cloud brain",
+  "type": "module",
+  "bin": {
+    "agentnexus-bridge": "./index.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,17 @@
+---
+pid: 16700
+cwd: "D:\AgentNexus"
+command: "cd D:\\AgentNexus\\cloudflare\\worker; npx wrangler login 2>&1"
+started_at: 2026-06-19T07:46:29.402Z
+running_for_ms: 42235006 
+---
+
+ ⛅️ wrangler 4.101.0 (update available 4.102.0)
+───────────────────────────────────────────────
+Attempting to login via OAuth...
+Opening a link in your default browser: https://dash.cloudflare.com/oauth2/auth?response_type=code&client_id=54d11594-84e4-41aa-b438-e81b8fa78ee7&redirect_uri=http%3A%2F%2Flocalhost%3A8976%2Foauth%2Fcallback&scope=account%3Aread%20user%3Aread%20workers%3Awrite%20workers_kv%3Awrite%20workers_routes%3Awrite%20workers_scripts%3Awrite%20workers_tail%3Aread%20d1%3Awrite%20pages%3Awrite%20zone%3Aread%20ssl_certs%3Awrite%20ai%3Awrite%20ai-search%3Awrite%20ai-search%3Arun%20websearch.run%20agent-memory%3Awrite%20queues%3Awrite%20pipelines%3Awrite%20secrets_store%3Awrite%20artifacts%3Awrite%20flagship%3Awrite%20containers%3Awrite%20cloudchamber%3Awrite%20connectivity%3Aadmin%20email_routing%3Awrite%20email_sending%3Awrite%20browser%3Awrite%20offline_access&state=36R-jO48t1nNF8_vR1yed~LKm.BgMg0p&code_challenge=p9J91fZL15n_FDEdAfhYD6k9OX9TFu1t_wUVOmk5004&code_challenge_method=S256
+
+✘ [ERROR] Timed out waiting for authorization code, please try again.
+
+
+🪵  Logs were written to "C:\Users\mrgeo\AppData\Roaming\xdg.config\.wrangler\logs\wrangler-2026-06-19_07-46-33_691.log"

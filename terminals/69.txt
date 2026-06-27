@@ -1,0 +1,17 @@
+---
+pid: 25468
+cwd: "D:\AgentNexus"
+command: "ssh -i \"$env:USERPROFILE\\.ssh\\ssh-key-2026-03-21_Oracle_Geomonkey.key\" -o BatchMode=yes root@43.128.75.149 'docker exec agentnexus-mqtt mosquitto_pub -h 43.128.75.149 -p 8883 --cafile /farm-data/mosquitto/certs/ca.crt --insecure -u 3915c8c5-f05f-478a-9f3a-4612ca259f76 -P sf_jGs4rKlKHDxZUjq4VFHLcAEOVEMirg-R1STakQ -t obolla/farm/b9bc802a-ab32-46cc-a479-f93c5e585964/telemetry -m \"{\\\"readings\\\":[{\\\"channel\\\":\\\"brix\\\",\\\"value\\\":12.1}]}\" -d; docker exec agentnexus-postgres psql -U agentnexus -d agentnexus -c \"SELECT r.source, c.channel_key, r.value_numeric FROM smart_farm_readings r JOIN smart_farm_channels c ON c.id=r.channel_id ORDER BY r.id DESC LIMIT 10;\"'"
+started_at: 2026-06-22T06:35:01.483Z
+running_for_ms: 27639995 
+---
+Error: Bad file descriptor
+ source | channel_key  | value_numeric 
+--------+--------------+---------------
+ http   | ph           |           6.2
+ http   | ec_ms        |           2.1
+ http   | uv_index     |           3.9
+ http   | humidity_pct |            62
+ http   | temp_day_c   |          27.8
+(5 rows)
+

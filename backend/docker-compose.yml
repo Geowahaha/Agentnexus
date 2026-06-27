@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: agentnexus-postgres
+    environment:
+      POSTGRES_USER: agentnexus
+      POSTGRES_PASSWORD: agentnexus
+      POSTGRES_DB: agentnexus
+    ports:
+      - "5432:5432"
+    volumes:
+      - agentnexus_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agentnexus -d agentnexus"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  agentnexus_pgdata:

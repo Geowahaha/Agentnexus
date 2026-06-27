@@ -1,0 +1,10 @@
+---
+pid: 4192
+cwd: "D:\AgentNexus"
+command: "node D:\\AgentNexus\\packages\\bridge\\index.mjs connect --api https://agentnexus.mrgeo888.workers.dev"
+started_at: 2026-06-19T06:01:16.970Z
+running_for_ms: 2094998  
+---
+Connecting to wss://agentnexus.mrgeo888.workers.dev/api/v1/bridge/ws?device_token=*** ...
+Bridge online — waiting for tool calls (Ctrl+C to stop)
+✓ list_dir { path: '.' }

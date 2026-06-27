@@ -1,0 +1,11 @@
+---
+pid: 14096
+cwd: "D:\AgentNexus"
+command: "Test-NetConnection 43.128.75.149 -Port 8883 -WarningAction SilentlyContinue | Format-List TcpTestSucceeded, PingSucceeded"
+started_at: 2026-06-22T06:48:33.319Z
+running_for_ms: 26845000 
+---
+
+TcpTestSucceeded : False
+PingSucceeded    : True
+

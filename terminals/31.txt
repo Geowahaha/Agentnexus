@@ -1,0 +1,13 @@
+---
+pid: 2608
+cwd: "D:\AgentNexus"
+command: "cd D:\\successcasting.com && npx next start -p 3456"
+started_at: 2026-06-18T11:47:22.647Z
+running_for_ms: 67735002 
+---
+   ▲ Next.js 15.5.14
+   - Local:        http://localhost:3456
+   - Network:      http://192.168.1.6:3456
+
+ ✓ Starting...
+ ✓ Ready in 2.6s

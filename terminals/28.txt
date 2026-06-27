@@ -1,0 +1,14 @@
+---
+pid: 14408
+cwd: "D:\AgentNexus"
+command: "node \"D:\\Pinpoint web\\pinpointapp\\scripts\\prepare-deploy-clean.mjs\""
+started_at: 2026-06-18T06:08:18.911Z
+running_for_ms: 86400014 
+---
+Prepared D:\_deploy_clean (16873 files)
+
+---
+exit_code: -1
+elapsed_ms: 86400014
+ended_at: 2026-06-19T06:08:45.315Z
+---

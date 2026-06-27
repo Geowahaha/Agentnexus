@@ -1,0 +1,183 @@
+You are my local AI with direct access to the live OBOLLA MCP server.
+
+=== MCP ENDPOINT (call this) ===
+POST https://obolla.com/mcp
+Protocol: JSON-RPC 2.0 (tools/call)
+
+=== TOOL + DATA FROM MY SCAN (USE EXACTLY THIS — NO QUESTIONS) ===
+Tool name: apply_agent_ready_fix
+
+url: https://obolla.com/
+
+fix_pack: {
+  "url": "https://obolla.com/",
+  "strategy": "static",
+  "files": {
+    "robots.txt": "# obolla.com — agent-ready robots.txt\nUser-agent: *\nAllow: /\nContent-Signal: ai-train=no, search=yes, ai-input=yes\n\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-Web\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Applebot\nAllow: /\n\nSitemap: https://www.obolla.com/sitemap.xml\n",
+    "llms.txt": "# obolla.com — Machine-readable for LLM agents + Search Engines\n\n> Policy: ai-train=no, search=yes, ai-input=yes. Optimized for traditional SEO, AI Answer Engines (AEO), and autonomous Agents (AAIO).\n\n## About OBOLLA — AI Garden Community\nNo substantial text content extracted.\n\n## Core Pages (SEO + AEO ready)\n- [Homepage](https://www.obolla.com/) — Primary landing with H1: key pages and services\n- [Key sections](https://www.obolla.com/) based on content: main services\n\n## Agent Discovery (AAIO)\n- [llms.txt](https://www.obolla.com/llms.txt) — This file\n- [agents.txt](https://www.obolla.com/agents.txt)\n- [ai.txt](https://www.obolla.com/ai.txt)\n- [robots.txt](https://www.obolla.com/robots.txt) — AI crawler rules + Content-Signal\n\n## Structured Data & Commerce (SEO + AEO + AAIO)\n- [API Catalog](https://www.obolla.com/.well-known/api-catalog)\n- [OpenAPI / Schema](https://www.obolla.com/openapi.json)\n- [Auth & Commerce](https://www.obolla.com/auth.md) — UCP / ACP / x402\n\nAgents & search engines: Use clear intent, entities, and structured data from actual page content.\n",
+    "agents.txt": "# agents.txt for obolla.com\n\ncontact: https://www.obolla.com/contact\npolicy: https://www.obolla.com/ai.txt\nallowed-paths: /, /services, /blog, /contact\ncatalog: https://www.obolla.com/.well-known/api-catalog\nskills: https://www.obolla.com/agent-skills (if available)\n\n# This site supports agent interactions via discovery files and API.\n",
+    "ai.txt": "# ai.txt — obolla.com\nai-train: no\nsearch: yes\nai-input: yes\n\nSee also:\n- https://www.obolla.com/llms.txt\n- https://www.obolla.com/agents.txt\n- https://www.obolla.com/robots.txt\n",
+    ".well-known/api-catalog": "{\n  \"linkset\": [\n    {\n      \"anchor\": \"https://www.obolla.com/api\",\n      \"item\": [\n        { \"rel\": \"service-desc\", \"href\": \"https://www.obolla.com/openapi.json\", \"type\": \"application/json\" },\n        { \"rel\": \"service-doc\", \"href\": \"https://www.obolla.com/auth.md\", \"type\": \"text/markdown\" },\n        { \"rel\": \"status\", \"href\": \"https://www.obolla.com/api/health\", \"type\": \"application/json\" }\n      ]\n    }\n  ]\n}",
+    "_headers": "/*\n  Content-Signal: ai-train=no, search=yes, ai-input=yes\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n\n/robots.txt\n  Content-Type: text/plain; charset=utf-8\n\n/llms.txt\n  Content-Type: text/plain; charset=utf-8\n\n/ai.txt\n  Content-Type: text/plain; charset=utf-8\n\n/agents.txt\n  Content-Type: text/plain; charset=utf-8\n\n/.well-known/api-catalog\n  Content-Type: application/linkset+json\n",
+    "seo-schema.jsonld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"WebSite\",\n  \"name\": \"obolla.com\",\n  \"url\": \"https://www.obolla.com\",\n  \"potentialAction\": {\n    \"@type\": \"SearchAction\",\n    \"target\": \"https://www.obolla.com/search?q={search_term_string}\",\n    \"query-input\": \"required name=search_term_string\"\n  },\n  \"sameAs\": [\"https://twitter.com/...\"] \n}",
+    "aeo-faq-example.html": "<!-- AEO: Add FAQPage or HowTo schema on service pages for direct AI answers -->",
+    "AGENT-READY-DEPLOY.md": "# Agent-Ready deploy bundle (SEO + AEO + AAIO + Revenue Attribution)\n\nGenerated for **https://www.obolla.com** (OBOLLA Agent-Ready Auto Fix).\n\n## SEO (Traditional)\n- Improve Core Web Vitals, on-page, internal links, schema.\n- Target Google/Bing rankings + AI citations.\n\n## AEO (AI Answer Engines)\n- Use FAQ/HowTo schema, entity optimization, direct answers.\n- Optimize for Perplexity, ChatGPT Search, Gemini, etc.\n\n## AAIO (Agent Optimization)\n- Full discovery stack (robots, llms, agents, MCP, commerce protocols).\n- Make site legible and actionable for autonomous agents.\n\n## Revenue Link (Closed Moat)\nAfter deployment:\n1. Log outreach or run relevant OBOLLA skills on the improved pages.\n2. Track via moat: pre/post scan lift + skill executions.\n3. Revenue attributed automatically (BillingTransaction + CreatorEarning records).\n4. Use data for proprietary validation and better future recommendations.\n\nReference: successcasting.com (25% → 100% Level 5) — real revenue lift via agent visibility.\n\n## Deploy\nStatic / Cloudflare Pages: Upload root (`wrangler pages deploy`).\nNext.js: Copy public/* + add schema in layout/route.\n\n## Verify + Attribute Revenue\n```bash\nnode scripts/agent-ready-auto-deploy.mjs https://www.obolla.com --verify-only\n```\nThen run OBOLLA skills and check Creator Dashboard for attributed revenue.\n",
+    "REVENUE-ATTRIBUTION.md": "# Revenue Attribution Note\nFixes above are designed to increase:\n- Traditional search traffic (SEO)\n- AI answer citations (AEO)\n- Autonomous agent executions (AAIO)\n\nAll executions on OBOLLA can be logged for revenue (via logged outreach → sale flow).\nThis powers the closed AIBotAuth + OBOLLA moat and creator earnings.\n"
+  },
+  "diffs": {
+    "robots.txt": "diff --git a/robots.txt b/robots.txt\nindex 0000000..0000000 100644\n--- a/robots.txt\n+++ b/robots.txt\n@@ -1,1 +33 @@\n-# original content not available - this is the proposed new file\n+# obolla.com — agent-ready robots.txt\n+User-agent: *\n+Allow: /\n+Content-Signal: ai-train=no, search=yes, ai-input=yes\n+\n+User-agent: GPTBot\n+Allow: /\n+\n+User-agent: OAI-SearchBot\n+Allow: /\n+\n+User-agent: ChatGPT-User\n+Allow: /\n+\n+User-agent: ClaudeBot\n+Allow: /\n+\n+User-agent: Claude-Web\n+Allow: /\n+\n+User-agent: PerplexityBot\n+Allow: /\n+\n+User-agent: Google-Extended\n+Allow: /\n+\n+User-agent: Applebot-Extended\n+Allow: /\n+\n+User-agent: Applebot\n+Allow: /\n+\n+Sitemap: https://www.obolla.com/sitemap.xml\n",
+    "llms.txt": "diff --git a/llms.txt b/llms.txt\nindex 0000000..0000000 100644\n--- a/llms.txt\n+++ b/llms.txt\n@@ -1,1 +23 @@\n-# original content not available - this is the proposed new file\n+# obolla.com — Machine-readable for LLM agents + Search Engines\n+\n+> Policy: ai-train=no, search=yes, ai-input=yes. Optimized for traditional SEO, AI Answer Engines (AEO), and autonomous Agents (AAIO).\n+\n+## About OBOLLA — AI Garden Community\n+No substantial text content extracted.\n+\n+## Core Pages (SEO + AEO ready)\n+- [Homepage](https://www.obolla.com/) — Primary landing with H1: key pages and services\n+- [Key sections](https://www.obolla.com/) based on content: main services\n+\n+## Agent Discovery (AAIO)\n+- [llms.txt](https://www.obolla.com/llms.txt) — This file\n+- [agents.txt](https://www.obolla.com/agents.txt)\n+- [ai.txt](https://www.obolla.com/ai.txt)\n+- [robots.txt](https://www.obolla.com/robots.txt) — AI crawler rules + Content-Signal\n+\n+## Structured Data & Commerce (SEO + AEO + AAIO)\n+- [API Catalog](https://www.obolla.com/.well-known/api-catalog)\n+- [OpenAPI / Schema](https://www.obolla.com/openapi.json)\n+- [Auth & Commerce](https://www.obolla.com/auth.md) — UCP / ACP / x402\n+\n+Agents & search engines: Use clear intent, entities, and structured data from actual page content.\n",
+    "agents.txt": "diff --git a/agents.txt b/agents.txt\nindex 0000000..0000000 100644\n--- a/agents.txt\n+++ b/agents.txt\n@@ -1,1 +9 @@\n-# original content not available - this is the proposed new file\n+# agents.txt for obolla.com\n+\n+contact: https://www.obolla.com/contact\n+policy: https://www.obolla.com/ai.txt\n+allowed-paths: /, /services, /blog, /contact\n+catalog: https://www.obolla.com/.well-known/api-catalog\n+skills: https://www.obolla.com/agent-skills (if available)\n+\n+# This site supports agent interactions via discovery files and API.\n",
+    "ai.txt": "diff --git a/ai.txt b/ai.txt\nindex 0000000..0000000 100644\n--- a/ai.txt\n+++ b/ai.txt\n@@ -1,1 +9 @@\n-# original content not available - this is the proposed new file\n+# ai.txt — obolla.com\n+ai-train: no\n+search: yes\n+ai-input: yes\n+\n+See also:\n+- https://www.obolla.com/llms.txt\n+- https://www.obolla.com/agents.txt\n+- https://www.obolla.com/robots.txt\n",
+    ".well-known/api-catalog": "diff --git a/.well-known/api-catalog b/.well-known/api-catalog\nindex 0000000..0000000 100644\n--- a/.well-known/api-catalog\n+++ b/.well-known/api-catalog\n@@ -1,1 +12 @@\n-# original content not available - this is the proposed new file\n+{\n+  \"linkset\": [\n+    {\n+      \"anchor\": \"https://www.obolla.com/api\",\n+      \"item\": [\n+        { \"rel\": \"service-desc\", \"href\": \"https://www.obolla.com/openapi.json\", \"type\": \"application/json\" },\n+        { \"rel\": \"service-doc\", \"href\": \"https://www.obolla.com/auth.md\", \"type\": \"text/markdown\" },\n+        { \"rel\": \"status\", \"href\": \"https://www.obolla.com/api/health\", \"type\": \"application/json\" }\n+      ]\n+    }\n+  ]\n+}",
+    "_headers": "diff --git a/_headers b/_headers\nindex 0000000..0000000 100644\n--- a/_headers\n+++ b/_headers\n@@ -1,1 +19 @@\n-# original content not available - this is the proposed new file\n+/*\n+  Content-Signal: ai-train=no, search=yes, ai-input=yes\n+  X-Content-Type-Options: nosniff\n+  Referrer-Policy: strict-origin-when-cross-origin\n+\n+/robots.txt\n+  Content-Type: text/plain; charset=utf-8\n+\n+/llms.txt\n+  Content-Type: text/plain; charset=utf-8\n+\n+/ai.txt\n+  Content-Type: text/plain; charset=utf-8\n+\n+/agents.txt\n+  Content-Type: text/plain; charset=utf-8\n+\n+/.well-known/api-catalog\n+  Content-Type: application/linkset+json\n",
+    "seo-schema.jsonld": "diff --git a/seo-schema.jsonld b/seo-schema.jsonld\nindex 0000000..0000000 100644\n--- a/seo-schema.jsonld\n+++ b/seo-schema.jsonld\n@@ -1,1 +12 @@\n-# original content not available - this is the proposed new file\n+{\n+  \"@context\": \"https://schema.org\",\n+  \"@type\": \"WebSite\",\n+  \"name\": \"obolla.com\",\n+  \"url\": \"https://www.obolla.com\",\n+  \"potentialAction\": {\n+    \"@type\": \"SearchAction\",\n+    \"target\": \"https://www.obolla.com/search?q={search_term_string}\",\n+    \"query-input\": \"required name=search_term_string\"\n+  },\n+  \"sameAs\": [\"https://twitter.com/...\"] \n+}",
+    "aeo-faq-example.html": "diff --git a/aeo-faq-example.html b/aeo-faq-example.html\nindex 0000000..0000000 100644\n--- a/aeo-faq-example.html\n+++ b/aeo-faq-example.html\n@@ -1,1 +1 @@\n-# original content not available - this is the proposed new file\n+<!-- AEO: Add FAQPage or HowTo schema on service pages for direct AI answers -->",
+    "AGENT-READY-DEPLOY.md": "diff --git a/AGENT-READY-DEPLOY.md b/AGENT-READY-DEPLOY.md\nindex 0000000..0000000 100644\n--- a/AGENT-READY-DEPLOY.md\n+++ b/AGENT-READY-DEPLOY.md\n@@ -1,1 +34 @@\n-# original content not available - this is the proposed new file\n+# Agent-Ready deploy bundle (SEO + AEO + AAIO + Revenue Attribution)\n+\n+Generated for **https://www.obolla.com** (OBOLLA Agent-Ready Auto Fix).\n+\n+## SEO (Traditional)\n+- Improve Core Web Vitals, on-page, internal links, schema.\n+- Target Google/Bing rankings + AI citations.\n+\n+## AEO (AI Answer Engines)\n+- Use FAQ/HowTo schema, entity optimization, direct answers.\n+- Optimize for Perplexity, ChatGPT Search, Gemini, etc.\n+\n+## AAIO (Agent Optimization)\n+- Full discovery stack (robots, llms, agents, MCP, commerce protocols).\n+- Make site legible and actionable for autonomous agents.\n+\n+## Revenue Link (Closed Moat)\n+After deployment:\n+1. Log outreach or run relevant OBOLLA skills on the improved pages.\n+2. Track via moat: pre/post scan lift + skill executions.\n+3. Revenue attributed automatically (BillingTransaction + CreatorEarning records).\n+4. Use data for proprietary validation and better future recommendations.\n+\n+Reference: successcasting.com (25% → 100% Level 5) — real revenue lift via agent visibility.\n+\n+## Deploy\n+Static / Cloudflare Pages: Upload root (`wrangler pages deploy`).\n+Next.js: Copy public/* + add schema in layout/route.\n+\n+## Verify + Attribute Revenue\n+```bash\n+node scripts/agent-ready-auto-deploy.mjs https://www.obolla.com --verify-only\n+```\n+Then run OBOLLA skills and check Creator Dashboard for attributed revenue.\n",
+    "REVENUE-ATTRIBUTION.md": "diff --git a/REVENUE-ATTRIBUTION.md b/REVENUE-ATTRIBUTION.md\nindex 0000000..0000000 100644\n--- a/REVENUE-ATTRIBUTION.md\n+++ b/REVENUE-ATTRIBUTION.md\n@@ -1,1 +8 @@\n-# original content not available - this is the proposed new file\n+# Revenue Attribution Note\n+Fixes above are designed to increase:\n+- Traditional search traffic (SEO)\n+- AI answer citations (AEO)\n+- Autonomous agent executions (AAIO)\n+\n+All executions on OBOLLA can be logged for revenue (via logged outreach → sale flow).\n+This powers the closed AIBotAuth + OBOLLA moat and creator earnings.\n"
+  },
+  "pr_ready_note": "Use these diffs to create a PR. Each file has unified diff format.",
+  "apply_instructions": "Preferred: Use MCP (secure, no local bridge) - see mcp_tool below or connect your AI client to OBOLLA MCP. Alternatives: GitHub PR or CF Pages (existing endpoints). Bridge is optional/local only if you prefer.",
+  "repo_paths": {
+    "robots.txt": "# obolla.com — agent-ready robots.txt\nUser-agent: *\nAllow: /\nContent-Signal: ai-train=no, search=yes, ai-input=yes\n\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-Web\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Applebot\nAllow: /\n\nSitemap: https://www.obolla.com/sitemap.xml\n",
+    "llms.txt": "# obolla.com — Machine-readable for LLM agents + Search Engines\n\n> Policy: ai-train=no, search=yes, ai-input=yes. Optimized for traditional SEO, AI Answer Engines (AEO), and autonomous Agents (AAIO).\n\n## About OBOLLA — AI Garden Community\nNo substantial text content extracted.\n\n## Core Pages (SEO + AEO ready)\n- [Homepage](https://www.obolla.com/) — Primary landing with H1: key pages and services\n- [Key sections](https://www.obolla.com/) based on content: main services\n\n## Agent Discovery (AAIO)\n- [llms.txt](https://www.obolla.com/llms.txt) — This file\n- [agents.txt](https://www.obolla.com/agents.txt)\n- [ai.txt](https://www.obolla.com/ai.txt)\n- [robots.txt](https://www.obolla.com/robots.txt) — AI crawler rules + Content-Signal\n\n## Structured Data & Commerce (SEO + AEO + AAIO)\n- [API Catalog](https://www.obolla.com/.well-known/api-catalog)\n- [OpenAPI / Schema](https://www.obolla.com/openapi.json)\n- [Auth & Commerce](https://www.obolla.com/auth.md) — UCP / ACP / x402\n\nAgents & search engines: Use clear intent, entities, and structured data from actual page content.\n",
+    "agents.txt": "# agents.txt for obolla.com\n\ncontact: https://www.obolla.com/contact\npolicy: https://www.obolla.com/ai.txt\nallowed-paths: /, /services, /blog, /contact\ncatalog: https://www.obolla.com/.well-known/api-catalog\nskills: https://www.obolla.com/agent-skills (if available)\n\n# This site supports agent interactions via discovery files and API.\n",
+    "ai.txt": "# ai.txt — obolla.com\nai-train: no\nsearch: yes\nai-input: yes\n\nSee also:\n- https://www.obolla.com/llms.txt\n- https://www.obolla.com/agents.txt\n- https://www.obolla.com/robots.txt\n",
+    ".well-known/api-catalog": "{\n  \"linkset\": [\n    {\n      \"anchor\": \"https://www.obolla.com/api\",\n      \"item\": [\n        { \"rel\": \"service-desc\", \"href\": \"https://www.obolla.com/openapi.json\", \"type\": \"application/json\" },\n        { \"rel\": \"service-doc\", \"href\": \"https://www.obolla.com/auth.md\", \"type\": \"text/markdown\" },\n        { \"rel\": \"status\", \"href\": \"https://www.obolla.com/api/health\", \"type\": \"application/json\" }\n      ]\n    }\n  ]\n}",
+    "_headers": "/*\n  Content-Signal: ai-train=no, search=yes, ai-input=yes\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n\n/robots.txt\n  Content-Type: text/plain; charset=utf-8\n\n/llms.txt\n  Content-Type: text/plain; charset=utf-8\n\n/ai.txt\n  Content-Type: text/plain; charset=utf-8\n\n/agents.txt\n  Content-Type: text/plain; charset=utf-8\n\n/.well-known/api-catalog\n  Content-Type: application/linkset+json\n",
+    "seo-schema.jsonld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"WebSite\",\n  \"name\": \"obolla.com\",\n  \"url\": \"https://www.obolla.com\",\n  \"potentialAction\": {\n    \"@type\": \"SearchAction\",\n    \"target\": \"https://www.obolla.com/search?q={search_term_string}\",\n    \"query-input\": \"required name=search_term_string\"\n  },\n  \"sameAs\": [\"https://twitter.com/...\"] \n}",
+    "aeo-faq-example.html": "<!-- AEO: Add FAQPage or HowTo schema on service pages for direct AI answers -->",
+    "AGENT-READY-DEPLOY.md": "# Agent-Ready deploy bundle (SEO + AEO + AAIO + Revenue Attribution)\n\nGenerated for **https://www.obolla.com** (OBOLLA Agent-Ready Auto Fix).\n\n## SEO (Traditional)\n- Improve Core Web Vitals, on-page, internal links, schema.\n- Target Google/Bing rankings + AI citations.\n\n## AEO (AI Answer Engines)\n- Use FAQ/HowTo schema, entity optimization, direct answers.\n- Optimize for Perplexity, ChatGPT Search, Gemini, etc.\n\n## AAIO (Agent Optimization)\n- Full discovery stack (robots, llms, agents, MCP, commerce protocols).\n- Make site legible and actionable for autonomous agents.\n\n## Revenue Link (Closed Moat)\nAfter deployment:\n1. Log outreach or run relevant OBOLLA skills on the improved pages.\n2. Track via moat: pre/post scan lift + skill executions.\n3. Revenue attributed automatically (BillingTransaction + CreatorEarning records).\n4. Use data for proprietary validation and better future recommendations.\n\nReference: successcasting.com (25% → 100% Level 5) — real revenue lift via agent visibility.\n\n## Deploy\nStatic / Cloudflare Pages: Upload root (`wrangler pages deploy`).\nNext.js: Copy public/* + add schema in layout/route.\n\n## Verify + Attribute Revenue\n```bash\nnode scripts/agent-ready-auto-deploy.mjs https://www.obolla.com --verify-only\n```\nThen run OBOLLA skills and check Creator Dashboard for attributed revenue.\n",
+    "REVENUE-ATTRIBUTION.md": "# Revenue Attribution Note\nFixes above are designed to increase:\n- Traditional search traffic (SEO)\n- AI answer citations (AEO)\n- Autonomous agent executions (AAIO)\n\nAll executions on OBOLLA can be logged for revenue (via logged outreach → sale flow).\nThis powers the closed AIBotAuth + OBOLLA moat and creator earnings.\n"
+  },
+  "pages_paths": {
+    "robots.txt": "# obolla.com — agent-ready robots.txt\nUser-agent: *\nAllow: /\nContent-Signal: ai-train=no, search=yes, ai-input=yes\n\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-Web\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Applebot\nAllow: /\n\nSitemap: https://www.obolla.com/sitemap.xml\n",
+    "llms.txt": "# obolla.com — Machine-readable for LLM agents + Search Engines\n\n> Policy: ai-train=no, search=yes, ai-input=yes. Optimized for traditional SEO, AI Answer Engines (AEO), and autonomous Agents (AAIO).\n\n## About OBOLLA — AI Garden Community\nNo substantial text content extracted.\n\n## Core Pages (SEO + AEO ready)\n- [Homepage](https://www.obolla.com/) — Primary landing with H1: key pages and services\n- [Key sections](https://www.obolla.com/) based on content: main services\n\n## Agent Discovery (AAIO)\n- [llms.txt](https://www.obolla.com/llms.txt) — This file\n- [agents.txt](https://www.obolla.com/agents.txt)\n- [ai.txt](https://www.obolla.com/ai.txt)\n- [robots.txt](https://www.obolla.com/robots.txt) — AI crawler rules + Content-Signal\n\n## Structured Data & Commerce (SEO + AEO + AAIO)\n- [API Catalog](https://www.obolla.com/.well-known/api-catalog)\n- [OpenAPI / Schema](https://www.obolla.com/openapi.json)\n- [Auth & Commerce](https://www.obolla.com/auth.md) — UCP / ACP / x402\n\nAgents & search engines: Use clear intent, entities, and structured data from actual page content.\n",
+    "agents.txt": "# agents.txt for obolla.com\n\ncontact: https://www.obolla.com/contact\npolicy: https://www.obolla.com/ai.txt\nallowed-paths: /, /services, /blog, /contact\ncatalog: https://www.obolla.com/.well-known/api-catalog\nskills: https://www.obolla.com/agent-skills (if available)\n\n# This site supports agent interactions via discovery files and API.\n",
+    "ai.txt": "# ai.txt — obolla.com\nai-train: no\nsearch: yes\nai-input: yes\n\nSee also:\n- https://www.obolla.com/llms.txt\n- https://www.obolla.com/agents.txt\n- https://www.obolla.com/robots.txt\n",
+    ".well-known/api-catalog": "{\n  \"linkset\": [\n    {\n      \"anchor\": \"https://www.obolla.com/api\",\n      \"item\": [\n        { \"rel\": \"service-desc\", \"href\": \"https://www.obolla.com/openapi.json\", \"type\": \"application/json\" },\n        { \"rel\": \"service-doc\", \"href\": \"https://www.obolla.com/auth.md\", \"type\": \"text/markdown\" },\n        { \"rel\": \"status\", \"href\": \"https://www.obolla.com/api/health\", \"type\": \"application/json\" }\n      ]\n    }\n  ]\n}",
+    "_headers": "/*\n  Content-Signal: ai-train=no, search=yes, ai-input=yes\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n\n/robots.txt\n  Content-Type: text/plain; charset=utf-8\n\n/llms.txt\n  Content-Type: text/plain; charset=utf-8\n\n/ai.txt\n  Content-Type: text/plain; charset=utf-8\n\n/agents.txt\n  Content-Type: text/plain; charset=utf-8\n\n/.well-known/api-catalog\n  Content-Type: application/linkset+json\n",
+    "seo-schema.jsonld": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"WebSite\",\n  \"name\": \"obolla.com\",\n  \"url\": \"https://www.obolla.com\",\n  \"potentialAction\": {\n    \"@type\": \"SearchAction\",\n    \"target\": \"https://www.obolla.com/search?q={search_term_string}\",\n    \"query-input\": \"required name=search_term_string\"\n  },\n  \"sameAs\": [\"https://twitter.com/...\"] \n}",
+    "aeo-faq-example.html": "<!-- AEO: Add FAQPage or HowTo schema on service pages for direct AI answers -->",
+    "AGENT-READY-DEPLOY.md": "# Agent-Ready deploy bundle (SEO + AEO + AAIO + Revenue Attribution)\n\nGenerated for **https://www.obolla.com** (OBOLLA Agent-Ready Auto Fix).\n\n## SEO (Traditional)\n- Improve Core Web Vitals, on-page, internal links, schema.\n- Target Google/Bing rankings + AI citations.\n\n## AEO (AI Answer Engines)\n- Use FAQ/HowTo schema, entity optimization, direct answers.\n- Optimize for Perplexity, ChatGPT Search, Gemini, etc.\n\n## AAIO (Agent Optimization)\n- Full discovery stack (robots, llms, agents, MCP, commerce protocols).\n- Make site legible and actionable for autonomous agents.\n\n## Revenue Link (Closed Moat)\nAfter deployment:\n1. Log outreach or run relevant OBOLLA skills on the improved pages.\n2. Track via moat: pre/post scan lift + skill executions.\n3. Revenue attributed automatically (BillingTransaction + CreatorEarning records).\n4. Use data for proprietary validation and better future recommendations.\n\nReference: successcasting.com (25% → 100% Level 5) — real revenue lift via agent visibility.\n\n## Deploy\nStatic / Cloudflare Pages: Upload root (`wrangler pages deploy`).\nNext.js: Copy public/* + add schema in layout/route.\n\n## Verify + Attribute Revenue\n```bash\nnode scripts/agent-ready-auto-deploy.mjs https://www.obolla.com --verify-only\n```\nThen run OBOLLA skills and check Creator Dashboard for attributed revenue.\n",
+    "REVENUE-ATTRIBUTION.md": "# Revenue Attribution Note\nFixes above are designed to increase:\n- Traditional search traffic (SEO)\n- AI answer citations (AEO)\n- Autonomous agent executions (AAIO)\n\nAll executions on OBOLLA can be logged for revenue (via logged outreach → sale flow).\nThis powers the closed AIBotAuth + OBOLLA moat and creator earnings.\n"
+  },
+  "mcp_tool": {
+    "name": "apply_agent_ready_fix",
+    "description": "Securely apply the generated agent-ready fix pack (full SEO + AEO + AAIO) without needing local Bridge. Pass scoped tokens for PR/deploy. Revenue is auto-logged to OBOLLA moat on success.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "fix_pack": {
+          "type": "object"
+        },
+        "github_token": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "For GitHub PR apply"
+        },
+        "repo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "GitHub owner/repo (required if using github_token)"
+        },
+        "cf_project_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cf_api_token": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "url",
+        "fix_pack"
+      ]
+    }
+  }
+}
+
+Tool definition (for reference):
+{
+  "name": "apply_agent_ready_fix",
+  "description": "Securely apply the generated agent-ready fix pack (full SEO + AEO + AAIO) without needing local Bridge. Pass scoped tokens for PR/deploy. Revenue is auto-logged to OBOLLA moat on success.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string"
+      },
+      "fix_pack": {
+        "type": "object"
+      },
+      "github_token": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "For GitHub PR apply"
+      },
+      "repo": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "GitHub owner/repo (required if using github_token)"
+      },
+      "cf_project_name": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "cf_api_token": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "required": [
+      "url",
+      "fix_pack"
+    ]
+  }
+}
+
+=== DO THIS NOW ===
+Call:
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "tools/call",
+  "params": {
+    "name": "apply_agent_ready_fix",
+    "arguments": {
+      "url": "https://obolla.com/",
+      "fix_pack": <use the exact fix_pack object above>
+    }
+  }
+}
+
+Revenue will be logged automatically.
+
+After the result, reply with a short clear summary only:
+- MCP success: yes (pack prepared)
+- Pack: number of files + key ones
+- Revenue: billing_id + earning_id + $9.99 (status closed)
+- auto_deployed: false (no tokens)
+- What I should do next (apply the files from the pack or give deploy tokens)
+
+Finish in this response. No asking back.

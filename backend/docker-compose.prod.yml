@@ -1,0 +1,75 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: agentnexus-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-agentnexus}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-agentnexus}
+      POSTGRES_DB: ${POSTGRES_DB:-agentnexus}
+    volumes:
+      - agentnexus_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agentnexus -d agentnexus"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - agentnexus
+
+  mqtt:
+    image: eclipse-mosquitto:2
+    container_name: agentnexus-mqtt
+    restart: unless-stopped
+    entrypoint: ["/mosquitto-entrypoint.sh"]
+    volumes:
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./mosquitto/docker-entrypoint.sh:/mosquitto-entrypoint.sh:ro
+      - ./mosquitto/certs:/mosquitto/certs:ro
+      - agentnexus_mqttdata:/mosquitto/data
+      - agentnexus_data:/farm-data
+    ports:
+      - "8883:8883"
+    networks:
+      - agentnexus
+
+  api:
+    build: .
+    container_name: agentnexus-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mqtt:
+        condition: service_started
+    env_file:
+      - .env
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8000
+      DATABASE_URL: ${DATABASE_URL:-postgresql+asyncpg://agentnexus:agentnexus@postgres:5432/agentnexus}
+      SMART_FARM_MQTT_ENABLED: "true"
+      SMART_FARM_MQTT_HOST: mqtt
+      SMART_FARM_MQTT_PORT: "1883"
+      SMART_FARM_MQTT_USERNAME: ${SMART_FARM_MQTT_USERNAME:-obolla-ingest}
+      SMART_FARM_MQTT_PASSWORD: ${SMART_FARM_MQTT_INGEST_PASSWORD:-obolla-ingest-internal}
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - agentnexus_data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/docs', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    networks:
+      - agentnexus
+
+networks:
+  agentnexus:
+
+volumes:
+  agentnexus_pgdata:
+  agentnexus_data:
+  agentnexus_mqttdata:

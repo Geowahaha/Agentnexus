@@ -1,0 +1,16 @@
+---
+pid: 14016
+cwd: "D:\AgentNexus"
+command: "cloudflared tunnel login 2>&1"
+started_at: 2026-06-19T08:16:05.753Z
+running_for_ms: 40470016 
+---
+A browser window should have opened at the following URL:
+
+https://dash.cloudflare.com/argotunnel?aud=&callback=https%3A%2F%2Flogin.cloudflareaccess.org%2F1MM1OLgS1nP9H6Z11DaFlNlxGN8nRbr2Zl2erPNm-z0%3D
+
+If the browser failed to open, please visit the URL above directly in your browser.
+2026-06-19T08:16:21Z INF You have successfully logged in.
+If you wish to copy your credentials to a server, they have been saved to:
+C:\Users\mrgeo\.cloudflared\cert.pem
+

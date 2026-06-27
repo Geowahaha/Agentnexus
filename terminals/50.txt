@@ -1,0 +1,15 @@
+---
+pid: 24992
+cwd: "D:\AgentNexus"
+command: "& \"C:\\Program Files (x86)\\cloudflared\\cloudflared.exe\" tunnel login 2>&1"
+started_at: 2026-06-19T07:35:26.557Z
+running_for_ms: 42899991 
+---
+A browser window should have opened at the following URL:
+
+https://dash.cloudflare.com/argotunnel?aud=&callback=https%3A%2F%2Flogin.cloudflareaccess.org%2FOwa2YkljS5GxYymPvYjr3yL9bV8FKmVpB1Z9xNlQRD0%3D
+
+If the browser failed to open, please visit the URL above directly in your browser.
+2026-06-19T07:36:21Z INF Waiting for login...
+2026-06-19T07:37:15Z INF Waiting for login...
+2026-06-19T07:38:09Z INF Waiting for login...

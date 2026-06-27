@@ -1,0 +1,18 @@
+---
+pid: 25432
+cwd: "D:\AgentNexus"
+command: "cd D:\\AgentNexus\\frontend; npm run preview -- --host 127.0.0.1 --port 4173"
+started_at: 2026-06-20T05:24:25.464Z
+running_for_ms: 86400003 
+---
+
+> frontend@0.0.0 preview
+> vite preview --host 127.0.0.1 --port 4173
+
+  ➜  Local:   http://127.0.0.1:4173/
+
+---
+exit_code: -1
+elapsed_ms: 86400003
+ended_at: 2026-06-21T05:24:21.982Z
+---

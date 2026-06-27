@@ -1,0 +1,17 @@
+{
+  "skill_name": "obolla-workflow",
+  "evals": [
+    {
+      "id": "agent-ready-l1",
+      "prompt": "รัน agent-ready proof บน obolla.com แบบ L1 อย่า deploy อย่าแก้ score"
+    },
+    {
+      "id": "debug-ui-zero",
+      "prompt": "หน้า Agent-Ready แสดง 0% แต่ verify ได้ 95% — debug ให้หน่อย"
+    },
+    {
+      "id": "deploy-edge",
+      "prompt": "deploy obolla.com edge แล้วเช็ก health ให้ backend_reachable true"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+---
+pid: 12184
+cwd: "D:\AgentNexus"
+command: "$key = \"D:\\successcasting.com\\private key.pem\"; ssh -i $key -o BatchMode=yes -o ConnectTimeout=15 -o StrictHostKeyChecking=no root@43.128.75.149 \"echo '=== PINPOINT SEARCH ==='; grep -ril pinpoint /etc/nginx /opt /home /root 2>/dev/null | head -20; echo '=== VISIBILITY ENGINE ==='; docker inspect visibility-engine-api --format '{{.Config.Labels}}' 2>/dev/null; ls -la /opt/visibility-engine-api 2>/dev/null | head -5; ls -la /root/visibility* /opt/visibility* /home/*/visibility* 2>/dev/null; echo '=== LARGE CLEANUP CANDIDATES ==='; du -sh /opt/successcasting-web.prev /opt/successcasting-web/.next.bak /opt/mempalace_ai /root/mempalace2_ai /var/log/journal /home/agentuser/.cache /root/.cache /home/agentuser/.hermes /root/.hermes 2>/dev/null; echo '=== APT CACHE ==='; du -sh /var/cache/apt /var/lib/apt/lists 2>/dev/null; echo '=== OLD NGINX BAK ==='; ls -la /etc/nginx/sites-available/*.bak* 2>/dev/null; echo '=== DANGLING DOCKER ==='; docker images -f dangling=true; docker images | grep -vE 'blutenstein|factory-api|n8n|visibility|python'\""
+started_at: 2026-06-19T12:49:06.215Z
+running_for_ms: 24034999 
+---
+=== PINPOINT SEARCH ===
+/opt/tiktok-affiliate-engine-review/tiktok-affiliate-engine/backend/node_modules/magic-string/dist/magic-string.es.d.mts
+/opt/tiktok-affiliate-engine-review/tiktok-affiliate-engine/backend/node_modules/magic-string/dist/magic-string.cjs.d.ts
+/opt/tiktok-affiliate-engine-review/tiktok-affiliate-engine/backend/node_modules/magic-string/README.md
+/opt/blutenstein-portal/app/main.py.bak.20260530024039
+/opt/blutenstein-portal/app/main.py.bak.20260529200737
+/opt/blutenstein-portal/app/main.py
+/opt/blutenstein-portal/app/__pycache__/main.cpython-312.pyc
+/opt/blutenstein-portal/app/main.py.bak.20260529191758
+/opt/blutenstein-portal/app/main.py.bak.20260529190016
+/opt/blutenstein-portal/app/main.py.bak.20260529185850
+/opt/blutenstein-portal/app/main.py.bak.20260530023520
+/opt/mempalace_ai/.venv/lib/python3.12/site-packages/ccxt/static_dependencies/lark/exceptions.py
+/opt/mempalace_ai/.venv/lib/python3.12/site-packages/ccxt/static_dependencies/lark/__pycache__/exceptions.cpython-312.pyc
+/opt/mempalace_ai/.venv/lib/python3.12/site-packages/sympy/parsing/latex/__init__.py
+/opt/successcasting-web.prev/node_modules/next/dist/server/app-render/dynamic-rendering.js.map
+/opt/successcasting-web.prev/node_modules/next/dist/server/app-render/dynamic-rendering.js
+/opt/successcasting-web.prev/node_modules/next/dist/compiled/next-server/app-route-turbo-experimental.runtime.prod.js.map
+/opt/successcasting-web.prev/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js
+/opt/successcasting-web.prev/node_modules/next/dist/compiled/next-server/app-page-experimental.runtime.dev.js.map
+/opt/successcasting-web.prev/node_modules/next/dist/compiled/next-server/server.runtime.prod.js.map
+=== VISIBILITY ENGINE ===
+map[com.docker.compose.config-hash:ebefc022bcaaaf329df9e6b55ebac30c707f40aa4f0284a7d7ba560c348028a5 com.docker.compose.container-number:1 com.docker.compose.oneoff:False com.docker.compose.project:visibility-engine-api com.docker.compose.project.config_files:docker-compose.yml com.docker.compose.project.working_dir:/opt/visibility-engine-api com.docker.compose.service:visibility-engine-api com.docker.compose.version:1.29.2]
+total 100
+drwxrwxrwx  7 root root  4096 May 30 10:28 .
+drwxr-xr-x 11 root root  4096 Jun  9 21:53 ..
+drwxrwxrwx  2 root root  4096 May 30 00:19 checklists
+-rwxrwxrwx  1 root root   503 May 29 22:17 config.example.yaml
+/opt/visibility-engine-api:
+total 100
+drwxrwxrwx  7 root root  4096 May 30 10:28 .
+drwxr-xr-x 11 root root  4096 Jun  9 21:53 ..
+drwxrwxrwx  2 root root  4096 May 30 00:19 checklists
+-rwxrwxrwx  1 root root   503 May 29 22:17 config.example.yaml
+-rwxrwxrwx  1 root root   551 May 30 10:28 docker-compose.yml
+-rwxrwxrwx  1 root root   527 May 30 10:28 Dockerfile
+drwxrwxrwx  3 root root  4096 May 30 00:08 .github
+-rwxrwxrwx  1 root root    80 May 30 00:04 .gitignore
+-rwxrwxrwx  1 root root  1066 May 30 00:03 LICENSE
+-rwxrwxrwx  1 root root   900 May 30 10:28 pyproject.toml
+-rwxrwxrwx  1 root root  5977 May 30 00:08 README.md
+-rwxrwxrwx  1 root root   108 May 30 10:28 requirements.txt
+drwxrwxrwx  2 root root  4096 May 30 00:19 samples
+drwxrwxrwx  2 root root  4096 May 30 00:56 tests
+drwxrwxrwx  5 root root  4096 May 30 10:28 visibility_engine
+-rw-r--r--  1 root root 35798 May 30 10:39 visibility-engine-api.tgz
+=== LARGE CLEANUP CANDIDATES ===
+1.4G/opt/successcasting-web.prev
+289M/opt/successcasting-web/.next.bak
+773M/opt/mempalace_ai
+480M/root/mempalace2_ai
+1.2G/var/log/journal
+2.7G/home/agentuser/.cache
+1.4G/root/.cache
+560M/home/agentuser/.hermes
+31M/root/.hermes
+=== APT CACHE ===
+135M/var/cache/apt
+183M/var/lib/apt/lists
+=== OLD NGINX BAK ===
+-rw-r--r-- 1 root root 1213 May 27 17:25 /etc/nginx/sites-available/successcasting-factory.bak.20260527172557
+=== DANGLING DOCKER ===
+IMAGE        ID             DISK USAGE   CONTENT SIZE   EXTRA
+<untagged>   90ae88ed6d30        239MB         57.3MB        
+<untagged>   d9f1db3047c4        277MB         67.1MB        
+<untagged>   c27930af962b        239MB         57.2MB        
+<untagged>   07034f7b8707        239MB         57.2MB        
+<untagged>   0513c3316a0e        239MB         57.1MB        
+<untagged>   db2b5837928e        238MB         57.1MB        
+<untagged>   751b7b1c05bf        238MB           57MB        
+<untagged>   6f92b47a7767        515MB          141MB        
+<untagged>   7dc645818134        515MB          141MB        
+<untagged>   f6ec8eedecbd        515MB          141MB        
+<untagged>   270e2207a839        515MB          141MB        
+<untagged>   cabe3a3c1f1a        515MB          141MB        
+<untagged>   aa1ac279eb0d        238MB         56.9MB        
+<untagged>   08f506a01caf        238MB         56.9MB        
+<untagged>   c006a32f6ae4        238MB         56.9MB        
+<untagged>   a67397870859        238MB         56.9MB        
+<untagged>   17b6e7c309d9        515MB          141MB        
+<untagged>   3de249c688d3        515MB          141MB        
+<untagged>   858b1d4c2d8f        515MB          141MB        
+<untagged>   4dad964f7170        515MB          141MB        
+<untagged>   b44eef926697        515MB          141MB        
+<untagged>   5b5eb8b66f7d        515MB          141MB        
+<untagged>   2d45da84b386        515MB          141MB        
+<untagged>   3555019ef866        515MB          141MB        
+<untagged>   806faf515479        238MB         56.9MB        
+<untagged>   d1e3b188fa19        238MB         56.9MB        
+<untagged>   d8f01ca963c7        238MB         56.9MB        
+<untagged>   69da58a170e1        238MB         56.9MB        
+<untagged>   2673effc4692        238MB         56.9MB        
+<untagged>   968f888497ad        238MB         56.9MB        
+<untagged>   fb45ef942cd9        238MB         56.9MB        
+<untagged>   b7d2b5e19413        515MB          141MB        
+<untagged>   2ae84dd6e929        510MB          138MB        
+<untagged>   66488c9095e7        510MB          138MB        
+<untagged>   7dcc0d0a0faf        510MB          138MB        
+<untagged>   d9f140f48934        510MB          138MB        
+<untagged>   75d78a725566        510MB          138MB        
+<untagged>   c70ae31f6034        510MB          138MB        
+<untagged>   1e848d2216d7        510MB          138MB        
+<untagged>   1ac9553778fa        510MB          138MB        
+<untagged>   1b1f3c83fc8f        510MB          138MB        
+<untagged>   37060e418f0a        510MB          138MB        
+<untagged>   18e43b310de7        510MB          138MB        
+<untagged>   0990530d7253        510MB          138MB        
+<untagged>   c63def0e7fd9        509MB          138MB        
+<untagged>   5d250d4f76b2        509MB          138MB        
+<untagged>   5205ea05ee0a        509MB          138MB        
+<untagged>   50cb8cdda1d6        509MB          138MB        
+<untagged>   771f4e0ab3f5        509MB          138MB        
+<untagged>   9cb4715c73e9        509MB          138MB        
+<untagged>   a23540c589d7        509MB          138MB        
+<untagged>   cbe8f1bcd6ea        325MB         85.7MB        
+<untagged>   635ed7fadd0b        249MB         64.2MB        
+<untagged>   85422a4eb0c1        248MB         64.2MB        
+<untagged>   286d0a369e32        248MB         64.2MB        
+<untagged>   f897fb63f81c        248MB         64.2MB        
+<untagged>   a577d318ce51        248MB         64.2MB        
+<untagged>   268f41f50ce3        248MB         64.2MB        
+<untagged>   6557a1226007        248MB         64.2MB        
+<untagged>   ea6f487d4afe        248MB         64.2MB        
+<untagged>   0300a3177f40        248MB         64.2MB        
+<untagged>   c64a22c97210        248MB         64.2MB        
+<untagged>   00b983579ed0        248MB         64.2MB        
+<untagged>   2ff87162dac2        248MB         64.2MB        
+<untagged>   3d3c28b5c5d6        248MB         64.2MB        
+<untagged>   ed4f22ccb04f        248MB         64.2MB        
+<untagged>   4791218c30e1        248MB         64.2MB        
+<untagged>   122913d55370        248MB         64.2MB        
+<untagged>   dd5511e36109        248MB         64.2MB        
+<untagged>   b591516b73b9        248MB         64.2MB        
+<untagged>   04654a11e529        248MB         64.2MB        
+<untagged>   a373a8e49961        238MB         56.9MB        
+<untagged>   aa82380cf976        238MB         56.9MB        
+<untagged>   75f511aef0be        248MB         64.1MB        
+<untagged>   c691def7a32d        248MB         64.1MB        
+<untagged>   b270384f9870        248MB         64.1MB        
+<untagged>   f1ccce34c375        248MB         64.1MB        
+<untagged>   c7ddfb91ce5b        248MB         64.1MB        
+<untagged>   a3f8aa06b618        248MB         64.1MB        
+<untagged>   a8d51d9d2cd2        248MB         64.1MB        
+<untagged>   8030af595493        247MB         63.4MB        
+<untagged>   53d27994ac5e        245MB         62.5MB        
+<untagged>   9efbcf399737        233MB         56.7MB        
+<untagged>   2dd922c0231e        238MB         56.9MB        
+<untagged>   10533b173bb3        229MB         54.9MB        
+<untagged>   543e75b8f843        229MB         54.9MB        
+<untagged>   e08f561b930f        229MB         54.9MB        
+<untagged>   87432b4582c8        229MB         54.9MB        
+<untagged>   0507e364de6d        238MB         56.9MB        
+<untagged>   cb6465cb147a        238MB         56.9MB        
+<untagged>   b904927903ce        238MB         56.9MB        
+<untagged>   b4059fde4850        236MB         56.2MB        
+<untagged>   d75a06d9d6cb        236MB         56.2MB        
+<untagged>   7d1e296ffd85        236MB         56.2MB        
+<untagged>   8b3729c7c2da        236MB         56.2MB        
+<untagged>   49fc3ef04ccc        236MB         56.2MB        
+<untagged>   a20027030a7e        236MB         56.2MB        
+<untagged>   ce5f447a61bd        229MB         54.9MB        
+<untagged>   cfbf8d17a21c        229MB         54.9MB        
+WARNING: This output is designed for human readability. For machine-readable output, please use --format.
+IMAGE                                                ID             DISK USAGE   CONTENT SIZE   EXTRA
+WARNING: This output is designed for human readability. For machine-readable output, please use --format.

@@ -1,0 +1,162 @@
+Use the audit-ai-visibility skill pack to improve https://successcasting.com for AI/search visibility and traffic readiness.
+
+Important safety rules:
+- Do not ask for or print API tokens, secrets, passwords, private keys, bearer tokens, Cloudflare credentials, GA credentials, or hosting credentials.
+- Use only the existing authenticated local environment or dashboard actions.
+- Do not deploy repo root if it contains .git, .env*, secrets, internal docs, node_modules, .vercel, or tooling folders.
+
+Target:
+https://successcasting.com
+Canonical observed:
+https://www.successcasting.com
+
+First run:
+scripts\verify-portable.bat
+scripts\audit-ai-visibility.bat https://successcasting.com --markdown
+scripts\audit-ai-visibility.bat https://successcasting.com
+
+Current live findings from previous audit:
+- apex https://successcasting.com redirects 301 to https://www.successcasting.com/
+- www homepage returns 200
+- robots.txt returns 200
+- llms.txt returns 200
+- ai.txt returns 200
+- agents.txt returns 404
+- sitemap.xml returns 200
+- GPTBot, ClaudeBot, Google-Extended, OAI-SearchBot, ChatGPT-User, PerplexityBot return 200
+- llms.txt has H1 and Markdown links
+- no ai-input=no found
+- no Content-Signal response header found
+- ai.txt currently says ai-train=yes
+- homepage GA4 ID exists but HTML shows gtag loader more than once; verify whether this causes duplicate page_view before changing
+- homepage has 2 H1s
+- /products has 0 H1
+- WebMCP form hints are not present
+
+Goal:
+Improve AI/search visibility and release a safe production update that can increase qualified organic/AI referral traffic.
+
+Fix priorities:
+
+1. Policy consistency
+Set the desired public AI policy across robots.txt, llms.txt, ai.txt, agents.txt, and response headers:
+ai-train=no, search=yes, ai-input=yes
+
+Rationale:
+- search=yes and ai-input=yes support AI answer visibility and citation.
+- ai-train=no keeps training opt-out unless the owner explicitly approves training use.
+- Avoid mixed signals like ai.txt saying ai-train=yes while headers say something else.
+
+2. Add agents.txt
+Create /agents.txt because it currently returns 404.
+Include:
+- canonical domain: https://www.successcasting.com
+- allowed public pages: homepage, products, product material pages, blog, contact anchor, sitemap, llms.txt, ai.txt
+- disallowed private/admin/API paths
+- AI crawler policy: ai-train=no, search=yes, ai-input=yes
+- contact and citation guidance
+
+3. Add Content-Signal response header
+For public pages and policy files, add:
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+Apply via the actual hosting stack after confirming it:
+- Cloudflare Pages: _headers
+- Next.js: next.config.js headers()
+- Other CDN/hosting: equivalent header config
+
+Do not break static asset caching.
+
+4. Improve robots.txt
+Keep current AI bot allows, but add clear consistency:
+- GPTBot
+- OAI-SearchBot
+- ChatGPT-User
+- ClaudeBot
+- Claude-User
+- Claude-SearchBot
+- Google-Extended
+- PerplexityBot
+- Perplexity-User
+- Applebot if appropriate
+
+Keep disallows:
+- /admin
+- /api
+- /dashboard
+
+Add sitemap:
+Sitemap: https://www.successcasting.com/sitemap.xml
+
+5. Polish llms.txt
+llms.txt is already decent, but improve it:
+- Keep H1.
+- Convert remaining bare URLs to Markdown links where possible.
+- Link agents.txt after creating it.
+- Add clear service intent:
+  custom sand casting, cast iron, ductile iron, cast steel, alloy steel, wear-resistant, heat-resistant, RFQ from drawings/sample/worn parts, Thailand/Samut Prakan.
+- Keep contact details public only.
+
+6. Check analytics duplication
+GA4 ID is present and gtag loader appears more than once in raw HTML.
+Before changing, verify browser runtime:
+- Does it send duplicate page_view events?
+- Is the second occurrence just Next.js serialized payload?
+If duplicate events happen, add a guard so GA4 config runs once.
+If not duplicate, leave it.
+
+7. On-page SEO quick fixes
+- Homepage has 2 H1s: reduce to one clear H1 if semantically incorrect.
+- /products has 0 H1: add one descriptive H1.
+- Keep titles/descriptions unique and manufacturing-intent focused.
+- Confirm product pages have strong H1, schema, and internal links.
+- Add/verify contact/RFQ CTA links from product pages.
+
+8. Optional Agentic/WebMCP improvement
+If there is an RFQ/contact form, add WebMCP-style annotations or clear machine-readable labels:
+- toolname
+- tooldescription
+- toolparamdescription
+Only do this after crawler/policy/header fixes.
+
+9. Deploy safely
+- Confirm production hosting path first.
+- Build/test locally.
+- Deploy only clean public/build output.
+- Purge CDN cache for:
+  /
+  /robots.txt
+  /llms.txt
+  /ai.txt
+  /agents.txt
+  /sitemap.xml
+  /products
+  /blog
+
+10. Final verification
+Run:
+scripts\audit-ai-visibility.bat https://successcasting.com --markdown
+scripts\audit-ai-visibility.bat https://successcasting.com
+
+Expected:
+- root 200 final at https://www.successcasting.com/
+- robots 200
+- llms 200
+- ai 200
+- agents 200
+- sitemap 200
+- all AI bot user-agents return 200
+- Content-Signal present: ai-train=no, search=yes, ai-input=yes
+- robots/llms/ai/agents have no ai-input=no
+- llms Markdown links > 0
+- www healthy, no 522/520/403
+- no accidental secrets in output
+
+Final report:
+- Before bottlenecks
+- Files changed
+- Headers changed
+- Live verification results
+- Risks/notes
+- Traffic lift hypothesis
+- Next checks in GA4/Search Console/Cloudflare analytics
