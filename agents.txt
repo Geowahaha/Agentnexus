@@ -1,0 +1,9 @@
+# agents.txt for obolla.com
+
+contact: https://www.obolla.com/contact
+policy: https://www.obolla.com/ai.txt
+allowed-paths: /, /services, /blog, /contact
+catalog: https://www.obolla.com/.well-known/api-catalog
+skills: https://www.obolla.com/agent-skills (if available)
+
+# This site supports agent interactions via discovery files and API.

@@ -1,0 +1,9 @@
+# ai.txt — obolla.com
+ai-train: no
+search: yes
+ai-input: yes
+
+See also:
+- https://www.obolla.com/llms.txt
+- https://www.obolla.com/agents.txt
+- https://www.obolla.com/robots.txt

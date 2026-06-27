@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "obolla.com",
+  "url": "https://www.obolla.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.obolla.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "sameAs": ["https://twitter.com/..."] 
+}

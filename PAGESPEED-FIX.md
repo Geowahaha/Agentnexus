@@ -1,0 +1,36 @@
+# PageSpeed & Core Web Vitals — Revenue Impact Fix Pack
+
+Site: **https://obolla.com**
+Current PageSpeed (lab): **64/100**
+
+## Why this matters for revenue
+- Google uses CWV in ranking → more organic traffic.
+- Every ~100ms faster LCP can lift conversions ~1% (retail benchmarks).
+- Slow mobile = higher bounce = lost leads before they see your offer.
+
+## Targets (customer growth criteria)
+| Metric | Target | Your scan |
+|--------|--------|-----------|
+| PageSpeed | ≥75 | 64 |
+| LCP | ≤2500ms | 4957 |
+| CLS | ≤0.1 | 0.22 |
+| INP | ≤200ms | — |
+
+## P0 fixes (deploy this week)
+- **LCP 4957ms** (target ≤2500ms): Server-render above-the-fold HTML; preload hero image/font; defer non-critical JS; avoid hiding hero behind scroll-reveal until JS runs.
+- **CLS 0.22** (target ≤0.1): Set explicit width/height on images; reserve space for ads/embeds; avoid injecting banners above existing content.
+- INP: monitor after JS bundle diet.
+- **Thin HTML shell**: Ensure default HTML includes H1 + 400+ words (not JS-only SPA) — helps bots AND LCP text paint.
+- **Cache**: Long-cache static assets; `immutable` on hashed JS/CSS bundles.
+
+## Stack-specific
+- **Cloudflare Worker + SPA**: Serve bot-readable `<main>` HTML for crawler UAs; keep SPA for humans.
+- **Next.js**: Use SSR/SSG for marketing pages; `next/font` with `display: swap`.
+- **WordPress**: Lazy-load images; critical CSS inline; disable render-blocking plugins on homepage.
+
+## Verify
+1. Re-run AIBotAuth deep scan or PageSpeed Insights after deploy.
+2. `POST /api/v1/agent-ready/smart-scan` — PageSpeed pillar should reach ≥75.
+3. Log before/after in OBOLLA moat for revenue attribution on your next client pitch.
+
+Source: paid AIBotAuth deep scan + OBOLLA Growth Score criteria.
