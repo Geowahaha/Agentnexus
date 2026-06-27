@@ -89,23 +89,18 @@ export function AgentReadyPro() {
   const skillId = '33333333-3333-4333-8333-333333333310'
   const price = 9.99
 
-  // Professional zen — benefit-first. SEO • AEO • AAIO • Revenue shown early. No salesy lines.
   const headline = isTh
-    ? 'Scan → Get real fixes → Apply with your AI'
-    : 'Scan → Get real fixes → Apply with your AI'
+    ? 'สแกน → ได้ไฟล์แก้จริง → ให้ AI apply'
+    : 'Scan → real fixes → your AI applies'
 
   const subline = isTh
-    ? 'Growth Score = รายได้จริง: AIBotAuth deep + PageSpeed + SEO/AEO/AAIO + attribution'
-    : 'Growth Score = revenue-focused: AIBotAuth deep + PageSpeed + SEO/AEO/AAIO + measurable ROI.'
-
-  const dnaLine = isTh
-    ? 'AI ทำงานหนัก — คุณมีเวลาเป็นมนุษย์ นั่งกาแฟกับคนที่คุณรัก'
-    : 'AI carries the heavy work — so you have time to be human and sit for coffee with the people you love.'
+    ? 'Growth Score · AIBotAuth deep · PageSpeed · SEO/AEO/AAIO'
+    : 'Growth Score · AIBotAuth deep · PageSpeed · SEO/AEO/AAIO · ROI'
 
   const steps = [
-    { num: '1', title: isTh ? 'สแกน' : 'Scan', desc: isTh ? 'AIBotAuth 8 บอท + isitagentready + SEO/AEO' : 'AIBotAuth 8 bots + isitagentready + SEO/AEO' },
-    { num: '2', title: isTh ? 'แก้ไข' : 'Fix', desc: isTh ? 'ไฟล์จริง + แผน Deploy' : 'Real files + deploy plan' },
-    { num: '3', title: isTh ? 'ใช้ MCP' : 'Apply with MCP', desc: isTh ? 'ปลอดภัย ด้วย AI ของคุณ (ไม่ต้อง Bridge)' : 'Secure with your AI (no local Bridge)' },
+    { num: '1', title: isTh ? 'สแกน' : 'Scan', desc: isTh ? '8 บอท + live score' : '8 bots + live score' },
+    { num: '2', title: isTh ? 'แก้ไข' : 'Fix', desc: isTh ? 'ไฟล์ deploy จริง' : 'Deploy-ready files' },
+    { num: '3', title: isTh ? 'MCP' : 'MCP', desc: isTh ? 'AI ของคุณ apply' : 'Your AI applies' },
   ]
 
   function scrollToRun() {
@@ -322,53 +317,44 @@ export function AgentReadyPro() {
   const isUnpurchasedUrl = Boolean(normalizedUrl && hasPurchasedSites && !entitled)
 
   return (
-    <div className="page-shell mx-auto max-w-5xl">
-      <div className="mb-2 flex items-center gap-2 text-sm">
+    <div className="page-shell mx-auto max-w-5xl px-4 sm:px-6">
+      <div className="mb-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm">
         <Link to="/" className="text-readable-muted hover:text-[var(--color-text)]">← Marketplace</Link>
-        <span className="text-[var(--color-border)]">·</span>
-        <span className="pro-badge">Flagship • Closed-Loop Agent-Ready</span>
+        <span className="hidden sm:inline text-[var(--color-border)]">·</span>
+        <span className="pro-badge text-[10px] sm:text-xs">Agent-Ready</span>
       </div>
 
-      {/* Clean Zen Hero */}
-      <div className="mt-6 max-w-2xl">
-        <div className="text-[10px] uppercase tracking-[3px] text-[var(--color-coffee)] mb-2">OBOLLA × AIBotAuth</div>
-        <h1 className="text-4xl sm:text-5xl font-semibold tracking-[-1.2px] leading-none">{headline}</h1>
-        <p className="mt-4 text-lg text-readable-muted">{subline}</p>
-        <p className="mt-2 text-sm italic text-[var(--color-coffee)]">{dnaLine}</p>
-
-        {/* SEO AEO AAIO + Revenue — shown first (professional benefit) */}
-        <div className="mt-3 text-xs uppercase tracking-[2px] text-[var(--color-coffee)]">
-          PageSpeed • SEO • AEO • AAIO • Revenue attribution
-        </div>
+      <div className="mt-4 sm:mt-6 max-w-xl">
+        <p className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)]">OBOLLA × AIBotAuth</p>
+        <h1 className="mt-2 text-[1.65rem] leading-tight font-semibold tracking-tight sm:text-4xl">{headline}</h1>
+        <p className="mt-2 text-sm sm:text-base text-readable-muted leading-snug">{subline}</p>
       </div>
 
-      <div className="mt-6">
-        <button onClick={scrollToRun} className="rounded-2xl bg-[var(--color-market)] px-8 py-3 text-sm font-semibold text-white">
-          {isTh ? 'เริ่มสแกน + แก้ไข — $9.99' : `Start Scan & Get Fixes — $${price}`}
+      <div className="mt-4 sm:mt-5 max-w-xl">
+        <button
+          type="button"
+          onClick={scrollToRun}
+          className="w-full sm:w-auto rounded-2xl bg-[var(--color-market)] px-6 py-3 text-sm font-semibold text-white"
+        >
+          {isTh ? `เริ่มสแกน — $${price}` : `Start scan — $${price}`}
         </button>
       </div>
 
-      {/* Clean 3-Step Zen Flow — only 3 steps, zen & linear */}
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div className="mt-5 sm:mt-6 grid grid-cols-3 gap-2 sm:gap-3 max-w-xl">
         {steps.map((s, i) => (
-          <div key={i} className="text-center p-5 rounded-3xl border bg-white">
-            <div className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)] mb-1">STEP {s.num}</div>
-            <div className="font-semibold text-lg">{s.title}</div>
-            <div className="text-sm text-readable-muted mt-1">{s.desc}</div>
+          <div key={i} className="rounded-2xl border bg-white px-2 py-3 sm:p-4 text-center">
+            <div className="text-[9px] sm:text-[10px] uppercase tracking-wide text-[var(--color-coffee)]">{s.num}</div>
+            <div className="mt-0.5 text-sm sm:text-base font-semibold">{s.title}</div>
+            <div className="mt-0.5 text-[10px] sm:text-xs text-readable-muted leading-tight">{s.desc}</div>
           </div>
         ))}
       </div>
 
-      {/* Additional clarity on outcomes (kept minimal) */}
-      <div className="mt-4 text-xs text-readable-muted">
-        Real files for SEO, AEO &amp; AAIO. Revenue attribution automatic.
-      </div>
-
       {/* Saved sites — bound purchase; free re-scan only for these URLs */}
       {user && savedSites.length > 0 && (
-        <div className="mt-8 max-w-2xl rounded-3xl border bg-white p-4">
+        <div className="mt-6 sm:mt-8 max-w-xl rounded-2xl sm:rounded-3xl border bg-white p-3 sm:p-4">
           <div className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)] mb-2">
-            {isTh ? 'เว็บที่ซื้อแล้ว (ผูกกับการจ่าย) — re-scan ฟรีเฉพาะเว็บนี้' : 'Purchased sites (bound) — free re-scan for these only'}
+            {isTh ? 'เว็บที่ซื้อแล้ว · re-scan ฟรี' : 'Purchased · free re-scan'}
           </div>
           <div className="flex flex-wrap gap-2">
             {savedSites.map((s: any) => (
@@ -388,10 +374,10 @@ export function AgentReadyPro() {
 
       {/* Agent coach — smart summary from first scan */}
       {user && showCoach && coach && (
-        <div className="mt-6 max-w-2xl rounded-3xl border-2 border-[var(--color-coffee)]/20 bg-gradient-to-br from-white to-amber-50/40 p-5">
+        <div className="mt-5 sm:mt-6 max-w-xl rounded-2xl sm:rounded-3xl border-2 border-[var(--color-coffee)]/20 bg-gradient-to-br from-white to-amber-50/40 p-4 sm:p-5">
           <div className="flex flex-wrap items-center gap-2 mb-1">
             <div className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)]">
-              {isTh ? 'Agent Coach — สรุปเชิงธุรกิจจากสแกนล่าสุด' : 'Agent Coach — business summary from your latest scan'}
+              {isTh ? 'Agent Coach' : 'Agent Coach'}
             </div>
             {coach.gemini_enriched && (
               <span className="rounded-full bg-blue-500/10 px-2 py-0.5 text-[10px] font-medium text-blue-700">
@@ -449,7 +435,7 @@ export function AgentReadyPro() {
       )}
 
       {isUnpurchasedUrl && (
-        <div className="mt-6 max-w-2xl rounded-2xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+        <div className="mt-5 max-w-xl rounded-2xl border border-amber-300 bg-amber-50 px-3 py-2.5 text-xs sm:text-sm text-amber-900 leading-snug">
           {isTh
             ? `เว็บ ${normalizedUrl} ยังไม่ได้ซื้อ — จ่าย $${price} เพื่อสแกนเว็บใหม่ หรือเลือกเว็บที่ซื้อแล้วด้านบนเพื่อ re-scan ฟรี`
             : `${normalizedUrl} is not purchased — pay $${price} for a new site, or pick a purchased site above for free re-scan.`}
@@ -457,7 +443,7 @@ export function AgentReadyPro() {
       )}
 
       {/* Super simple run form */}
-      <div ref={runRef} className="mt-8 max-w-md">
+      <div ref={runRef} className="mt-6 sm:mt-8 max-w-xl">
         {!user ? (
           <Link to="/register" className="block rounded-2xl bg-[var(--color-market)] py-3 text-center font-semibold text-white">Sign up free to try</Link>
         ) : (
