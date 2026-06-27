@@ -1,0 +1,41 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://obolla.com/api",
+      "service-desc": [
+        {
+          "href": "https://obolla.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json;version=3.1"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://obolla.com/.well-known/api-docs.md",
+          "type": "text/markdown"
+        },
+        {
+          "href": "https://obolla.com/auth.md",
+          "type": "text/markdown"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://obolla.com/agents.txt",
+          "type": "text/plain"
+        },
+        {
+          "href": "https://obolla.com/.well-known/http-message-signatures-directory",
+          "type": "application/jwk-set+json"
+        },
+        {
+          "href": "https://obolla.com/.well-known/ucp",
+          "type": "application/json"
+        },
+        {
+          "href": "https://obolla.com/.well-known/acp.json",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}

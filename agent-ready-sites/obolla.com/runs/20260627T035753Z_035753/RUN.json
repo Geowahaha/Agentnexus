@@ -1,0 +1,133 @@
+{
+  "run_id": "20260627T035753Z_035753",
+  "site_url": "https://obolla.com",
+  "host": "obolla.com",
+  "action": "analyze",
+  "source": "local_test",
+  "recorded_at": "2026-06-27T03:57:53.681001+00:00",
+  "before": {
+    "file_count": 11,
+    "meta": {
+      "fetched_at": "2026-06-27T03:57:53.996818+00:00",
+      "paths": {
+        "robots.txt": {
+          "status": 200,
+          "found": true
+        },
+        "llms.txt": {
+          "status": 200,
+          "found": true
+        },
+        "agents.txt": {
+          "status": 200,
+          "found": true
+        },
+        "ai.txt": {
+          "status": 200,
+          "found": true
+        },
+        "sitemap.xml": {
+          "status": 200,
+          "found": true
+        },
+        ".well-known/api-catalog": {
+          "status": 200,
+          "found": true
+        },
+        ".well-known/agent-card.json": {
+          "status": 200,
+          "found": true
+        },
+        ".well-known/mcp/server-card.json": {
+          "status": 200,
+          "found": true
+        },
+        ".well-known/agent-skills/index.json": {
+          "status": 200,
+          "found": true
+        },
+        "openapi.json": {
+          "status": 200,
+          "found": true
+        },
+        "auth.md": {
+          "status": 200,
+          "found": true
+        }
+      }
+    }
+  },
+  "after": {
+    "file_count": 12
+  },
+  "changes": [
+    {
+      "path": ".well-known/api-catalog",
+      "change": "modified",
+      "summary": "~603 chars vs live"
+    },
+    {
+      "path": "AGENT-READY-DEPLOY.md",
+      "change": "added",
+      "summary": "new agent-ready file proposed"
+    },
+    {
+      "path": "PAGESPEED-FIX.md",
+      "change": "added",
+      "summary": "new agent-ready file proposed"
+    },
+    {
+      "path": "REVENUE-ATTRIBUTION.md",
+      "change": "added",
+      "summary": "new agent-ready file proposed"
+    },
+    {
+      "path": "REVENUE-GROWTH-PLAYBOOK.md",
+      "change": "added",
+      "summary": "new agent-ready file proposed"
+    },
+    {
+      "path": "_headers",
+      "change": "added",
+      "summary": "new agent-ready file proposed"
+    },
+    {
+      "path": "aeo-faq-example.html",
+      "change": "added",
+      "summary": "new agent-ready file proposed"
+    },
+    {
+      "path": "agents.txt",
+      "change": "modified",
+      "summary": "~50 chars vs live"
+    },
+    {
+      "path": "ai.txt",
+      "change": "modified",
+      "summary": "~17 chars vs live"
+    },
+    {
+      "path": "llms.txt",
+      "change": "modified",
+      "summary": "~759 chars vs live"
+    },
+    {
+      "path": "robots.txt",
+      "change": "modified",
+      "summary": "~180 chars vs live"
+    },
+    {
+      "path": "seo-schema.jsonld",
+      "change": "added",
+      "summary": "new agent-ready file proposed"
+    }
+  ],
+  "changed_count": 12,
+  "added_count": 7,
+  "modified_count": 5,
+  "archive_path": "obolla.com/runs/20260627T035753Z_035753",
+  "result": {
+    "protocol_percent": 95,
+    "note": "local archive test"
+  }
+}

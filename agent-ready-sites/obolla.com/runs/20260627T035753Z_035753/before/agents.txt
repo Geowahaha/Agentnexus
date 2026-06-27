@@ -1,0 +1,9 @@
+# OBOLLA Agent Discovery
+
+Origin: https://obolla.com
+API catalog: https://obolla.com/.well-known/api-catalog
+OpenAPI: https://obolla.com/openapi.json
+MCP server card: https://obolla.com/.well-known/mcp/server-card.json
+A2A agent card: https://obolla.com/.well-known/agent-card.json
+Skills index: https://obolla.com/.well-known/agent-skills/index.json
+Auth.md: https://obolla.com/auth.md

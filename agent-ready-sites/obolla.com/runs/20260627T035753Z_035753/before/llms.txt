@@ -1,0 +1,8 @@
+# OBOLLA
+
+OBOLLA is an AI expert skills marketplace, agent-ready service surface, and smart farm data workflow platform.
+
+Canonical origin: https://obolla.com
+API catalog: https://obolla.com/.well-known/api-catalog
+Agent card: https://obolla.com/.well-known/agent-card.json
+Auth instructions: https://obolla.com/auth.md

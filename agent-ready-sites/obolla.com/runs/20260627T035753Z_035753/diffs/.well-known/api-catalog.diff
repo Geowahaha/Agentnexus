@@ -1,0 +1,18 @@
+diff --git a/.well-known/api-catalog b/.well-known/api-catalog
+index 0000000..0000000 100644
+--- a/.well-known/api-catalog
++++ b/.well-known/api-catalog
+@@ -1,1 +12 @@
+-# original content not available - this is the proposed new file
++{
++  "linkset": [
++    {
++      "anchor": "https://www.obolla.com/api",
++      "item": [
++        { "rel": "service-desc", "href": "https://www.obolla.com/openapi.json", "type": "application/json" },
++        { "rel": "service-doc", "href": "https://www.obolla.com/auth.md", "type": "text/markdown" },
++        { "rel": "status", "href": "https://www.obolla.com/api/health", "type": "application/json" }
++      ]
++    }
++  ]
++}

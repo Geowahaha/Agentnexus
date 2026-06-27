@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Content-Signal: ai-train=yes, ai-input=yes, search=yes
+Sitemap: https://obolla.com/sitemap.xml

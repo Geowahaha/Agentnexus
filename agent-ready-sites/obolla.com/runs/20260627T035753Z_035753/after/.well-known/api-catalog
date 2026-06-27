@@ -1,0 +1,12 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.obolla.com/api",
+      "item": [
+        { "rel": "service-desc", "href": "https://www.obolla.com/openapi.json", "type": "application/json" },
+        { "rel": "service-doc", "href": "https://www.obolla.com/auth.md", "type": "text/markdown" },
+        { "rel": "status", "href": "https://www.obolla.com/api/health", "type": "application/json" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+diff --git a/llms.txt b/llms.txt
+index 0000000..0000000 100644
+--- a/llms.txt
++++ b/llms.txt
+@@ -1,1 +23 @@
+-# original content not available - this is the proposed new file
++# obolla.com — Machine-readable for LLM agents + Search Engines
++
++> Policy: ai-train=no, search=yes, ai-input=yes. Optimized for traditional SEO, AI Answer Engines (AEO), and autonomous Agents (AAIO).
++
++## About OBOLLA — AI Garden Community
++No substantial text content extracted.
++
++## Core Pages (SEO + AEO ready)
++- [Homepage](https://www.obolla.com/) — Primary landing with H1: key pages and services
++- [Key sections](https://www.obolla.com/) based on content: main services
++
++## Agent Discovery (AAIO)
++- [llms.txt](https://www.obolla.com/llms.txt) — This file
++- [agents.txt](https://www.obolla.com/agents.txt)
++- [ai.txt](https://www.obolla.com/ai.txt)
++- [robots.txt](https://www.obolla.com/robots.txt) — AI crawler rules + Content-Signal
++
++## Structured Data & Commerce (SEO + AEO + AAIO)
++- [API Catalog](https://www.obolla.com/.well-known/api-catalog)
++- [OpenAPI / Schema](https://www.obolla.com/openapi.json)
++- [Auth & Commerce](https://www.obolla.com/auth.md) — UCP / ACP / x402
++
++Agents & search engines: Use clear intent, entities, and structured data from actual page content.

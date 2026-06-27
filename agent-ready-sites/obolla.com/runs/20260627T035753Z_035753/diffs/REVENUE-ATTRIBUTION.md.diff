@@ -1,0 +1,14 @@
+diff --git a/REVENUE-ATTRIBUTION.md b/REVENUE-ATTRIBUTION.md
+index 0000000..0000000 100644
+--- a/REVENUE-ATTRIBUTION.md
++++ b/REVENUE-ATTRIBUTION.md
+@@ -1,1 +8 @@
+-# original content not available - this is the proposed new file
++# Revenue Attribution Note
++Fixes above are designed to increase:
++- Traditional search traffic (SEO)
++- AI answer citations (AEO)
++- Autonomous agent executions (AAIO)
++
++All executions on OBOLLA can be logged for revenue (via logged outreach → sale flow).
++This powers the closed AIBotAuth + OBOLLA moat and creator earnings.

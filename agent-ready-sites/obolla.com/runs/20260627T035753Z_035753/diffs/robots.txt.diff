@@ -1,0 +1,39 @@
+diff --git a/robots.txt b/robots.txt
+index 0000000..0000000 100644
+--- a/robots.txt
++++ b/robots.txt
+@@ -1,1 +33 @@
+-# original content not available - this is the proposed new file
++# obolla.com — agent-ready robots.txt
++User-agent: *
++Allow: /
++Content-Signal: ai-train=no, search=yes, ai-input=yes
++
++User-agent: GPTBot
++Allow: /
++
++User-agent: OAI-SearchBot
++Allow: /
++
++User-agent: ChatGPT-User
++Allow: /
++
++User-agent: ClaudeBot
++Allow: /
++
++User-agent: Claude-Web
++Allow: /
++
++User-agent: PerplexityBot
++Allow: /
++
++User-agent: Google-Extended
++Allow: /
++
++User-agent: Applebot-Extended
++Allow: /
++
++User-agent: Applebot
++Allow: /
++
++Sitemap: https://www.obolla.com/sitemap.xml

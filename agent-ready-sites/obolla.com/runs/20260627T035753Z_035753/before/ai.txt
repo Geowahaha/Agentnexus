@@ -1,0 +1,3 @@
+# OBOLLA AI Access
+
+Public pages may be fetched for search, summarization, and agent discovery. Do not treat public website content as final professional advice or production payment settlement.

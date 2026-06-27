@@ -1,0 +1,7 @@
+diff --git a/aeo-faq-example.html b/aeo-faq-example.html
+index 0000000..0000000 100644
+--- a/aeo-faq-example.html
++++ b/aeo-faq-example.html
+@@ -1,1 +1 @@
+-# original content not available - this is the proposed new file
++<!-- AEO: Add FAQPage or HowTo schema on service pages for direct AI answers -->

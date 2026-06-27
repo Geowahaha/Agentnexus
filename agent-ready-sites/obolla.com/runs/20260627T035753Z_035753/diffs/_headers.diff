@@ -1,0 +1,25 @@
+diff --git a/_headers b/_headers
+index 0000000..0000000 100644
+--- a/_headers
++++ b/_headers
+@@ -1,1 +19 @@
+-# original content not available - this is the proposed new file
++/*
++  Content-Signal: ai-train=no, search=yes, ai-input=yes
++  X-Content-Type-Options: nosniff
++  Referrer-Policy: strict-origin-when-cross-origin
++
++/robots.txt
++  Content-Type: text/plain; charset=utf-8
++
++/llms.txt
++  Content-Type: text/plain; charset=utf-8
++
++/ai.txt
++  Content-Type: text/plain; charset=utf-8
++
++/agents.txt
++  Content-Type: text/plain; charset=utf-8
++
++/.well-known/api-catalog
++  Content-Type: application/linkset+json
