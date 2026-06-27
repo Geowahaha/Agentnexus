@@ -17,17 +17,14 @@ function Read-EnvKey($path, $key) {
     return $null
 }
 
-$token = Read-EnvKey $EnvFile "GITHUB_TOKEN"
-if (-not $token) { throw "GITHUB_TOKEN missing in $EnvFile" }
-
 if (-not (Test-Path ".git")) {
     git init
     git branch -M main
 }
 
-$remoteUrl = "https://${token}@github.com/$Repo.git"
-git remote remove origin 2>$null
-git remote add origin $remoteUrl
+$setupCreds = Join-Path $PSScriptRoot "setup-github-credential-manager.ps1"
+if (-not (Test-Path $setupCreds)) { throw "Missing $setupCreds" }
+& $setupCreds -Repo $Repo -RepoRoot $RepoRoot -EnvFile $EnvFile | Out-Host
 
 git add -A
 $status = git status --porcelain
