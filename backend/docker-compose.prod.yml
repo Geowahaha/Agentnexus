@@ -53,10 +53,13 @@ services:
       SMART_FARM_MQTT_PORT: "1883"
       SMART_FARM_MQTT_USERNAME: ${SMART_FARM_MQTT_USERNAME:-obolla-ingest}
       SMART_FARM_MQTT_PASSWORD: ${SMART_FARM_MQTT_INGEST_PASSWORD:-obolla-ingest-internal}
+      AGENT_READY_ARCHIVE_ROOT: /app/agent-ready-sites
+      AGENT_READY_ARCHIVE_GIT: ${AGENT_READY_ARCHIVE_GIT:-0}
     ports:
       - "127.0.0.1:8000:8000"
     volumes:
       - agentnexus_data:/app/data
+      - ${AGENT_READY_ARCHIVE_HOST_PATH:-./agent-ready-sites}:/app/agent-ready-sites
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/docs', timeout=3)"]
       interval: 30s

@@ -89,6 +89,11 @@ class Settings(BaseSettings):
     smart_farm_auto_export_enabled: bool = True
     smart_farm_auto_export_interval_seconds: int = 3600
 
+    # Agent-Ready run archive (before[]/after[] per site in agent-ready-sites/)
+    agent_ready_archive_root: str | None = None
+    agent_ready_archive_git: bool = True
+    agent_ready_archive_git_push: bool = False
+
 
 @lru_cache
 def get_settings() -> Settings:

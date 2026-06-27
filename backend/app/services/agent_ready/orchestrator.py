@@ -16,23 +16,19 @@ from app.services.agent_ready.fix_pack import (
 from app.services.agent_ready.github_deploy import GitHubDeployAdapter
 from app.services.agent_ready.isitagentready_client import IsitagentreadyClient
 from app.services.agent_ready.mcp_tools import APPLY_AGENT_READY_FIX_TOOL
+from app.services.agent_ready.run_archive import AgentReadyRunArchive
 from app.services.agent_ready.smart_scorecard import build_smart_scorecard
 from app.services.agent_ready.stack_detector import StackDetector
 
 
-def _normalize_site_url(url: str) -> str:
-    u = (url or "").strip()
-    if not u:
-        return u
-    if not u.startswith(("http://", "https://")):
-        u = f"https://{u.lstrip('/')}"
-    return u.rstrip("/")
+from app.services.agent_ready.url_utils import normalize_site_url as _normalize_site_url
 
 
 class AgentReadyOrchestrator:
     """Phase 2–3: analyze stack, deploy fix pack (GitHub PR / CF Pages / Worker), verify loop."""
 
     def __init__(self) -> None:
+        self._archive = AgentReadyRunArchive()
         self.stack = StackDetector()
         self.scanner = IsitagentreadyClient()
         self.cf = CloudflareAdapter()
@@ -50,8 +46,9 @@ class AgentReadyOrchestrator:
         page_content = fetch_page_content(url)
 
         smart = await build_smart_scorecard(url)  # auto-loads paid reference scan when bundled
+        pack = self.build_fix_pack(_normalize_site_url(url), strategy=profile.deploy_strategy)
 
-        return {
+        out = {
             "url": profile.url,
             "stack": profile.to_dict(),
             "scan": {
@@ -84,6 +81,29 @@ class AgentReadyOrchestrator:
                 "post_deploy_commands": self._post_deploy_commands(profile.deploy_strategy),
             },
         }
+        try:
+            archive = await self._archive.save_run(
+                url=profile.url,
+                action="analyze",
+                source="agent_ready_analyze",
+                after_files=pack.get("files") or {},
+                diffs=pack.get("diffs"),
+                extra={
+                    "protocol_percent": summary.get("percent"),
+                    "smart_percent": smart.get("smart_score"),
+                    "growth_percent": smart.get("growth_score"),
+                    "scan_level": scan.get("level"),
+                },
+            )
+            out["run_archive"] = {
+                "run_id": archive.get("run_id"),
+                "path": archive.get("archive_path"),
+                "changed_count": archive.get("changed_count"),
+                "git": archive.get("git"),
+            }
+        except Exception as exc:  # noqa: BLE001
+            out["run_archive_error"] = str(exc)[:300]
+        return out
 
     def build_fix_pack(self, url: str, *, strategy: str | None = None, existing_files: dict[str, str] | None = None) -> dict[str, Any]:
         profile_strategy = strategy
@@ -290,6 +310,28 @@ class AgentReadyOrchestrator:
             )
 
         result["fix_pack"] = pack  # echo back for the caller
+        try:
+            archive = await self._archive.save_run(
+                url=url,
+                action="apply_agent_ready_fix",
+                source="agent_ready_apply",
+                after_files=pack.get("files") or {},
+                diffs=pack.get("diffs"),
+                extra={
+                    "auto_deployed": result.get("auto_deployed"),
+                    "github": result.get("github"),
+                    "cloudflare_worker": result.get("cloudflare_worker"),
+                    "billing_id": (result.get("sale") or {}).get("billing_id") if isinstance(result.get("sale"), dict) else None,
+                },
+            )
+            result["run_archive"] = {
+                "run_id": archive.get("run_id"),
+                "path": archive.get("archive_path"),
+                "changed_count": archive.get("changed_count"),
+                "git": archive.get("git"),
+            }
+        except Exception as exc:  # noqa: BLE001
+            result["run_archive_error"] = str(exc)[:300]
         return result
 
     async def verify_loop(

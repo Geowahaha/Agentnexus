@@ -42,7 +42,7 @@ cd /opt/agentnexus
 cp .env /tmp/agentnexus.env.bak
 tar -xzf /tmp/agentnexus-backend-deploy.tar.gz -C /opt/agentnexus
 cp /tmp/agentnexus.env.bak .env
-mkdir -p mosquitto/certs
+mkdir -p mosquitto/certs agent-ready-sites
 chmod +x scripts/setup-mqtt-tls-vps.sh mosquitto/docker-entrypoint.sh 2>/dev/null || true
 bash scripts/setup-mqtt-tls-vps.sh || true
 ufw allow 8883/tcp comment 'MQTT TLS Smart Farm' 2>/dev/null || true

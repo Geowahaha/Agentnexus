@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 
 from app.services.agent_ready.orchestrator import AgentReadyOrchestrator
+from app.services.agent_ready.run_archive import AgentReadyRunArchive
 from app.services.agent_ready.smart_scorecard import build_smart_scorecard
 from app.core.deps import get_session
 from app.services.moat_service import log_revenue_sale_from_outreach
@@ -9,6 +10,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 router = APIRouter()
 _orchestrator = AgentReadyOrchestrator()
+_archive = AgentReadyRunArchive()
 
 
 class AnalyzeRequest(BaseModel):
@@ -179,6 +181,33 @@ async def purge_agent_paths(body: PurgeRequest):
         raise
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+
+@router.get("/archive/sites")
+async def list_archive_sites():
+    """List per-site archive boxes (SITE.json index for each host)."""
+    return {
+        "archive_root": str(_archive.root),
+        "sites": _archive.list_sites(),
+    }
+
+
+@router.get("/archive/runs")
+async def list_archive_runs(url: str, limit: int = 20):
+    """List archived runs for one website (newest first)."""
+    if not url.strip():
+        raise HTTPException(status_code=400, detail="url query param required")
+    runs = _archive.list_runs(url.strip(), limit=min(max(limit, 1), 100))
+    return {"url": url.strip(), "runs": runs, "count": len(runs)}
+
+
+@router.get("/archive/runs/{host}/{run_id}")
+async def get_archive_run(host: str, run_id: str):
+    """Fetch RUN.json metadata for a single archived run."""
+    record = _archive.get_run(host, run_id)
+    if not record:
+        raise HTTPException(status_code=404, detail="run not found")
+    return record
 
 
 @router.post("/fix-pack")

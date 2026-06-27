@@ -129,5 +129,10 @@
   "result": {
     "protocol_percent": 95,
     "note": "local archive test"
+  },
+  "git": {
+    "committed": true,
+    "commit": "[main b5efdd",
+    "message": "agent-ready: obolla.com run 20260627T035753Z_035753 (12 files changed)"
   }
 }
