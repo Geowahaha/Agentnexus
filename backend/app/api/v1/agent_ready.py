@@ -1,8 +1,12 @@
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 
+from app.auth.dependencies import get_current_user
+from app.auth.models import User
+from app.repositories.agent_ready_session_repository import AgentReadySessionRepository
 from app.services.agent_ready.orchestrator import AgentReadyOrchestrator
 from app.services.agent_ready.run_archive import AgentReadyRunArchive
+from app.services.agent_ready.session_service import AgentReadySessionService
 from app.services.agent_ready.smart_scorecard import build_smart_scorecard
 from app.core.deps import get_session
 from app.services.moat_service import log_revenue_sale_from_outreach
@@ -64,6 +68,23 @@ class CloudflarePagesDeployRequest(BaseModel):
     account_id: str | None = None
     api_token: str | None = Field(None, description="Optional; falls back to CLOUDFLARE_API_TOKEN env")
     wait: bool = True
+
+
+class CoachSyncRequest(BaseModel):
+    url: str
+    workflow_id: str | None = None
+    analyze: dict | None = None
+    fix_pack: dict | None = None
+    progress: dict | None = None
+
+
+class CoachProgressRequest(BaseModel):
+    url: str
+    progress: dict = Field(default_factory=dict)
+
+
+class CoachRescanRequest(BaseModel):
+    url: str
 
 
 @router.post("/smart-scan")
@@ -181,6 +202,81 @@ async def purge_agent_paths(body: PurgeRequest):
         raise
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+
+def _coach_service(session: AsyncSession = Depends(get_session)) -> AgentReadySessionService:
+    return AgentReadySessionService(AgentReadySessionRepository(session))
+
+
+@router.get("/coach/sites")
+async def list_coach_sites(
+    current_user: User = Depends(get_current_user),
+    coach: AgentReadySessionService = Depends(_coach_service),
+):
+    """Sites this user has paid-scanned — enables resume + free re-scan."""
+    sites = await coach.list_sites(current_user.id)
+    return {"sites": sites, "count": len(sites)}
+
+
+@router.get("/coach/session")
+async def get_coach_session(
+    url: str,
+    current_user: User = Depends(get_current_user),
+    coach: AgentReadySessionService = Depends(_coach_service),
+):
+    if not url.strip():
+        raise HTTPException(status_code=400, detail="url query param required")
+    record = await coach.get_session(current_user.id, url.strip())
+    if not record:
+        raise HTTPException(status_code=404, detail="No saved session for this site")
+    return record
+
+
+@router.post("/coach/sync")
+async def sync_coach_after_paid_scan(
+    body: CoachSyncRequest,
+    current_user: User = Depends(get_current_user),
+    coach: AgentReadySessionService = Depends(_coach_service),
+):
+    """Persist coach state after paid workflow — unlocks free re-scans for this URL."""
+    try:
+        return await coach.sync_after_paid_run(
+            current_user.id,
+            url=body.url.strip(),
+            workflow_id=body.workflow_id,
+            analyze=body.analyze,
+            fix_pack=body.fix_pack,
+            progress=body.progress,
+        )
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+
+@router.post("/coach/rescan")
+async def coach_free_rescan(
+    body: CoachRescanRequest,
+    current_user: User = Depends(get_current_user),
+    coach: AgentReadySessionService = Depends(_coach_service),
+):
+    """Re-scan live site for entitled users — no additional charge."""
+    try:
+        return await coach.rescan(current_user.id, body.url.strip())
+    except PermissionError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+
+@router.post("/coach/progress")
+async def coach_update_progress(
+    body: CoachProgressRequest,
+    current_user: User = Depends(get_current_user),
+    coach: AgentReadySessionService = Depends(_coach_service),
+):
+    record = await coach.update_progress(current_user.id, body.url.strip(), body.progress)
+    if not record:
+        raise HTTPException(status_code=404, detail="No saved session for this site")
+    return record
 
 
 @router.get("/archive/sites")

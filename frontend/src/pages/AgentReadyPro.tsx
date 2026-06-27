@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import type { FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { api, request } from '../api/client'  // request for custom POSTs
@@ -24,8 +24,57 @@ export function AgentReadyPro() {
   const [fixPack, setFixPack] = useState<any>(null)
   const [applied, setApplied] = useState(false)
   const [reScanning, setReScanning] = useState(false)
+  const [coachSession, setCoachSession] = useState<any>(null)
+  const [savedSites, setSavedSites] = useState<any[]>([])
+  const [loadingSession, setLoadingSession] = useState(false)
 
   const isTh = locale === 'th'
+
+  const isEntitledForUrl = useCallback((siteUrl: string) => {
+    if (!siteUrl) return false
+    const { normalized } = normalizeSiteUrl(siteUrl)
+    if (coachSession?.site_url === normalized && coachSession?.entitled) return true
+    return savedSites.some((s: any) => s.site_url === normalized && s.entitled)
+  }, [coachSession, savedSites])
+
+  const applyCoachSession = useCallback((session: any) => {
+    if (!session) return
+    setCoachSession(session)
+    if (session.site_url) setUrl(session.site_url)
+    const latest = session.latest_scan
+    if (latest) setResult(latest)
+    if (session.initial_scan) setInitialResult(session.initial_scan)
+    if (session.fix_pack) setFixPack(session.fix_pack)
+    if (session.progress?.mcp_applied) setApplied(true)
+  }, [initialResult])
+
+  const refreshSavedSites = useCallback(async () => {
+    if (!token) return
+    try {
+      const res: any = await request('/agent-ready/coach/sites', {}, token)
+      setSavedSites(res.sites || [])
+    } catch {
+      /* no sessions yet */
+    }
+  }, [token])
+
+  useEffect(() => {
+    refreshSavedSites()
+  }, [refreshSavedSites])
+
+  useEffect(() => {
+    if (!token || !url.trim()) return
+    const { normalized, error: urlErr } = normalizeSiteUrl(url)
+    if (urlErr || !normalized) return
+    if (!isEntitledForUrl(normalized)) return
+    let cancelled = false
+    setLoadingSession(true)
+    request(`/agent-ready/coach/session?url=${encodeURIComponent(normalized)}`, {}, token)
+      .then((session: any) => { if (!cancelled) applyCoachSession(session) })
+      .catch(() => { /* no session */ })
+      .finally(() => { if (!cancelled) setLoadingSession(false) })
+    return () => { cancelled = true }
+  }, [token, url, isEntitledForUrl, applyCoachSession])
   const skillId = '33333333-3333-4333-8333-333333333310'
   const price = 9.99
 
@@ -80,18 +129,17 @@ export function AgentReadyPro() {
     const timer = setInterval(() => setRunSeconds(Math.floor((Date.now() - start) / 1000)), 1000)
 
     try {
-      // Run the flagship Auto Fix workflow
-      await api.runWorkflow(token, {
+      const workflow = await api.runWorkflow(token, {
         task_description: normalized,
         workflow_type: 'expert_skill',
         expert_skill_id: skillId,
         task_context: { expert_skill_id: skillId, expert_skill_slug: 'agent-ready-auto-fix', target_url: normalized },
       })
 
-      // Try to fetch richer analysis + fix pack for better UX (use raw request)
+      let scored: any = null
       try {
         const analyze: any = await request('/agent-ready/analyze', { method: 'POST', body: JSON.stringify({ url: normalized }) }, token)
-        const scored: any = analyze?.partial && analyze?.summary?.percent == null
+        scored = analyze?.partial && analyze?.summary?.percent == null
           ? await request('/agent-ready/verify', { method: 'POST', body: JSON.stringify({ url: normalized, max_attempts: 1, purge_between: false }) }, token).then((v: any) => ({
               ...analyze,
               summary: v?.final ?? v?.attempts?.[0] ?? analyze.summary,
@@ -104,27 +152,46 @@ export function AgentReadyPro() {
         console.warn('analyze failed', e)
         try {
           const verify: any = await request('/agent-ready/verify', { method: 'POST', body: JSON.stringify({ url: normalized, max_attempts: 1, purge_between: false }) }, token)
-          const fallback = {
+          scored = {
             url: normalized,
             summary: verify?.final ?? verify?.attempts?.[0] ?? { percent: 0 },
             scan: { level: verify?.final?.level, level_name: verify?.final?.level_name },
             note: 'Score from live verify (analyze unavailable)',
           }
-          setResult(fallback)
-          setInitialResult(fallback)
+          setResult(scored)
+          setInitialResult(scored)
         } catch {
-          const fallback = { url: normalized, summary: { percent: 0 }, note: 'Scan unavailable — try again in a minute' }
-          setResult(fallback)
-          setInitialResult(fallback)
+          scored = { url: normalized, summary: { percent: 0 }, note: 'Scan unavailable — try again in a minute' }
+          setResult(scored)
+          setInitialResult(scored)
         }
       }
 
+      let pack: any = null
       try {
-        const pack = await request('/agent-ready/fix-pack', { method: 'POST', body: JSON.stringify({ url: normalized }) }, token)
+        pack = await request('/agent-ready/fix-pack', { method: 'POST', body: JSON.stringify({ url: normalized }) }, token)
         setFixPack(pack)
       } catch (e) {
         console.warn('fix-pack failed', e)
-        setFixPack({ url: normalized, files: {}, note: 'Fix-pack endpoint not available, basic mode' })
+        pack = { url: normalized, files: {}, note: 'Fix-pack endpoint not available, basic mode' }
+        setFixPack(pack)
+      }
+
+      try {
+        const session: any = await request('/agent-ready/coach/sync', {
+          method: 'POST',
+          body: JSON.stringify({
+            url: normalized,
+            workflow_id: workflow.workflow_id,
+            analyze: scored,
+            fix_pack: pack,
+            progress: { scanned: true, fix_pack_ready: true, mcp_applied: false, reverified: false },
+          }),
+        }, token)
+        applyCoachSession(session)
+        await refreshSavedSites()
+      } catch (e) {
+        console.warn('coach sync failed', e)
       }
 
       clearInterval(timer)
@@ -160,7 +227,12 @@ export function AgentReadyPro() {
         } catch (_) {}
       }
 
-      // Revenue is already logged inside /apply. Subtle confirmation.
+      try {
+        await request('/agent-ready/coach/progress', {
+          method: 'POST',
+          body: JSON.stringify({ url, progress: { mcp_applied: true } }),
+        }, token)
+      } catch { /* optional */ }
     } catch (e: any) {
       setApplied(false)
       setError('MCP apply start failed: ' + (e.message || ''))
@@ -169,21 +241,30 @@ export function AgentReadyPro() {
 
   async function handleReScan() {
     if (!url || !token) return
+    const { normalized, error: urlErr } = normalizeSiteUrl(url)
+    if (urlErr || !normalized) {
+      setError(urlErr || 'Invalid URL')
+      return
+    }
     setReScanning(true)
     setError('')
     try {
-      // Fresh live scan to show what changed after the local AI applied the MCP fixes
-      const fresh = await request('/agent-ready/analyze', { method: 'POST', body: JSON.stringify({ url }) }, token)
-      setResult(fresh)
-
-      // Optional deeper verify loop for more accurate post-apply status (can be slow)
-      // try { await request('/agent-ready/verify', {method:'POST', body: JSON.stringify({url})}, token) } catch {}
+      const session: any = await request('/agent-ready/coach/rescan', {
+        method: 'POST',
+        body: JSON.stringify({ url: normalized }),
+      }, token)
+      applyCoachSession(session)
+      await refreshSavedSites()
     } catch (e: any) {
-      setError('Re-scan failed: ' + (e.message || ''))
+      setError(isTh ? `Re-scan ล้มเหลว: ${e.message || ''}` : `Re-scan failed: ${e.message || ''}`)
     } finally {
       setReScanning(false)
     }
   }
+
+  const coach = coachSession?.coach
+  const entitled = isEntitledForUrl(url)
+  const showCoach = coach || (result && entitled)
 
   return (
     <div className="page-shell mx-auto max-w-5xl">
@@ -228,6 +309,65 @@ export function AgentReadyPro() {
         Real files for SEO, AEO &amp; AAIO. Revenue attribution automatic.
       </div>
 
+      {/* Saved sites — resume coach without paying again */}
+      {user && savedSites.length > 0 && (
+        <div className="mt-8 max-w-2xl rounded-3xl border bg-white p-4">
+          <div className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)] mb-2">
+            {isTh ? 'เว็บที่คุณซื้อแล้ว — re-scan ฟรี' : 'Your sites — free re-scan'}
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {savedSites.map((s: any) => (
+              <button
+                key={s.site_host}
+                type="button"
+                onClick={() => setUrl(s.site_url)}
+                className={`rounded-2xl border px-3 py-2 text-left text-xs ${url === s.site_url ? 'border-emerald-600 bg-emerald-50' : 'hover:bg-zinc-50'}`}
+              >
+                <div className="font-semibold">{s.site_host}</div>
+                <div className="text-readable-muted">Growth {s.growth_percent ?? '—'}% · {s.scan_count ?? 0} scans</div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Agent coach — smart summary from first scan */}
+      {user && showCoach && coach && (
+        <div className="mt-6 max-w-2xl rounded-3xl border-2 border-[var(--color-coffee)]/20 bg-gradient-to-br from-white to-amber-50/40 p-5">
+          <div className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)] mb-1">
+            {isTh ? 'Agent Coach — สรุปจากสแกนล่าสุด' : 'Agent Coach — from your latest scan'}
+          </div>
+          <h2 className="text-xl font-semibold leading-snug">
+            {isTh ? coach.headline_th : coach.headline_en}
+          </h2>
+          <p className="mt-2 text-sm text-readable-muted leading-relaxed">
+            {isTh ? coach.executive_summary_th : coach.executive_summary_en}
+          </p>
+          {(coach.delta_narrative_en || coach.delta_narrative_th) && (
+            <p className="mt-2 text-sm font-medium text-emerald-800">
+              {isTh ? coach.delta_narrative_th : coach.delta_narrative_en}
+            </p>
+          )}
+          {coach.next_steps_en?.length > 0 && (
+            <ul className="mt-3 space-y-1 text-xs text-readable-muted">
+              {(isTh ? coach.next_steps_th : coach.next_steps_en).slice(0, 4).map((step: string, i: number) => (
+                <li key={i}><span className="text-emerald-700 font-mono mr-1">{i + 1}.</span>{step}</li>
+              ))}
+            </ul>
+          )}
+          {entitled && (
+            <button
+              type="button"
+              onClick={handleReScan}
+              disabled={reScanning || loadingSession}
+              className="mt-4 w-full rounded-2xl border border-emerald-600 bg-white py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50 disabled:opacity-60"
+            >
+              {reScanning ? (isTh ? 'กำลัง re-scan...' : 'Re-scanning...') : (isTh ? 'Re-scan ฟรี (ไม่หักเครดิต)' : 'Free re-scan (no charge)')}
+            </button>
+          )}
+        </div>
+      )}
+
       {/* Super simple run form */}
       <div ref={runRef} className="mt-8 max-w-md">
         {!user ? (
@@ -247,7 +387,11 @@ export function AgentReadyPro() {
               disabled={running || !consentAccepted}
               className="w-full rounded-2xl bg-black py-3 text-sm font-bold text-white disabled:opacity-60"
             >
-              {running ? `Working... ${runSeconds}s` : `Scan & Prepare Fixes — $${price}`}
+              {running
+                ? `Working... ${runSeconds}s`
+                : entitled
+                  ? (isTh ? 'สแกนใหม่ (จ่ายอีกครั้งสำหรับเว็บใหม่)' : 'New paid scan (new site)')
+                  : `Scan & Prepare Fixes — $${price}`}
             </button>
             {/* Clean professional consent for customers (benefit-focused, non-redundant) */}
             <label className="flex cursor-pointer gap-3 rounded-2xl border border-[var(--color-border)] bg-white p-3.5 text-sm">
@@ -544,15 +688,21 @@ Finish in this response. No asking back.`;
           )}
 
           {/* Clear re-scan to see what the local AI did (addresses before/after confusion) */}
-          {applied && (
+          {(applied || entitled) && (
             <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-4">
-              <div className="text-sm font-medium">MCP delivered to your AI + revenue logged.</div>
+              <div className="text-sm font-medium">
+                {applied
+                  ? (isTh ? 'ส่ง MCP ให้ AI แล้ว + บันทึก revenue' : 'MCP delivered to your AI + revenue logged.')
+                  : (isTh ? 'คุณมีสิทธิ์ re-scan ฟรีสำหรับเว็บนี้' : 'You have free re-scan entitlement for this site.')}
+              </div>
               <button
                 onClick={handleReScan}
                 disabled={reScanning}
                 className="mt-3 w-full rounded-2xl bg-white py-3 text-sm font-semibold border hover:bg-emerald-100 disabled:opacity-60"
               >
-                {reScanning ? 'Re-scanning live site...' : 'My local AI applied the fixes → Re-scan live site & update progress'}
+                {reScanning
+                  ? (isTh ? 'กำลัง re-scan...' : 'Re-scanning live site...')
+                  : (isTh ? 'Re-scan ฟรี → อัปเดต before/after' : 'Free re-scan → update before/after progress')}
               </button>
               <p className="mt-2 text-xs text-readable-muted">
                 After your local AI (or you) deploys the fixes to {url || 'the site'}, click above. The score + progress will update to show the real before → after lift.

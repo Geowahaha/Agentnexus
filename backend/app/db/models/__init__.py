@@ -30,6 +30,7 @@ from app.db.models.visibility_event import VisibilityEventORM
 from app.db.models.skill_execution_event import SkillExecutionEventORM
 from app.db.models.agent_behavior_trace import AgentBehaviorTraceORM
 from app.db.models.moat_skill_efficacy import MoatSkillEfficacyORM
+from app.db.models.agent_ready_session import AgentReadySessionORM
 
 __all__ = [
     "AgentORM",
