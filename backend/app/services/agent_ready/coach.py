@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from app.services.agent_ready.coach_gemini import enrich_coach_with_gemini
+
 
 def _layer_entries(smart: dict[str, Any]) -> list[tuple[str, dict[str, Any]]]:
     layers = smart.get("layers") or {}
@@ -104,7 +106,7 @@ def build_coach_brief(analyze: dict[str, Any], *, previous: dict[str, Any] | Non
         for key, layer in weak_layers
     ]
 
-    return {
+    brief = {
         "headline_en": headline_en,
         "headline_th": headline_th,
         "executive_summary_en": executive_en,
@@ -125,6 +127,17 @@ def build_coach_brief(analyze: dict[str, Any], *, previous: dict[str, Any] | Non
         "scan_level": (analyze.get("scan") or {}).get("level"),
         "scan_level_name": (analyze.get("scan") or {}).get("level_name"),
     }
+    return brief
+
+
+async def build_coach_brief_async(
+    analyze: dict[str, Any],
+    *,
+    previous: dict[str, Any] | None = None,
+    is_rescan: bool = False,
+) -> dict[str, Any]:
+    baseline = build_coach_brief(analyze, previous=previous)
+    return await enrich_coach_with_gemini(analyze, baseline, is_rescan=is_rescan)
 
 
 def _layer_hint(layer_id: str, percent: int | float | None) -> str:

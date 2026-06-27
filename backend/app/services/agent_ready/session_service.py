@@ -1,19 +1,28 @@
 from __future__ import annotations
 
+import asyncio
+import logging
 import uuid
 from datetime import datetime, timezone
 from typing import Any
 
+from app.core.database import async_session_maker
 from app.repositories.agent_ready_session_repository import AgentReadySessionRepository
-from app.services.agent_ready.coach import build_coach_brief, build_session_state
+from app.repositories.user_repository import UserRepository
+from app.services.agent_ready.coach import build_coach_brief_async, build_session_state
+from app.services.agent_ready.coach_notify import notify_rescan_complete
 from app.services.agent_ready.orchestrator import AgentReadyOrchestrator
+
+logger = logging.getLogger(__name__)
+_background_rescans: set[str] = set()
 
 
 class AgentReadySessionService:
     AGENT_READY_SKILL_ID = "33333333-3333-4333-8333-333333333310"
 
-    def __init__(self, repo: AgentReadySessionRepository) -> None:
+    def __init__(self, repo: AgentReadySessionRepository, users: UserRepository | None = None) -> None:
         self._repo = repo
+        self._users = users
         self._orchestrator = AgentReadyOrchestrator()
 
     @staticmethod
@@ -56,7 +65,7 @@ class AgentReadySessionService:
             initial = scan
 
         prev = (existing.state or {}).get("latest_scan") if existing else None
-        coach = build_coach_brief(scan, previous=prev)
+        coach = await build_coach_brief_async(scan, previous=prev, is_rescan=False)
         state = build_session_state(
             analyze=scan,
             coach=coach,
@@ -75,7 +84,13 @@ class AgentReadySessionService:
         )
         return self._row_detail(row)
 
-    async def rescan(self, user_id: str | uuid.UUID, url: str) -> dict[str, Any]:
+    async def rescan(
+        self,
+        user_id: str | uuid.UUID,
+        url: str,
+        *,
+        notify_email: bool = True,
+    ) -> dict[str, Any]:
         uid = self._uid(user_id)
         _, host = self._repo.normalize(url)
         row = await self._repo.get_for_user(uid, host)
@@ -86,7 +101,7 @@ class AgentReadySessionService:
         previous_latest = (row.state or {}).get("latest_scan")
         scan = await self._orchestrator.analyze(site_url)
         scan["recorded_at"] = datetime.now(timezone.utc).isoformat()
-        coach = build_coach_brief(scan, previous=previous_latest)
+        coach = await build_coach_brief_async(scan, previous=previous_latest, is_rescan=True)
         initial = (row.state or {}).get("initial_scan") or previous_latest
         progress = dict((row.state or {}).get("progress") or {})
         progress["reverified"] = True
@@ -109,7 +124,79 @@ class AgentReadySessionService:
         out = self._row_detail(updated)
         out["rescan"] = True
         out["free"] = True
+
+        if self._users and notify_email:
+            user = await self._users.get_by_id(str(user_id))
+            if user and user.email:
+                notify_result = await notify_rescan_complete(
+                    user_id=str(user_id),
+                    user_email=user.email,
+                    user_name=user.full_name,
+                    site_url=site_url,
+                    site_host=host,
+                    coach=coach,
+                    send_email=notify_email,
+                )
+                out["notification"] = notify_result
+
         return out
+
+    async def queue_rescan(
+        self,
+        user_id: str | uuid.UUID,
+        url: str,
+        *,
+        notify_email: bool = True,
+    ) -> dict[str, Any]:
+        """Queue live re-scan in background — user can leave; email/push when done."""
+        uid = self._uid(user_id)
+        _, host = self._repo.normalize(url)
+        row = await self._repo.get_for_user(uid, host)
+        if row is None or not row.entitled:
+            raise PermissionError("No paid entitlement for this site — run a paid scan first")
+
+        key = f"{uid}:{host}"
+        if key in _background_rescans:
+            return {
+                "status": "already_queued",
+                "site_url": row.site_url,
+                "site_host": host,
+                "notify_email": notify_email,
+            }
+
+        site_url, _ = self._repo.normalize(url)
+        _background_rescans.add(key)
+        asyncio.create_task(
+            self._rescan_background(str(user_id), site_url, notify_email=notify_email, queue_key=key)
+        )
+        return {
+            "status": "queued",
+            "site_url": site_url,
+            "site_host": host,
+            "notify_email": notify_email,
+            "message_th": "กำลัง re-scan ในพื้นหลัง — เราจะส่ง email เมื่อเสร็จ ปิดหน้าได้เลย",
+            "message_en": "Re-scan queued in the background — we'll email you when it's done.",
+        }
+
+    @staticmethod
+    async def _rescan_background(
+        user_id: str,
+        url: str,
+        *,
+        notify_email: bool,
+        queue_key: str,
+    ) -> None:
+        try:
+            async with async_session_maker() as session:
+                svc = AgentReadySessionService(
+                    AgentReadySessionRepository(session),
+                    UserRepository(session),
+                )
+                await svc.rescan(user_id, url, notify_email=notify_email)
+        except Exception as exc:  # noqa: BLE001
+            logger.exception("background rescan failed for %s: %s", url, exc)
+        finally:
+            _background_rescans.discard(queue_key)
 
     async def update_progress(self, user_id: str | uuid.UUID, url: str, progress: dict[str, Any]) -> dict[str, Any] | None:
         _, host = self._repo.normalize(url)

@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from app.auth.dependencies import get_current_user
 from app.auth.models import User
 from app.repositories.agent_ready_session_repository import AgentReadySessionRepository
+from app.repositories.user_repository import UserRepository
 from app.services.agent_ready.orchestrator import AgentReadyOrchestrator
 from app.services.agent_ready.run_archive import AgentReadyRunArchive
 from app.services.agent_ready.session_service import AgentReadySessionService
@@ -85,6 +86,7 @@ class CoachProgressRequest(BaseModel):
 
 class CoachRescanRequest(BaseModel):
     url: str
+    notify_email: bool = True
 
 
 @router.post("/smart-scan")
@@ -205,7 +207,7 @@ async def purge_agent_paths(body: PurgeRequest):
 
 
 def _coach_service(session: AsyncSession = Depends(get_session)) -> AgentReadySessionService:
-    return AgentReadySessionService(AgentReadySessionRepository(session))
+    return AgentReadySessionService(AgentReadySessionRepository(session), UserRepository(session))
 
 
 @router.get("/coach/sites")
@@ -260,7 +262,22 @@ async def coach_free_rescan(
 ):
     """Re-scan live site for entitled users — no additional charge."""
     try:
-        return await coach.rescan(current_user.id, body.url.strip())
+        return await coach.rescan(current_user.id, body.url.strip(), notify_email=body.notify_email)
+    except PermissionError as exc:
+        raise HTTPException(status_code=402, detail=str(exc)) from exc
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+
+@router.post("/coach/rescan-async")
+async def coach_rescan_async(
+    body: CoachRescanRequest,
+    current_user: User = Depends(get_current_user),
+    coach: AgentReadySessionService = Depends(_coach_service),
+):
+    """Queue re-scan in background — email/push when done; no need to keep the page open."""
+    try:
+        return await coach.queue_rescan(current_user.id, body.url.strip(), notify_email=body.notify_email)
     except PermissionError as exc:
         raise HTTPException(status_code=402, detail=str(exc)) from exc
     except Exception as exc:  # noqa: BLE001

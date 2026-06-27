@@ -24,6 +24,7 @@ export function AgentReadyPro() {
   const [fixPack, setFixPack] = useState<any>(null)
   const [applied, setApplied] = useState(false)
   const [reScanning, setReScanning] = useState(false)
+  const [backgroundQueued, setBackgroundQueued] = useState('')
   const [coachSession, setCoachSession] = useState<any>(null)
   const [savedSites, setSavedSites] = useState<any[]>([])
   const [loadingSession, setLoadingSession] = useState(false)
@@ -247,14 +248,19 @@ export function AgentReadyPro() {
       return
     }
     setReScanning(true)
+    setBackgroundQueued('')
     setError('')
     try {
       const session: any = await request('/agent-ready/coach/rescan', {
         method: 'POST',
-        body: JSON.stringify({ url: normalized }),
+        body: JSON.stringify({ url: normalized, notify_email: true }),
       }, token)
       applyCoachSession(session)
       await refreshSavedSites()
+      const emailSent = session?.notification?.email?.sent === 'true'
+      if (emailSent) {
+        setBackgroundQueued(isTh ? 'ส่งสรุปทาง email แล้ว' : 'Summary emailed to you')
+      }
     } catch (e: any) {
       setError(isTh ? `Re-scan ล้มเหลว: ${e.message || ''}` : `Re-scan failed: ${e.message || ''}`)
     } finally {
@@ -262,7 +268,36 @@ export function AgentReadyPro() {
     }
   }
 
+  async function handleBackgroundReScan() {
+    if (!url || !token) return
+    const { normalized, error: urlErr } = normalizeSiteUrl(url)
+    if (urlErr || !normalized) {
+      setError(urlErr || 'Invalid URL')
+      return
+    }
+    setError('')
+    try {
+      const res: any = await request('/agent-ready/coach/rescan-async', {
+        method: 'POST',
+        body: JSON.stringify({ url: normalized, notify_email: true }),
+      }, token)
+      setBackgroundQueued(
+        isTh
+          ? (res.message_th || 'กำลัง re-scan — เราจะส่ง email เมื่อเสร็จ ปิดหน้าได้เลย')
+          : (res.message_en || 'Re-scan queued — we will email you when done.'),
+      )
+    } catch (e: any) {
+      setError(isTh ? `คิว re-scan ล้มเหลว: ${e.message || ''}` : `Background re-scan failed: ${e.message || ''}`)
+    }
+  }
+
   const coach = coachSession?.coach
+  const coachHeadlineTh = coach?.headline_th_business || coach?.headline_th
+  const coachHeadlineEn = coach?.headline_en
+  const coachSummaryTh = coach?.executive_summary_th_business || coach?.executive_summary_th
+  const coachSummaryEn = coach?.executive_summary_en
+  const coachStepsTh = coach?.next_steps_th_business || coach?.next_steps_th
+  const coachStepsEn = coach?.next_steps_en
   const entitled = isEntitledForUrl(url)
   const showCoach = coach || (result && entitled)
 
@@ -334,36 +369,61 @@ export function AgentReadyPro() {
       {/* Agent coach — smart summary from first scan */}
       {user && showCoach && coach && (
         <div className="mt-6 max-w-2xl rounded-3xl border-2 border-[var(--color-coffee)]/20 bg-gradient-to-br from-white to-amber-50/40 p-5">
-          <div className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)] mb-1">
-            {isTh ? 'Agent Coach — สรุปจากสแกนล่าสุด' : 'Agent Coach — from your latest scan'}
+          <div className="flex flex-wrap items-center gap-2 mb-1">
+            <div className="text-[10px] uppercase tracking-[2px] text-[var(--color-coffee)]">
+              {isTh ? 'Agent Coach — สรุปเชิงธุรกิจจากสแกนล่าสุด' : 'Agent Coach — business summary from your latest scan'}
+            </div>
+            {coach.gemini_enriched && (
+              <span className="rounded-full bg-blue-500/10 px-2 py-0.5 text-[10px] font-medium text-blue-700">
+                Gemini
+              </span>
+            )}
           </div>
           <h2 className="text-xl font-semibold leading-snug">
-            {isTh ? coach.headline_th : coach.headline_en}
+            {isTh ? coachHeadlineTh : coachHeadlineEn}
           </h2>
           <p className="mt-2 text-sm text-readable-muted leading-relaxed">
-            {isTh ? coach.executive_summary_th : coach.executive_summary_en}
+            {isTh ? coachSummaryTh : coachSummaryEn}
           </p>
+          {isTh && coach.revenue_insight_th && (
+            <p className="mt-2 text-sm font-medium text-amber-900/90 leading-relaxed">
+              {coach.revenue_insight_th}
+            </p>
+          )}
           {(coach.delta_narrative_en || coach.delta_narrative_th) && (
             <p className="mt-2 text-sm font-medium text-emerald-800">
               {isTh ? coach.delta_narrative_th : coach.delta_narrative_en}
             </p>
           )}
-          {coach.next_steps_en?.length > 0 && (
+          {coachStepsEn?.length > 0 && (
             <ul className="mt-3 space-y-1 text-xs text-readable-muted">
-              {(isTh ? coach.next_steps_th : coach.next_steps_en).slice(0, 4).map((step: string, i: number) => (
+              {(isTh ? coachStepsTh : coachStepsEn).slice(0, 4).map((step: string, i: number) => (
                 <li key={i}><span className="text-emerald-700 font-mono mr-1">{i + 1}.</span>{step}</li>
               ))}
             </ul>
           )}
+          {backgroundQueued && (
+            <p className="mt-3 text-xs font-medium text-emerald-800">{backgroundQueued}</p>
+          )}
           {entitled && (
-            <button
-              type="button"
-              onClick={handleReScan}
-              disabled={reScanning || loadingSession}
-              className="mt-4 w-full rounded-2xl border border-emerald-600 bg-white py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50 disabled:opacity-60"
-            >
-              {reScanning ? (isTh ? 'กำลัง re-scan...' : 'Re-scanning...') : (isTh ? 'Re-scan ฟรี (ไม่หักเครดิต)' : 'Free re-scan (no charge)')}
-            </button>
+            <div className="mt-4 space-y-2">
+              <button
+                type="button"
+                onClick={handleReScan}
+                disabled={reScanning || loadingSession}
+                className="w-full rounded-2xl border border-emerald-600 bg-white py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50 disabled:opacity-60"
+              >
+                {reScanning ? (isTh ? 'กำลัง re-scan...' : 'Re-scanning...') : (isTh ? 'Re-scan ฟรี (อัปเดตหน้านี้ + ส่ง email)' : 'Free re-scan (update here + email)')}
+              </button>
+              <button
+                type="button"
+                onClick={handleBackgroundReScan}
+                disabled={reScanning || loadingSession}
+                className="w-full rounded-2xl border border-[var(--color-border)] bg-white py-2.5 text-sm font-medium text-readable-muted hover:bg-zinc-50 disabled:opacity-60"
+              >
+                {isTh ? 'Re-scan พื้นหลัง — ส่ง email เมื่อเสร็จ (ปิดหน้าได้)' : 'Background re-scan — email when done (leave page)'}
+              </button>
+            </div>
           )}
         </div>
       )}
@@ -702,10 +762,23 @@ Finish in this response. No asking back.`;
               >
                 {reScanning
                   ? (isTh ? 'กำลัง re-scan...' : 'Re-scanning live site...')
-                  : (isTh ? 'Re-scan ฟรี → อัปเดต before/after' : 'Free re-scan → update before/after progress')}
+                  : (isTh ? 'Re-scan ฟรี → อัปเดต before/after + email' : 'Free re-scan → update before/after + email')}
               </button>
+              <button
+                type="button"
+                onClick={handleBackgroundReScan}
+                disabled={reScanning}
+                className="mt-2 w-full rounded-2xl border border-dashed py-2.5 text-xs font-medium text-readable-muted hover:bg-white disabled:opacity-60"
+              >
+                {isTh ? 'หรือ re-scan พื้นหลัง — ส่ง email เมื่อเสร็จ (ไม่ต้องเปิดหน้า)' : 'Or background re-scan — email when done (no need to stay)'}
+              </button>
+              {backgroundQueued && (
+                <p className="mt-2 text-xs font-medium text-emerald-800">{backgroundQueued}</p>
+              )}
               <p className="mt-2 text-xs text-readable-muted">
-                After your local AI (or you) deploys the fixes to {url || 'the site'}, click above. The score + progress will update to show the real before → after lift.
+                {isTh
+                  ? `หลัง deploy fixes ขึ้น ${url || 'เว็บ'} แล้ว กด re-scan — คะแนน before/after จะอัปเดต และส่งสรุปภาษาไทยทาง email`
+                  : `After your local AI (or you) deploys fixes to ${url || 'the site'}, re-scan updates scores and emails a Thai business summary.`}
               </p>
             </div>
           )}

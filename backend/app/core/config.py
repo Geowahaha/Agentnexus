@@ -93,6 +93,11 @@ class Settings(BaseSettings):
     agent_ready_archive_root: str | None = None
     agent_ready_archive_git: bool = True
     agent_ready_archive_git_push: bool = False
+    agent_ready_coach_model: str = "gemini-2.5-flash"
+    agent_ready_rescan_email_enabled: bool = True
+
+    resend_api_key: str | None = None
+    obolla_from_email: str = "OBOLLA Agent-Ready <noreply@obolla.com>"
 
 
 @lru_cache
